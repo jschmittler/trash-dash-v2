@@ -1,0 +1,4 @@
+interface:
+  display_name: "Trash Dash V2 Release Gate"
+  short_description: "Require runtime and visual evidence before completion"
+  default_prompt: "Apply the Trash Dash 2.0 release gate and report PASS, FAIL, INCOMPLETE, or CANNOT VERIFY with evidence."
