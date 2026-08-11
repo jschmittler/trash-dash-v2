@@ -1,14 +1,19 @@
-# Git LFS setup recommendation
+# Git LFS configuration
 
-Git LFS was unavailable on 2026-08-11 (`git lfs version` was not a recognized command), so large reference PNGs have not been committed.
+Git LFS 3.7.1 was installed and configured locally for this repository on 2026-08-11.
 
-Recommended action before committing binary design references:
+The tracked rule is intentionally limited to:
 
-1. Install Git LFS through the platform package manager or the official installer.
-2. Run `git lfs install` inside this repository.
-3. Run `git lfs track "docs/design/trash-dash/reference/**/*.png"`.
-4. Review the generated `.gitattributes` and confirm no `assets/runtime/**` blanket rule was added.
-5. Run `git lfs status` and `git check-attr filter -- docs/design/trash-dash/reference/<sample>.png`.
-6. Re-run the multipart checksum validation before staging.
+```gitattributes
+docs/design/trash-dash/reference/**/*.png filter=lfs diff=lfs merge=lfs -text
+```
 
-Until that is done or a fallback is explicitly approved, full-resolution reference PNGs remain present locally but unstaged and uncommitted. Runtime asset policy remains separate and will be decided from actual build/export behavior.
+All 113 approved full-resolution reference PNGs are stored as LFS objects and retain the SHA-256 values declared by the approval manifests. No blanket rule applies to `assets/runtime/` or `assets/generated/`; runtime asset policy remains separate and will be decided from actual build/export behavior.
+
+Validation commands:
+
+- `git lfs version`
+- `git lfs status`
+- `git lfs fsck`
+- `git check-attr filter diff merge text -- docs/design/trash-dash/reference/<sample>.png`
+- approval checksum verification from `docs/design/trash-dash/`
