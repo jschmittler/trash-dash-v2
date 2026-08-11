@@ -1,35 +1,86 @@
 # Engine decision
 
-Status: **decision required before gameplay scaffold**
+Status: **accepted**
 
 Decision owner: project owner
 
-Recorded: 2026-08-11
+Accepted: 2026-08-11
 
-## What is already decided
+## Decision
 
-- V2 is an unrelated greenfield repository, not a fork or wholesale port.
-- Approved design references remain engine-neutral source material.
-- Runtime art is derived, validated, and separate from full-resolution references.
-- Gameplay must support deterministic tests, independent collision geometry, semantic render layers, real-game visual audits, keyboard and touch input, responsive target resolutions, and web deployment unless targets change.
-- No gameplay implementation starts until the runtime choice is accepted.
+Trash Dash 2.0 will use the current stable Godot 4 release with typed GDScript.
 
-## Recommendation
+Launch targets are:
 
-Retain web delivery and use a dedicated 2D game framework rather than rebuilding V1's React-owned Canvas loop. A framework should own the game loop, input, camera, audio, texture/animation registration, and scene lifecycle; React, if used at all, should be limited to surrounding product UI. Phaser is the leading web candidate, while a thin custom Canvas runtime is acceptable only if minimizing dependencies outweighs the maintenance burden. Godot should be selected only if native desktop/mobile exports are a near-term requirement and web bundle/startup tradeoffs are acceptable.
+- Windows through Steam;
+- macOS through Steam;
+- iOS through the Apple App Store;
+- Android through Google Play.
 
-## Decision questions
+Linux and web exports are not launch targets.
 
-1. Are web browsers the only launch target for the first public release, or are native desktop/mobile builds required?
-2. Must V2 embed inside a React site, or may the game own the page and expose a small integration boundary?
-3. Is deterministic replay/recording a first-release requirement?
-4. Which browsers and mobile devices define the minimum support matrix?
-5. What are the authoritative logical resolution, supported aspect ratios, and orientation policy?
-6. Is a tilemap editor workflow required, or will levels be validated data authored through repository tools?
-7. Should physics remain purpose-built platformer collision, or is a general physics engine required?
-8. Are accessibility remapping, controller support, and cloud saves first-release requirements?
-9. Which hosting target replaces or consolidates the V1 GitHub Pages/OpenAI Sites/Cloudflare mix?
+## Presentation and input
 
-## Candidate acceptance test
+- Gameplay uses a fixed 960×540 logical viewport and fixed 16:9 field of view.
+- Wider or taller physical displays use letterboxing and safe-area-aware UI rather than revealing additional gameplay space.
+- Mobile gameplay is landscape-only and touch-first.
+- Desktop keyboard controls are required and remappable.
+- Controller support is recommended but is not a launch blocker.
+- All devices feed one platform-neutral gameplay action layer.
 
-Before committing to an engine, build a disposable spike outside production source that proves: fixed-step simulation; keyboard/touch action mapping; pixel-crisp scaling; aspect preservation; camera follow and boss lock; independent collision overlays; audio pause/mute/transition; one derived sprite animation; one data-defined surface and encounter; screenshot capture at target resolutions; headless unit tests; and a production web build. Delete the spike after recording results; do not promote spike gameplay into V2.
+## Runtime architecture
+
+Godot owns the game loop, rendering, input, audio, scene lifecycle, and platform exports. Typed GDScript modules remain focused by responsibility. Application-wide autoloads are limited to save/settings, audio routing, scene transitions, and truly global state.
+
+Levels use a hybrid authoring model:
+
+- typed, validated Godot Resources define sections, supports, collision, encounters, checkpoints, routes, boss lifecycle, and asset references;
+- Godot scenes provide visual composition and editor previews;
+- stable IDs connect resource data to scene nodes;
+- validation prevents invalid or incomplete levels from entering gameplay.
+
+Approved design files remain immutable source references. Deterministic tools derive candidates under `assets/generated/`; only release-gated outputs enter `assets/runtime/`.
+
+## Renderer and physics
+
+The initial engine spike will use Godot's Compatibility renderer because the project is a pixel-art 2D game and broad mobile compatibility is more valuable than advanced 3D rendering features. The spike must verify the choice on representative iOS and Android hardware before it becomes a production constraint.
+
+Gameplay uses purpose-built 2D platformer behavior with Godot collision primitives. Collision, hurtboxes, attacks, weak points, supports, and effect origins remain independent from transparent sprite bounds.
+
+## Persistence and services
+
+Launch saves are local, versioned, validated, and written atomically. Corrupt saves are retained for diagnosis before safe defaults are restored. Steam Cloud, iCloud, and Google Play synchronization are deferred behind a future storage adapter.
+
+## Distribution constraints
+
+- Windows and macOS packages target Steam.
+- macOS distribution requires signing and notarization.
+- iOS exporting and App Store submission require macOS, Xcode, signing identities, and provisioning.
+- Android publishing uses signed Android App Bundles.
+- Signing keys, certificates, provisioning profiles, and store credentials never enter the repository.
+
+## Rejected approaches
+
+- **Browser-first Phaser/custom Canvas:** rejected because Windows, macOS, iOS, and Android native builds are required while Linux and web are not.
+- **Unity:** viable but rejected because its C# workflow and project/runtime weight are unnecessary for this 2D scope.
+- **Separate native applications:** rejected because duplicated rendering, input, save, testing, and release systems would multiply cost and drift.
+
+## Mandatory pre-production spike
+
+Before creating production gameplay, build a disposable Godot spike outside production source that proves:
+
+1. fixed-step gameplay behavior;
+2. typed GDScript project structure;
+3. fixed 960×540 rendering with crisp integer-friendly scaling, letterboxing, and safe-area UI;
+4. keyboard and landscape touch action parity;
+5. camera follow, transition, boss lock, and release states;
+6. independent collision and debug overlays;
+7. one derived sprite animation with stable anchors and aspect ratio;
+8. one typed level resource connected to one composed scene;
+9. local versioned save/load and corruption recovery;
+10. audio pause, mute, loop, transition, and lifecycle behavior;
+11. automated unit and gameplay checks;
+12. screenshot capture at representative desktop and mobile resolutions;
+13. unsigned development exports for Windows, macOS, iOS device, and Android device.
+
+Record the results, remove the spike, and retain only accepted contracts and infrastructure decisions. Spike gameplay may not be promoted into production source.

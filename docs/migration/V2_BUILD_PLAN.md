@@ -6,7 +6,7 @@
 
 **Architecture:** Approved design files remain immutable inputs. A selected 2D runtime consumes validated level, encounter, animation, asset, and rendering contracts through adapters isolated from game logic. Generated assets are promoted to runtime only after provenance, automated, and visual gates.
 
-**Tech Stack:** Runtime framework pending `docs/architecture/ENGINE_DECISION.md`; Git; GitHub Actions after remote creation; engine-appropriate TypeScript or native scripting; repository tools for asset, level, and visual validation.
+**Tech Stack:** Current stable Godot 4; typed GDScript; Git and Git LFS; GitHub Actions where platform signing permits; repository tools for asset, level, and visual validation; Steam, Apple App Store, and Google Play distribution.
 
 ## Global constraints
 
@@ -18,11 +18,11 @@
 
 ---
 
-### Task 1: Accept the engine and target matrix
+### Task 1: Validate the accepted engine and target matrix
 
 **Files:** Modify `docs/architecture/ENGINE_DECISION.md`; create the engine-native package/project configuration only after acceptance.
 
-- [ ] Answer all nine decision questions and record browser/device, resolution, orientation, accessibility, physics, editor, and deployment targets.
+- [x] Select Godot 4 with typed GDScript and record Windows/macOS Steam plus landscape iOS/Android store targets, fixed 960×540 presentation, required keyboard/touch input, optional controllers, hybrid authoring, and local saves.
 - [ ] Build a disposable spike proving the candidate acceptance test without copying V1 production code.
 - [ ] Record measured bundle/startup, pixel scaling, input, camera, audio, test, and screenshot results.
 - [ ] Select the engine, document rejected alternatives, delete the spike, and verify no spike gameplay entered `src/`.

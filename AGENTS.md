@@ -36,7 +36,7 @@ Runtime work must conform to:
 - `docs/architecture/ENCOUNTER_CONTRACT.md`
 - `docs/architecture/VISUAL_AUDIT_PROTOCOL.md`
 
-Do not begin gameplay or level implementation until the engine decision is accepted. Source sheets are design references, not runtime atlases. Use independent collision geometry, preserve aspect ratios, and keep generated and runtime assets separate.
+Do not begin production gameplay or level implementation until the engine decision is accepted and its mandatory disposable native-platform spike has passed review. Source sheets are design references, not runtime atlases. Use independent collision geometry, preserve aspect ratios, and keep generated and runtime assets separate.
 
 ## Completion language
 
