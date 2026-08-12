@@ -39,7 +39,7 @@ The export command reports the clean source revision, package path, byte size, S
 tools/verify/verify_local.sh
 ```
 
-The aggregate labels are `Policy`, `Exact Godot version and headless import`, `Tests`, `Headless editor smoke`, `Fresh unsigned macOS export`, and `Bounded package process`. A successful run ends with `Local verification: PASS`; any failed stage stops the sequence and returns nonzero. Its validated temporary directory is removed automatically, and the launched package PID must be absent after the expected signal-derived wait status `130`; the aggregate script itself then exits `0`.
+The aggregate labels are `Policy`, `Exact Godot version and headless import`, `Tests`, `Headless editor smoke`, `Fresh unsigned macOS export`, and `Bounded package process`. A successful run ends with `Local verification: PASS`; any failed stage stops the sequence and returns nonzero. Its validated temporary directory is removed automatically. The package is launched through a locale-stable signal-reset wrapper because non-interactive shells ignore `SIGINT` for asynchronous children; the wrapper immediately becomes the package process, so the recorded PID must be absent after the expected signal-derived wait status `130`. The aggregate script itself then exits `0`.
 
 The diagnostic shell displays exactly five neutral labels:
 

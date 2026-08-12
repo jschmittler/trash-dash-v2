@@ -73,10 +73,12 @@ TRASH_DASH_GODOT_BIN="$godot_bin" "$script_dir/export_macos.sh" "$export_dir"
 echo "[6/6] Bounded package process"
 executable="$export_dir/extracted/Trash Dash 2.0.app/Contents/MacOS/Trash Dash 2.0"
 package_log="$temp_dir/package-smoke.log"
-(
-	trap - INT
-	exec "$executable" --headless
-) > "$package_log" 2>&1 &
+# Non-interactive shells start asynchronous children with SIGINT ignored. Reset
+# it in a tiny exec wrapper so the recorded PID becomes Godot's PID and accepts
+# the required interrupt instead of leaving an orphaned package process.
+LC_ALL=C LANG=C /usr/bin/perl -e \
+	'$SIG{INT} = "DEFAULT"; exec {$ARGV[0]} @ARGV or die "exec failed: $!\n"' \
+	"$executable" --headless > "$package_log" 2>&1 &
 package_pid=$!
 printf 'Package PID: %s\n' "$package_pid"
 sleep 2
