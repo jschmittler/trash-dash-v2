@@ -2,6 +2,7 @@ extends SceneTree
 
 const PROJECT_CONTRACT_CASE: Script = preload("res://tests/unit/test_project_contract.gd")
 const TEST_RUNNER_CASE: Script = preload("res://tests/unit/test_test_runner.gd")
+const CORE_CONTRACT_CASE: Script = preload("res://tests/unit/test_core_contracts.gd")
 const RUNNER_PROBE_CASE: Script = preload("res://tests/support/runner_probe_case.gd")
 
 var _usage_error: String = ""
@@ -31,7 +32,7 @@ func _run() -> void:
 	quit(0 if failures.is_empty() else 1)
 
 func _selected_scripts() -> Array[Script]:
-	var all_cases: Array[Script] = [PROJECT_CONTRACT_CASE, TEST_RUNNER_CASE]
+	var all_cases: Array[Script] = [PROJECT_CONTRACT_CASE, TEST_RUNNER_CASE, CORE_CONTRACT_CASE]
 	var suite_name := ""
 	var probe_mode := ""
 	for argument: String in OS.get_cmdline_args():
