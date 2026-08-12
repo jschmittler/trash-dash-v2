@@ -1,86 +1,133 @@
 # Engine decision
 
-Status: **accepted**
+Status: **accepted for the macOS MVP foundation**
 
 Decision owner: project owner
 
 Accepted: 2026-08-11
 
+Revised and user-approved: 2026-08-12
+
 ## Decision
 
-Trash Dash 2.0 will use the current stable Godot 4 release with typed GDScript.
+Trash Dash 2.0 will use Godot 4.7.1 Standard with typed GDScript. The current
+MVP target is macOS desktop only until the project has a meaningful working
+prototype. Windows, Android, and iOS remain intended roadmap targets, but their
+proof and release work are deferred and do not block the macOS MVP.
 
-Launch targets are:
+Linux and web are not targets.
 
-- Windows through Steam;
-- macOS through Steam;
-- iOS through the Apple App Store;
-- Android through Google Play.
-
-Linux and web exports are not launch targets.
+This approval is deliberately narrow. It accepts the engine foundation for
+macOS runtime scaffolding, production infrastructure, and prototype gameplay.
+It does not approve a canonical level, production asset, complete platform
+matrix, store package, or release.
 
 ## Presentation and input
 
 - Gameplay uses a fixed 960×540 logical viewport and fixed 16:9 field of view.
-- Wider or taller physical displays use letterboxing and safe-area-aware UI rather than revealing additional gameplay space.
-- Mobile gameplay is landscape-only and touch-first.
-- Desktop keyboard controls are required and remappable.
-- Controller support is recommended but is not a launch blocker.
-- All devices feed one platform-neutral gameplay action layer.
+- Wider or taller physical displays use centered letterboxing rather than
+  revealing additional gameplay space.
+- macOS requires remappable physical-keyboard controls through one
+  platform-neutral gameplay action layer.
+- Mobile remains landscape-only and touch-first when Android and iOS re-enter
+  scope; touch controls and the rotate-device gate must remain hidden on
+  desktop.
+- Controller support is recommended but is not an MVP blocker.
 
 ## Runtime architecture
 
-Godot owns the game loop, rendering, input, audio, scene lifecycle, and platform exports. Typed GDScript modules remain focused by responsibility. Application-wide autoloads are limited to save/settings, audio routing, scene transitions, and truly global state.
+Godot owns the game loop, rendering, input, audio, scene lifecycle, and native
+exports. Typed GDScript modules remain focused by responsibility.
+Application-wide autoloads are limited to save/settings, audio routing, scene
+transitions, and truly global state.
 
 Levels use a hybrid authoring model:
 
-- typed, validated Godot Resources define sections, supports, collision, encounters, checkpoints, routes, boss lifecycle, and asset references;
+- typed, validated Godot Resources define sections, supports, collision,
+  encounters, checkpoints, routes, boss lifecycle, and asset references;
 - Godot scenes provide visual composition and editor previews;
 - stable IDs connect resource data to scene nodes;
 - validation prevents invalid or incomplete levels from entering gameplay.
 
-Approved design files remain immutable source references. Deterministic tools derive candidates under `assets/generated/`; only release-gated outputs enter `assets/runtime/`.
+Approved design files remain immutable source references. Deterministic tools
+derive candidates under `assets/generated/`; only release-gated outputs enter
+`assets/runtime/`.
 
 ## Renderer and physics
 
-The initial engine spike will use Godot's Compatibility renderer because the project is a pixel-art 2D game and broad mobile compatibility is more valuable than advanced 3D rendering features. The spike must verify the choice on representative iOS and Android hardware before it becomes a production constraint.
+Godot's Compatibility renderer is accepted for the macOS MVP foundation only.
+The reviewed macOS package used OpenGL 4.1 through Metal on Apple M2 and
+preserved the fixed FOV, letterboxing, and desktop UI policy at all assessed
+window sizes.
 
-Gameplay uses purpose-built 2D platformer behavior with Godot collision primitives. Collision, hurtboxes, attacks, weak points, supports, and effect origins remain independent from transparent sprite bounds.
+Cross-platform renderer acceptance remains pending. A historical run in a
+Parallels Windows 11 VM reached Compatibility OpenGL 3.3 but repeatedly failed
+GLES3 vertex-shader compilation. That result is `FAIL`, is nonblocking for the
+macOS MVP, and must be resolved on an appropriate Windows GPU/driver
+environment before Windows re-enters scope. Android and physical-device iOS
+renderer results are `CANNOT VERIFY` and deferred.
+
+Gameplay uses purpose-built 2D platformer behavior with Godot collision
+primitives. Collision, hurtboxes, attacks, weak points, supports, and effect
+origins remain independent from transparent sprite bounds.
 
 ## Persistence and services
 
-Launch saves are local, versioned, validated, and written atomically. Corrupt saves are retained for diagnosis before safe defaults are restored. Steam Cloud, iCloud, and Google Play synchronization are deferred behind a future storage adapter.
+MVP saves are local, versioned, validated, and written atomically. Corrupt
+saves are retained for diagnosis before safe defaults are restored. Steam
+Cloud, iCloud, and Google Play synchronization are deferred behind a future
+storage adapter.
+
+## Assets
+
+The source-sheet-derived Trashy idle used during the disposable spike is test
+evidence only. It must not enter main, `assets/runtime/`, or production. The
+project owner is preparing clean sprites/assets for the next phase; those
+assets must be imported, validated, and promoted through the normal pipeline.
+Do not derive further production assets from concept sheets unless the owner
+explicitly requests it or it becomes necessary and is reviewed first.
 
 ## Distribution constraints
 
-- Windows and macOS packages target Steam.
-- macOS distribution requires signing and notarization.
-- iOS exporting and App Store submission require macOS, Xcode, signing identities, and provisioning.
-- Android publishing uses signed Android App Bundles.
-- Signing keys, certificates, provisioning profiles, and store credentials never enter the repository.
+- The macOS MVP package is a universal arm64+x86_64 desktop build.
+- macOS store distribution eventually requires signing and notarization.
+- The project owner has an Apple Developer account but has deferred Team ID,
+  certificate, and provisioning-profile hookup. None may enter Git.
+- Future Windows packaging targets Steam.
+- Future iOS export/submission requires local Xcode signing and physical-device
+  proof; future Android publishing requires a signed Android App Bundle and
+  device proof.
+- Signing keys, certificates, provisioning profiles, Team IDs, keystores,
+  passwords, and store credentials never enter the repository.
 
 ## Rejected approaches
 
-- **Browser-first Phaser/custom Canvas:** rejected because Windows, macOS, iOS, and Android native builds are required while Linux and web are not.
-- **Unity:** viable but rejected because its C# workflow and project/runtime weight are unnecessary for this 2D scope.
-- **Separate native applications:** rejected because duplicated rendering, input, save, testing, and release systems would multiply cost and drift.
+- **Browser-first Phaser/custom Canvas:** rejected because the longer-term
+  roadmap still calls for native desktop and mobile builds.
+- **Unity:** viable but rejected because its C# workflow and project/runtime
+  weight are unnecessary for this 2D scope.
+- **Separate native applications:** rejected because duplicated rendering,
+  input, save, testing, and release systems would multiply cost and drift.
 
-## Mandatory pre-production spike
+## Disposable spike outcome
 
-Before creating production gameplay, build a disposable Godot spike outside production source that proves:
+The mandatory disposable spike was completed outside `main` and reviewed. Its
+macOS MVP foundation is acceptable, but the SPIKE/V2 release gate is
+`INCOMPLETE`, not `PASS`, because:
 
-1. fixed-step gameplay behavior;
-2. typed GDScript project structure;
-3. fixed 960×540 rendering with crisp integer-friendly scaling, letterboxing, and safe-area UI;
-4. keyboard and landscape touch action parity;
-5. camera follow, transition, boss lock, and release states;
-6. independent collision and debug overlays;
-7. one derived sprite animation with stable anchors and aspect ratio;
-8. one typed level resource connected to one composed scene;
-9. local versioned save/load and corruption recovery;
-10. audio pause, mute, loop, transition, and lifecycle behavior;
-11. automated unit and gameplay checks;
-12. screenshot capture at representative desktop and mobile resolutions;
-13. unsigned development exports for Windows, macOS, iOS device, and Android device.
+1. no uninterrupted human traversal of the packaged build or physical-keyboard
+   feel assessment was performed;
+2. the otherwise green full suite retains an isolated real-audio-test exit
+   warning for leaked `AudioStreamWAV`/`AudioStreamPlaybackWAV` instances and
+   orphan `Master`;
+3. clean production sprites/assets have not yet been imported or validated.
 
-Record the results, remove the spike, and retain only accepted contracts and infrastructure decisions. Spike gameplay may not be promoted into production source.
+The spike proved enough to begin macOS MVP infrastructure and prototype work.
+Each production feature still requires its applicable contracts and V2
+release gate. No level, asset, audio integration, platform, or release is
+complete merely because the foundation was accepted.
+
+No spike implementation or generated spike asset may enter `main`. After this
+reviewed record is safely committed and pushed, the temporary spike
+branch/worktree is removed; reproducible build and export evidence remains
+ephemeral rather than a retained release artifact.
