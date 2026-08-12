@@ -15,6 +15,10 @@ const REQUIRED_NODE_PATHS: Array[NodePath] = [
 	NodePath("SafeMargin/StatusColumn/RuntimePolicy"),
 	NodePath("SafeMargin/StatusColumn/ContentStatus"),
 ]
+const LOGICAL_VIEWPORT_SIZE := Vector2i(960, 540)
+const PORTRAIT_WINDOW_SIZE := Vector2i(390, 844)
+const REQUIRED_LOGICAL_FONT_SIZE := 32
+const MINIMUM_PORTRAIT_FONT_PIXELS := 13.0
 
 func test_scene_presents_ready_foundation_and_frees_cleanly() -> void:
 	var bootstrap := BOOTSTRAP_SCENE.instantiate()
@@ -90,6 +94,46 @@ func test_configured_error_presentation_appends_validation_messages() -> void:
 	bootstrap.queue_free()
 	await tree.process_frame
 	assert_true(not is_instance_valid(bootstrap), "error bootstrap freed")
+
+func test_container_theme_keeps_portrait_diagnostics_readable() -> void:
+	var bootstrap := BOOTSTRAP_SCENE.instantiate()
+	var tree := Engine.get_main_loop() as SceneTree
+	tree.root.add_child(bootstrap)
+	await tree.process_frame
+	var safe_margin := bootstrap.get_node("SafeMargin") as MarginContainer
+	assert_true(safe_margin.theme != null, "safe margin owns diagnostic theme")
+	var logical_font_size := (
+		safe_margin.theme.default_font_size if safe_margin.theme != null else 0
+	)
+	assert_equal(
+		logical_font_size,
+		REQUIRED_LOGICAL_FONT_SIZE,
+		"container-owned logical font size"
+	)
+	var keep_aspect_scale := minf(
+		float(PORTRAIT_WINDOW_SIZE.x) / float(LOGICAL_VIEWPORT_SIZE.x),
+		float(PORTRAIT_WINDOW_SIZE.y) / float(LOGICAL_VIEWPORT_SIZE.y)
+	)
+	assert_true(
+		float(logical_font_size) * keep_aspect_scale >= MINIMUM_PORTRAIT_FONT_PIXELS,
+		"portrait effective font pixels"
+	)
+	for label_name: String in [
+		"ProjectTitle",
+		"FoundationStatus",
+		"BuildIdentity",
+		"RuntimePolicy",
+		"ContentStatus",
+	]:
+		var label := safe_margin.get_node("StatusColumn/%s" % label_name) as Label
+		assert_equal(
+			label.get_theme_font_size(&"font_size"),
+			REQUIRED_LOGICAL_FONT_SIZE,
+			"inherited font size: %s" % label_name
+		)
+	bootstrap.queue_free()
+	await tree.process_frame
+	assert_true(not is_instance_valid(bootstrap), "typography bootstrap freed")
 
 func _label_text(bootstrap: Node, label_name: String) -> String:
 	var path := NodePath("SafeMargin/StatusColumn/%s" % label_name)

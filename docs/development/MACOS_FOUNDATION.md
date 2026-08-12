@@ -18,6 +18,12 @@ Run the static repository boundary check:
 tools/verify/check_policy.sh
 ```
 
+Run the bounded policy and exact-PID process regression fixtures:
+
+```bash
+tools/verify/test_shell_contracts.sh
+```
+
 Run the complete dependency-free GDScript suite:
 
 ```bash
@@ -39,7 +45,7 @@ The export command reports the clean source revision, package path, byte size, S
 tools/verify/verify_local.sh
 ```
 
-The aggregate labels are `Policy`, `Exact Godot version and headless import`, `Tests`, `Headless editor smoke`, `Fresh unsigned macOS export`, and `Bounded package process`. A successful run ends with `Local verification: PASS`; any failed stage stops the sequence and returns nonzero. Its validated temporary directory is removed automatically. The package is launched through a locale-stable signal-reset wrapper because non-interactive shells ignore `SIGINT` for asynchronous children; the wrapper immediately becomes the package process, so the recorded PID must be absent after the expected signal-derived wait status `130`. The aggregate script itself then exits `0`.
+The aggregate labels are `Policy`, `Exact Godot version and headless import`, `Tests`, `Headless editor smoke`, `Fresh unsigned macOS export`, and `Bounded package process`. The policy stage includes deterministic shell-contract fixtures. A successful run ends with `Local verification: PASS`; any failed stage stops the sequence and returns nonzero. Its validated temporary directory is removed automatically. The package is launched through a locale-stable signal-reset wrapper because non-interactive shells ignore `SIGINT` for asynchronous children; the wrapper immediately becomes the package process. The verifier sends `SIGINT`, polls for a short bounded grace, then conditionally sends exact-PID `SIGTERM` and `SIGKILL` fallbacks. Any fallback is a verification failure, every exit path reaps the child, and a passing run requires the PID absent after signal-derived wait status `130`. Aggregate `INT`/`TERM` traps also terminate and reap that exact PID before cleaning the validated directory.
 
 The diagnostic shell displays exactly five neutral labels:
 

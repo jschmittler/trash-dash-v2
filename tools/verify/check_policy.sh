@@ -5,19 +5,61 @@ script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 repo_root="$(cd "$script_dir/../.." && pwd)"
 cd "$repo_root"
 
-tracked_files="$(git ls-files)"
+if ! command -v rg >/dev/null 2>&1; then
+	echo "policy dependency error: required command not found: rg" >&2
+	exit 1
+fi
+
+if ! tracked_files="$(git ls-files)"; then
+	echo "policy dependency error: git ls-files failed" >&2
+	exit 1
+fi
+
+RG_MATCHES=""
+capture_rg_input() {
+	local pattern="$1"
+	local input="$2"
+	local mode="${3:-match}"
+	local rg_status=0
+	set +e
+	if [[ "$mode" == "invert" ]]; then
+		RG_MATCHES="$(printf '%s\n' "$input" | rg -v -- "$pattern")"
+		rg_status=$?
+	else
+		RG_MATCHES="$(printf '%s\n' "$input" | rg -- "$pattern")"
+		rg_status=$?
+	fi
+	set -e
+	if [[ "$rg_status" -gt 1 ]]; then
+		printf 'policy dependency error: rg failed with status %s for pattern %s\n' \
+			"$rg_status" \
+			"$pattern" >&2
+		exit 1
+	fi
+	if [[ "$rg_status" -eq 1 ]]; then
+		RG_MATCHES=""
+	fi
+}
 
 reject_tracked_paths() {
 	local rule="$1"
 	local pattern="$2"
+	local exception_pattern="${3:-}"
 	local matches=""
-	if matches="$(printf '%s\n' "$tracked_files" | rg "$pattern")"; then
-		while IFS= read -r matched_file; do
-			printf '%s: %s\n' "$matched_file" "$rule" >&2
-		done <<< "$matches"
-		printf 'policy violation: %s\n' "$rule" >&2
-		exit 1
+	capture_rg_input "$pattern" "$tracked_files"
+	matches="$RG_MATCHES"
+	if [[ -n "$matches" && -n "$exception_pattern" ]]; then
+		capture_rg_input "$exception_pattern" "$matches" "invert"
+		matches="$RG_MATCHES"
 	fi
+	if [[ -z "$matches" ]]; then
+		return
+	fi
+	while IFS= read -r matched_file; do
+		printf '%s: %s\n' "$matched_file" "$rule" >&2
+	done <<< "$matches"
+	printf 'policy violation: %s\n' "$rule" >&2
+	exit 1
 }
 
 reject_content() {
@@ -25,29 +67,47 @@ reject_content() {
 	local pattern="$2"
 	shift 2
 	local matches=""
-	if matches="$(rg -n -i -- "$pattern" "$@")"; then
-		printf '%s\n' "$matches" >&2
-		printf 'policy violation: %s\n' "$rule" >&2
+	local rg_status=0
+	set +e
+	matches="$(rg -H -n -i -- "$pattern" "$@")"
+	rg_status=$?
+	set -e
+	if [[ "$rg_status" -gt 1 ]]; then
+		printf 'policy dependency error: rg failed with status %s for rule %s\n' \
+			"$rg_status" \
+			"$rule" >&2
 		exit 1
 	fi
+	if [[ "$rg_status" -eq 1 ]]; then
+		return
+	fi
+	printf '%s\n' "$matches" >&2
+	printf 'policy violation: %s\n' "$rule" >&2
+	exit 1
 }
 
 reject_tracked_paths \
 	"tracked generated output" \
-	'(^|/)(\.godot|\.import)(/|$)|^(build|export|exports|logs?)/|\.(log|import)$'
+	'(^|/)(\.godot|\.import|export|exports|logs?)(/|$)|\.(log|import)$'
+reject_tracked_paths \
+	"tracked generated output" \
+	'(^|/)build(/|$)' \
+	'^src/core/build(/|$)'
 reject_tracked_paths \
 	"tracked credential, certificate, profile, or keystore" \
-	'(^|/)(credentials?|secrets?)([._-]|$)|\.(keystore|jks|p12|pfx|pem|cer|crt|profile|mobileprovision|provisionprofile)$'
+	'(^|/)(credentials?|secrets?)([._/-]|$)|\.(keystore|jks|p12|pfx|pem|cer|crt|profile|mobileprovision|provisionprofile)$'
 reject_tracked_paths \
 	"tracked generated UID cache" \
 	'(^|/)(uid_cache\.bin|global_script_class_cache\.cfg)$'
 
-restricted_scope_matches="$(
-	printf '%s\n' "$tracked_files" \
-		| rg '^(assets/runtime|src/actors|src/gameplay|src/levels|src/rendering|src/world)/' \
-		| rg -v '/\.gitkeep$' \
-		|| true
-)"
+capture_rg_input \
+	'^(assets/runtime|src/actors|src/gameplay|src/levels|src/rendering|src/world)/' \
+	"$tracked_files"
+restricted_scope_matches="$RG_MATCHES"
+if [[ -n "$restricted_scope_matches" ]]; then
+	capture_rg_input '/\.gitkeep$' "$restricted_scope_matches" "invert"
+	restricted_scope_matches="$RG_MATCHES"
+fi
 if [[ -n "$restricted_scope_matches" ]]; then
 	while IFS= read -r matched_file; do
 		printf '%s: production content root must remain empty\n' "$matched_file" >&2
@@ -56,12 +116,15 @@ if [[ -n "$restricted_scope_matches" ]]; then
 	exit 1
 fi
 
-unexpected_test_paths="$(
-	printf '%s\n' "$tracked_files" \
-		| rg '^tests/' \
-		| rg -v '^tests/run_all\.gd$|^tests/(gameplay|support|unit|visual)/(\.gitkeep|[^/]+\.gd)$' \
-		|| true
-)"
+capture_rg_input '^tests/' "$tracked_files"
+unexpected_test_paths="$RG_MATCHES"
+if [[ -n "$unexpected_test_paths" ]]; then
+	capture_rg_input \
+		'^tests/run_all\.gd$|^tests/(gameplay|support|unit|visual)/(\.gitkeep|[^/]+\.gd)$' \
+		"$unexpected_test_paths" \
+		"invert"
+	unexpected_test_paths="$RG_MATCHES"
+fi
 if [[ -n "$unexpected_test_paths" ]]; then
 	while IFS= read -r matched_file; do
 		printf '%s: unexpected tracked test path\n' "$matched_file" >&2
@@ -70,12 +133,15 @@ if [[ -n "$unexpected_test_paths" ]]; then
 	exit 1
 fi
 
-unexpected_verify_paths="$(
-	printf '%s\n' "$tracked_files" \
-		| rg '^tools/verify/' \
-		| rg -v '^tools/verify/(check_policy|run_tests|export_macos|verify_local)\.sh$' \
-		|| true
-)"
+capture_rg_input '^tools/verify/' "$tracked_files"
+unexpected_verify_paths="$RG_MATCHES"
+if [[ -n "$unexpected_verify_paths" ]]; then
+	capture_rg_input \
+		'^tools/verify/(check_policy|run_tests|export_macos|verify_local|run_bounded_process|test_shell_contracts)\.sh$' \
+		"$unexpected_verify_paths" \
+		"invert"
+	unexpected_verify_paths="$RG_MATCHES"
+fi
 if [[ -n "$unexpected_verify_paths" ]]; then
 	while IFS= read -r matched_file; do
 		printf '%s: unexpected tracked verification path\n' "$matched_file" >&2
@@ -84,16 +150,15 @@ if [[ -n "$unexpected_verify_paths" ]]; then
 	exit 1
 fi
 
+capture_rg_input \
+	'^(project\.godot|export_presets\.cfg|scenes/|src/|docs/development/)' \
+	"$tracked_files"
 scan_files=()
 while IFS= read -r tracked_file; do
 	if [[ -n "$tracked_file" ]]; then
 		scan_files+=("$tracked_file")
 	fi
-done < <(
-	printf '%s\n' "$tracked_files" \
-		| rg '^(project\.godot|export_presets\.cfg|scenes/|src/|docs/development/)' \
-		|| true
-)
+done <<< "$RG_MATCHES"
 
 if [[ "${#scan_files[@]}" -gt 0 ]]; then
 	reject_content \
@@ -132,24 +197,35 @@ reject_content \
 	project.godot
 
 shell_files=(
+	tools/verify/check_policy.sh
 	tools/verify/run_tests.sh
 	tools/verify/export_macos.sh
 	tools/verify/verify_local.sh
+	tools/verify/run_bounded_process.sh
+	tools/verify/test_shell_contracts.sh
 )
 existing_shell_files=()
 for shell_file in "${shell_files[@]}"; do
 	if [[ -f "$shell_file" ]]; then
+		if ! bash -n "$shell_file"; then
+			printf '%s: invalid shell syntax\n' "$shell_file" >&2
+			exit 1
+		fi
 		existing_shell_files+=("$shell_file")
 	fi
 done
 if [[ "${#existing_shell_files[@]}" -gt 0 ]]; then
+	# Split literal command names so this policy's own data does not resemble an
+	# executable statement when check_policy.sh is included in the source scan.
+	forbidden_command='(code''sign|notary''tool|al''tool|xc''run|xcode''build|cu''rl|wg''et|sc''p|rs''ync|su''do|osa''script|security[[:space:]]+(find-''identity|find-''certificate)|git[[:space:]]+(cl''ean|res''et|check''out))'
+	execution_prefix='(^[[:space:]]*|[;&|][[:space:]]*|[$][(][[:space:]]*|^[[:space:]]*(if|elif|while|until)[[:space:]]+!?[[:space:]]*|^[[:space:]]*(then|do)[[:space:]]+|^[[:space:]]*![[:space:]]*)'
 	reject_content \
 		"signing, notarization, upload, credential-discovery, or broad Git command" \
-		'(^|[;&|[:space:]])(codesign|notarytool|altool|xcrun|xcodebuild|curl|wget|scp|rsync|sudo|osascript)([;&|[:space:]]|$)|security[[:space:]]+(find-identity|find-certificate)|git[[:space:]]+(clean|reset|checkout)' \
+		"${execution_prefix}${forbidden_command}([;&|)[:space:]]|$)" \
 		"${existing_shell_files[@]}"
 	reject_content \
 		"unbounded recursive removal" \
-		'rm[[:space:]]+(-[^[:space:]]*r[^[:space:]]*f|-rf|-fr)([[:space:]]|$)' \
+		'(^[[:space:]]*|[;&|][[:space:]]*|[$][(][[:space:]]*)rm[[:space:]]+(-[^[:space:]]*r[^[:space:]]*f|-rf|-fr)([[:space:]]|$)' \
 		"${existing_shell_files[@]}"
 fi
 

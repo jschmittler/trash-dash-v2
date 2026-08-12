@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3]
+[gd_scene load_steps=4 format=3]
 
 [ext_resource type="Script" path="res://src/core/bootstrap/bootstrap_controller.gd" id="1_controller"]
 [ext_resource type="Script" path="res://src/ui/bootstrap/bootstrap_view.gd" id="2_view"]
+
+[sub_resource type="Theme" id="Theme_diagnostics"]
+default_font_size = 32
 
 [node name="Bootstrap" type="Control"]
 layout_mode = 3
@@ -23,6 +26,7 @@ theme_override_constants/margin_left = 48
 theme_override_constants/margin_top = 48
 theme_override_constants/margin_right = 48
 theme_override_constants/margin_bottom = 48
+theme = SubResource("Theme_diagnostics")
 script = ExtResource("2_view")
 
 [node name="StatusColumn" type="VBoxContainer" parent="SafeMargin"]
