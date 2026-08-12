@@ -72,10 +72,14 @@ TRASH_DASH_GODOT_BIN="$godot_bin" "$script_dir/export_macos.sh" "$export_dir"
 
 echo "[6/6] Bounded package process"
 executable="$export_dir/extracted/Trash Dash 2.0.app/Contents/MacOS/Trash Dash 2.0"
-"$executable" --headless &
+package_log="$temp_dir/package-smoke.log"
+(
+	trap - INT
+	exec "$executable" --headless
+) > "$package_log" 2>&1 &
 package_pid=$!
 printf 'Package PID: %s\n' "$package_pid"
-sleep 5
+sleep 2
 if ! kill -0 "$package_pid" 2>/dev/null; then
 	set +e
 	wait "$package_pid"
@@ -89,7 +93,7 @@ set +e
 wait "$package_pid"
 package_status=$?
 set -e
-if [[ "$package_status" -ne 0 ]]; then
+if [[ "$package_status" -ne 130 ]]; then
 	printf 'Package did not exit cleanly after SIGINT: %s\n' "$package_status" >&2
 	exit 1
 fi
@@ -97,5 +101,10 @@ if kill -0 "$package_pid" 2>/dev/null; then
 	printf 'Package process is still present: %s\n' "$package_pid" >&2
 	exit 1
 fi
-printf 'Process cleanup: PASS (PID %s absent, exit 0)\n' "$package_pid"
+cat "$package_log"
+if rg -n -i '(^|[[:space:]])(ERROR|WARNING):|leak|orphan|crash' "$package_log"; then
+	echo "Package smoke log contains a failure diagnostic" >&2
+	exit 1
+fi
+printf 'Process cleanup: PASS (PID %s absent, expected SIGINT exit 130)\n' "$package_pid"
 echo "Local verification: PASS"
