@@ -1,0 +1,56 @@
+{
+  "project": "Trash Dash",
+  "phase": "04-boss-animation-source-atlases",
+  "status": "complete",
+  "method": "phase-03-variable-canvas-workflow",
+  "reference_policy": "Approved branded boss sheets are visual truth. Preserve boss scale, transformations, attack phases, projectiles, props, effects, defeat and reveal sequences. Remove presentation text and backgrounds. Never crop to fixed square cells.",
+  "bosses": [
+    {
+      "level": 1,
+      "id": "boss-trash-dash",
+      "source": "source/level-01/boss-trash-dash.png"
+    },
+    {
+      "level": 2,
+      "id": "boss-brutus-bin-hound",
+      "source": "source/level-02/boss-brutus-bin-hound.png"
+    },
+    {
+      "level": 3,
+      "id": "boss-pizza-rat-king",
+      "source": "source/level-03/boss-pizza-rat-king.png"
+    },
+    {
+      "level": 4,
+      "id": "boss-project-opossum",
+      "source": "source/level-04/boss-project-opossum.png"
+    },
+    {
+      "level": 5,
+      "id": "boss-galactogobbler",
+      "source": "source/level-05/boss-galactogobbler.png"
+    },
+    {
+      "level": 6,
+      "id": "boss-diamond-don",
+      "source": "source/level-06/boss-diamond-don.png"
+    }
+  ],
+  "output_contract": {
+    "canvas": "variable",
+    "fixed_cell": false,
+    "aspect_ratio": "source-dependent",
+    "alpha": "true transparency",
+    "runtime_atlas": false
+  },
+  "generation": {
+    "method": "imagegen reference edit",
+    "used_approved_references": true,
+    "procedural": false,
+    "text_only": false
+  },
+  "visual_review": {
+    "accepted": true,
+    "path": "qa/visual-review.json"
+  }
+}

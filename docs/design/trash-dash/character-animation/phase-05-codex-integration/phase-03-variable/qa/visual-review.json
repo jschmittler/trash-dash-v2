@@ -1,0 +1,24 @@
+{
+  "phase": 3,
+  "accepted": true,
+  "reviewed_contact_sheet": "phase-03-combined-contact.png",
+  "enemy_count": 16,
+  "levels": [3, 4, 5, 6],
+  "checks": {
+    "approved_reference_fidelity": "pass",
+    "variable_canvas_contract": "pass",
+    "full_pose_and_effect_extents": "pass",
+    "true_alpha_on_all_final_pngs": "pass",
+    "full_png_decode": "pass",
+    "visible_chroma_residue": "pass",
+    "labels_panels_and_paper_removed": "pass",
+    "pose_separation": "pass",
+    "edge_clipping": "pass"
+  },
+  "repairs": [
+    "Rebuilt Subway Roach from its intact generated chroma atlas using its measured magenta source key.",
+    "Rebuilt Phase Gecko from its intact generated chroma atlas.",
+    "Rebuilt Vacuum Jelly from its intact generated chroma atlas."
+  ],
+  "runtime_note": "These are animation source atlases. Runtime frame bounds, anchors, collision geometry, and playback transitions still require implementation validation in the game."
+}

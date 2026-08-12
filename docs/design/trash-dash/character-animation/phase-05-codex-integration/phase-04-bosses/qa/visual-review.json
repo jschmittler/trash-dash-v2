@@ -1,0 +1,23 @@
+{
+  "phase": 4,
+  "accepted": true,
+  "boss_count": 6,
+  "reviewed_contact_sheet": "phase-04-combined-contact.png",
+  "checks": {
+    "approved_reference_fidelity": "pass",
+    "variable_canvas_contract": "pass",
+    "phase_and_transformation_coverage": "pass",
+    "projectiles_props_and_effects": "pass",
+    "defeat_and_reveal_sequences": "pass",
+    "true_alpha": "pass",
+    "full_png_decode": "pass",
+    "visible_chroma_residue": "pass",
+    "presentation_callouts_removed": "pass",
+    "edge_clipping": "pass"
+  },
+  "cleanup_notes": [
+    "Removed an enclosed controller-symbol callout from the Trash Dash atlas.",
+    "Applied a second bright-green key cleanup to Brutus, Galactogobbler, and Diamond Don.",
+    "Preserved intentional green toxic effects, cyan water, violet cosmic energy, and purple enraged effects."
+  ]
+}

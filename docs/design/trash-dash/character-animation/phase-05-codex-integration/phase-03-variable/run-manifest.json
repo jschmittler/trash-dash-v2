@@ -1,0 +1,37 @@
+{
+  "project": "Trash Dash",
+  "phase": "03-levels-03-through-06-common-enemies",
+  "status": "complete",
+  "method": "phase-02-variable-canvas-workflow",
+  "reference_policy": "Approved branded source sheets are visual truth. Preserve complete poses, variable-width motion silhouettes, props, projectiles, FX, proportions, scale relationships, and row order. Remove presentation text, labels, notes, borders, and backgrounds. Never crop to square cells.",
+  "levels": {
+    "3": ["alley-cat-burglar", "sewer-rat-courier", "subway-roach", "traffic-cone-crab"],
+    "4": ["beaker-slime", "clipboard-hamster", "mop-bot-3000", "phase-gecko"],
+    "5": ["asteroid-armadillo", "rocket-roach", "satellite-hermit-crab", "vacuum-jelly"],
+    "6": ["baserunning-beaver", "clobbering-cub", "sliding-seagull", "windup-weasel"]
+  },
+  "output_contract": {
+    "canvas": "variable",
+    "fixed_cell": false,
+    "aspect_ratio": "source-dependent",
+    "alpha": "true transparency",
+    "runtime_atlas": false
+  },
+  "generation": {
+    "method": "imagegen edit",
+    "used_approved_references": true,
+    "procedural": false,
+    "text_only": false
+  },
+  "visual_review": {
+    "accepted": true,
+    "scope": "all 16 common-enemy atlases across levels 03 through 06",
+    "level_reviews": {
+      "3": {"accepted": true, "path": "qa/level-03-contact.png"},
+      "4": {"accepted": true, "path": "qa/level-04-contact.png"},
+      "5": {"accepted": true, "path": "qa/level-05-contact.png"},
+      "6": {"accepted": true, "path": "qa/level-06-visual-review.json"}
+    },
+    "path": "qa/visual-review.json"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "accepted": true,
+  "reviewer_notes": "All ten cleaned sheets were inspected together against the approved source contact. Character identity, row order, readable action silhouettes, props, projectiles, and character-specific FX are retained. Presentation labels are absent, canvas edges are transparent, and no outer-edge cropping is present.",
+  "checks": {
+    "reference_identity": "pass",
+    "row_and_pose_order": "pass",
+    "animation_readable": "pass",
+    "props_projectiles_fx_retained": "pass",
+    "labels_removed": "pass",
+    "real_alpha": "pass",
+    "transparent_canvas_edges": "pass",
+    "not_procedural": "pass"
+  },
+  "contact_sheets": [
+    "qa/level-01-contact.png",
+    "qa/level-02-contact.png",
+    "qa/all-enemies-contact.png"
+  ]
+}

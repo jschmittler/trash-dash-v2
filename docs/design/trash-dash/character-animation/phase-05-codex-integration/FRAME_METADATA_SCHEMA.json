@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Trash Dash Variable Frame Metadata",
+  "type": "object",
+  "required": ["asset_id", "source_atlas", "animations", "validation"],
+  "properties": {
+    "asset_id": {"type": "string"},
+    "source_atlas": {"type": "string"},
+    "source_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "reference_scale": {"type": "number", "exclusiveMinimum": 0},
+    "facing": {"enum": ["left", "right", "front", "back", "none", "mixed"]},
+    "animations": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["loop", "frames"],
+        "properties": {
+          "loop": {"type": "boolean"},
+          "fps": {"type": "number", "exclusiveMinimum": 0},
+          "next_state": {"type": ["string", "null"]},
+          "frames": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["id", "rect", "pivot", "duration_ms"],
+              "properties": {
+                "id": {"type": "string"},
+                "rect": {
+                  "type": "object",
+                  "required": ["x", "y", "w", "h"],
+                  "properties": {
+                    "x": {"type": "integer", "minimum": 0},
+                    "y": {"type": "integer", "minimum": 0},
+                    "w": {"type": "integer", "minimum": 1},
+                    "h": {"type": "integer", "minimum": 1}
+                  }
+                },
+                "pivot": {
+                  "type": "object",
+                  "required": ["x", "y", "space"],
+                  "properties": {
+                    "x": {"type": "number"},
+                    "y": {"type": "number"},
+                    "space": {"enum": ["frame_pixels", "normalized"]}
+                  }
+                },
+                "duration_ms": {"type": "integer", "minimum": 1},
+                "visual_offset": {
+                  "type": "object",
+                  "properties": {
+                    "x": {"type": "number"},
+                    "y": {"type": "number"}
+                  }
+                },
+                "hurtboxes": {"type": "array"},
+                "hitboxes": {"type": "array"},
+                "events": {"type": "array"},
+                "attachments": {"type": "array"}
+              }
+            }
+          }
+        }
+      }
+    },
+    "validation": {
+      "type": "object",
+      "required": ["source_reviewed", "alpha_reviewed", "motion_reviewed", "gameplay_reviewed"],
+      "properties": {
+        "source_reviewed": {"type": "boolean"},
+        "alpha_reviewed": {"type": "boolean"},
+        "motion_reviewed": {"type": "boolean"},
+        "gameplay_reviewed": {"type": "boolean"}
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "level": 6,
+  "accepted": true,
+  "reviewed_contact_sheet": "level-06-contact.png",
+  "checks": {
+    "approved_reference_fidelity": "pass",
+    "variable_canvas_preserved": "pass",
+    "full_pose_and_effect_extents": "pass",
+    "true_alpha": "pass",
+    "visible_chroma_residue": "pass",
+    "text_labels_and_panels_removed": "pass",
+    "pose_overlap": "pass",
+    "edge_clipping": "pass"
+  },
+  "notes": [
+    "Baserunning Beaver retains the complete slide sequence, dirt trails, tail, and defeat poses.",
+    "Clobbering Cub retains the oversized bat, swing arcs, impact effects, and topple sequence.",
+    "Sliding Seagull retains flight, dive, ground skim, landing, feather, dust, and crash-out states.",
+    "Windup Weasel retains throw timing, projectile variants, trajectories, impacts, and spin-out defeat.",
+    "A second global chroma cleanup removed enclosed background pockets beneath poses and effects."
+  ]
+}
