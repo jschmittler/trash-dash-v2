@@ -4,6 +4,8 @@ const PROJECT_CONTRACT_CASE: Script = preload("res://tests/unit/test_project_con
 const TEST_RUNNER_CASE: Script = preload("res://tests/unit/test_test_runner.gd")
 const CORE_CONTRACT_CASE: Script = preload("res://tests/unit/test_core_contracts.gd")
 const SERVICE_REGISTRY_CASE: Script = preload("res://tests/unit/test_service_registry.gd")
+const STARTUP_VALIDATOR_CASE: Script = preload("res://tests/unit/test_startup_validator.gd")
+const BOOTSTRAP_SCENE_CASE: Script = preload("res://tests/gameplay/test_bootstrap_scene.gd")
 const RUNNER_PROBE_CASE: Script = preload("res://tests/support/runner_probe_case.gd")
 
 var _usage_error: String = ""
@@ -33,7 +35,14 @@ func _run() -> void:
 	quit(0 if failures.is_empty() else 1)
 
 func _selected_scripts() -> Array[Script]:
-	var all_cases: Array[Script] = [PROJECT_CONTRACT_CASE, TEST_RUNNER_CASE, CORE_CONTRACT_CASE, SERVICE_REGISTRY_CASE]
+	var all_cases: Array[Script] = [
+		PROJECT_CONTRACT_CASE,
+		TEST_RUNNER_CASE,
+		CORE_CONTRACT_CASE,
+		SERVICE_REGISTRY_CASE,
+		STARTUP_VALIDATOR_CASE,
+		BOOTSTRAP_SCENE_CASE,
+	]
 	var suite_name := ""
 	var probe_mode := ""
 	for argument: String in OS.get_cmdline_args():
