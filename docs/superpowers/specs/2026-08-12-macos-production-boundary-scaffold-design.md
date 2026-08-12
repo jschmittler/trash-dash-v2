@@ -1,6 +1,6 @@
 # macOS Production Boundary Scaffold Design
 
-Status: **approved design, pending implementation plan**
+Status: **approved**
 
 Approved by: project owner
 
