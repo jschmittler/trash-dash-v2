@@ -26,6 +26,11 @@ func test_settings_are_exact() -> void:
 	assert_equal(ProjectSettings.get_setting("display/window/stretch/aspect"), "keep", "aspect")
 	assert_equal(ProjectSettings.get_setting("rendering/renderer/rendering_method"), "gl_compatibility", "renderer")
 	assert_equal(ProjectSettings.get_setting("rendering/textures/canvas_textures/default_texture_filter"), 0, "nearest")
+	assert_equal(
+		ProjectSettings.get_setting("rendering/textures/vram_compression/import_etc2_astc"),
+		true,
+		"universal macOS texture import"
+	)
 
 func test_actions_have_exact_physical_defaults() -> void:
 	for action: StringName in REQUIRED_ACTIONS:
