@@ -26,6 +26,7 @@ cleanup() {
 	trap - EXIT INT TERM
 	local cleanup_status=0
 	bounded_process_cleanup || cleanup_status=$?
+	release_godot_process_lock || cleanup_status=$?
 	if is_valid_temp_dir; then
 		find "$temp_dir" -depth -delete
 	else
@@ -61,7 +62,13 @@ elif ! command -v "$godot_bin" >/dev/null 2>&1; then
 	printf 'Godot executable was not found: %s\n' "$godot_bin" >&2
 	exit 1
 fi
-actual_version="$("$godot_bin" --version)"
+actual_version="$(run_godot_stage \
+	"$repo_root" \
+	"Godot version check" \
+	"verify-version" \
+	"$godot_bin" \
+	--headless \
+	--version)"
 if [[ "$actual_version" != "$expected_version" ]]; then
 	printf 'Godot version mismatch: expected %s, got %s\n' \
 		"$expected_version" \
@@ -71,8 +78,9 @@ fi
 printf 'Godot version: %s\n' "$actual_version"
 echo "Godot executable: Standard"
 run_godot_stage \
+	"$repo_root" \
 	"headless import" \
-	"$temp_dir/headless-import.log" \
+	"headless-import" \
 	"$godot_bin" \
 	--headless \
 	--path "$repo_root" \
@@ -84,8 +92,9 @@ TRASH_DASH_GODOT_BIN="$godot_bin" "$script_dir/run_tests.sh"
 
 echo "[4/6] Headless editor smoke"
 run_godot_stage \
+	"$repo_root" \
 	"headless editor smoke" \
-	"$temp_dir/editor-smoke.log" \
+	"editor-smoke" \
 	"$godot_bin" \
 	--headless \
 	--path "$repo_root" \
@@ -98,8 +107,26 @@ TRASH_DASH_GODOT_BIN="$godot_bin" "$script_dir/export_macos.sh" "$export_dir"
 
 echo "[6/6] Bounded package process"
 executable="$export_dir/extracted/Trash Dash 2.0.app/Contents/MacOS/Trash Dash 2.0"
-package_log="$temp_dir/package-smoke.log"
-run_bounded_process "$package_log" "$executable" --headless
-cat "$package_log"
-check_godot_diagnostics "bounded package smoke" "$package_log"
+prepare_godot_log_files "$repo_root" "package-smoke"
+package_engine_log="$godot_log_engine_file"
+package_output_log="$godot_log_output_file"
+acquire_godot_process_lock
+set +e
+run_bounded_process \
+	"$package_output_log" \
+	"$executable" \
+	--log-file "$package_engine_log" \
+	--headless
+package_status=$?
+set -e
+release_godot_process_lock
+cat "$package_output_log"
+check_godot_diagnostics \
+	"bounded package smoke" "$package_engine_log" "$package_output_log"
+if [[ "$package_status" -ne 0 ]]; then
+	print_godot_failure \
+		"bounded package smoke" "$package_status" \
+		"$executable" --log-file "$package_engine_log" --headless
+	exit "$package_status"
+fi
 echo "Local verification: PASS"

@@ -10,6 +10,28 @@ TRASH_DASH_GODOT_BIN=/opt/homebrew/bin/godot tools/verify/run_tests.sh
 
 `TRASH_DASH_GODOT_BIN` must name the Standard executable. The scripts reject Mono, development, custom, and every version other than the exact accepted build.
 
+## Codex Godot log safety
+
+Before every Godot process, repository automation resolves the project root
+containing `project.godot`, creates and write-tests
+`<project-root>/.codex/godot-logs/`, and acquires a project-local process lock.
+Every Godot invocation—including version checks and the packaged smoke—receives
+an explicit purpose-specific `--log-file` in that directory. Captured terminal
+output is stored beside the engine log as `<purpose>.output.log`.
+
+Do not invoke Godot directly from Codex automation. Use
+`tools/verify/run_tests.sh`, `tools/verify/export_macos.sh`, or the shared
+`run_godot_stage` helper in `tools/verify/godot_diagnostics.sh`. Never point
+Godot logs at `user://`, `~/Library/`, a temporary export directory, or any
+path outside this writable project workspace. Automated import, validation,
+script, export, and smoke processes must be headless; only an explicit visual
+QA session may open an interactive window.
+
+If a Godot stage exits nonzero, the helper reports the exact command, status,
+engine-log path, and output-log path. Stop and inspect those logs before any
+further Godot launch. Do not retry automatically. The project lock rejects a
+second automated Godot process while one is already active.
+
 ## Focused commands
 
 Run the static repository boundary check:

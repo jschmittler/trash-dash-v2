@@ -38,6 +38,28 @@ Runtime work must conform to:
 
 Do not begin production gameplay or level implementation until the engine decision is accepted and its mandatory disposable native-platform spike has passed review. Source sheets are design references, not runtime atlases. Use independent collision geometry, preserve aspect ratios, and keep generated and runtime assets separate.
 
+## Codex Godot execution safety
+
+Godot 4.7.1 can crash when it cannot open its log file. Before every
+Codex-initiated Godot process, locate the project root containing
+`project.godot`, create `<project-root>/.codex/godot-logs/`, and verify that
+directory is writable. Every invocation must explicitly include
+`--log-file "<project-root>/.codex/godot-logs/<purpose>.log"`.
+
+Never use `user://`, `~/Library/`, a nonexistent or unverified temporary
+directory, or any path outside the writable project workspace for Godot
+automation logs. Use `--headless` for imports, validation, script checks,
+exports, and automated smoke tests unless visual QA explicitly requires an
+interactive window. Never run concurrent automated import/editor processes
+for the same project.
+
+If Godot exits nonzero, do not automatically retry. Inspect the project-local
+engine and output logs, report the full command and exit status, diagnose the
+failure, and only then decide whether another launch is justified. Batch code
+and filesystem changes before one validation pass rather than launching Godot
+after every edit. Repository automation must use the shared safety helpers in
+`tools/verify/godot_log_safety.sh` and `tools/verify/godot_diagnostics.sh`.
+
 ## Completion language
 
 `v2_release_gate` is mandatory before calling any asset, animation, encounter, level, or audio integration complete. If required runtime or visual evidence cannot be produced, report `INCOMPLETE` or `CANNOT VERIFY`, never `PASS`.

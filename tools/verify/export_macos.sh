@@ -106,7 +106,13 @@ elif ! command -v "$godot_bin" >/dev/null 2>&1; then
 	printf 'Godot executable was not found: %s\n' "$godot_bin" >&2
 	exit 1
 fi
-actual_version="$("$godot_bin" --version)"
+actual_version="$(run_godot_stage \
+	"$repo_root" \
+	"Godot version check" \
+	"export-version" \
+	"$godot_bin" \
+	--headless \
+	--version)"
 if [[ "$actual_version" != "$expected_version" ]]; then
 	printf 'Godot version mismatch: expected %s, got %s\n' \
 		"$expected_version" \
@@ -122,8 +128,9 @@ extract_dir="$output_dir/extracted"
 
 echo "Export: unsigned macOS development package"
 run_godot_stage \
+	"$repo_root" \
 	"macOS export" \
-	"$output_dir/godot-export.log" \
+	"macos-export" \
 	"$godot_bin" \
 	--headless \
 	--path "$repo_root" \

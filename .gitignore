@@ -1,4 +1,5 @@
 .DS_Store
+.codex/godot-logs/
 .godot/
 .import/
 *.log

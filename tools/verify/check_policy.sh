@@ -173,7 +173,7 @@ capture_rg_input '^tools/verify/' "$tracked_files"
 unexpected_verify_paths="$RG_MATCHES"
 if [[ -n "$unexpected_verify_paths" ]]; then
 	capture_rg_input \
-		'^tools/verify/(check_policy|run_tests|export_macos|verify_local|run_bounded_process|test_shell_contracts|godot_diagnostics)\.sh$' \
+		'^tools/verify/(check_policy|run_tests|export_macos|verify_local|run_bounded_process|test_shell_contracts|godot_diagnostics|godot_log_safety)\.sh$' \
 		"$unexpected_verify_paths" \
 		"invert"
 	unexpected_verify_paths="$RG_MATCHES"
@@ -258,6 +258,7 @@ shell_files=(
 	tools/verify/run_tests.sh
 	tools/verify/export_macos.sh
 	tools/verify/godot_diagnostics.sh
+	tools/verify/godot_log_safety.sh
 	tools/verify/verify_local.sh
 	tools/verify/run_bounded_process.sh
 	tools/verify/test_shell_contracts.sh

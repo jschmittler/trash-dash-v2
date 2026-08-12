@@ -210,6 +210,7 @@ create_export_repo() {
 	mkdir -p "$fixture_repo/tools/verify"
 	cp "$script_dir/export_macos.sh" "$fixture_repo/tools/verify/export_macos.sh"
 	cp "$script_dir/godot_diagnostics.sh" "$fixture_repo/tools/verify/godot_diagnostics.sh"
+	cp "$script_dir/godot_log_safety.sh" "$fixture_repo/tools/verify/godot_log_safety.sh"
 	printf '%s\n' 'config_version=5' > "$fixture_repo/project.godot"
 	git -C "$fixture_repo" init -q
 	git -C "$fixture_repo" add .
@@ -225,16 +226,28 @@ create_fake_godot() {
 	local probe_message="${3:-intentional runner probe failure}"
 	printf '%s\n' \
 		'#!/usr/bin/env bash' \
-		'if [[ "${1:-}" == "--version" ]]; then' \
+		'log_file=""' \
+		'is_version=false' \
+		'is_probe=false' \
+		'while [[ "$#" -gt 0 ]]; do' \
+		'  case "$1" in' \
+		'    --log-file) log_file="$2"; shift 2 ;;' \
+		'    --version) is_version=true; shift ;;' \
+		'    --probe-fail) is_probe=true; shift ;;' \
+		'    *) shift ;;' \
+		'  esac' \
+		'done' \
+		'if [[ -z "$log_file" ]]; then echo "missing --log-file" >&2; exit 70; fi' \
+		': > "$log_file"' \
+		'if [[ -n "${TRASH_DASH_FAKE_GODOT_TEXT:-}" ]]; then printf "%s\n" "$TRASH_DASH_FAKE_GODOT_TEXT"; fi' \
+		'if [[ "$is_version" == true ]]; then' \
 		'  echo "4.7.1.stable.official.a13da4feb"' \
 		'  exit 0' \
 		'fi' \
-		'for argument in "$@"; do' \
-		'  if [[ "$argument" == "--probe-fail" ]]; then' \
+		'if [[ "$is_probe" == true ]]; then' \
 		"    printf '%s\\n' '$probe_message'" \
 		"    exit $probe_status" \
-		'  fi' \
-		'done' \
+		'fi' \
 		'echo "Tests: 1, Failures: 0"' \
 		'exit 0' > "$fake_godot"
 	chmod +x "$fake_godot"
@@ -419,17 +432,19 @@ test_godot_diagnostic_helper_contracts() {
 	fi
 	# shellcheck source=/dev/null
 	. "$helper"
+	local fake_godot="$temp_dir/fake-godot-diagnostics"
+	create_fake_godot "$fake_godot"
 	for diagnostic_kind in warning error; do
-		local diagnostic_log="$temp_dir/diagnostic-$diagnostic_kind.log"
 		local diagnostic_text="WARNING: synthetic warning"
 		if [[ "$diagnostic_kind" == "error" ]]; then
 			diagnostic_text="ERROR: synthetic error"
 		fi
 		set +e
-		run_godot_stage \
+		TRASH_DASH_FAKE_GODOT_TEXT="$diagnostic_text" run_godot_stage \
+			"$repo_root" \
 			"zero-exit-$diagnostic_kind" \
-			"$diagnostic_log" \
-			/bin/bash -c "printf '%s\\n' '$diagnostic_text'; exit 0"
+			"contract-$diagnostic_kind" \
+			"$fake_godot"
 		local diagnostic_status=$?
 		set -e
 		if [[ "$diagnostic_status" -eq 0 ]]; then
@@ -438,18 +453,83 @@ test_godot_diagnostic_helper_contracts() {
 			record_success "zero-exit Godot $diagnostic_kind output fails"
 		fi
 	done
-	local informational_log="$temp_dir/diagnostic-informational.log"
 	set +e
-	run_godot_stage \
+	TRASH_DASH_FAKE_GODOT_TEXT=$'Godot Engine v4.7.1.stable.official.a13da4feb\nOpenGL API 4.1 Metal - 88.1 - Compatibility' run_godot_stage \
+		"$repo_root" \
 		"informational-renderer" \
-		"$informational_log" \
-		/bin/bash -c "printf '%s\\n' 'Godot Engine v4.7.1.stable.official.a13da4feb' 'OpenGL API 4.1 Metal - 88.1 - Compatibility'; exit 0"
+		"contract-informational" \
+		"$fake_godot"
 	local informational_status=$?
 	set -e
 	if [[ "$informational_status" -ne 0 ]]; then
 		record_failure "Godot banner and renderer information remain allowed"
 	else
 		record_success "Godot banner and renderer information remain allowed"
+	fi
+}
+
+test_godot_log_safety_contracts() {
+	local helper="$script_dir/godot_log_safety.sh"
+	if [[ ! -f "$helper" ]]; then
+		record_failure "Godot log safety helper exists"
+		return
+	fi
+	# shellcheck source=/dev/null
+	. "$helper"
+	if ! prepare_godot_log_files "$repo_root" "safety-contract"; then
+		record_failure "project-local Godot log directory is prepared"
+		return
+	fi
+	local expected_directory="$repo_root/.codex/godot-logs"
+	if [[ "$godot_log_directory" != "$expected_directory" \
+		|| "$godot_log_engine_file" != "$expected_directory/safety-contract.log" \
+		|| "$godot_log_output_file" != "$expected_directory/safety-contract.output.log" \
+		|| ! -w "$godot_log_directory" ]]; then
+		record_failure "Godot logs are writable and project-local"
+	else
+		record_success "Godot logs are writable and project-local"
+	fi
+	set +e
+	prepare_godot_log_files "$temp_dir" "missing-project" >/dev/null 2>&1
+	local missing_project_status=$?
+	prepare_godot_log_files "$repo_root" "../escape" >/dev/null 2>&1
+	local unsafe_purpose_status=$?
+	set -e
+	if [[ "$missing_project_status" -eq 0 || "$unsafe_purpose_status" -eq 0 ]]; then
+		record_failure "unsafe Godot log targets are rejected before launch"
+	else
+		record_success "unsafe Godot log targets are rejected before launch"
+	fi
+	prepare_godot_log_files "$repo_root" "lock-contract"
+	acquire_godot_process_lock
+	set +e
+	acquire_godot_process_lock >/dev/null 2>&1
+	local duplicate_lock_status=$?
+	set -e
+	release_godot_process_lock
+	if [[ "$duplicate_lock_status" -eq 0 ]]; then
+		record_failure "concurrent Codex Godot process lock is rejected"
+	else
+		record_success "concurrent Codex Godot process lock is rejected"
+	fi
+	local fake_godot="$temp_dir/fake-godot-log-contract"
+	local args_file="$temp_dir/fake-godot-log-contract.args"
+	printf '%s\n' \
+		'#!/usr/bin/env bash' \
+		'printf "%s\n" "$@" > "${TRASH_DASH_FAKE_ARGS_FILE:?}"' \
+		'while [[ "$#" -gt 0 ]]; do' \
+		'  if [[ "$1" == "--log-file" ]]; then : > "$2"; shift 2; else shift; fi' \
+		'done' \
+		'exit 0' > "$fake_godot"
+	chmod +x "$fake_godot"
+	TRASH_DASH_FAKE_ARGS_FILE="$args_file" run_godot_stage \
+		"$repo_root" "log argument contract" "argument-contract" "$fake_godot" --headless
+	local expected_log="$repo_root/.codex/godot-logs/argument-contract.log"
+	if ! grep -Fx -- '--log-file' "$args_file" >/dev/null \
+		|| ! grep -Fx -- "$expected_log" "$args_file" >/dev/null; then
+		record_failure "Godot launch receives explicit project-local --log-file"
+	else
+		record_success "Godot launch receives explicit project-local --log-file"
 	fi
 }
 
@@ -462,6 +542,7 @@ test_runner_probe_contracts() {
 	local runner_status=$?
 	set -e
 	if [[ "$runner_status" -eq 0 ]] || ! grep -F 'expected exit 1' "$output_file" >/dev/null; then
+		sed -n '1,120p' "$output_file" >&2
 		record_failure "runner rejects wrong intentional-probe exit"
 	else
 		record_success "runner rejects wrong intentional-probe exit"
@@ -475,6 +556,7 @@ test_runner_probe_contracts() {
 	runner_status=$?
 	set -e
 	if [[ "$runner_status" -eq 0 ]] || ! grep -F 'deterministic message' "$output_file" >/dev/null; then
+		sed -n '1,120p' "$output_file" >&2
 		record_failure "runner rejects wrong intentional-probe message"
 	else
 		record_success "runner rejects wrong intentional-probe message"
@@ -883,6 +965,7 @@ case "$requested_group" in
 		run_policy_boundary_contracts
 		test_export_dependencies_fail_closed
 		test_godot_diagnostic_helper_contracts
+		test_godot_log_safety_contracts
 		test_runner_probe_contracts
 		run_process_contracts
 		test_post_kill_poll_failure_does_not_reap
@@ -896,6 +979,7 @@ case "$requested_group" in
 		;;
 	diagnostics)
 		test_godot_diagnostic_helper_contracts
+		test_godot_log_safety_contracts
 		test_runner_probe_contracts
 		;;
 	process)
