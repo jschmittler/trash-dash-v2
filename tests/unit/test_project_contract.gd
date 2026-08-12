@@ -35,11 +35,15 @@ func test_settings_are_exact() -> void:
 func test_actions_have_exact_physical_defaults() -> void:
 	for action: StringName in REQUIRED_ACTIONS:
 		assert_true(InputMap.has_action(action), "missing action: %s" % action)
-		var keys: Array[Key] = []
-		for event: InputEvent in InputMap.action_get_events(action):
-			if event is InputEventKey:
-				keys.append((event as InputEventKey).physical_keycode)
-		assert_equal(keys, REQUIRED_ACTIONS[action], "defaults: %s" % action)
+		assert_equal(InputMap.action_get_deadzone(action), 0.5, "deadzone: %s" % action)
+		var events := InputMap.action_get_events(action)
+		assert_equal(events.size(), REQUIRED_ACTIONS[action].size(), "event count: %s" % action)
+		for event_index: int in events.size():
+			_assert_exact_key_event(
+				events[event_index],
+				REQUIRED_ACTIONS[action][event_index],
+				"%s event %d" % [action, event_index]
+			)
 	var config := ConfigFile.new()
 	assert_equal(config.load("res://project.godot"), OK, "project config loads")
 	var action_names: Array[String] = []
@@ -51,6 +55,28 @@ func test_actions_have_exact_physical_defaults() -> void:
 		expected_names.append(String(required_action))
 	expected_names.sort()
 	assert_equal(action_names, expected_names, "project-defined actions")
+
+func _assert_exact_key_event(event: InputEvent, expected_key: Key, context: String) -> void:
+	assert_true(event is InputEventKey, "%s type" % context)
+	if not event is InputEventKey:
+		return
+	var key_event := event as InputEventKey
+	assert_equal(key_event.physical_keycode, expected_key, "%s physical key" % context)
+	assert_equal(key_event.keycode, KEY_NONE, "%s logical key" % context)
+	assert_equal(key_event.key_label, KEY_NONE, "%s key label" % context)
+	assert_equal(key_event.unicode, 0, "%s unicode" % context)
+	assert_equal(key_event.location, KeyLocation.KEY_LOCATION_UNSPECIFIED, "%s location" % context)
+	assert_equal(key_event.alt_pressed, false, "%s alt modifier" % context)
+	assert_equal(key_event.shift_pressed, false, "%s shift modifier" % context)
+	assert_equal(key_event.ctrl_pressed, false, "%s control modifier" % context)
+	assert_equal(key_event.meta_pressed, false, "%s command modifier" % context)
+	assert_equal(key_event.pressed, false, "%s pressed state" % context)
+	assert_equal(key_event.echo, false, "%s echo state" % context)
+	assert_equal(key_event.device, -1, "%s device" % context)
+	assert_equal(key_event.window_id, 0, "%s window" % context)
+	assert_equal(key_event.resource_local_to_scene, false, "%s local resource" % context)
+	assert_equal(key_event.resource_name, "", "%s resource name" % context)
+	assert_equal(key_event.get_script(), null, "%s script" % context)
 
 func test_macos_export_preset_is_single_and_unsigned() -> void:
 	var preset_path := "res://export_presets.cfg"

@@ -100,19 +100,55 @@ reject_tracked_paths \
 	"tracked generated UID cache" \
 	'(^|/)(uid_cache\.bin|global_script_class_cache\.cfg)$'
 
-capture_rg_input \
-	'^(assets/runtime|src/actors|src/gameplay|src/levels|src/rendering|src/world)/' \
-	"$tracked_files"
-restricted_scope_matches="$RG_MATCHES"
-if [[ -n "$restricted_scope_matches" ]]; then
-	capture_rg_input '/\.gitkeep$' "$restricted_scope_matches" "invert"
-	restricted_scope_matches="$RG_MATCHES"
-fi
-if [[ -n "$restricted_scope_matches" ]]; then
+capture_rg_input '^(assets|scenes|src)/' "$tracked_files"
+production_scope_files="$RG_MATCHES"
+unexpected_production_paths=""
+while IFS= read -r production_file; do
+	if [[ -z "$production_file" ]]; then
+		continue
+	fi
+	case "$production_file" in
+		assets/generated/.gitkeep \
+		| assets/runtime/.gitkeep \
+		| scenes/bootstrap/bootstrap.tscn \
+		| src/actors/.gitkeep \
+		| src/core/.gitkeep \
+		| src/core/bootstrap/bootstrap_controller.gd \
+		| src/core/bootstrap/foundation_status.gd \
+		| src/core/bootstrap/project_settings_adapter.gd \
+		| src/core/bootstrap/startup_validator.gd \
+		| src/core/build/build_identity.gd \
+		| src/core/display/display_policy.gd \
+		| src/core/input/input_map_contract.gd \
+		| src/core/services/audio_service.gd \
+		| src/core/services/runtime_state_service.gd \
+		| src/core/services/save_settings_service.gd \
+		| src/core/services/scene_transition_service.gd \
+		| src/core/services/service_registry.gd \
+		| src/core/services/service_result.gd \
+		| src/core/services/unavailable_audio_service.gd \
+		| src/core/services/unavailable_runtime_state_service.gd \
+		| src/core/services/unavailable_save_settings_service.gd \
+		| src/core/services/unavailable_scene_transition_service.gd \
+		| src/gameplay/.gitkeep \
+		| src/levels/.gitkeep \
+		| src/rendering/.gitkeep \
+		| src/ui/.gitkeep \
+		| src/ui/bootstrap/bootstrap_view.gd \
+		| src/world/.gitkeep)
+			;;
+		*)
+			unexpected_production_paths+="${production_file}"$'\n'
+			;;
+	esac
+done <<< "$production_scope_files"
+unexpected_production_paths="${unexpected_production_paths%$'\n'}"
+if [[ -n "$unexpected_production_paths" ]]; then
 	while IFS= read -r matched_file; do
-		printf '%s: production content root must remain empty\n' "$matched_file" >&2
-	done <<< "$restricted_scope_matches"
-	echo "policy violation: production content root must remain empty" >&2
+		printf '%s: path is outside the macOS foundation production allowlist\n' \
+			"$matched_file" >&2
+	done <<< "$unexpected_production_paths"
+	echo "policy violation: unexpected production path" >&2
 	exit 1
 fi
 
@@ -137,7 +173,7 @@ capture_rg_input '^tools/verify/' "$tracked_files"
 unexpected_verify_paths="$RG_MATCHES"
 if [[ -n "$unexpected_verify_paths" ]]; then
 	capture_rg_input \
-		'^tools/verify/(check_policy|run_tests|export_macos|verify_local|run_bounded_process|test_shell_contracts)\.sh$' \
+		'^tools/verify/(check_policy|run_tests|export_macos|verify_local|run_bounded_process|test_shell_contracts|godot_diagnostics)\.sh$' \
 		"$unexpected_verify_paths" \
 		"invert"
 	unexpected_verify_paths="$RG_MATCHES"
@@ -159,6 +195,27 @@ while IFS= read -r tracked_file; do
 		scan_files+=("$tracked_file")
 	fi
 done <<< "$RG_MATCHES"
+
+capture_rg_input \
+	'^(project\.godot|export_presets\.cfg|scenes/|src/)' \
+	"$tracked_files"
+production_scan_files=()
+while IFS= read -r tracked_file; do
+	if [[ -n "$tracked_file" ]]; then
+		production_scan_files+=("$tracked_file")
+	fi
+done <<< "$RG_MATCHES"
+
+if [[ "${#production_scan_files[@]}" -gt 0 ]]; then
+	reject_content \
+		"production credential or signing assignment" \
+		'^[[:space:]]*((var|const)[[:space:]]+)?[[:alnum:]_./-]*(team[_ /-]?id|api[_ /-]?token|token|password|private[_ /-]?key|certificate|profile|identity|pem)[[:alnum:]_./ -]*[[:space:]]*:?=[[:space:]]*[\x22\x27]' \
+		"${production_scan_files[@]}"
+	reject_content \
+		"production private-key or certificate material" \
+		'-----BEGIN[[:space:]]+((RSA|EC|OPENSSH)[[:space:]]+)?(PRIVATE KEY|CERTIFICATE)-----|(Developer ID Application|Developer ID Installer|Apple Development|Apple Distribution):[[:space:]]|[\x22\x27][^\x22\x27]+\.(p12|pfx|pem|cer|crt|mobileprovision|provisionprofile)[\x22\x27]' \
+		"${production_scan_files[@]}"
+fi
 
 if [[ "${#scan_files[@]}" -gt 0 ]]; then
 	reject_content \
@@ -200,6 +257,7 @@ shell_files=(
 	tools/verify/check_policy.sh
 	tools/verify/run_tests.sh
 	tools/verify/export_macos.sh
+	tools/verify/godot_diagnostics.sh
 	tools/verify/verify_local.sh
 	tools/verify/run_bounded_process.sh
 	tools/verify/test_shell_contracts.sh

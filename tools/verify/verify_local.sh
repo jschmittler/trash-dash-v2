@@ -4,6 +4,7 @@ set -euo pipefail
 script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 repo_root="$(cd "$script_dir/../.." && pwd)"
 . "$script_dir/run_bounded_process.sh"
+. "$script_dir/godot_diagnostics.sh"
 godot_bin="${TRASH_DASH_GODOT_BIN:-godot}"
 expected_version="4.7.1.stable.official.a13da4feb"
 temp_parent="${TMPDIR:-/tmp}"
@@ -69,13 +70,27 @@ if [[ "$actual_version" != "$expected_version" ]]; then
 fi
 printf 'Godot version: %s\n' "$actual_version"
 echo "Godot executable: Standard"
-"$godot_bin" --headless --path "$repo_root" --editor --quit
+run_godot_stage \
+	"headless import" \
+	"$temp_dir/headless-import.log" \
+	"$godot_bin" \
+	--headless \
+	--path "$repo_root" \
+	--editor \
+	--quit
 
 echo "[3/6] Tests"
 TRASH_DASH_GODOT_BIN="$godot_bin" "$script_dir/run_tests.sh"
 
 echo "[4/6] Headless editor smoke"
-"$godot_bin" --headless --path "$repo_root" --editor --quit
+run_godot_stage \
+	"headless editor smoke" \
+	"$temp_dir/editor-smoke.log" \
+	"$godot_bin" \
+	--headless \
+	--path "$repo_root" \
+	--editor \
+	--quit
 
 echo "[5/6] Fresh unsigned macOS export"
 export_dir="$temp_dir/export"
@@ -86,17 +101,5 @@ executable="$export_dir/extracted/Trash Dash 2.0.app/Contents/MacOS/Trash Dash 2
 package_log="$temp_dir/package-smoke.log"
 run_bounded_process "$package_log" "$executable" --headless
 cat "$package_log"
-set +e
-package_diagnostics="$(rg -n -i '(^|[[:space:]])(ERROR|WARNING):|leak|orphan|crash' "$package_log")"
-diagnostic_status=$?
-set -e
-if [[ "$diagnostic_status" -gt 1 ]]; then
-	printf 'Package smoke diagnostic scan failed with status %s\n' "$diagnostic_status" >&2
-	exit 1
-fi
-if [[ "$diagnostic_status" -eq 0 ]]; then
-	printf '%s\n' "$package_diagnostics" >&2
-	echo "Package smoke log contains a failure diagnostic" >&2
-	exit 1
-fi
+check_godot_diagnostics "bounded package smoke" "$package_log"
 echo "Local verification: PASS"

@@ -55,10 +55,17 @@ func test_ready_and_error_status_factories_are_exact() -> void:
 func test_current_input_map_is_valid() -> void:
 	assert_equal(InputMapContractType.validate_current(), PackedStringArray(), "input map")
 
+func test_pure_input_validation_accepts_only_exact_key_descriptors() -> void:
+	assert_equal(
+		InputMapContractType.validate_actions(_approved_input_events()),
+		PackedStringArray(),
+		"approved event descriptors"
+	)
+
 func test_input_validation_reports_ordered_missing_and_mismatched_actions() -> void:
 	var actual := {
-		&"move_left": [KEY_A, KEY_RIGHT],
-		&"jump": [KEY_SPACE],
+		&"move_left": [_key_event(KEY_A), _key_event(KEY_RIGHT)],
+		&"jump": [_key_event(KEY_SPACE)],
 	}
 	assert_equal(
 		InputMapContractType.validate_actions(actual),
@@ -71,3 +78,68 @@ func test_input_validation_reports_ordered_missing_and_mismatched_actions() -> v
 		]),
 		"input validation messages"
 	)
+
+func test_input_validation_rejects_non_key_events() -> void:
+	var joypad_actions := _approved_input_events()
+	var joypad_event := InputEventJoypadButton.new()
+	joypad_event.button_index = JOY_BUTTON_A
+	joypad_actions[&"jump"] = [joypad_event]
+	assert_equal(
+		InputMapContractType.validate_actions(joypad_actions),
+		PackedStringArray(["input defaults mismatch: jump"]),
+		"joypad event"
+	)
+	var mouse_actions := _approved_input_events()
+	var mouse_event := InputEventMouseButton.new()
+	mouse_event.button_index = MOUSE_BUTTON_LEFT
+	mouse_actions[&"action"] = [mouse_event]
+	assert_equal(
+		InputMapContractType.validate_actions(mouse_actions),
+		PackedStringArray(["input defaults mismatch: action"]),
+		"mouse event"
+	)
+
+func test_input_validation_rejects_modifiers_echo_and_device_overrides() -> void:
+	var modified_actions := _approved_input_events()
+	var modified_key := _key_event(KEY_A)
+	modified_key.ctrl_pressed = true
+	modified_actions[&"move_left"] = [modified_key, _key_event(KEY_LEFT)]
+	assert_equal(
+		InputMapContractType.validate_actions(modified_actions),
+		PackedStringArray(["input defaults mismatch: move_left"]),
+		"modified key"
+	)
+	var echo_actions := _approved_input_events()
+	var echo_key := _key_event(KEY_SPACE)
+	echo_key.echo = true
+	echo_actions[&"jump"] = [echo_key]
+	assert_equal(
+		InputMapContractType.validate_actions(echo_actions),
+		PackedStringArray(["input defaults mismatch: jump"]),
+		"echo key"
+	)
+	var device_actions := _approved_input_events()
+	var device_key := _key_event(KEY_E)
+	device_key.device = 0
+	device_actions[&"action"] = [device_key]
+	assert_equal(
+		InputMapContractType.validate_actions(device_actions),
+		PackedStringArray(["input defaults mismatch: action"]),
+		"device override"
+	)
+
+func _approved_input_events() -> Dictionary:
+	return {
+		&"move_left": [_key_event(KEY_A), _key_event(KEY_LEFT)],
+		&"move_right": [_key_event(KEY_D), _key_event(KEY_RIGHT)],
+		&"jump": [_key_event(KEY_SPACE)],
+		&"dash": [_key_event(KEY_SHIFT)],
+		&"action": [_key_event(KEY_E)],
+		&"pause": [_key_event(KEY_ESCAPE)],
+	}
+
+func _key_event(physical_keycode: Key) -> InputEventKey:
+	var event := InputEventKey.new()
+	event.physical_keycode = physical_keycode
+	event.device = -1
+	return event

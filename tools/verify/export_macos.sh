@@ -3,8 +3,17 @@ set -euo pipefail
 
 script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 repo_root="$(cd "$script_dir/../.." && pwd)"
+. "$script_dir/godot_diagnostics.sh"
 godot_bin="${TRASH_DASH_GODOT_BIN:-godot}"
 expected_version="4.7.1.stable.official.a13da4feb"
+
+for required_command in git rg; do
+	if ! command -v "$required_command" >/dev/null 2>&1; then
+		printf 'Export dependency error: required command not found: %s\n' \
+			"$required_command" >&2
+		exit 1
+	fi
+done
 
 if [[ "$#" -ne 1 ]]; then
 	echo "Usage: tools/verify/export_macos.sh <empty-output-directory>" >&2
@@ -56,18 +65,37 @@ if ! git diff --quiet || ! git diff --cached --quiet; then
 	echo "Export requires tracked source to match HEAD" >&2
 	exit 1
 fi
-unexpected_untracked="$(
-	git ls-files --others --exclude-standard \
-		| rg -v '\.(uid|import)$' \
-		|| true
-)"
+set +e
+untracked_files="$(git ls-files --others --exclude-standard)"
+git_ls_files_status=$?
+set -e
+if [[ "$git_ls_files_status" -ne 0 ]]; then
+	printf 'Export dependency error: git ls-files failed with status %s\n' \
+		"$git_ls_files_status" >&2
+	exit 1
+fi
+set +e
+unexpected_untracked="$(printf '%s\n' "$untracked_files" | rg -v -- '\.(uid|import)$')"
+rg_status=$?
+set -e
+if [[ "$rg_status" -gt 1 ]]; then
+	printf 'Export dependency error: rg failed with status %s while scanning untracked files\n' \
+		"$rg_status" >&2
+	exit 1
+fi
+if [[ "$rg_status" -eq 1 ]]; then
+	unexpected_untracked=""
+fi
 if [[ -n "$unexpected_untracked" ]]; then
 	while IFS= read -r untracked_file; do
 		printf '%s: unexpected untracked source blocks export\n' "$untracked_file" >&2
 	done <<< "$unexpected_untracked"
 	exit 1
 fi
-revision="$(git rev-parse HEAD)"
+if ! revision="$(git rev-parse HEAD)"; then
+	echo "Export dependency error: git rev-parse HEAD failed" >&2
+	exit 1
+fi
 
 if [[ "$godot_bin" == */* ]]; then
 	if [[ ! -x "$godot_bin" ]]; then
@@ -93,7 +121,10 @@ package="$output_dir/trash-dash-foundation-macos.zip"
 extract_dir="$output_dir/extracted"
 
 echo "Export: unsigned macOS development package"
-"$godot_bin" \
+run_godot_stage \
+	"macOS export" \
+	"$output_dir/godot-export.log" \
+	"$godot_bin" \
 	--headless \
 	--path "$repo_root" \
 	--export-debug "macOS" \
