@@ -1,0 +1,101 @@
+{
+  "package": "trash-dash-hd-powerups",
+  "version": "1.0.0",
+  "status": "approved",
+  "purpose": "Approved Taco and Kite power-up item sprites and pickup overlay animations for Trash Dash HD Remake.",
+  "runtimeAssets": {
+    "powerupItems": {
+      "file": "assets/powerups/taco-kite-powerups-clean-chroma.png",
+      "dimensions": {"width": 2172, "height": 724},
+      "background": "chroma-green",
+      "rowSplitY": 362,
+      "important": "This sheet is intentionally chroma-backed to preserve glow and particle detail. Chroma-key to alpha during asset preparation. Do not globally delete all green pixels because the approved Taco/Kite artwork contains legitimate green artwork.",
+      "rows": {
+        "taco": {
+          "row": 0,
+          "y": 0,
+          "height": 362,
+          "frameCount": 11,
+          "xCuts": [0, 199, 404, 594, 793, 994, 1187, 1422, 1584, 1757, 1954, 2172],
+          "states": [
+            "idle",
+            "bob_up",
+            "rotate_tilt",
+            "sparkle_variation",
+            "collectible_highlight",
+            "pickup_activation_impact",
+            "heroic_super_mode",
+            "glow_pulse",
+            "extra_sparkle",
+            "energy_ring",
+            "recovery_fade_out"
+          ],
+          "suggestedGroups": {
+            "ambient": [0, 1, 2, 3],
+            "pickup": [4, 5],
+            "active_power": [6],
+            "accent_options": [7, 8, 9],
+            "recovery": [10]
+          }
+        },
+        "kite": {
+          "row": 1,
+          "y": 362,
+          "height": 362,
+          "frameCount": 11,
+          "xCuts": [0, 202, 398, 594, 793, 985, 1167, 1431, 1596, 1767, 1955, 2172],
+          "states": [
+            "idle",
+            "bob_up",
+            "rotate_tilt",
+            "wind_swirl_variation",
+            "collectible_highlight",
+            "pickup_activation_impact",
+            "magical_airborne_mode",
+            "glow_pulse",
+            "extra_sparkle",
+            "wind_ring",
+            "recovery_fade_out"
+          ],
+          "suggestedGroups": {
+            "ambient": [0, 1, 2, 3],
+            "pickup": [4, 5],
+            "active_power": [6],
+            "accent_options": [7, 8, 9],
+            "recovery": [10]
+          }
+        }
+      }
+    },
+    "pickupOverlays": {
+      "taco": {
+        "file": "assets/overlays/taco-power-overlay-clean-8frame.png",
+        "dimensions": {"width": 1536, "height": 1024},
+        "grid": {"columns": 4, "rows": 2, "frameWidth": 384, "frameHeight": 512},
+        "frameCount": 8,
+        "playback": "sequential",
+        "states": ["incoming", "impact", "explosion", "radiant_burst", "hold", "ring_shockwave", "dissipate", "fade_out"]
+      },
+      "kite": {
+        "file": "assets/overlays/kite-power-overlay-clean-8frame.png",
+        "dimensions": {"width": 1536, "height": 1024},
+        "grid": {"columns": 4, "rows": 2, "frameWidth": 384, "frameHeight": 512},
+        "frameCount": 8,
+        "playback": "sequential",
+        "states": ["rush_in", "sweep_on", "impact_flash", "wind_burst", "radial_blast", "hold_peak", "fade_out", "disperse"]
+      }
+    }
+  },
+  "referenceOnly": [
+    "reference/powerups-branded-reference.png",
+    "reference/taco-power-overlay-branded-reference.png",
+    "reference/kite-power-overlay-branded-reference.png"
+  ],
+  "rules": [
+    "Treat all supplied runtime artwork as approved source-of-truth art.",
+    "Do not redraw, recolor, regenerate, squash, stretch, or reinterpret the Taco or Kite designs.",
+    "Preserve particle effects, glow falloff, wind trails, rings, sparkles, and activation bursts.",
+    "Keep branded reference files out of production runtime bundles.",
+    "Persist final frame rectangles and timing in data/config so runtime code does not visually guess frame boundaries."
+  ]
+}
