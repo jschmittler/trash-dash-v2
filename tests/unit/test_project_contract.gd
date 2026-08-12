@@ -70,6 +70,11 @@ func _assert_exact_key_event(event: InputEvent, expected_key: Key, context: Stri
 	assert_equal(key_event.shift_pressed, false, "%s shift modifier" % context)
 	assert_equal(key_event.ctrl_pressed, false, "%s control modifier" % context)
 	assert_equal(key_event.meta_pressed, false, "%s command modifier" % context)
+	assert_equal(
+		key_event.command_or_control_autoremap,
+		false,
+		"%s command-or-control autoremap" % context
+	)
 	assert_equal(key_event.pressed, false, "%s pressed state" % context)
 	assert_equal(key_event.echo, false, "%s echo state" % context)
 	assert_equal(key_event.device, -1, "%s device" % context)

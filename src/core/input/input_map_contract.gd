@@ -59,6 +59,7 @@ static func _key_event_matches(event: InputEventKey, required_key: Key) -> bool:
 		and not event.shift_pressed
 		and not event.ctrl_pressed
 		and not event.meta_pressed
+		and not event.command_or_control_autoremap
 		and not event.pressed
 		and not event.echo
 		and event.device == -1

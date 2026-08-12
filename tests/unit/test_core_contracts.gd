@@ -127,6 +127,24 @@ func test_input_validation_rejects_modifiers_echo_and_device_overrides() -> void
 		PackedStringArray(["input defaults mismatch: action"]),
 		"device override"
 	)
+	var autoremap_actions := _approved_input_events()
+	var autoremap_key := _key_event(KEY_ESCAPE)
+	autoremap_key.command_or_control_autoremap = true
+	autoremap_actions[&"pause"] = [autoremap_key]
+	assert_equal(
+		InputMapContractType.validate_actions(autoremap_actions),
+		PackedStringArray(["input defaults mismatch: pause"]),
+		"command-or-control autoremap"
+	)
+
+func test_input_validation_explicitly_checks_command_or_control_autoremap() -> void:
+	var input_contract_source := FileAccess.get_file_as_string(
+		"res://src/core/input/input_map_contract.gd"
+	)
+	assert_true(
+		input_contract_source.contains("not event.command_or_control_autoremap"),
+		"production matcher owns the autoremap descriptor field"
+	)
 
 func _approved_input_events() -> Dictionary:
 	return {
