@@ -108,7 +108,7 @@ if [[ " $architectures " != *" arm64 "* || " $architectures " != *" x86_64 "* ]]
 	printf 'Architecture verification failed: %s\n' "$architectures" >&2
 	exit 1
 fi
-package_sha_line="$(shasum -a 256 "$package")"
+package_sha_line="$(LC_ALL=C LANG=C shasum -a 256 "$package")"
 package_sha="${package_sha_line%% *}"
 package_size="$(stat -f '%z' "$package")"
 
