@@ -4,6 +4,7 @@ set -euo pipefail
 bounded_process_pid=""
 bounded_process_reaped=false
 bounded_process_status=""
+bounded_process_absence_confirmed=false
 bounded_process_grace_attempts="${TRASH_DASH_PROCESS_GRACE_ATTEMPTS:-20}"
 bounded_process_poll_seconds="${TRASH_DASH_PROCESS_POLL_SECONDS:-0.1}"
 bounded_process_startup_delay="${TRASH_DASH_PROCESS_STARTUP_DELAY_SECONDS:-2}"
@@ -27,6 +28,7 @@ bounded_process_poll_until_absent() {
 	local attempt=0
 	while [[ "$attempt" -lt "$bounded_process_grace_attempts" ]]; do
 		if ! kill -0 "$bounded_process_pid" 2>/dev/null; then
+			bounded_process_absence_confirmed=true
 			return 0
 		fi
 		sleep "$bounded_process_poll_seconds"
@@ -38,6 +40,11 @@ bounded_process_poll_until_absent() {
 bounded_process_reap() {
 	if [[ -z "$bounded_process_pid" || "$bounded_process_reaped" == true ]]; then
 		return
+	fi
+	if [[ "$bounded_process_absence_confirmed" != true ]]; then
+		printf 'Refusing to wait before exact PID absence is confirmed: %s\n' \
+			"$bounded_process_pid" >&2
+		return 1
 	fi
 	set +e
 	wait "$bounded_process_pid"
@@ -56,10 +63,16 @@ bounded_process_cleanup() {
 		if ! bounded_process_poll_until_absent; then
 			forced_kill=true
 			kill -KILL "$bounded_process_pid" 2>/dev/null || true
-			bounded_process_poll_until_absent || true
+			if ! bounded_process_poll_until_absent; then
+				printf 'Package process remains after bounded KILL poll: %s\n' \
+					"$bounded_process_pid" >&2
+				return 1
+			fi
 		fi
+	else
+		bounded_process_absence_confirmed=true
 	fi
-	bounded_process_reap
+	bounded_process_reap || return 1
 	if kill -0 "$bounded_process_pid" 2>/dev/null; then
 		printf 'Package process remains after cleanup: %s\n' "$bounded_process_pid" >&2
 		return 1
@@ -93,6 +106,7 @@ run_bounded_process() {
 	bounded_process_pid=""
 	bounded_process_reaped=false
 	bounded_process_status=""
+	bounded_process_absence_confirmed=false
 	LC_ALL=C LANG=C /usr/bin/perl -e \
 		'$SIG{INT} = "DEFAULT"; $SIG{TERM} = "DEFAULT"; exec {$ARGV[0]} @ARGV or die "exec failed: $!\n"' \
 		"$@" > "$log_file" 2>&1 &
@@ -100,14 +114,15 @@ run_bounded_process() {
 	printf 'Package PID: %s\n' "$bounded_process_pid"
 	sleep "$bounded_process_startup_delay"
 	if ! kill -0 "$bounded_process_pid" 2>/dev/null; then
-		bounded_process_reap
+		bounded_process_absence_confirmed=true
+		bounded_process_reap || return 1
 		printf 'Package exited before SIGINT with status %s\n' "$bounded_process_status" >&2
 		return 1
 	fi
 
 	kill -INT "$bounded_process_pid"
 	if bounded_process_poll_until_absent; then
-		bounded_process_reap
+		bounded_process_reap || return 1
 		if [[ "$bounded_process_status" -ne 130 ]]; then
 			printf 'Package did not exit cleanly after SIGINT: %s\n' \
 				"$bounded_process_status" >&2
@@ -121,7 +136,7 @@ run_bounded_process() {
 	printf 'Package ignored SIGINT within bounded grace: %s\n' "$bounded_process_pid" >&2
 	kill -TERM "$bounded_process_pid" 2>/dev/null || true
 	if bounded_process_poll_until_absent; then
-		bounded_process_reap
+		bounded_process_reap || return 1
 		printf 'Forced process fallback: TERM (PID %s absent, status %s)\n' \
 			"$bounded_process_pid" \
 			"$bounded_process_status" >&2
@@ -129,12 +144,12 @@ run_bounded_process() {
 	fi
 
 	kill -KILL "$bounded_process_pid" 2>/dev/null || true
-	bounded_process_poll_until_absent || true
-	bounded_process_reap
-	if kill -0 "$bounded_process_pid" 2>/dev/null; then
-		printf 'Package process remains after KILL fallback: %s\n' "$bounded_process_pid" >&2
+	if ! bounded_process_poll_until_absent; then
+		printf 'Package process remains after bounded KILL poll: %s\n' \
+			"$bounded_process_pid" >&2
 		return 1
 	fi
+	bounded_process_reap || return 1
 	printf 'Forced process fallback: KILL (PID %s absent, status %s)\n' \
 		"$bounded_process_pid" \
 		"$bounded_process_status" >&2

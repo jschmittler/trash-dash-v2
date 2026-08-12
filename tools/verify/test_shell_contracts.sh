@@ -183,6 +183,96 @@ assert_pid_absent() {
 	record_success "$case_name exact PID is absent"
 }
 
+wait_for_pid_absence() {
+	local process_pid="$1"
+	for attempt in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20; do
+		if ! kill -0 "$process_pid" 2>/dev/null; then
+			return 0
+		fi
+		sleep 0.05
+	done
+	return 1
+}
+
+test_post_kill_poll_failure_does_not_reap() {
+	local process_runner="$script_dir/run_bounded_process.sh"
+	for lifecycle_path in run cleanup; do
+		local output_file="$temp_dir/post-kill-$lifecycle_path.out"
+		local marker_file="$temp_dir/post-kill-$lifecycle_path.wait-called"
+		local process_log="$temp_dir/post-kill-$lifecycle_path.log"
+		local started_at="$(date +%s)"
+		set +e
+		/bin/bash -c '
+			set -euo pipefail
+			. "$1"
+			lifecycle_path="$2"
+			process_log="$3"
+			marker_file="$4"
+			bounded_process_startup_delay=0.1
+			bounded_process_grace_attempts=1
+			bounded_process_poll_seconds=0
+			bounded_process_poll_until_absent() {
+				return 1
+			}
+			bounded_process_reap() {
+				printf "wait attempted\n" > "$marker_file"
+				sleep 2
+			}
+			set +e
+			if [[ "$lifecycle_path" == run ]]; then
+				run_bounded_process "$process_log" /usr/bin/perl -e \
+					'"'"'$SIG{INT} = "IGNORE"; $SIG{TERM} = "IGNORE"; sleep 1 while 1'"'"'
+				contract_status=$?
+			else
+				LC_ALL=C LANG=C /usr/bin/perl -e \
+					'"'"'$SIG{INT} = "IGNORE"; $SIG{TERM} = "IGNORE"; sleep 1 while 1'"'"' &
+				bounded_process_pid=$!
+				printf "Package PID: %s\n" "$bounded_process_pid"
+				bounded_process_cleanup
+				contract_status=$?
+			fi
+			set -e
+			exit "$contract_status"
+		' _ "$process_runner" "$lifecycle_path" "$process_log" "$marker_file" \
+			> "$output_file" 2>&1
+		local contract_status=$?
+		set -e
+		local elapsed_seconds=$(( $(date +%s) - started_at ))
+		local child_pid="$(process_pid_from "$output_file")"
+		if [[ -n "$child_pid" ]]; then
+			recorded_pids+=("$child_pid")
+			wait_for_pid_absence "$child_pid" || true
+		fi
+		if [[ "$contract_status" -eq 0 ]]; then
+			record_failure "post-KILL poll failure $lifecycle_path path returns failure"
+		else
+			record_success "post-KILL poll failure $lifecycle_path path returns failure"
+		fi
+		if [[ "$elapsed_seconds" -ge 2 ]]; then
+			record_failure "post-KILL poll failure $lifecycle_path path returns within bound"
+		else
+			record_success "post-KILL poll failure $lifecycle_path path returns within bound"
+		fi
+		if [[ -e "$marker_file" ]]; then
+			record_failure "post-KILL poll failure $lifecycle_path path skips blocking wait"
+		else
+			record_success "post-KILL poll failure $lifecycle_path path skips blocking wait"
+		fi
+		if ! grep -F 'Package process remains after bounded KILL poll' "$output_file" >/dev/null; then
+			record_failure "post-KILL poll failure $lifecycle_path path reports failure"
+		else
+			record_success "post-KILL poll failure $lifecycle_path path reports failure"
+		fi
+		if [[ -z "$child_pid" ]]; then
+			record_failure "post-KILL poll failure $lifecycle_path path records exact PID"
+		elif kill -0 "$child_pid" 2>/dev/null; then
+			record_failure "post-KILL poll failure $lifecycle_path child exact PID is absent"
+		else
+			record_success "post-KILL poll failure $lifecycle_path child exact PID is absent"
+		fi
+	done
+}
+
 run_process_contracts() {
 	local process_runner="$script_dir/run_bounded_process.sh"
 	if [[ ! -x "$process_runner" ]]; then
@@ -276,6 +366,7 @@ test_forbidden_path_rejects "nested-secrets" "nested/secrets/token.txt"
 test_forbidden_path_rejects "build-nested-exports" "src/core/build/exports/app.zip"
 test_policy_self_inspection_rejects_executable_statement
 run_process_contracts
+test_post_kill_poll_failure_does_not_reap
 
 printf 'Shell contract tests: %s failures\n' "$failures"
 if [[ "$failures" -ne 0 ]]; then
