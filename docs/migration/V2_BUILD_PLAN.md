@@ -53,8 +53,8 @@ report; disposable implementation remains outside `main`.
   foundation and record the revised macOS-only scope.
 - [x] Record that the overall SPIKE/V2 gate is `INCOMPLETE`; do not treat the
   original Windows/Android/iOS proof matrix as accepted.
-- [ ] Remove the disposable branch/worktree only after the reviewed main
-  documentation is committed and pushed.
+- [x] Remove the validated disposable branch/worktree after the reviewed main
+  documentation was committed and pushed.
 
 ### Task 2: Scaffold the macOS MVP runtime boundaries
 
