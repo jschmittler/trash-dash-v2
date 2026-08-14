@@ -197,6 +197,8 @@ create_policy_repo() {
 	fixture_repo="$temp_dir/policy-$case_name"
 	mkdir -p "$fixture_repo/tools/verify" "$fixture_repo/src/core/build"
 	cp "$script_dir/check_policy.sh" "$fixture_repo/tools/verify/check_policy.sh"
+	printf '%s\n' '#!/usr/bin/env python3' > "$fixture_repo/tools/verify/validate_design_library.py"
+	printf '%s\n' '#!/usr/bin/env python3' > "$fixture_repo/tools/verify/audit_canonical_assets.py"
 	printf '%s\n' 'config_version=5' > "$fixture_repo/project.godot"
 	printf '%s\n' '[preset.0]' 'name="macOS"' 'platform="macOS"' > "$fixture_repo/export_presets.cfg"
 	printf '%s\n' 'class_name BuildIdentity' > "$fixture_repo/src/core/build/build_identity.gd"
@@ -587,6 +589,8 @@ test_current_production_allowlist_passes() {
 	fixture_repo="$temp_dir/policy-current-production"
 	mkdir -p "$fixture_repo/tools/verify"
 	cp "$script_dir/check_policy.sh" "$fixture_repo/tools/verify/check_policy.sh"
+	printf '%s\n' '#!/usr/bin/env python3' > "$fixture_repo/tools/verify/validate_design_library.py"
+	printf '%s\n' '#!/usr/bin/env python3' > "$fixture_repo/tools/verify/audit_canonical_assets.py"
 	while IFS= read -r tracked_file; do
 		mkdir -p "$fixture_repo/$(dirname "$tracked_file")"
 		cp "$repo_root/$tracked_file" "$fixture_repo/$tracked_file"

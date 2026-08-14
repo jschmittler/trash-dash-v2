@@ -21,9 +21,9 @@ OUTPUT = ROOT / "assets/generated/boss-brutus-bin-hound-isolated"
 FRAMES_OUT = OUTPUT / "frames"
 SOURCE = (
     ROOT
-    / "docs/design/trash-dash/character-animation/phase-05-codex-integration/phase-04-bosses/final/boss-brutus-bin-hound-transparent.png"
+    / "docs/design/trash-dash/library/characters/bosses/brutus-bin-hound/sprites/animation-source/boss-brutus-bin-hound-transparent.png"
 )
-CANON = ROOT / "docs/design/trash-dash/reference/characters/level-02/sprites/boss-brutus-bin-hound.png"
+CANON = ROOT / "docs/design/trash-dash/library/characters/bosses/brutus-bin-hound/sprites/reference/boss-brutus-bin-hound.png"
 DESKTOP_COPY = Path("/Users/jamesschmittler/Desktop/boss-brutus-bin-hound-transparent.png")
 ATLAS_OUT = OUTPUT / "boss-brutus-bin-hound-isolated.png"
 CONTACT_OUT = OUTPUT / "contact-sheet.png"

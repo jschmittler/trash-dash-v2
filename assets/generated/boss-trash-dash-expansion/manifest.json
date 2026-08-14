@@ -3,9 +3,9 @@
   "canonId": "boss.level-01.trash-dash",
   "status": "generated-awaiting-user-approval",
   "sourcePath": "/Users/jamesschmittler/Desktop/boss-trash-dash-transparent.png",
-  "canonicalVisualAuthority": "docs/design/trash-dash/reference/characters/level-01/sprites/boss-trash-dash.png",
-  "canonicalBossBible": "docs/design/trash-dash/docs/game/bosses/README.md",
-  "canonicalBossFile": "docs/design/trash-dash/docs/game/bosses/TRASH_DASH.md",
+  "canonicalVisualAuthority": "docs/design/trash-dash/library/characters/bosses/trash-dash/sprites/reference/boss-trash-dash.png",
+  "canonicalBossBible": "docs/design/trash-dash/manuals/bosses/README.md",
+  "canonicalBossFile": "docs/design/trash-dash/manuals/bosses/TRASH_DASH.md",
   "sourceSha256": "85f85f67a46c028dbf6a416cc90cf71c7be58dff95a73f9774439fee7d1ba96f",
   "canonicalVisualSha256": "84dd4b7f4643211cbb1b7bdbe49daf1eb260af5e3b06fd514a2429dd7e6b021c",
   "originalSheetSize": [

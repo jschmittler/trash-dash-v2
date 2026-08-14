@@ -6,6 +6,7 @@ import argparse
 import csv
 import hashlib
 import json
+import re
 from collections import Counter
 from pathlib import Path
 
@@ -15,6 +16,15 @@ MIGRATION_REL = DESIGN_REL / "manifests/LIBRARY_MIGRATION_MAP.tsv"
 PREFLIGHT_REL = DESIGN_REL / "manifests/LIBRARY_PRE_MIGRATION_INVENTORY.tsv"
 TEXT_SUFFIXES = {".md", ".txt", ".json", ".tsv", ".yaml", ".yml", ".py", ".sh", ".gd", ".ts", ".cfg"}
 LEGACY_LITERAL = "docs/design/trash-dash/reference/"
+DESIGN_PATH_PATTERN = re.compile(r"docs/design/trash-dash/[A-Za-z0-9_./-]+")
+MARKDOWN_LINK_PATTERN = re.compile(r"\[[^\]]+\]\(([^)]+)\)")
+MUTABLE_TEXT_CATEGORIES = {
+    "design-support",
+    "game-manual",
+    "boss-manual",
+    "enemy-manual",
+    "level-manual",
+}
 
 
 def sha256(path: Path) -> str:
@@ -37,7 +47,6 @@ def active_text_files(root: Path) -> list[Path]:
         root / ".skills",
         root / "tools",
         root / "src",
-        root / "tests",
         root / "assets/generated",
         root / "docs/architecture",
         root / "docs/migration",
@@ -48,7 +57,15 @@ def active_text_files(root: Path) -> list[Path]:
     for scan_root in scan_roots:
         if scan_root.is_dir():
             candidates.extend(path for path in scan_root.rglob("*") if path.is_file() and path.suffix.lower() in TEXT_SUFFIXES)
-    return sorted(set(candidates))
+    excluded = {
+        root / "tools/verify/validate_design_library.py",
+    }
+    return sorted(
+        path for path in set(candidates)
+        if path not in excluded
+        and not path.is_relative_to(root / "tools/library")
+        and not path.is_relative_to(root / "tools/visual-audit/evidence")
+    )
 
 
 def validate(root: Path) -> list[str]:
@@ -117,6 +134,8 @@ def validate(root: Path) -> list[str]:
                     failures.append(f"removed metadata has destination: {row['old_path']}")
             elif destination and not (root / destination).is_file():
                 failures.append(f"missing migration destination: {destination}")
+            elif destination and row.get("category") not in MUTABLE_TEXT_CATEGORIES and sha256(root / destination) != row.get("sha256"):
+                failures.append(f"migration hash mismatch: {row['old_path']} -> {destination}")
             if disposition not in {"canonical-moved", "package-preserved", "archive", "generated-metadata-removed"}:
                 failures.append(f"invalid migration disposition: {row['old_path']}")
 
@@ -132,6 +151,24 @@ def validate(root: Path) -> list[str]:
             continue
         if LEGACY_LITERAL in text:
             failures.append(f"active legacy path: {path.relative_to(root).as_posix()}")
+        for matched in DESIGN_PATH_PATTERN.findall(text):
+            referenced = matched.rstrip(".,:;`")
+            if any(token in referenced for token in ("*", "<", ">", "{")):
+                continue
+            if not (root / referenced).exists():
+                failures.append(f"missing active design reference: {path.relative_to(root).as_posix()} -> {referenced}")
+        if path.suffix.lower() == ".md" and path.is_relative_to(design):
+            for link in MARKDOWN_LINK_PATTERN.findall(text):
+                if "://" in link or link.startswith("#"):
+                    continue
+                target_text = link.split("#", 1)[0]
+                if not target_text:
+                    continue
+                target = (path.parent / target_text).resolve()
+                if not target.exists():
+                    failures.append(
+                        f"broken design Markdown link: {path.relative_to(root).as_posix()} -> {link}"
+                    )
 
     return failures
 

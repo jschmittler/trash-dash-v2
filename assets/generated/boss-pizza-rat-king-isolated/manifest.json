@@ -9,9 +9,9 @@
     "runtimePromotionAuthorized": false
   },
   "canonicalFacing": "right",
-  "approvedSource": "docs/design/trash-dash/character-animation/phase-05-codex-integration/phase-04-bosses/final/boss-pizza-rat-king-transparent.png",
+  "approvedSource": "docs/design/trash-dash/library/characters/bosses/pizza-rat-king/sprites/animation-source/boss-pizza-rat-king-transparent.png",
   "approvedSourceSha256": "be59825e4827ad39c08e50f1cb6218424b1db6b37730cc63c98eccf20a290a56",
-  "canonicalVisualAuthority": "docs/design/trash-dash/reference/characters/level-03/sprites/boss-pizza-rat-king.png",
+  "canonicalVisualAuthority": "docs/design/trash-dash/library/characters/bosses/pizza-rat-king/sprites/reference/boss-pizza-rat-king.png",
   "canonicalVisualSha256": "ee5c495e2f0e2cdcca6735ef472a0c3b47fe53ec23a58a0e96e6a7e7457f7255",
   "sheet": {
     "file": "assets/generated/boss-pizza-rat-king-isolated/boss-pizza-rat-king-isolated.png",

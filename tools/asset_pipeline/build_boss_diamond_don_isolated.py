@@ -18,8 +18,8 @@ ROOT = Path(__file__).resolve().parents[2]
 OUTPUT = ROOT / "assets/generated/boss-diamond-don-isolated"
 FRAMES_OUT = OUTPUT / "frames"
 PREVIEWS_OUT = OUTPUT / "previews"
-SOURCE = ROOT / "docs/design/trash-dash/character-animation/phase-05-codex-integration/phase-04-bosses/final/boss-diamond-don-transparent.png"
-CANON = ROOT / "docs/design/trash-dash/reference/characters/level-06/sprites/boss-diamond-don.png"
+SOURCE = ROOT / "docs/design/trash-dash/library/characters/bosses/diamond-don/sprites/animation-source/boss-diamond-don-transparent.png"
+CANON = ROOT / "docs/design/trash-dash/library/characters/bosses/diamond-don/sprites/reference/boss-diamond-don.png"
 ATTACHED_COPY = Path("/Users/jamesschmittler/Desktop/boss-diamond-don-transparent.png")
 ATLAS_OUT = OUTPUT / "boss-diamond-don-isolated.png"
 CONTACT_OUT = OUTPUT / "contact-sheet.png"
@@ -370,14 +370,14 @@ def immutable_specification() -> str:
     return """# Diamond Don Immutable Generation Specification
 
 Execution: `EXECUTE: boss-diamond-don`  
-Contract: `docs/design/trash-dash/docs/game/bosses/BOSSFIX.md`, reread in full immediately before execution  
+Contract: `docs/design/trash-dash/manuals/bosses/BOSSFIX.md`, reread in full immediately before execution
 Specification status: immutable for this execution batch
 
 ## Identity
 
 - Boss: The Diamond Don (`boss.level-06-secret.diamond-don`).
-- Canonical visual authority: `docs/design/trash-dash/reference/characters/level-06/sprites/boss-diamond-don.png`.
-- Accepted extraction source: `docs/design/trash-dash/character-animation/phase-05-codex-integration/phase-04-bosses/final/boss-diamond-don-transparent.png`.
+- Canonical visual authority: `docs/design/trash-dash/library/characters/bosses/diamond-don/sprites/reference/boss-diamond-don.png`.
+- Accepted extraction source: `docs/design/trash-dash/library/characters/bosses/diamond-don/sprites/animation-source/boss-diamond-don-transparent.png`.
 - Locked: towering upright heavyweight charcoal/deep-gray raccoon; black mask; lighter muzzle and cheeks; pale yellow-green reflective eyes; broad black nose; enormous ringed tail; low black fedora/trilby; dirty off-white/gray pinstriped baseball shirt; distressed ambiguous `06`; charcoal armor; layered belts, brown straps, gold buckles/chains; armored gloves; dark trousers; black boots; battered reinforced spiked dark-brown wooden bat; huge forearms, round belly, short powerful legs, wide plantigrade stance; smug controlled theatrical kingpin affect.
 - Locked effects: dirty gray-brown shockwaves/rubble, black arcs, pale baseball streaks, yellow stars, smoky violet curse with acid-green accents, skull motifs, subtle green gauntlet indicators, approved baseballs/coins/chains/padlock/dust/mines/minions/hat/bat/detached props/defeat effects.
 

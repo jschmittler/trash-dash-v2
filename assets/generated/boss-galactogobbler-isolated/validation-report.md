@@ -16,8 +16,8 @@
 
 - Build: `python3 tools/asset_pipeline/build_boss_galactogobbler_isolated.py`
 - Verify: `python3 tools/verify/check_boss_galactogobbler_isolated.py`
-- Canonical source: `docs/design/trash-dash/reference/characters/level-05/sprites/boss-galactogobbler.png`
-- Accepted extraction source: `docs/design/trash-dash/character-animation/phase-05-codex-integration/phase-04-bosses/final/boss-galactogobbler-transparent.png`
+- Canonical source: `docs/design/trash-dash/library/characters/bosses/galactogobbler/sprites/reference/boss-galactogobbler.png`
+- Accepted extraction source: `docs/design/trash-dash/library/characters/bosses/galactogobbler/sprites/animation-source/boss-galactogobbler-transparent.png`
 - Output: `assets/generated/boss-galactogobbler-isolated/`
 
 ## V2 release-gate status

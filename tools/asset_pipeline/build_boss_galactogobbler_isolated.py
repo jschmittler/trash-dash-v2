@@ -20,8 +20,8 @@ ROOT = Path(__file__).resolve().parents[2]
 OUTPUT = ROOT / "assets/generated/boss-galactogobbler-isolated"
 FRAMES_OUT = OUTPUT / "frames"
 PREVIEWS_OUT = OUTPUT / "previews"
-SOURCE = ROOT / "docs/design/trash-dash/character-animation/phase-05-codex-integration/phase-04-bosses/final/boss-galactogobbler-transparent.png"
-CANON = ROOT / "docs/design/trash-dash/reference/characters/level-05/sprites/boss-galactogobbler.png"
+SOURCE = ROOT / "docs/design/trash-dash/library/characters/bosses/galactogobbler/sprites/animation-source/boss-galactogobbler-transparent.png"
+CANON = ROOT / "docs/design/trash-dash/library/characters/bosses/galactogobbler/sprites/reference/boss-galactogobbler.png"
 ATTACHED_COPY = Path("/Users/jamesschmittler/Desktop/boss-galactogobbler-transparent.png")
 ATLAS_OUT = OUTPUT / "boss-galactogobbler-isolated.png"
 CONTACT_OUT = OUTPUT / "contact-sheet.png"
@@ -378,14 +378,14 @@ def immutable_specification() -> str:
     return """# Galactogobbler Immutable Generation Specification
 
 Execution: `EXECUTE: boss-galactogobbler`  
-Contract: `docs/design/trash-dash/docs/game/bosses/BOSSFIX.md`, reread in full immediately before execution  
+Contract: `docs/design/trash-dash/manuals/bosses/BOSSFIX.md`, reread in full immediately before execution
 Specification status: immutable for this execution batch
 
 ## Identity
 
 - Boss: Galactogobbler, Hoarder of Worlds (`boss.level-05.galactogobbler`).
-- Canonical visual authority: `docs/design/trash-dash/reference/characters/level-05/sprites/boss-galactogobbler.png`.
-- Accepted transparent atlas: `docs/design/trash-dash/character-animation/phase-05-codex-integration/phase-04-bosses/final/boss-galactogobbler-transparent.png`.
+- Canonical visual authority: `docs/design/trash-dash/library/characters/bosses/galactogobbler/sprites/reference/boss-galactogobbler.png`.
+- Accepted transparent atlas: `docs/design/trash-dash/library/characters/bosses/galactogobbler/sprites/animation-source/boss-galactogobbler-transparent.png`.
 - Locked: small lavender-to-deep-violet alien; bulbous hairless head; two enormous glossy black-purple oval eyes; tiny nostrils; wide subordinate-to-maw mouth; compact limbs and rounded fingers; cyan luminous cylindrical canister; nearly spherical asteroid/electronics/cosmic-garbage shell; circular aperture; orbiting scraps; curious, hungry, frightened, uncertain, intelligent affect.
 - Locked effects: violet/lavender/magenta-white/cyan/deep near-black gravity, portals, orbit paths, rubble, meteors with limited orange-yellow heat, black tied emblem bags, canister light, smoke, wire, machinery, and reassembly effects already present in the accepted atlas.
 

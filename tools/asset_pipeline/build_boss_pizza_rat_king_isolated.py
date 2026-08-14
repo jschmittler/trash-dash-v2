@@ -23,9 +23,9 @@ FRAMES_OUT = OUTPUT / "frames"
 PREVIEWS_OUT = OUTPUT / "previews"
 SOURCE = (
     ROOT
-    / "docs/design/trash-dash/character-animation/phase-05-codex-integration/phase-04-bosses/final/boss-pizza-rat-king-transparent.png"
+    / "docs/design/trash-dash/library/characters/bosses/pizza-rat-king/sprites/animation-source/boss-pizza-rat-king-transparent.png"
 )
-CANON = ROOT / "docs/design/trash-dash/reference/characters/level-03/sprites/boss-pizza-rat-king.png"
+CANON = ROOT / "docs/design/trash-dash/library/characters/bosses/pizza-rat-king/sprites/reference/boss-pizza-rat-king.png"
 DESKTOP_COPY = Path("/Users/jamesschmittler/Desktop/boss-pizza-rat-king-transparent.png")
 ATLAS_OUT = OUTPUT / "boss-pizza-rat-king-isolated.png"
 CONTACT_OUT = OUTPUT / "contact-sheet.png"
@@ -360,8 +360,8 @@ Specification status: immutable for this execution batch
 ## Identity
 
 - Boss: His Greasiness, the Pizza Rat King (`boss.level-03.pizza-rat-king`).
-- Canonical visual authority: `docs/design/trash-dash/reference/characters/level-03/sprites/boss-pizza-rat-king.png`.
-- Accepted transparent atlas: `docs/design/trash-dash/character-animation/phase-05-codex-integration/phase-04-bosses/final/boss-pizza-rat-king-transparent.png`.
+- Canonical visual authority: `docs/design/trash-dash/library/characters/bosses/pizza-rat-king/sprites/reference/boss-pizza-rat-king.png`.
+- Accepted transparent atlas: `docs/design/trash-dash/library/characters/bosses/pizza-rat-king/sprites/animation-source/boss-pizza-rat-king-transparent.png`.
 - Locked: enormous obese low sewer-rat silhouette; greasy dark brown-gray/olive-black fur; dirty pale belly; pink segmented tail and paws; large pale-yellow eyes; irregular teeth; bent-fork crown; ragged red-brown mantle; huge dirty silver pizza cutter; canonical pizza, grease, dust, debris, wheel, speed-streak, impact-star, rat-reveal, and crown-detail effects.
 
 ## Animation

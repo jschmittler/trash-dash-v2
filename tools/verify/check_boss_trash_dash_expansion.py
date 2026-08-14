@@ -10,7 +10,7 @@ from PIL import Image
 
 
 ROOT = Path(__file__).resolve().parents[2]
-SOURCE = ROOT / "docs/design/trash-dash/character-animation/phase-05-codex-integration/phase-04-bosses/final/boss-trash-dash-transparent.png"
+SOURCE = ROOT / "docs/design/trash-dash/library/characters/bosses/trash-dash/sprites/animation-source/boss-trash-dash-transparent.png"
 OUTPUT_DIR = ROOT / "assets/generated/boss-trash-dash-expansion"
 OUTPUT = OUTPUT_DIR / "boss-trash-dash-expanded.png"
 MANIFEST = OUTPUT_DIR / "manifest.json"

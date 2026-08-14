@@ -2,9 +2,9 @@
   "assetName": "boss-trash-dash-isolated",
   "canonId": "boss.level-01.trash-dash",
   "status": "artwork-approved",
-  "approvedSource": "docs/design/trash-dash/character-animation/phase-05-codex-integration/phase-04-bosses/final/boss-trash-dash-transparent.png",
+  "approvedSource": "docs/design/trash-dash/library/characters/bosses/trash-dash/sprites/animation-source/boss-trash-dash-transparent.png",
   "approvedSourceSha256": "85f85f67a46c028dbf6a416cc90cf71c7be58dff95a73f9774439fee7d1ba96f",
-  "canonicalVisualAuthority": "docs/design/trash-dash/reference/characters/level-01/sprites/boss-trash-dash.png",
+  "canonicalVisualAuthority": "docs/design/trash-dash/library/characters/bosses/trash-dash/sprites/reference/boss-trash-dash.png",
   "canonicalVisualSha256": "84dd4b7f4643211cbb1b7bdbe49daf1eb260af5e3b06fd514a2429dd7e6b021c",
   "sheet": {
     "file": "assets/generated/boss-trash-dash-isolated/boss-trash-dash-isolated.png",

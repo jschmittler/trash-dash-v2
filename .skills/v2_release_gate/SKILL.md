@@ -13,7 +13,7 @@ Read the applicable canonical design documents under `../../docs/design/trash-da
 
 ## Gate checklist
 
-1. **Provenance:** every design input is listed by an approval manifest and comes from `docs/design/trash-dash/reference/`; no archive or unapproved V1 runtime asset is present.
+1. **Provenance:** every design input is listed by an approval manifest and comes from `docs/design/trash-dash/library/`; no archive or unapproved V1 runtime asset is present.
 2. **Derivation:** generated outputs live in `assets/generated/`; only reviewed outputs are promoted to `assets/runtime/`; rebuild commands and metadata are recorded.
 3. **Contracts:** level, encounter, animation, collision, scale, layer, and audio behavior satisfy the applicable architecture contracts.
 4. **Asset integrity:** source rectangles, visible-alpha bounds, uniform scale, aspect ratio, anchors, atlas cells, filtering, and runtime destinations are measured and valid.

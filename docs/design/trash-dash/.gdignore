@@ -1,0 +1,2 @@
+# Design sources are not Godot runtime imports. Promote reviewed assets into
+# assets/runtime/ before the engine imports them.

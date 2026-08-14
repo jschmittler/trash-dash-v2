@@ -24,7 +24,7 @@ permits; repository tools for asset, level, and visual validation.
 - The sibling V1 repository is read-only and must remain unchanged.
 - Do not copy V1 gameplay code, level files, spawn tables, runtime atlases,
   runtime art, or implementation debt.
-- `docs/design/trash-dash/reference/` is the approved design source of truth;
+- `docs/design/trash-dash/library/` is the approved design source of truth;
   archives are forbidden.
 - The disposable source-sheet-derived Trashy idle is spike evidence only and
   must not enter main or production runtime.
@@ -91,6 +91,11 @@ configuration at repository root.
 **Files:** Create deterministic tools under `tools/asset-pipeline`, generated
 manifests under `assets/generated`, runtime manifests under `assets/runtime`,
 and tests under `tests/unit`.
+
+- [x] Reorganize the design-source library by asset type, preserve complete
+  handoff packages, publish deterministic catalog/migration manifests, and
+  validate active references. This is source-library infrastructure only; it
+  does not promote or approve any runtime asset.
 
 - [ ] Receive and inventory the project owner's clean sprites/assets.
 - [ ] Implement explicit crop/cell handling, alpha inspection,

@@ -1,14 +1,14 @@
 # Project O.P.O.S.S.U.M. Immutable Generation Specification
 
 Execution: `EXECUTE: boss-project-opossum`  
-Contract: `docs/design/trash-dash/docs/game/bosses/BOSSFIX.md`, reread in full immediately before execution  
+Contract: `docs/design/trash-dash/manuals/bosses/BOSSFIX.md`, reread in full immediately before execution
 Specification status: immutable for this execution batch
 
 ## Identity
 
 - Boss: Project O.P.O.S.S.U.M. (`boss.level-04.project-opossum`).
-- Canonical visual authority: `docs/design/trash-dash/reference/characters/level-04/sprites/boss-project-opossum.png`.
-- Accepted transparent atlas: `docs/design/trash-dash/character-animation/phase-05-codex-integration/phase-04-bosses/final/boss-project-opossum-transparent.png`.
+- Canonical visual authority: `docs/design/trash-dash/library/characters/bosses/project-opossum/sprites/reference/boss-project-opossum.png`.
+- Accepted transparent atlas: `docs/design/trash-dash/library/characters/bosses/project-opossum/sprites/animation-source/boss-project-opossum-transparent.png`.
 - Locked: giant long broad low-slung charcoal/deep-gray quadrupedal opossum; sharply tapered pale gray-white face and dark eye patches; small pink-centered round ears; tiny dark/red-reflective eyes; pink nose and narrow clawed feet; long naked pink-purple dark-ringed tail; bulky improvised gunmetal laboratory harness with circular housings, copper coils, hoses, clamps, red/blue wiring, blue energy cells, warning lights, patched panels, aerials, sparks, and the prominent red top beacon.
 - Host intent remains wary, anxious, intelligent, and defensive; the malfunctioning rig is the aggressor.
 

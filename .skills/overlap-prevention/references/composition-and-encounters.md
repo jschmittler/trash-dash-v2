@@ -34,4 +34,4 @@ Resolve grounded actors to one stable support ID and clamp the full collision bo
 
 Spatial validity is necessary but insufficient. Inspect full-speed motion and rolling viewports for silhouette merging, crowding, implausible support, repetitive texture, blocked route communication, obscured attacks, and missing negative space.
 
-The canonical roster and encounter intent live in `../../../docs/design/trash-dash/docs/game/enemies.md`; runtime records must satisfy `../../../docs/architecture/ENCOUNTER_CONTRACT.md`.
+The canonical roster and encounter intent live in `../../../docs/design/trash-dash/manuals/enemies/legacy-enemies.md`; runtime records must satisfy `../../../docs/architecture/ENCOUNTER_CONTRACT.md`.

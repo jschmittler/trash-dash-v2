@@ -15,7 +15,7 @@ Status: generated and statically validated; production-runtime verification is u
 
 - Generator: built-in Codex `image_gen` tool (`gpt-image-2` path), 2026-08-13.
 - Reference role: approved visual direction only, not edit targets.
-- Approved references: `docs/design/trash-dash/reference/environments/level-03/level-3-01` through `level-3-05`.
+- Approved references: `docs/design/trash-dash/library/environments/backgrounds/level-03/level-3-01-restaurant-alley.png` through `level-3-05-construction-site-finale.png`.
 - Manifest approval and SHA-256 matches were verified before generation.
 - Exact approved prompt set is preserved in the originating Codex task; prompt responsibilities and ownership are summarized in `prompts/plate-prompts.md`.
 

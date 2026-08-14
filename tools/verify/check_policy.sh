@@ -95,7 +95,8 @@ reject_tracked_paths \
 	'^src/core/build(/|$)'
 reject_tracked_paths \
 	"tracked credential, certificate, profile, or keystore" \
-	'(^|/)(credentials?|secrets?)([._/-]|$)|\.(keystore|jks|p12|pfx|pem|cer|crt|profile|mobileprovision|provisionprofile)$'
+	'(^|/)(credentials?|secrets?)([._/-]|$)|\.(keystore|jks|p12|pfx|pem|cer|crt|profile|mobileprovision|provisionprofile)$' \
+	'^docs/design/trash-dash/library/'
 reject_tracked_paths \
 	"tracked generated UID cache" \
 	'(^|/)(uid_cache\.bin|global_script_class_cache\.cfg)$'
@@ -108,7 +109,7 @@ while IFS= read -r production_file; do
 		continue
 	fi
 	case "$production_file" in
-		assets/generated/.gitkeep \
+		assets/generated/* \
 		| assets/runtime/.gitkeep \
 		| scenes/bootstrap/bootstrap.tscn \
 		| src/actors/.gitkeep \
@@ -156,7 +157,7 @@ capture_rg_input '^tests/' "$tracked_files"
 unexpected_test_paths="$RG_MATCHES"
 if [[ -n "$unexpected_test_paths" ]]; then
 	capture_rg_input \
-		'^tests/run_all\.gd$|^tests/(gameplay|support|unit|visual)/(\.gitkeep|[^/]+\.gd)$' \
+		'^tests/run_all\.gd$|^tests/(gameplay|support|unit|visual)/(\.gitkeep|[^/]+\.gd)$|^tests/library/[^/]+\.py$' \
 		"$unexpected_test_paths" \
 		"invert"
 	unexpected_test_paths="$RG_MATCHES"
@@ -173,7 +174,7 @@ capture_rg_input '^tools/verify/' "$tracked_files"
 unexpected_verify_paths="$RG_MATCHES"
 if [[ -n "$unexpected_verify_paths" ]]; then
 	capture_rg_input \
-		'^tools/verify/(check_policy|check_character_animation_import|check_powerup_source_import|run_tests|export_macos|verify_local|run_bounded_process|test_shell_contracts|godot_diagnostics|godot_log_safety)\.sh$' \
+		'^tools/verify/(check_policy|check_character_animation_import|check_powerup_source_import|run_tests|export_macos|verify_local|run_bounded_process|test_shell_contracts|godot_diagnostics|godot_log_safety)\.sh$|^tools/verify/[^/]+\.py$' \
 		"$unexpected_verify_paths" \
 		"invert"
 	unexpected_verify_paths="$RG_MATCHES"
@@ -289,5 +290,8 @@ if [[ "${#existing_shell_files[@]}" -gt 0 ]]; then
 		'(^[[:space:]]*|[;&|][[:space:]]*|[$][(][[:space:]]*)rm[[:space:]]+(-[^[:space:]]*r[^[:space:]]*f|-rf|-fr)([[:space:]]|$)' \
 		"${existing_shell_files[@]}"
 fi
+
+python3 tools/verify/validate_design_library.py
+python3 tools/verify/audit_canonical_assets.py
 
 echo "Policy: PASS"

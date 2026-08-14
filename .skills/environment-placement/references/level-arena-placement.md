@@ -34,7 +34,7 @@ Freestanding art cannot intersect the solid body of a platform. `ON_SURFACE` mee
 
 Draw back-to-front using the canonical semantic layers. Far backgrounds are opaque and slowest. Whole middle landmarks use object-shaped alpha and a declared contact row. Close framing moves fastest, owns complete silhouettes, and must not cover traversal information. Each boundary uses one monotonic eased blend.
 
-See `../../../docs/design/trash-dash/docs/game/LEVEL_LAYOUT_GUIDANCE.md` and `../../../docs/architecture/LEVEL_CONTRACT.md` for processing, transition, baseline, and viewport requirements.
+See `../../../docs/design/trash-dash/manuals/levels/LEVEL_LAYOUT_GUIDANCE.md` and `../../../docs/architecture/LEVEL_CONTRACT.md` for processing, transition, baseline, and viewport requirements.
 
 ## Boss arenas
 

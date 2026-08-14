@@ -19,8 +19,8 @@ FRAMES_OUT = OUTPUT / "frames"
 ATLAS_OUT = OUTPUT / "boss-trash-dash-isolated.png"
 PREVIEW_OUT = OUTPUT / "contact-sheet.png"
 MANIFEST_OUT = OUTPUT / "manifest.json"
-SOURCE = ROOT / "docs/design/trash-dash/character-animation/phase-05-codex-integration/phase-04-bosses/final/boss-trash-dash-transparent.png"
-CANON = ROOT / "docs/design/trash-dash/reference/characters/level-01/sprites/boss-trash-dash.png"
+SOURCE = ROOT / "docs/design/trash-dash/library/characters/bosses/trash-dash/sprites/animation-source/boss-trash-dash-transparent.png"
+CANON = ROOT / "docs/design/trash-dash/library/characters/bosses/trash-dash/sprites/reference/boss-trash-dash.png"
 GUTTER = 8
 MAX_WIDTH = 2048
 

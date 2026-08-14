@@ -12,8 +12,8 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[2]
 OUTPUT = ROOT / "assets/generated/boss-diamond-don-isolated"
-SOURCE = ROOT / "docs/design/trash-dash/character-animation/phase-05-codex-integration/phase-04-bosses/final/boss-diamond-don-transparent.png"
-CANON = ROOT / "docs/design/trash-dash/reference/characters/level-06/sprites/boss-diamond-don.png"
+SOURCE = ROOT / "docs/design/trash-dash/library/characters/bosses/diamond-don/sprites/animation-source/boss-diamond-don-transparent.png"
+CANON = ROOT / "docs/design/trash-dash/library/characters/bosses/diamond-don/sprites/reference/boss-diamond-don.png"
 MANIFEST = OUTPUT / "manifest.json"
 BATCH = OUTPUT / "batch-manifest.json"
 AUDIT = OUTPUT / "source-audit.json"
@@ -227,8 +227,8 @@ def main() -> None:
 
 - Build: `python3 tools/asset_pipeline/build_boss_diamond_don_isolated.py`
 - Verify: `python3 tools/verify/check_boss_diamond_don_isolated.py`
-- Canonical source: `docs/design/trash-dash/reference/characters/level-06/sprites/boss-diamond-don.png`
-- Accepted extraction source: `docs/design/trash-dash/character-animation/phase-05-codex-integration/phase-04-bosses/final/boss-diamond-don-transparent.png`
+- Canonical source: `docs/design/trash-dash/library/characters/bosses/diamond-don/sprites/reference/boss-diamond-don.png`
+- Accepted extraction source: `docs/design/trash-dash/library/characters/bosses/diamond-don/sprites/animation-source/boss-diamond-don-transparent.png`
 - Output: `assets/generated/boss-diamond-don-isolated/`
 
 ## V2 release-gate status

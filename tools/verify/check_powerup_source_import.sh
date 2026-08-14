@@ -3,7 +3,7 @@ set -euo pipefail
 
 script_dir="$(CDPATH= cd -- "$(dirname -- "$0")" && pwd -P)"
 repo_root="$(CDPATH= cd -- "$script_dir/../.." && pwd -P)"
-package_root="$repo_root/docs/design/trash-dash/powerups/trash-dash-hd-powerups-v1"
+package_root="$repo_root/docs/design/trash-dash/packages/powerups/trash-dash-hd-powerups-v1"
 
 fail() {
 	printf 'Power-up source import: FAIL: %s\n' "$*" >&2

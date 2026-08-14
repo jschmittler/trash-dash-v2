@@ -85,6 +85,13 @@ class DesignLibraryValidatorTests(unittest.TestCase):
         self.assertTrue(any("uncataloged library file" in failure for failure in failures))
         self.assertTrue(any("design metadata present" in failure for failure in failures))
 
+    def test_missing_active_design_reference_fails(self) -> None:
+        (self.root / "README.md").write_text(
+            "Use docs/design/trash-dash/library/missing.png", encoding="utf-8"
+        )
+        failures = validate(self.root)
+        self.assertTrue(any("missing active design reference" in failure for failure in failures))
+
 
 if __name__ == "__main__":
     unittest.main()

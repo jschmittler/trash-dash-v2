@@ -2,7 +2,7 @@
   "boss": "Galactogobbler, Hoarder of Worlds",
   "canonId": "boss.level-05.galactogobbler",
   "canonicalBoard": {
-    "path": "docs/design/trash-dash/reference/characters/level-05/sprites/boss-galactogobbler.png",
+    "path": "docs/design/trash-dash/library/characters/bosses/galactogobbler/sprites/reference/boss-galactogobbler.png",
     "sha256": "9c1896aa4b61bed52586e4b1df3dbeca002e3edb09da536ab17945332284ace4",
     "size": [
       1448,
@@ -11,7 +11,7 @@
     "mode": "RGB"
   },
   "acceptedTransparentAtlas": {
-    "path": "docs/design/trash-dash/character-animation/phase-05-codex-integration/phase-04-bosses/final/boss-galactogobbler-transparent.png",
+    "path": "docs/design/trash-dash/library/characters/bosses/galactogobbler/sprites/animation-source/boss-galactogobbler-transparent.png",
     "sha256": "3a030409a4ee38c38ece7137f4a5f6484b629b12ec9dcc9760e8ecd18015f15a",
     "attachedCopySha256": "3a030409a4ee38c38ece7137f4a5f6484b629b12ec9dcc9760e8ecd18015f15a",
     "size": [

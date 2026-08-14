@@ -14,9 +14,9 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[2]
 SOURCE_ATLAS = Path("/Users/jamesschmittler/Desktop/boss-trash-dash-transparent.png")
-CANON_BOARD = ROOT / "docs/design/trash-dash/reference/characters/level-01/sprites/boss-trash-dash.png"
-BOSS_BIBLE = ROOT / "docs/design/trash-dash/docs/game/bosses/README.md"
-BOSS_CANON = ROOT / "docs/design/trash-dash/docs/game/bosses/TRASH_DASH.md"
+CANON_BOARD = ROOT / "docs/design/trash-dash/library/characters/bosses/trash-dash/sprites/reference/boss-trash-dash.png"
+BOSS_BIBLE = ROOT / "docs/design/trash-dash/manuals/bosses/README.md"
+BOSS_CANON = ROOT / "docs/design/trash-dash/manuals/bosses/TRASH_DASH.md"
 OUTPUT_DIR = ROOT / "assets/generated/boss-trash-dash-expansion"
 OUTPUT_CELLS = OUTPUT_DIR / "cells"
 OUTPUT_SHEET = OUTPUT_DIR / "boss-trash-dash-expanded.png"

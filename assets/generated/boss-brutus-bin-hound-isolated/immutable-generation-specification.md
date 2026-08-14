@@ -7,8 +7,8 @@ Runtime promotion: forbidden for this batch
 ## Authority and identity
 
 - Contract: `/Users/jamesschmittler/Desktop/bossfix.md` (875 lines, reread in full before execution).
-- Canonical visual authority: `docs/design/trash-dash/reference/characters/level-02/sprites/boss-brutus-bin-hound.png`, SHA-256 `ddf2eb77ad8f16aa164a934b08ea6b64c0679c24bf9c3a92a4fa444813c25c1c`, 1254×1254 RGB.
-- Accepted transparent source atlas: `docs/design/trash-dash/character-animation/phase-05-codex-integration/phase-04-bosses/final/boss-brutus-bin-hound-transparent.png`, SHA-256 `2fb68f090e668dc662dbf5d92a08f15699a0f4afc8f5d864da82d27927da1cf1c`, 1536×1024 RGBA.
+- Canonical visual authority: `docs/design/trash-dash/library/characters/bosses/brutus-bin-hound/sprites/reference/boss-brutus-bin-hound.png`, SHA-256 `ddf2eb77ad8f16aa164a934b08ea6b64c0679c24bf9c3a92a4fa444813c25c1c`, 1254×1254 RGB.
+- Accepted transparent source atlas: `docs/design/trash-dash/library/characters/bosses/brutus-bin-hound/sprites/animation-source/boss-brutus-bin-hound-transparent.png`, SHA-256 `2fb68f090e668dc662dbf5d92a08f15699a0f4afc8f5d864da82d27927da1cf1c`, 1536×1024 RGBA.
 - The accepted transparent atlas is byte-identical to `/Users/jamesschmittler/Desktop/boss-brutus-bin-hound-transparent.png`.
 - Locked identity: oversized stocky tan-orange English bulldog; enormous square wrinkled head; folded rose ears; narrow dark eyes; black nose; cream muzzle/chest/toes; drooping jowls; underbite; red-orange studded collar; inverted scratched ribbed dark blue-gray galvanized wheeled-bin armor; two black spiral-hub wheels on top; four short legs; right-facing side profile; approved materials, palette, expressions, and effects language.
 

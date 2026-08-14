@@ -4,17 +4,21 @@
 
 Trash Dash 2.0 is a selective greenfield rebuild. The sibling V1 repository at `../trash-dash/` is read-only reference material. Never modify it and never copy its production source tree, level modules, spawn tables, runtime atlases, runtime art, or implementation code into this repository without an approved reuse-matrix change.
 
-The canonical design source is `docs/design/trash-dash/reference/`, interpreted through the approval files in `docs/design/trash-dash/manifests/`. Files under any `archive/` path are noncanonical and may not enter V2 runtime work.
+The canonical visual source is `docs/design/trash-dash/library/`, interpreted through `docs/design/trash-dash/manifests/library-catalog.json`. Written canon lives under `docs/design/trash-dash/manuals/`; complete handoff evidence lives under `docs/design/trash-dash/packages/` and is not a competing source of truth. Start at `docs/design/trash-dash/LIBRARY_INDEX.md`. Files under any `archive/` path are noncanonical and may not enter V2 runtime work.
 
 ## Canonical boss descriptions
 
-Before any work involving a boss's visuals, animation, VFX, attacks, narrative, dialogue, marketing, or generative prompt, read `docs/design/trash-dash/docs/game/bosses/README.md` and that boss's linked canon file in full. These descriptions are strict project canon. Do not silently reinterpret, omit, replace, or contradict a locked attribute. The approved reference sheet remains the final authority for visible appearance; if prose and source art appear to conflict, stop and request a canon ruling rather than inventing a resolution.
+Before any work involving a boss's visuals, animation, VFX, attacks, narrative, dialogue, marketing, or generative prompt, read `docs/design/trash-dash/manuals/bosses/README.md` and that boss's linked canon file in full. These descriptions are strict project canon. Do not silently reinterpret, omit, replace, or contradict a locked attribute. The approved library reference sheet remains the final authority for visible appearance; if prose and source art appear to conflict, stop and request a canon ruling rather than inventing a resolution.
 
 ## Canonical UI kit
 
-Before modifying menu, HUD, notification, alert, pause, results, reward, or Character Select code or art, read the canonical UI Kit at `docs/design/trash-dash/ui-kit/` and follow its authority order: written contracts/tokens/approval rules, overall concept board, matching phase concept board, matching phase source sheet, then implementation judgment. The approved visual language is **Reclaimed Playground**.
+Before modifying menu, HUD, notification, alert, pause, results, reward, or Character Select code or art, read `docs/design/trash-dash/library/interface/` and the preserved written UI contracts under `docs/design/trash-dash/packages/ui-kit/trash-dash-hd-remake-ui-kit-codex-handoff-v0.3/docs/`. Follow their authority order: written contracts/tokens/approval rules, overall concept board, matching phase concept board, matching phase source sheet, then implementation judgment. The approved visual language is **Reclaimed Playground**.
 
 Source sheets are immutable extraction sources, not runtime atlases. Stage crops before cleanup; never stretch or squash raster UI art; construct scalable panels with 9-slice or layered pieces; keep dynamic values as runtime text; preserve full Trashy and Jimothy silhouettes; use the motion-token system with reduced-motion behavior; and validate UI changes in live gameplay. Do not import alternate source-sheet logos, characters, or off-style UI.
+
+## Canonical Art and Level-Design Resources
+
+Before selecting, creating, replacing, or implementing visual assets, read `docs/design/trash-dash/manifests/library-catalog.json` and the relevant level concept, blueprint, level specification, and enemy specification. Reuse registered canonical sources instead of creating competing duplicates. Concepts and blueprints are reference-only unless explicitly registered for runtime use; isolated props are authoritative appearances; composite foreground sheets are contact/reference sheets, not automatic spritesheets. Never overwrite approved canon without an explicit requested revision. Register newly approved sources, label derivatives with their source relationship, and run `python3 tools/verify/validate_design_library.py` plus `python3 tools/verify/audit_canonical_assets.py` after any asset import or visual replacement.
 
 ## Mandatory skill routing
 

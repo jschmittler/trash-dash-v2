@@ -5,9 +5,9 @@ Status: **GENERATED - AWAITING USER APPROVAL**
 ## Canon and source authority
 
 - Canon ID: `boss.level-01.trash-dash`
-- Canonical Boss Bible: `docs/design/trash-dash/docs/game/bosses/README.md`
-- Boss canon: `docs/design/trash-dash/docs/game/bosses/TRASH_DASH.md`
-- Visible authority: `docs/design/trash-dash/reference/characters/level-01/sprites/boss-trash-dash.png`
+- Canonical Boss Bible: `docs/design/trash-dash/manuals/bosses/README.md`
+- Boss canon: `docs/design/trash-dash/manuals/bosses/TRASH_DASH.md`
+- Visible authority: `docs/design/trash-dash/library/characters/bosses/trash-dash/sprites/reference/boss-trash-dash.png`
 - Preserved approved atlas: `/Users/jamesschmittler/Desktop/boss-trash-dash-transparent.png`
 
 ## Output

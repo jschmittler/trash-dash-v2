@@ -3,8 +3,9 @@ set -euo pipefail
 
 script_dir="$(CDPATH= cd -- "$(dirname -- "$0")" && pwd -P)"
 repo_root="$(CDPATH= cd -- "$script_dir/../.." && pwd -P)"
-import_root="$repo_root/docs/design/trash-dash/character-animation/phase-05-codex-integration"
+import_root="$repo_root/docs/design/trash-dash/packages/character-animation/phase-05-codex-integration"
 inventory="$import_root/CANONICAL_IMPORT_INVENTORY.json"
+catalog="$repo_root/docs/design/trash-dash/manifests/library-catalog.json"
 
 fail() {
   printf 'Character animation import: FAIL: %s\n' "$*" >&2
@@ -17,6 +18,7 @@ done
 
 [ -d "$import_root" ] || fail "import root is missing: $import_root"
 [ -f "$inventory" ] || fail "inventory is missing: $inventory"
+[ -f "$catalog" ] || fail "library catalog is missing: $catalog"
 
 for required_file in \
   "$import_root/README.md" \
@@ -114,7 +116,13 @@ while IFS="$(printf '\t')" read -r asset_id atlas_rel expected_hash expected_wid
   esac
 
   atlas="$import_root/$atlas_rel"
-  source="$repo_root/$source_rel"
+  current_source_rel="$(jq -r --arg legacy "$source_rel" '
+    [.assets[] | select(.aliases | index($legacy)) | .canonicalPath]
+    | unique
+    | if length == 1 then .[0] else empty end
+  ' "$catalog")"
+  [ -n "$current_source_rel" ] || fail "$asset_id source reference does not resolve uniquely through the library catalog: $source_rel"
+  source="$repo_root/$current_source_rel"
   [ -f "$atlas" ] || fail "$asset_id approved atlas is missing: $atlas_rel"
   [ -f "$source" ] || fail "$asset_id source reference is missing: $source_rel"
 
@@ -155,7 +163,7 @@ for imported_source in \
   [ -f "$imported_source" ] || fail "expected imported branded source glob did not resolve"
   imported_source_count=$((imported_source_count + 1))
   source_name="${imported_source##*/}"
-  repository_source="$(find "$repo_root/docs/design/trash-dash/reference/characters" -type f -name "$source_name" -print)"
+  repository_source="$(find "$repo_root/docs/design/trash-dash/library/characters" -type f -name "$source_name" -print)"
   [ -n "$repository_source" ] || fail "no repository reference resolves for imported source: $source_name"
   [ "$(printf '%s\n' "$repository_source" | wc -l | tr -d ' ')" -eq 1 ] || fail "multiple repository references resolve for imported source: $source_name"
   cmp -s "$imported_source" "$repository_source" || fail "imported branded source conflicts with repository reference: $source_name"

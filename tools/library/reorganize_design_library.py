@@ -114,17 +114,6 @@ def copy_operations() -> list[CopyOperation]:
             f"docs/design/trash-dash/library/gameplay/powerups/sprites/animation-source/{Path(relative).name}",
             "gameplay",
         ))
-    for filename in (
-        "powerups-branded-reference.png",
-        "kite-power-overlay-branded-reference.png",
-        "taco-power-overlay-branded-reference.png",
-    ):
-        operations.append(CopyOperation(
-            f"{powerups}/reference/{filename}",
-            f"docs/design/trash-dash/library/gameplay/powerups/concepts/{filename}",
-            "gameplay",
-        ))
-
     ui = "docs/design/trash-dash/ui-kit/trash-dash-hd-remake-ui-kit-codex-handoff-v0.3"
     for filename in (
         "00-overall-ui-kit.png", "01-buttons-tabs.png", "02-panels-containers.png",
