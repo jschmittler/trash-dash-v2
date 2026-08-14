@@ -1,0 +1,57 @@
+{
+  "boss": "Brutus Bin Hound",
+  "canonId": "boss.level-02.brutus-bin-hound",
+  "canonicalBoard": {
+    "path": "docs/design/trash-dash/reference/characters/level-02/sprites/boss-brutus-bin-hound.png",
+    "sha256": "ddf2eb77ad8f16aa164a934b08ea6b64c0679c24bf9c3a92a4fa444813c25c1c",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB"
+  },
+  "acceptedTransparentAtlas": {
+    "path": "docs/design/trash-dash/character-animation/phase-05-codex-integration/phase-04-bosses/final/boss-brutus-bin-hound-transparent.png",
+    "sha256": "2fb68f090e668dc662dbf5d92a08f15699a0f4afc8f5d864da82d27927da1cf1",
+    "desktopCopySha256": "2fb68f090e668dc662dbf5d92a08f15699a0f4afc8f5d864da82d27927da1cf1",
+    "size": [
+      1536,
+      1024
+    ],
+    "mode": "RGBA",
+    "visibleBounds": [
+      11,
+      13,
+      1514,
+      1009
+    ],
+    "visiblePixelCount": 512248,
+    "opaquePixelCount": 512248,
+    "transparentPixelCount": 1060616,
+    "partialAlphaPixelCount": 0,
+    "connectedComponentCount": 589
+  },
+  "sequenceAudit": {
+    "emerge": {
+      "classification": "EXISTS - COMPLETE",
+      "frameCount": 4
+    },
+    "retreat": {
+      "classification": "EXISTS - COMPLETE",
+      "frameCount": 5
+    },
+    "defeat": {
+      "classification": "EXISTS - COMPLETE",
+      "frameCount": 5
+    }
+  },
+  "defects": {
+    "crossFrameRectangularEnvelopeOverlap": true,
+    "neighboringFrameBleedRisk": true,
+    "visiblePixelsTouchingAcceptedAtlasBoundary": false,
+    "ambiguousDetachedEffectOwnershipBeforeManifest": true,
+    "insufficientTransparentGutters": true,
+    "missingRequiredSequenceFrames": false
+  },
+  "resolution": "ownership-mask extraction plus variable-cell repack; no artwork generation"
+}

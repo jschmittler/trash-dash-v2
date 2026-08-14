@@ -1,0 +1,218 @@
+{
+  "size": [
+    1320,
+    540
+  ],
+  "plates": {
+    "level4-hidden-service-entrance-far.png": {
+      "source": "assets/generated/level4-parallax/sources/level4-hidden-service-entrance-far-source.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "runtimeSize": [
+        1320,
+        540
+      ],
+      "transparent": 0,
+      "opaque": 712800,
+      "partialAlpha": 0
+    },
+    "level4-hidden-service-entrance-middle.png": {
+      "source": "assets/generated/level4-parallax/sources/level4-hidden-service-entrance-middle-source.png",
+      "sourceSize": [
+        1690,
+        931
+      ],
+      "runtimeSize": [
+        1320,
+        540
+      ],
+      "transparent": 541038,
+      "opaque": 171762,
+      "partialAlpha": 0
+    },
+    "level4-hidden-service-entrance-close.png": {
+      "source": "assets/generated/level4-parallax/sources/level4-hidden-service-entrance-close-source.png",
+      "sourceSize": [
+        1691,
+        930
+      ],
+      "runtimeSize": [
+        1320,
+        540
+      ],
+      "transparent": 629170,
+      "opaque": 83630,
+      "partialAlpha": 0
+    },
+    "level4-experimental-laboratory-far.png": {
+      "source": "assets/generated/level4-parallax/sources/level4-experimental-laboratory-far-source.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "runtimeSize": [
+        1320,
+        540
+      ],
+      "transparent": 0,
+      "opaque": 712800,
+      "partialAlpha": 0
+    },
+    "level4-experimental-laboratory-middle.png": {
+      "source": "assets/generated/level4-parallax/sources/level4-experimental-laboratory-middle-source.png",
+      "sourceSize": [
+        1959,
+        803
+      ],
+      "runtimeSize": [
+        1320,
+        540
+      ],
+      "transparent": 488733,
+      "opaque": 224067,
+      "partialAlpha": 0
+    },
+    "level4-experimental-laboratory-close.png": {
+      "source": "assets/generated/level4-parallax/sources/level4-experimental-laboratory-close-source.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "runtimeSize": [
+        1320,
+        540
+      ],
+      "transparent": 687133,
+      "opaque": 25667,
+      "partialAlpha": 0
+    },
+    "level4-robotics-assembly-chamber-far.png": {
+      "source": "assets/generated/level4-parallax/sources/level4-robotics-assembly-chamber-far-source.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "runtimeSize": [
+        1320,
+        540
+      ],
+      "transparent": 0,
+      "opaque": 712800,
+      "partialAlpha": 0
+    },
+    "level4-robotics-assembly-chamber-middle.png": {
+      "source": "assets/generated/level4-parallax/sources/level4-robotics-assembly-chamber-middle-source.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "runtimeSize": [
+        1320,
+        540
+      ],
+      "transparent": 664505,
+      "opaque": 48295,
+      "partialAlpha": 0
+    },
+    "level4-robotics-assembly-chamber-close.png": {
+      "source": "assets/generated/level4-parallax/sources/level4-robotics-assembly-chamber-close-source.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "runtimeSize": [
+        1320,
+        540
+      ],
+      "transparent": 707140,
+      "opaque": 5660,
+      "partialAlpha": 0
+    },
+    "level4-zero-gravity-research-chamber-far.png": {
+      "source": "assets/generated/level4-parallax/sources/level4-zero-gravity-research-chamber-far-source.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "runtimeSize": [
+        1320,
+        540
+      ],
+      "transparent": 0,
+      "opaque": 712800,
+      "partialAlpha": 0
+    },
+    "level4-zero-gravity-research-chamber-middle.png": {
+      "source": "assets/generated/level4-parallax/sources/level4-zero-gravity-research-chamber-middle-source.png",
+      "sourceSize": [
+        1675,
+        939
+      ],
+      "runtimeSize": [
+        1320,
+        540
+      ],
+      "transparent": 645272,
+      "opaque": 67528,
+      "partialAlpha": 0
+    },
+    "level4-zero-gravity-research-chamber-close.png": {
+      "source": "assets/generated/level4-parallax/sources/level4-zero-gravity-research-chamber-close-source.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "runtimeSize": [
+        1320,
+        540
+      ],
+      "transparent": 703555,
+      "opaque": 9245,
+      "partialAlpha": 0
+    },
+    "level4-rocket-hangar-finale-far.png": {
+      "source": "assets/generated/level4-parallax/sources/level4-rocket-hangar-finale-far-source.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "runtimeSize": [
+        1320,
+        540
+      ],
+      "transparent": 0,
+      "opaque": 712800,
+      "partialAlpha": 0
+    },
+    "level4-rocket-hangar-finale-middle.png": {
+      "source": "assets/generated/level4-parallax/sources/level4-rocket-hangar-finale-middle-source.png",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "runtimeSize": [
+        1320,
+        540
+      ],
+      "transparent": 648439,
+      "opaque": 64361,
+      "partialAlpha": 0
+    },
+    "level4-rocket-hangar-finale-close.png": {
+      "source": "assets/generated/level4-parallax/sources/level4-rocket-hangar-finale-close-source.png",
+      "sourceSize": [
+        1962,
+        802
+      ],
+      "runtimeSize": [
+        1320,
+        540
+      ],
+      "transparent": 646916,
+      "opaque": 65884,
+      "partialAlpha": 0
+    }
+  }
+}

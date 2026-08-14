@@ -1,0 +1,32 @@
+{
+  "boss": "boss-trash-dash",
+  "status": "immutable-prebuild-manifest",
+  "sourceSheetSize": [1536, 1024],
+  "plannedFrameCount": 96,
+  "plannedSequences": {
+    "approvedExistingAnimations": 70,
+    "emerge": 3,
+    "retreat": 3,
+    "defeat": 7,
+    "gameplaySupportEffects": 13
+  },
+  "operations": {
+    "PRESERVE EXACTLY - REPOSITION FOR ISOLATION": 96,
+    "GENERATE NEW": 0,
+    "REPLACE UNAPPROVED": 0
+  },
+  "layout": {
+    "type": "explicit-variable-frame-rectangles",
+    "readingOrder": "sequence order, then frame order",
+    "maximumSheetWidth": 2048,
+    "transparentGutterPixelsOnEverySide": 8,
+    "frameOrderLocked": true,
+    "pivotAndGroundRegistrationLocked": true
+  },
+  "toxicSpitOwnership": {
+    "toxic-spit-2": "reviewed ownership mask toxic-spit-3.png",
+    "toxic-spit-3": "reviewed ownership mask toxic-spit-4.png",
+    "toxic-spit-4": "reviewed ownership mask toxic-spit-5.png"
+  },
+  "outputFormat": "RGBA PNG plus manifest and validation report"
+}

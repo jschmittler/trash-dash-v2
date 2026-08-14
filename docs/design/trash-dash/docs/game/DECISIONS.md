@@ -14,3 +14,4 @@
 12. Secret Level 6 access method remains TBD.
 13. Sprite sheets are source art, not automatically runtime-ready atlases. Codex must validate/slice them before implementation.
 14. Level 1 boss art and Brutus boss art are now included in this package as approved concept/reference sheets.
+15. `docs/game/bosses/README.md` and its six linked boss files are the canonical written boss bible. They govern boss visuals, animation, VFX, attacks, story, dialogue, audio direction, promotional material, and generative prompts. The approved reference sheets remain final authority for directly visible appearance. Contradictions require an explicit canon amendment; prompts do not silently amend canon.

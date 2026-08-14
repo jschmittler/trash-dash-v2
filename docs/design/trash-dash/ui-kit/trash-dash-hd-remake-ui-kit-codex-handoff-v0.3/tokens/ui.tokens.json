@@ -1,0 +1,122 @@
+{
+  "$schema": "trash-dash-ui-tokens-v1",
+  "version": "0.3.0",
+  "styleName": "Reclaimed Playground",
+  "depth": {
+    "world": 0,
+    "surface": 100,
+    "control": 200,
+    "feedback": 300,
+    "celebration": 400,
+    "modal": 500
+  },
+  "spacing": {
+    "2xs": 4,
+    "xs": 8,
+    "sm": 12,
+    "md": 16,
+    "lg": 24,
+    "xl": 32,
+    "2xl": 48,
+    "3xl": 64
+  },
+  "scale": {
+    "hoverLiftPx": 6,
+    "hoverScale": 1.025,
+    "pressScale": 0.97,
+    "heroSelectedScale": 1.04,
+    "disabledScale": 1.0
+  },
+  "rotation": {
+    "microWiggleDeg": 1.5,
+    "cardIdleMaxDeg": 0.75,
+    "toastEntryDeg": 3,
+    "warningImpactDeg": 1.25
+  },
+  "outline": {
+    "thin": 2,
+    "standard": 4,
+    "focus": 6,
+    "hero": 8
+  },
+  "shadow": {
+    "surface": {
+      "x": 0,
+      "y": 6,
+      "blur": 10,
+      "opacity": 0.28
+    },
+    "control": {
+      "x": 0,
+      "y": 5,
+      "blur": 7,
+      "opacity": 0.3
+    },
+    "lifted": {
+      "x": 0,
+      "y": 9,
+      "blur": 12,
+      "opacity": 0.32
+    },
+    "pressed": {
+      "x": 0,
+      "y": 2,
+      "blur": 4,
+      "opacity": 0.24
+    }
+  },
+  "materials": {
+    "primary": [
+      "corrugated-cardboard",
+      "painted-wood"
+    ],
+    "secondary": [
+      "torn-paper",
+      "sticker",
+      "tin-sign",
+      "bottle-cap"
+    ],
+    "fasteners": [
+      "masking-tape",
+      "duct-tape",
+      "screw",
+      "nail",
+      "paperclip"
+    ]
+  },
+  "semanticColorRoles": {
+    "success": "green",
+    "objective": "yellow",
+    "danger": "red",
+    "information": "blue",
+    "rare": "purple",
+    "primaryAction": "yellow",
+    "selected": "green",
+    "destructive": "red"
+  },
+  "text": {
+    "display": {
+      "case": "upper-or-title",
+      "weight": "heavy",
+      "personality": "hand-painted"
+    },
+    "label": {
+      "case": "upper-or-title",
+      "weight": "bold",
+      "personality": "playful-readable"
+    },
+    "support": {
+      "case": "sentence",
+      "weight": "medium",
+      "personality": "clean-readable"
+    }
+  },
+  "responsive": {
+    "designReferenceWidth": 1920,
+    "designReferenceHeight": 1080,
+    "minSafeMarginPercent": 4,
+    "minInteractiveTargetPx": 44,
+    "preserveArtworkAspectRatio": true,
+    "allowNonUniformRasterScale": false
+  }
+}

@@ -11,6 +11,8 @@
 8. `reference/rewards/**` for the level-complete dumpster reward.
 9. `reference/level-layouts/dynamic-approved/**` for current level flow direction.
 
+For any boss-related use, also read `bosses/README.md` and the linked boss-specific canon file. The boss bible is mandatory interpretation guidance for every approved boss sheet.
+
 ## Do not treat as current source of truth
 - `archive/**`
 - `reference/level-layouts/superseded-canonical-v1/**`

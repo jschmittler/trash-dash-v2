@@ -1,0 +1,529 @@
+{
+  "assetName": "boss-trash-dash-canon-repair",
+  "canonId": "boss.level-01.trash-dash",
+  "status": "generated-awaiting-user-approval",
+  "sourcePath": "/Users/jamesschmittler/Desktop/boss-trash-dash-transparent.png",
+  "canonicalVisualAuthority": "docs/design/trash-dash/reference/characters/level-01/sprites/boss-trash-dash.png",
+  "canonicalBossBible": "docs/design/trash-dash/docs/game/bosses/README.md",
+  "canonicalBossFile": "docs/design/trash-dash/docs/game/bosses/TRASH_DASH.md",
+  "sourceSha256": "85f85f67a46c028dbf6a416cc90cf71c7be58dff95a73f9774439fee7d1ba96f",
+  "canonicalVisualSha256": "84dd4b7f4643211cbb1b7bdbe49daf1eb260af5e3b06fd514a2429dd7e6b021c",
+  "originalSheetSize": [
+    1536,
+    1024
+  ],
+  "expandedSheetSize": [
+    1536,
+    1280
+  ],
+  "preserveExactlyRect": [
+    0,
+    0,
+    1536,
+    1024
+  ],
+  "cellSize": [
+    128,
+    128
+  ],
+  "canonicalFacing": "right",
+  "sourcePixelScale": 1,
+  "runtimeScale": 1,
+  "anchor": "canonical_source_ground_baseline",
+  "alpha": "binary-transparent",
+  "sampling": "nearest-neighbor",
+  "readingOrder": "manifest-defined_left_to_right",
+  "frames": {
+    "emerge_01": {
+      "canonicalSourceRect": [
+        650,
+        960,
+        128,
+        128
+      ],
+      "canonicalIncludedArtRect": [
+        672,
+        1014,
+        738,
+        1073
+      ],
+      "sheetRect": [
+        0,
+        1024,
+        128,
+        128
+      ],
+      "derivedCell": "assets/generated/boss-trash-dash-expansion/cells/emerge_01.png",
+      "visibleBounds": [
+        33,
+        82,
+        55,
+        31
+      ],
+      "pivot": [
+        714,
+        1072
+      ],
+      "groundBaselineInCell": 112,
+      "scaleApplied": 1,
+      "horizontalRegistration": "preserved_from_canonical_source_lane"
+    },
+    "emerge_02": {
+      "canonicalSourceRect": [
+        735,
+        960,
+        128,
+        128
+      ],
+      "canonicalIncludedArtRect": [
+        744,
+        1005,
+        824,
+        1073
+      ],
+      "sheetRect": [
+        128,
+        1024,
+        128,
+        128
+      ],
+      "derivedCell": "assets/generated/boss-trash-dash-expansion/cells/emerge_02.png",
+      "visibleBounds": [
+        9,
+        68,
+        80,
+        45
+      ],
+      "pivot": [
+        799,
+        1072
+      ],
+      "groundBaselineInCell": 112,
+      "scaleApplied": 1,
+      "horizontalRegistration": "preserved_from_canonical_source_lane"
+    },
+    "emerge_03": {
+      "canonicalSourceRect": [
+        820,
+        960,
+        128,
+        128
+      ],
+      "canonicalIncludedArtRect": [
+        832,
+        1002,
+        924,
+        1073
+      ],
+      "sheetRect": [
+        256,
+        1024,
+        128,
+        128
+      ],
+      "derivedCell": "assets/generated/boss-trash-dash-expansion/cells/emerge_03.png",
+      "visibleBounds": [
+        12,
+        56,
+        87,
+        57
+      ],
+      "pivot": [
+        884,
+        1072
+      ],
+      "groundBaselineInCell": 112,
+      "scaleApplied": 1,
+      "horizontalRegistration": "preserved_from_canonical_source_lane"
+    },
+    "retreat_01": {
+      "canonicalSourceRect": [
+        930,
+        960,
+        128,
+        128
+      ],
+      "canonicalIncludedArtRect": [
+        948,
+        1034,
+        1028,
+        1073
+      ],
+      "sheetRect": [
+        384,
+        1024,
+        128,
+        128
+      ],
+      "derivedCell": "assets/generated/boss-trash-dash-expansion/cells/retreat_01.png",
+      "visibleBounds": [
+        21,
+        94,
+        71,
+        19
+      ],
+      "pivot": [
+        994,
+        1072
+      ],
+      "groundBaselineInCell": 112,
+      "scaleApplied": 1,
+      "horizontalRegistration": "preserved_from_canonical_source_lane"
+    },
+    "retreat_02": {
+      "canonicalSourceRect": [
+        1025,
+        960,
+        128,
+        128
+      ],
+      "canonicalIncludedArtRect": [
+        1038,
+        1037,
+        1107,
+        1073
+      ],
+      "sheetRect": [
+        512,
+        1024,
+        128,
+        128
+      ],
+      "derivedCell": "assets/generated/boss-trash-dash-expansion/cells/retreat_02.png",
+      "visibleBounds": [
+        13,
+        96,
+        63,
+        17
+      ],
+      "pivot": [
+        1089,
+        1072
+      ],
+      "groundBaselineInCell": 112,
+      "scaleApplied": 1,
+      "horizontalRegistration": "preserved_from_canonical_source_lane"
+    },
+    "retreat_03": {
+      "canonicalSourceRect": [
+        1115,
+        960,
+        128,
+        128
+      ],
+      "canonicalIncludedArtRect": [
+        1132,
+        1040,
+        1212,
+        1073
+      ],
+      "sheetRect": [
+        640,
+        1024,
+        128,
+        128
+      ],
+      "derivedCell": "assets/generated/boss-trash-dash-expansion/cells/retreat_03.png",
+      "visibleBounds": [
+        17,
+        101,
+        49,
+        12
+      ],
+      "pivot": [
+        1179,
+        1072
+      ],
+      "groundBaselineInCell": 112,
+      "scaleApplied": 1,
+      "horizontalRegistration": "preserved_from_canonical_source_lane"
+    },
+    "defeat_01": {
+      "canonicalSourceRect": [
+        0,
+        960,
+        128,
+        128
+      ],
+      "canonicalIncludedArtRect": [
+        24,
+        990,
+        126,
+        1073
+      ],
+      "sheetRect": [
+        0,
+        1152,
+        128,
+        128
+      ],
+      "derivedCell": "assets/generated/boss-trash-dash-expansion/cells/defeat_01.png",
+      "visibleBounds": [
+        24,
+        47,
+        102,
+        66
+      ],
+      "pivot": [
+        64,
+        1072
+      ],
+      "groundBaselineInCell": 112,
+      "scaleApplied": 1,
+      "horizontalRegistration": "preserved_from_canonical_source_lane"
+    },
+    "defeat_02": {
+      "canonicalSourceRect": [
+        110,
+        960,
+        128,
+        128
+      ],
+      "canonicalIncludedArtRect": [
+        126,
+        997,
+        224,
+        1073
+      ],
+      "sheetRect": [
+        128,
+        1152,
+        128,
+        128
+      ],
+      "derivedCell": "assets/generated/boss-trash-dash-expansion/cells/defeat_02.png",
+      "visibleBounds": [
+        16,
+        54,
+        98,
+        59
+      ],
+      "pivot": [
+        174,
+        1072
+      ],
+      "groundBaselineInCell": 112,
+      "scaleApplied": 1,
+      "horizontalRegistration": "preserved_from_canonical_source_lane"
+    },
+    "defeat_03": {
+      "canonicalSourceRect": [
+        220,
+        960,
+        128,
+        128
+      ],
+      "canonicalIncludedArtRect": [
+        232,
+        995,
+        326,
+        1073
+      ],
+      "sheetRect": [
+        256,
+        1152,
+        128,
+        128
+      ],
+      "derivedCell": "assets/generated/boss-trash-dash-expansion/cells/defeat_03.png",
+      "visibleBounds": [
+        12,
+        48,
+        92,
+        65
+      ],
+      "pivot": [
+        284,
+        1072
+      ],
+      "groundBaselineInCell": 112,
+      "scaleApplied": 1,
+      "horizontalRegistration": "preserved_from_canonical_source_lane"
+    },
+    "defeat_04": {
+      "canonicalSourceRect": [
+        325,
+        960,
+        128,
+        128
+      ],
+      "canonicalIncludedArtRect": [
+        337,
+        987,
+        412,
+        1073
+      ],
+      "sheetRect": [
+        384,
+        1152,
+        128,
+        128
+      ],
+      "derivedCell": "assets/generated/boss-trash-dash-expansion/cells/defeat_04.png",
+      "visibleBounds": [
+        12,
+        39,
+        75,
+        74
+      ],
+      "pivot": [
+        389,
+        1072
+      ],
+      "groundBaselineInCell": 112,
+      "scaleApplied": 1,
+      "horizontalRegistration": "preserved_from_canonical_source_lane"
+    },
+    "defeat_05": {
+      "canonicalSourceRect": [
+        410,
+        960,
+        128,
+        128
+      ],
+      "canonicalIncludedArtRect": [
+        419,
+        993,
+        508,
+        1073
+      ],
+      "sheetRect": [
+        512,
+        1152,
+        128,
+        128
+      ],
+      "derivedCell": "assets/generated/boss-trash-dash-expansion/cells/defeat_05.png",
+      "visibleBounds": [
+        9,
+        43,
+        89,
+        70
+      ],
+      "pivot": [
+        474,
+        1072
+      ],
+      "groundBaselineInCell": 112,
+      "scaleApplied": 1,
+      "horizontalRegistration": "preserved_from_canonical_source_lane"
+    },
+    "defeat_06": {
+      "canonicalSourceRect": [
+        500,
+        960,
+        128,
+        128
+      ],
+      "canonicalIncludedArtRect": [
+        510,
+        986,
+        577,
+        1073
+      ],
+      "sheetRect": [
+        640,
+        1152,
+        128,
+        128
+      ],
+      "derivedCell": "assets/generated/boss-trash-dash-expansion/cells/defeat_06.png",
+      "visibleBounds": [
+        10,
+        47,
+        67,
+        66
+      ],
+      "pivot": [
+        564,
+        1072
+      ],
+      "groundBaselineInCell": 112,
+      "scaleApplied": 1,
+      "horizontalRegistration": "preserved_from_canonical_source_lane"
+    },
+    "defeat_07": {
+      "canonicalSourceRect": [
+        575,
+        960,
+        128,
+        128
+      ],
+      "canonicalIncludedArtRect": [
+        580,
+        1000,
+        657,
+        1073
+      ],
+      "sheetRect": [
+        768,
+        1152,
+        128,
+        128
+      ],
+      "derivedCell": "assets/generated/boss-trash-dash-expansion/cells/defeat_07.png",
+      "visibleBounds": [
+        5,
+        70,
+        70,
+        43
+      ],
+      "pivot": [
+        639,
+        1072
+      ],
+      "groundBaselineInCell": 112,
+      "scaleApplied": 1,
+      "horizontalRegistration": "preserved_from_canonical_source_lane"
+    }
+  },
+  "states": {
+    "emerge": {
+      "orderedFrames": [
+        "emerge_01",
+        "emerge_02",
+        "emerge_03"
+      ],
+      "fps": 8,
+      "loop": false,
+      "interruptible": false,
+      "completion": "transition_to_idle"
+    },
+    "retreat": {
+      "orderedFrames": [
+        "retreat_01",
+        "retreat_02",
+        "retreat_03"
+      ],
+      "fps": 8,
+      "loop": false,
+      "interruptible": false,
+      "completion": "hold_hidden_inactive"
+    },
+    "defeat": {
+      "orderedFrames": [
+        "defeat_01",
+        "defeat_02",
+        "defeat_03",
+        "defeat_04",
+        "defeat_05",
+        "defeat_06",
+        "defeat_07"
+      ],
+      "fps": 10,
+      "loop": false,
+      "interruptible": false,
+      "completion": "hold_canonical_refuse_heap_and_release_arena"
+    }
+  },
+  "collisionPolicy": "independent_state_data_not_alpha_bounds",
+  "runtimePromotion": "not_performed",
+  "provenance": {
+    "method": "native-size deterministic background-to-alpha separation from approved canonical board",
+    "aiGenerationUsed": false,
+    "resizingUsed": false,
+    "independentCenteringUsed": false,
+    "edgeRepaintingUsed": false,
+    "rebuildCommand": "python3 tools/asset_pipeline/build_boss_trash_dash_expansion.py"
+  }
+}

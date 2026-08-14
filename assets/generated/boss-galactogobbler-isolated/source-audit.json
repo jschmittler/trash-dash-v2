@@ -1,0 +1,131 @@
+{
+  "boss": "Galactogobbler, Hoarder of Worlds",
+  "canonId": "boss.level-05.galactogobbler",
+  "canonicalBoard": {
+    "path": "docs/design/trash-dash/reference/characters/level-05/sprites/boss-galactogobbler.png",
+    "sha256": "9c1896aa4b61bed52586e4b1df3dbeca002e3edb09da536ab17945332284ace4",
+    "size": [
+      1448,
+      1086
+    ],
+    "mode": "RGB"
+  },
+  "acceptedTransparentAtlas": {
+    "path": "docs/design/trash-dash/character-animation/phase-05-codex-integration/phase-04-bosses/final/boss-galactogobbler-transparent.png",
+    "sha256": "3a030409a4ee38c38ece7137f4a5f6484b629b12ec9dcc9760e8ecd18015f15a",
+    "attachedCopySha256": "3a030409a4ee38c38ece7137f4a5f6484b629b12ec9dcc9760e8ecd18015f15a",
+    "size": [
+      1536,
+      1024
+    ],
+    "mode": "RGBA",
+    "visibleBounds": [
+      15,
+      9,
+      1531,
+      1001
+    ],
+    "visiblePixelCount": 494403,
+    "opaquePixelCount": 494403,
+    "transparentPixelCount": 1078461,
+    "partialAlphaPixelCount": 0
+  },
+  "sequenceAudit": {
+    "emerge": {
+      "classification": "EXISTS - COMPLETE",
+      "orderedFrames": [
+        "black-bag-reconstitution-11",
+        "black-bag-reconstitution-10",
+        "black-bag-reconstitution-09",
+        "black-bag-reconstitution-07",
+        "black-bag-reconstitution-00",
+        "vulnerable-alien-00",
+        "defeat-collapse-11",
+        "defeat-collapse-09",
+        "defeat-collapse-07",
+        "defeat-collapse-05",
+        "defeat-collapse-03",
+        "defeat-collapse-01",
+        "shell-crack-progression-10",
+        "shell-crack-progression-07",
+        "shell-crack-progression-04",
+        "shell-crack-progression-00",
+        "idle-hover-00"
+      ],
+      "startState": "approved nearly dispersed emblem-bag state",
+      "intermediateMotion": "approved bag, living alien/canister, rubble, gravity reassembly, and shell restoration artwork",
+      "endState": "idle-hover-00 active armored state",
+      "continuity": "canonical bag/reconstitution vocabulary resolves to approved active idle; no new mechanism",
+      "loop": false
+    },
+    "retreat": {
+      "classification": "EXISTS - COMPLETE",
+      "orderedFrames": [
+        "idle-hover-00",
+        "shell-crack-progression-00",
+        "shell-crack-progression-04",
+        "shell-crack-progression-07",
+        "shell-crack-progression-10",
+        "defeat-collapse-01",
+        "defeat-collapse-03",
+        "defeat-collapse-05",
+        "defeat-collapse-07",
+        "defeat-collapse-09",
+        "defeat-collapse-11",
+        "vulnerable-alien-00",
+        "black-bag-reconstitution-00",
+        "black-bag-reconstitution-07",
+        "black-bag-reconstitution-09",
+        "black-bag-reconstitution-10",
+        "black-bag-reconstitution-11"
+      ],
+      "startState": "idle-hover-00 active armored state",
+      "intermediateMotion": "intentional gravity recall through approved shell, rubble, alien/canister, and emblem-bag states",
+      "endState": "approved nearly dispersed emblem-bag inactive/exit state",
+      "continuity": "active shell intentionally withdraws through canonical reconstitution vocabulary and remains capable of return",
+      "loop": false
+    },
+    "defeat": {
+      "classification": "EXISTS - COMPLETE",
+      "orderedFrames": [
+        "hit-react-00",
+        "hit-react-03",
+        "hit-react-06",
+        "hit-react-10",
+        "shell-crack-progression-00",
+        "shell-crack-progression-03",
+        "shell-crack-progression-06",
+        "shell-crack-progression-10",
+        "stunned-vulnerable-00",
+        "stunned-vulnerable-03",
+        "stunned-vulnerable-06",
+        "stunned-vulnerable-09",
+        "defeat-collapse-00",
+        "defeat-collapse-02",
+        "defeat-collapse-04",
+        "defeat-collapse-06",
+        "defeat-collapse-08",
+        "defeat-collapse-10",
+        "defeat-collapse-11",
+        "vulnerable-alien-00"
+      ],
+      "startState": "approved armored hit reaction",
+      "intermediateMotion": "approved mass shedding, core exposure, shell burst, and rubble dissipation",
+      "endState": "approved living lavender alien visibly identifiable beside the cyan canister",
+      "continuity": "loss reads through approved shell destruction while preserving the living exact character and canister",
+      "loop": false
+    }
+  },
+  "defects": {
+    "missingOrIncompleteAnimations": false,
+    "crossFrameSpriteOrEffectOverlap": true,
+    "neighboringFrameBleedRisk": true,
+    "visiblePixelsTouchingAcceptedAtlasBoundary": false,
+    "ambiguousDetachedEffectOwnershipBeforeManifest": true,
+    "insufficientTransparentGutters": true,
+    "missingEmergeFrames": false,
+    "missingRetreatFrames": false,
+    "missingDefeatFrames": false
+  },
+  "resolution": "approved-only sequence composition plus reviewed rectangular ownership-mask extraction and variable-cell repack; no artwork generation"
+}

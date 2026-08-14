@@ -1,0 +1,93 @@
+{
+  "boss": "His Greasiness, the Pizza Rat King",
+  "canonId": "boss.level-03.pizza-rat-king",
+  "canonicalBoard": {
+    "path": "docs/design/trash-dash/reference/characters/level-03/sprites/boss-pizza-rat-king.png",
+    "sha256": "ee5c495e2f0e2cdcca6735ef472a0c3b47fe53ec23a58a0e96e6a7e7457f7255",
+    "size": [
+      1448,
+      1086
+    ],
+    "mode": "RGB"
+  },
+  "acceptedTransparentAtlas": {
+    "path": "docs/design/trash-dash/character-animation/phase-05-codex-integration/phase-04-bosses/final/boss-pizza-rat-king-transparent.png",
+    "sha256": "be59825e4827ad39c08e50f1cb6218424b1db6b37730cc63c98eccf20a290a56",
+    "desktopCopySha256": "be59825e4827ad39c08e50f1cb6218424b1db6b37730cc63c98eccf20a290a56",
+    "size": [
+      1717,
+      916
+    ],
+    "mode": "RGBA",
+    "visibleBounds": [
+      25,
+      10,
+      1668,
+      912
+    ],
+    "visiblePixelCount": 538601,
+    "opaquePixelCount": 538601,
+    "transparentPixelCount": 1034171,
+    "partialAlphaPixelCount": 0,
+    "connectedComponentCount": 578
+  },
+  "sequenceAudit": {
+    "emerge": {
+      "classification": "EXISTS - COMPLETE",
+      "orderedFrames": [
+        "dust-impact-effect-00",
+        "pan-charge-fast-run-06",
+        "charge-startup-03",
+        "charge-startup-00",
+        "idle-00"
+      ],
+      "startState": "approved off-screen dust/entry cue",
+      "intermediateMotion": "approved right-facing rush decelerates through charge startup poses",
+      "endState": "idle-00 active boss state",
+      "continuity": "dust cue to canonical right-facing movement to active idle",
+      "loop": false
+    },
+    "retreat": {
+      "classification": "EXISTS - COMPLETE",
+      "orderedFrames": [
+        "idle-00",
+        "charge-startup-00",
+        "pan-charge-fast-run-00",
+        "pan-charge-fast-run-06",
+        "dust-impact-effect-00"
+      ],
+      "startState": "idle-00 active boss state",
+      "intermediateMotion": "approved charge anticipation accelerates into intentional right-facing exit",
+      "endState": "approved off-screen dust/exit cue",
+      "continuity": "active idle to canonical charge vocabulary; no defeat pose",
+      "loop": false
+    },
+    "defeat": {
+      "classification": "EXISTS - COMPLETE",
+      "orderedFrames": [
+        "hit-react-00",
+        "hit-react-03",
+        "charge-crash-stunned-00",
+        "charge-crash-stunned-01",
+        "charge-crash-stunned-02"
+      ],
+      "startState": "approved hit reaction",
+      "intermediateMotion": "approved recoil and crash progression",
+      "endState": "approved face-down defeated king, still visibly the exact boss",
+      "continuity": "hit to crash/stunned collapse; the separate approved rat/crown reveal remains post-defeat support art",
+      "loop": false
+    }
+  },
+  "defects": {
+    "missingOrIncompleteAnimations": false,
+    "crossFrameRectangularEnvelopeOverlap": true,
+    "neighboringFrameBleedRisk": true,
+    "visiblePixelsTouchingAcceptedAtlasBoundary": false,
+    "ambiguousDetachedEffectOwnershipBeforeManifest": true,
+    "insufficientTransparentGutters": true,
+    "missingEmergeFrames": false,
+    "missingRetreatFrames": false,
+    "missingDefeatFrames": false
+  },
+  "resolution": "approved-frame sequence composition plus reviewed ownership-mask extraction and variable-cell repack; no artwork generation"
+}

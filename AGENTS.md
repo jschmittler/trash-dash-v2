@@ -6,6 +6,16 @@ Trash Dash 2.0 is a selective greenfield rebuild. The sibling V1 repository at `
 
 The canonical design source is `docs/design/trash-dash/reference/`, interpreted through the approval files in `docs/design/trash-dash/manifests/`. Files under any `archive/` path are noncanonical and may not enter V2 runtime work.
 
+## Canonical boss descriptions
+
+Before any work involving a boss's visuals, animation, VFX, attacks, narrative, dialogue, marketing, or generative prompt, read `docs/design/trash-dash/docs/game/bosses/README.md` and that boss's linked canon file in full. These descriptions are strict project canon. Do not silently reinterpret, omit, replace, or contradict a locked attribute. The approved reference sheet remains the final authority for visible appearance; if prose and source art appear to conflict, stop and request a canon ruling rather than inventing a resolution.
+
+## Canonical UI kit
+
+Before modifying menu, HUD, notification, alert, pause, results, reward, or Character Select code or art, read the canonical UI Kit at `docs/design/trash-dash/ui-kit/` and follow its authority order: written contracts/tokens/approval rules, overall concept board, matching phase concept board, matching phase source sheet, then implementation judgment. The approved visual language is **Reclaimed Playground**.
+
+Source sheets are immutable extraction sources, not runtime atlases. Stage crops before cleanup; never stretch or squash raster UI art; construct scalable panels with 9-slice or layered pieces; keep dynamic values as runtime text; preserve full Trashy and Jimothy silhouettes; use the motion-token system with reduced-motion behavior; and validate UI changes in live gameplay. Do not import alternate source-sheet logos, characters, or off-style UI.
+
 ## Mandatory skill routing
 
 Before substantial work, read this file, `.skills/README.md`, and every applicable skill. Declare the selected skill set before editing.

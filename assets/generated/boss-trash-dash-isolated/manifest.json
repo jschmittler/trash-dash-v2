@@ -1,0 +1,4026 @@
+{
+  "assetName": "boss-trash-dash-isolated",
+  "canonId": "boss.level-01.trash-dash",
+  "status": "artwork-approved",
+  "approvedSource": "docs/design/trash-dash/character-animation/phase-05-codex-integration/phase-04-bosses/final/boss-trash-dash-transparent.png",
+  "approvedSourceSha256": "85f85f67a46c028dbf6a416cc90cf71c7be58dff95a73f9774439fee7d1ba96f",
+  "canonicalVisualAuthority": "docs/design/trash-dash/reference/characters/level-01/sprites/boss-trash-dash.png",
+  "canonicalVisualSha256": "84dd4b7f4643211cbb1b7bdbe49daf1eb260af5e3b06fd514a2429dd7e6b021c",
+  "sheet": {
+    "file": "assets/generated/boss-trash-dash-isolated/boss-trash-dash-isolated.png",
+    "size": [
+      2048,
+      952
+    ],
+    "mode": "RGBA",
+    "background": "transparent",
+    "layout": "manifest-defined-variable-rectangles",
+    "gutterPixels": 8,
+    "readingOrder": "states then ordered frames"
+  },
+  "canonicalFacing": "right",
+  "sourcePixelScale": 1,
+  "runtimeScale": 1,
+  "states": [
+    {
+      "id": "idle",
+      "frames": [
+        "idle-0",
+        "idle-1",
+        "idle-2",
+        "idle-3"
+      ],
+      "source": "approved-transparent-sheet"
+    },
+    {
+      "id": "squat-anticipation",
+      "frames": [
+        "squat-anticipation-0",
+        "squat-anticipation-1",
+        "squat-anticipation-2",
+        "squat-anticipation-3",
+        "squat-anticipation-4",
+        "squat-anticipation-5",
+        "squat-anticipation-6"
+      ],
+      "source": "approved-transparent-sheet"
+    },
+    {
+      "id": "lumber-walk",
+      "frames": [
+        "lumber-walk-0",
+        "lumber-walk-1",
+        "lumber-walk-2",
+        "lumber-walk-3",
+        "lumber-walk-4",
+        "lumber-walk-5"
+      ],
+      "source": "approved-transparent-sheet"
+    },
+    {
+      "id": "short-run-charge",
+      "frames": [
+        "short-run-charge-0",
+        "short-run-charge-1",
+        "short-run-charge-2",
+        "short-run-charge-3",
+        "short-run-charge-4",
+        "short-run-charge-5"
+      ],
+      "source": "approved-transparent-sheet"
+    },
+    {
+      "id": "roar-tell",
+      "frames": [
+        "roar-tell-0",
+        "roar-tell-1",
+        "roar-tell-2",
+        "roar-tell-3"
+      ],
+      "source": "approved-transparent-sheet"
+    },
+    {
+      "id": "swing-slam-action",
+      "frames": [
+        "swing-slam-action-0",
+        "swing-slam-action-1",
+        "swing-slam-action-2",
+        "swing-slam-action-3"
+      ],
+      "source": "approved-transparent-sheet"
+    },
+    {
+      "id": "recovery",
+      "frames": [
+        "recovery-0",
+        "recovery-1",
+        "recovery-2",
+        "recovery-3",
+        "recovery-4"
+      ],
+      "source": "approved-transparent-sheet"
+    },
+    {
+      "id": "toxic-spit",
+      "frames": [
+        "toxic-spit-0",
+        "toxic-spit-1",
+        "toxic-spit-2",
+        "toxic-spit-3",
+        "toxic-spit-4"
+      ],
+      "source": "approved-transparent-sheet"
+    },
+    {
+      "id": "jump-slam",
+      "frames": [
+        "jump-slam-0",
+        "jump-slam-1",
+        "jump-slam-2",
+        "jump-slam-3",
+        "jump-slam-4"
+      ],
+      "source": "approved-transparent-sheet"
+    },
+    {
+      "id": "hit-light",
+      "frames": [
+        "hit-light-0",
+        "hit-light-1",
+        "hit-light-2"
+      ],
+      "source": "approved-transparent-sheet"
+    },
+    {
+      "id": "hit-heavy",
+      "frames": [
+        "hit-heavy-0",
+        "hit-heavy-1",
+        "hit-heavy-2"
+      ],
+      "source": "approved-transparent-sheet"
+    },
+    {
+      "id": "stunned-vulnerable",
+      "frames": [
+        "stunned-vulnerable-0",
+        "stunned-vulnerable-1",
+        "stunned-vulnerable-2"
+      ],
+      "source": "approved-transparent-sheet"
+    },
+    {
+      "id": "get-up-recovery",
+      "frames": [
+        "get-up-recovery-0",
+        "get-up-recovery-1",
+        "get-up-recovery-2",
+        "get-up-recovery-3"
+      ],
+      "source": "approved-transparent-sheet"
+    },
+    {
+      "id": "enraged-phase",
+      "frames": [
+        "enraged-phase-0",
+        "enraged-phase-1",
+        "enraged-phase-2",
+        "enraged-phase-3",
+        "enraged-phase-4"
+      ],
+      "source": "approved-transparent-sheet"
+    },
+    {
+      "id": "power-slam",
+      "frames": [
+        "power-slam-0",
+        "power-slam-1",
+        "power-slam-2",
+        "power-slam-3",
+        "power-slam-4",
+        "power-slam-5"
+      ],
+      "source": "approved-transparent-sheet"
+    },
+    {
+      "id": "emerge",
+      "frames": [
+        "emerge_01",
+        "emerge_02",
+        "emerge_03"
+      ],
+      "source": "approved-canonical-board",
+      "fps": 8,
+      "loop": false
+    },
+    {
+      "id": "retreat",
+      "frames": [
+        "retreat_01",
+        "retreat_02",
+        "retreat_03"
+      ],
+      "source": "approved-canonical-board",
+      "fps": 8,
+      "loop": false
+    },
+    {
+      "id": "defeat",
+      "frames": [
+        "defeat_01",
+        "defeat_02",
+        "defeat_03",
+        "defeat_04",
+        "defeat_05",
+        "defeat_06",
+        "defeat_07"
+      ],
+      "source": "approved-canonical-board",
+      "fps": 10,
+      "loop": false
+    },
+    {
+      "id": "gameplay-support-effects",
+      "frames": [
+        "ooze-spit-small-0",
+        "ooze-spit-small-1",
+        "ooze-spit-large-0",
+        "ooze-spit-large-1",
+        "ooze-splash-impact-0",
+        "ooze-splash-impact-1",
+        "slam-impact-0",
+        "slam-impact-1",
+        "dust-debris-0",
+        "dust-debris-1",
+        "tossed-trash-clump-0",
+        "tossed-trash-clump-1",
+        "ooze-puddles-various"
+      ],
+      "source": "approved-transparent-sheet",
+      "loop": false
+    }
+  ],
+  "frames": {
+    "idle-0": {
+      "cellRect": [
+        0,
+        0,
+        137,
+        130
+      ],
+      "artRect": [
+        8,
+        8,
+        121,
+        114
+      ],
+      "logicalPivotInCell": [
+        68,
+        121
+      ],
+      "logicalPivot": {
+        "x": 60,
+        "y": 113
+      },
+      "sourceRect": {
+        "h": 114,
+        "w": 121,
+        "x": 11,
+        "y": 36
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "cc4539d04b75604e3059a3b060b1422145cd5a72883b8876eb2ed35f9d24741e",
+      "frameFile": "frames/idle-0.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        121,
+        114
+      ]
+    },
+    "idle-1": {
+      "cellRect": [
+        137,
+        0,
+        139,
+        131
+      ],
+      "artRect": [
+        145,
+        8,
+        123,
+        115
+      ],
+      "logicalPivotInCell": [
+        69,
+        122
+      ],
+      "logicalPivot": {
+        "x": 61,
+        "y": 114
+      },
+      "sourceRect": {
+        "h": 115,
+        "w": 123,
+        "x": 133,
+        "y": 36
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "5fd9d9652ae770fae69bb4282d60a54a07ca3c567be9ac0e51ef1a2d698a8d8b",
+      "frameFile": "frames/idle-1.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        123,
+        115
+      ]
+    },
+    "idle-2": {
+      "cellRect": [
+        276,
+        0,
+        138,
+        131
+      ],
+      "artRect": [
+        284,
+        8,
+        122,
+        115
+      ],
+      "logicalPivotInCell": [
+        69,
+        122
+      ],
+      "logicalPivot": {
+        "x": 61,
+        "y": 114
+      },
+      "sourceRect": {
+        "h": 115,
+        "w": 122,
+        "x": 258,
+        "y": 36
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "cf2667642f12906b8438d57a13e498021b425bc83e454701566a4b33f1f5ae63",
+      "frameFile": "frames/idle-2.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        122,
+        115
+      ]
+    },
+    "idle-3": {
+      "cellRect": [
+        414,
+        0,
+        135,
+        131
+      ],
+      "artRect": [
+        422,
+        8,
+        119,
+        115
+      ],
+      "logicalPivotInCell": [
+        67,
+        122
+      ],
+      "logicalPivot": {
+        "x": 59,
+        "y": 114
+      },
+      "sourceRect": {
+        "h": 115,
+        "w": 119,
+        "x": 380,
+        "y": 36
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "fc8e44a9b18e0209dc5091abfee6c4d0402f5dc4d622cafe0841496110a82517",
+      "frameFile": "frames/idle-3.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        119,
+        115
+      ]
+    },
+    "squat-anticipation-0": {
+      "cellRect": [
+        549,
+        0,
+        132,
+        130
+      ],
+      "artRect": [
+        557,
+        8,
+        116,
+        114
+      ],
+      "logicalPivotInCell": [
+        66,
+        121
+      ],
+      "logicalPivot": {
+        "x": 58,
+        "y": 113
+      },
+      "sourceRect": {
+        "h": 114,
+        "w": 116,
+        "x": 499,
+        "y": 37
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "ba548652fdf5f60ed6fe6198080115c255069602961132ade62044b9f79c71d9",
+      "frameFile": "frames/squat-anticipation-0.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        116,
+        114
+      ]
+    },
+    "squat-anticipation-1": {
+      "cellRect": [
+        681,
+        0,
+        129,
+        112
+      ],
+      "artRect": [
+        689,
+        8,
+        113,
+        96
+      ],
+      "logicalPivotInCell": [
+        64,
+        103
+      ],
+      "logicalPivot": {
+        "x": 56,
+        "y": 95
+      },
+      "sourceRect": {
+        "h": 96,
+        "w": 113,
+        "x": 615,
+        "y": 55
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "065aec506a00cce90a0046a11734e009ec14ac0f1b044e2d5c752e9604a72254",
+      "frameFile": "frames/squat-anticipation-1.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        113,
+        96
+      ]
+    },
+    "squat-anticipation-2": {
+      "cellRect": [
+        810,
+        0,
+        123,
+        86
+      ],
+      "artRect": [
+        818,
+        8,
+        107,
+        70
+      ],
+      "logicalPivotInCell": [
+        61,
+        77
+      ],
+      "logicalPivot": {
+        "x": 53,
+        "y": 69
+      },
+      "sourceRect": {
+        "h": 70,
+        "w": 107,
+        "x": 728,
+        "y": 81
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "a73d759d99074c485482327051f531389f16a699f6889be1d2c61265558413d6",
+      "frameFile": "frames/squat-anticipation-2.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        107,
+        70
+      ]
+    },
+    "squat-anticipation-3": {
+      "cellRect": [
+        933,
+        0,
+        130,
+        92
+      ],
+      "artRect": [
+        941,
+        8,
+        114,
+        76
+      ],
+      "logicalPivotInCell": [
+        65,
+        83
+      ],
+      "logicalPivot": {
+        "x": 57,
+        "y": 75
+      },
+      "sourceRect": {
+        "h": 76,
+        "w": 114,
+        "x": 835,
+        "y": 75
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "d46e8a93a4218601feb199c4f3c61ee5a1846a931eeb569377ede82bad66baaa",
+      "frameFile": "frames/squat-anticipation-3.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        114,
+        76
+      ]
+    },
+    "squat-anticipation-4": {
+      "cellRect": [
+        1063,
+        0,
+        127,
+        114
+      ],
+      "artRect": [
+        1071,
+        8,
+        111,
+        98
+      ],
+      "logicalPivotInCell": [
+        63,
+        105
+      ],
+      "logicalPivot": {
+        "x": 55,
+        "y": 97
+      },
+      "sourceRect": {
+        "h": 98,
+        "w": 111,
+        "x": 960,
+        "y": 52
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "fafe33033168f1fbb920c9d202983b87ce273ada824cddb11627f7aa0cb7a7a6",
+      "frameFile": "frames/squat-anticipation-4.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        111,
+        98
+      ]
+    },
+    "squat-anticipation-5": {
+      "cellRect": [
+        1190,
+        0,
+        129,
+        120
+      ],
+      "artRect": [
+        1198,
+        8,
+        113,
+        104
+      ],
+      "logicalPivotInCell": [
+        64,
+        111
+      ],
+      "logicalPivot": {
+        "x": 56,
+        "y": 103
+      },
+      "sourceRect": {
+        "h": 104,
+        "w": 113,
+        "x": 1076,
+        "y": 46
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "e5805e03bbcb193290b55362e1231111d89f9f9b6a807e4a8c4a7eb717407263",
+      "frameFile": "frames/squat-anticipation-5.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        113,
+        104
+      ]
+    },
+    "squat-anticipation-6": {
+      "cellRect": [
+        1319,
+        0,
+        130,
+        117
+      ],
+      "artRect": [
+        1327,
+        8,
+        114,
+        101
+      ],
+      "logicalPivotInCell": [
+        65,
+        108
+      ],
+      "logicalPivot": {
+        "x": 57,
+        "y": 100
+      },
+      "sourceRect": {
+        "h": 101,
+        "w": 114,
+        "x": 1190,
+        "y": 50
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "ec4daf1a9e4feed43829c70395c0330cb27db3238247302dd1ea7a4a5e21a458",
+      "frameFile": "frames/squat-anticipation-6.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        114,
+        101
+      ]
+    },
+    "lumber-walk-0": {
+      "cellRect": [
+        1449,
+        0,
+        129,
+        114
+      ],
+      "artRect": [
+        1457,
+        8,
+        113,
+        98
+      ],
+      "logicalPivotInCell": [
+        64,
+        105
+      ],
+      "logicalPivot": {
+        "x": 56,
+        "y": 97
+      },
+      "sourceRect": {
+        "h": 98,
+        "w": 113,
+        "x": 13,
+        "y": 191
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "bb52dde68ae8d1d1488ec3b8070112eb462d7d21862dd29bbb12ecc48bccf106",
+      "frameFile": "frames/lumber-walk-0.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        113,
+        98
+      ]
+    },
+    "lumber-walk-1": {
+      "cellRect": [
+        1578,
+        0,
+        134,
+        112
+      ],
+      "artRect": [
+        1586,
+        8,
+        118,
+        96
+      ],
+      "logicalPivotInCell": [
+        67,
+        103
+      ],
+      "logicalPivot": {
+        "x": 59,
+        "y": 95
+      },
+      "sourceRect": {
+        "h": 96,
+        "w": 118,
+        "x": 131,
+        "y": 193
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "85396d82d351c61c8875dce3e559a3a128904c6c2855495231f8b07ccdafe70d",
+      "frameFile": "frames/lumber-walk-1.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        118,
+        96
+      ]
+    },
+    "lumber-walk-2": {
+      "cellRect": [
+        1712,
+        0,
+        130,
+        112
+      ],
+      "artRect": [
+        1720,
+        8,
+        114,
+        96
+      ],
+      "logicalPivotInCell": [
+        65,
+        103
+      ],
+      "logicalPivot": {
+        "x": 57,
+        "y": 95
+      },
+      "sourceRect": {
+        "h": 96,
+        "w": 114,
+        "x": 254,
+        "y": 193
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "e767b66c2f4e71c9ec7e75ca4ace8881669b51f9505b1e75a0b2d5d3881ed222",
+      "frameFile": "frames/lumber-walk-2.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        114,
+        96
+      ]
+    },
+    "lumber-walk-3": {
+      "cellRect": [
+        1842,
+        0,
+        134,
+        122
+      ],
+      "artRect": [
+        1850,
+        8,
+        118,
+        106
+      ],
+      "logicalPivotInCell": [
+        67,
+        113
+      ],
+      "logicalPivot": {
+        "x": 59,
+        "y": 105
+      },
+      "sourceRect": {
+        "h": 106,
+        "w": 118,
+        "x": 376,
+        "y": 183
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "fdebf0cf76292f8f3f4a04e964429ae2ebe0d13f7bd8987c219d5622ef18f57f",
+      "frameFile": "frames/lumber-walk-3.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        118,
+        106
+      ]
+    },
+    "lumber-walk-4": {
+      "cellRect": [
+        0,
+        131,
+        124,
+        112
+      ],
+      "artRect": [
+        8,
+        139,
+        108,
+        96
+      ],
+      "logicalPivotInCell": [
+        62,
+        103
+      ],
+      "logicalPivot": {
+        "x": 54,
+        "y": 95
+      },
+      "sourceRect": {
+        "h": 96,
+        "w": 108,
+        "x": 496,
+        "y": 193
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "f905e800a3cc1da9731f1f22f863c7212e342f0f816c9abe41436d62394146c8",
+      "frameFile": "frames/lumber-walk-4.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        108,
+        96
+      ]
+    },
+    "lumber-walk-5": {
+      "cellRect": [
+        124,
+        131,
+        127,
+        114
+      ],
+      "artRect": [
+        132,
+        139,
+        111,
+        98
+      ],
+      "logicalPivotInCell": [
+        63,
+        105
+      ],
+      "logicalPivot": {
+        "x": 55,
+        "y": 97
+      },
+      "sourceRect": {
+        "h": 98,
+        "w": 111,
+        "x": 611,
+        "y": 191
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "a32f0fcf8ec8f2be580b996840a6d7ea14ddda0f4ac7b006154664f2e5b72ecd",
+      "frameFile": "frames/lumber-walk-5.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        111,
+        98
+      ]
+    },
+    "short-run-charge-0": {
+      "cellRect": [
+        251,
+        131,
+        145,
+        116
+      ],
+      "artRect": [
+        259,
+        139,
+        129,
+        100
+      ],
+      "logicalPivotInCell": [
+        72,
+        107
+      ],
+      "logicalPivot": {
+        "x": 64,
+        "y": 99
+      },
+      "sourceRect": {
+        "h": 100,
+        "w": 129,
+        "x": 752,
+        "y": 189
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "f1afff4fe525f9b8b96f0d89e6c5b69e6feae60305fc75ebe0ca0c275f62f7f6",
+      "frameFile": "frames/short-run-charge-0.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        129,
+        100
+      ]
+    },
+    "short-run-charge-1": {
+      "cellRect": [
+        396,
+        131,
+        133,
+        115
+      ],
+      "artRect": [
+        404,
+        139,
+        117,
+        99
+      ],
+      "logicalPivotInCell": [
+        66,
+        106
+      ],
+      "logicalPivot": {
+        "x": 58,
+        "y": 98
+      },
+      "sourceRect": {
+        "h": 99,
+        "w": 117,
+        "x": 898,
+        "y": 190
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "7b5f47e58739033b678ef1cc2a950cc21846407ec7bec9942e5667444cb1bd75",
+      "frameFile": "frames/short-run-charge-1.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        117,
+        99
+      ]
+    },
+    "short-run-charge-2": {
+      "cellRect": [
+        529,
+        131,
+        133,
+        109
+      ],
+      "artRect": [
+        537,
+        139,
+        117,
+        93
+      ],
+      "logicalPivotInCell": [
+        66,
+        100
+      ],
+      "logicalPivot": {
+        "x": 58,
+        "y": 92
+      },
+      "sourceRect": {
+        "h": 93,
+        "w": 117,
+        "x": 1015,
+        "y": 196
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "662e90ed9ce59c351125076282d3c364ed81c5e9fccaf3662486ae07eb9fd93b",
+      "frameFile": "frames/short-run-charge-2.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        117,
+        93
+      ]
+    },
+    "short-run-charge-3": {
+      "cellRect": [
+        662,
+        131,
+        122,
+        103
+      ],
+      "artRect": [
+        670,
+        139,
+        106,
+        87
+      ],
+      "logicalPivotInCell": [
+        61,
+        94
+      ],
+      "logicalPivot": {
+        "x": 53,
+        "y": 86
+      },
+      "sourceRect": {
+        "h": 87,
+        "w": 106,
+        "x": 1139,
+        "y": 202
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "3c51aec3ff146607f2b2abf80bdca78687807b27f8154cc878e6702d4a6f6b86",
+      "frameFile": "frames/short-run-charge-3.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        106,
+        87
+      ]
+    },
+    "short-run-charge-4": {
+      "cellRect": [
+        784,
+        131,
+        139,
+        100
+      ],
+      "artRect": [
+        792,
+        139,
+        123,
+        84
+      ],
+      "logicalPivotInCell": [
+        69,
+        91
+      ],
+      "logicalPivot": {
+        "x": 61,
+        "y": 83
+      },
+      "sourceRect": {
+        "h": 84,
+        "w": 123,
+        "x": 1245,
+        "y": 205
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "674251a14ab9e5bfbdf9794b702047eac53aff745586170c8b31cd5719e93031",
+      "frameFile": "frames/short-run-charge-4.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        123,
+        84
+      ]
+    },
+    "short-run-charge-5": {
+      "cellRect": [
+        923,
+        131,
+        117,
+        104
+      ],
+      "artRect": [
+        931,
+        139,
+        101,
+        88
+      ],
+      "logicalPivotInCell": [
+        58,
+        95
+      ],
+      "logicalPivot": {
+        "x": 50,
+        "y": 87
+      },
+      "sourceRect": {
+        "h": 88,
+        "w": 101,
+        "x": 1371,
+        "y": 194
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "6f8d210fb6420cfe028cf90c4ed87344e2159d63503d77cdbd754d7c39d2f049",
+      "frameFile": "frames/short-run-charge-5.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        101,
+        88
+      ]
+    },
+    "roar-tell-0": {
+      "cellRect": [
+        1040,
+        131,
+        133,
+        136
+      ],
+      "artRect": [
+        1048,
+        139,
+        117,
+        120
+      ],
+      "logicalPivotInCell": [
+        66,
+        127
+      ],
+      "logicalPivot": {
+        "x": 58,
+        "y": 119
+      },
+      "sourceRect": {
+        "h": 120,
+        "w": 117,
+        "x": 27,
+        "y": 316
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "77eef93fdb48700e1f2f4669e1c5dc808b3f4e5b6e3165c5ed1ed5f3411ed2a4",
+      "frameFile": "frames/roar-tell-0.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        117,
+        120
+      ]
+    },
+    "roar-tell-1": {
+      "cellRect": [
+        1173,
+        131,
+        120,
+        131
+      ],
+      "artRect": [
+        1181,
+        139,
+        104,
+        115
+      ],
+      "logicalPivotInCell": [
+        60,
+        122
+      ],
+      "logicalPivot": {
+        "x": 52,
+        "y": 114
+      },
+      "sourceRect": {
+        "h": 115,
+        "w": 104,
+        "x": 144,
+        "y": 321
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "f7792275a5746c17f41ca7245aee4030a104c8b4440969d25de5f60cfb307f21",
+      "frameFile": "frames/roar-tell-1.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        104,
+        115
+      ]
+    },
+    "roar-tell-2": {
+      "cellRect": [
+        1293,
+        131,
+        120,
+        130
+      ],
+      "artRect": [
+        1301,
+        139,
+        104,
+        114
+      ],
+      "logicalPivotInCell": [
+        60,
+        121
+      ],
+      "logicalPivot": {
+        "x": 52,
+        "y": 113
+      },
+      "sourceRect": {
+        "h": 114,
+        "w": 104,
+        "x": 252,
+        "y": 324
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "fe6cae25befb5bc8f1a204bc3e04046b8a6ab1a54e8f7abd281506132d715716",
+      "frameFile": "frames/roar-tell-2.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        104,
+        114
+      ]
+    },
+    "roar-tell-3": {
+      "cellRect": [
+        1413,
+        131,
+        117,
+        127
+      ],
+      "artRect": [
+        1421,
+        139,
+        101,
+        111
+      ],
+      "logicalPivotInCell": [
+        58,
+        118
+      ],
+      "logicalPivot": {
+        "x": 50,
+        "y": 110
+      },
+      "sourceRect": {
+        "h": 111,
+        "w": 101,
+        "x": 359,
+        "y": 331
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "bb1da198d81b40489b1bbb212e528d233e32a7c381aeba397beb4a328613d76a",
+      "frameFile": "frames/roar-tell-3.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        101,
+        111
+      ]
+    },
+    "swing-slam-action-0": {
+      "cellRect": [
+        1530,
+        131,
+        132,
+        102
+      ],
+      "artRect": [
+        1538,
+        139,
+        116,
+        86
+      ],
+      "logicalPivotInCell": [
+        66,
+        93
+      ],
+      "logicalPivot": {
+        "x": 58,
+        "y": 85
+      },
+      "sourceRect": {
+        "h": 86,
+        "w": 116,
+        "x": 460,
+        "y": 355
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "c37692aa85b93e9da6f8bf11fbe529b36483aff79d0819942a1309defe63cd94",
+      "frameFile": "frames/swing-slam-action-0.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        116,
+        86
+      ]
+    },
+    "swing-slam-action-1": {
+      "cellRect": [
+        1662,
+        131,
+        127,
+        120
+      ],
+      "artRect": [
+        1670,
+        139,
+        111,
+        104
+      ],
+      "logicalPivotInCell": [
+        63,
+        111
+      ],
+      "logicalPivot": {
+        "x": 55,
+        "y": 103
+      },
+      "sourceRect": {
+        "h": 104,
+        "w": 111,
+        "x": 576,
+        "y": 337
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "a4f79678ebd3c90b4e07d425f8d8a9cba32e87b4c5fff7aa3c2af9c0d3cb66fe",
+      "frameFile": "frames/swing-slam-action-1.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        111,
+        104
+      ]
+    },
+    "swing-slam-action-2": {
+      "cellRect": [
+        1789,
+        131,
+        125,
+        104
+      ],
+      "artRect": [
+        1797,
+        139,
+        109,
+        88
+      ],
+      "logicalPivotInCell": [
+        62,
+        95
+      ],
+      "logicalPivot": {
+        "x": 54,
+        "y": 87
+      },
+      "sourceRect": {
+        "h": 88,
+        "w": 109,
+        "x": 687,
+        "y": 356
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "c47fac6485afb15421926d2f65a1100de3b5c26f131586f441350eb6b97ba58c",
+      "frameFile": "frames/swing-slam-action-2.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        109,
+        88
+      ]
+    },
+    "swing-slam-action-3": {
+      "cellRect": [
+        0,
+        267,
+        156,
+        124
+      ],
+      "artRect": [
+        8,
+        275,
+        140,
+        108
+      ],
+      "logicalPivotInCell": [
+        78,
+        115
+      ],
+      "logicalPivot": {
+        "x": 70,
+        "y": 107
+      },
+      "sourceRect": {
+        "h": 108,
+        "w": 140,
+        "x": 803,
+        "y": 349
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "be60afb5bbe587be8bfe56f6bba4c40a2ae67a021c627e3392bca6962c22d828",
+      "frameFile": "frames/swing-slam-action-3.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        140,
+        108
+      ]
+    },
+    "recovery-0": {
+      "cellRect": [
+        156,
+        267,
+        131,
+        113
+      ],
+      "artRect": [
+        164,
+        275,
+        115,
+        97
+      ],
+      "logicalPivotInCell": [
+        65,
+        104
+      ],
+      "logicalPivot": {
+        "x": 57,
+        "y": 96
+      },
+      "sourceRect": {
+        "h": 97,
+        "w": 115,
+        "x": 957,
+        "y": 347
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "458a8328bd783fa105e99fcdcb7d4c65d4e493b3733cd30c6ba013bc378d5b6b",
+      "frameFile": "frames/recovery-0.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        115,
+        97
+      ]
+    },
+    "recovery-1": {
+      "cellRect": [
+        287,
+        267,
+        138,
+        112
+      ],
+      "artRect": [
+        295,
+        275,
+        122,
+        96
+      ],
+      "logicalPivotInCell": [
+        69,
+        103
+      ],
+      "logicalPivot": {
+        "x": 61,
+        "y": 95
+      },
+      "sourceRect": {
+        "h": 96,
+        "w": 122,
+        "x": 1080,
+        "y": 349
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "1c10995986f606a7975f35c16d9a5769f7fe1fc046a6c841ecf51bf0fefef98f",
+      "frameFile": "frames/recovery-1.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        122,
+        96
+      ]
+    },
+    "recovery-2": {
+      "cellRect": [
+        425,
+        267,
+        128,
+        112
+      ],
+      "artRect": [
+        433,
+        275,
+        112,
+        96
+      ],
+      "logicalPivotInCell": [
+        64,
+        103
+      ],
+      "logicalPivot": {
+        "x": 56,
+        "y": 95
+      },
+      "sourceRect": {
+        "h": 96,
+        "w": 112,
+        "x": 1202,
+        "y": 349
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "51549ad14dc33b4045e68579fcac6376bc2f445ef13df1ceaf24c53b8d7f9754",
+      "frameFile": "frames/recovery-2.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        112,
+        96
+      ]
+    },
+    "recovery-3": {
+      "cellRect": [
+        553,
+        267,
+        112,
+        85
+      ],
+      "artRect": [
+        561,
+        275,
+        96,
+        69
+      ],
+      "logicalPivotInCell": [
+        56,
+        76
+      ],
+      "logicalPivot": {
+        "x": 48,
+        "y": 68
+      },
+      "sourceRect": {
+        "h": 69,
+        "w": 96,
+        "x": 1314,
+        "y": 378
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "36e7c15d892258cc8f29bba2b393d8bec11360187244b10a785fc97b5a0d6b68",
+      "frameFile": "frames/recovery-3.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        96,
+        69
+      ]
+    },
+    "recovery-4": {
+      "cellRect": [
+        665,
+        267,
+        115,
+        96
+      ],
+      "artRect": [
+        673,
+        275,
+        99,
+        80
+      ],
+      "logicalPivotInCell": [
+        57,
+        87
+      ],
+      "logicalPivot": {
+        "x": 49,
+        "y": 79
+      },
+      "sourceRect": {
+        "h": 80,
+        "w": 99,
+        "x": 1410,
+        "y": 367
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "ac68bbec7b46c4efc8d9d32659b3448d719624c3ea799bed20662334ec5a10f3",
+      "frameFile": "frames/recovery-4.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        99,
+        80
+      ]
+    },
+    "toxic-spit-0": {
+      "cellRect": [
+        780,
+        267,
+        109,
+        108
+      ],
+      "artRect": [
+        788,
+        275,
+        93,
+        92
+      ],
+      "logicalPivotInCell": [
+        54,
+        99
+      ],
+      "logicalPivot": {
+        "x": 46,
+        "y": 91
+      },
+      "sourceRect": {
+        "h": 92,
+        "w": 93,
+        "x": 23,
+        "y": 493
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "54367353f404deb3f08d200e5d3337cbbe5a09e21b0e49a2e749fdfbf3797e5d",
+      "frameFile": "frames/toxic-spit-0.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        93,
+        92
+      ]
+    },
+    "toxic-spit-1": {
+      "cellRect": [
+        889,
+        267,
+        113,
+        114
+      ],
+      "artRect": [
+        897,
+        275,
+        97,
+        98
+      ],
+      "logicalPivotInCell": [
+        56,
+        105
+      ],
+      "logicalPivot": {
+        "x": 48,
+        "y": 97
+      },
+      "sourceRect": {
+        "h": 98,
+        "w": 97,
+        "x": 128,
+        "y": 487
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "782a747b5171d9f867eb65071fada5c2c04148313cfccb917485a8d8a9ec4772",
+      "frameFile": "frames/toxic-spit-1.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        97,
+        98
+      ]
+    },
+    "toxic-spit-2": {
+      "cellRect": [
+        1002,
+        267,
+        426,
+        137
+      ],
+      "artRect": [
+        1010,
+        275,
+        410,
+        121
+      ],
+      "logicalPivotInCell": [
+        70,
+        107
+      ],
+      "logicalPivot": {
+        "x": 62,
+        "y": 99
+      },
+      "sourceRect": {
+        "h": 121,
+        "w": 410,
+        "x": 210,
+        "y": 485
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": {
+        "excluded_alpha_positive_count": 12847,
+        "file_sha256": "8f8f4b2be6558e2b79de8776bd3ec681100bd5eecacf76fe4506f5c75197f25f",
+        "path": "tools/asset-pipeline/masks/boss-trash-dash/toxic-spit-3.png",
+        "purpose": "retain the reviewed branded pose component while excluding alpha-positive neighboring pose pixels",
+        "raw_mask_sha256": "b14a1ba78188ff30e0a6f3f4da1d9dce39c650ae480ccc6cdfcbca474756ee58",
+        "selected_alpha_positive_count": 5958,
+        "source_alignment": {
+          "height": 121,
+          "origin": {
+            "x": 210,
+            "y": 485
+          },
+          "width": 410
+        },
+        "source_overlay": {
+          "edge_alpha_contact": {
+            "bottom": 0,
+            "left": 39,
+            "right": 0,
+            "top": 0
+          },
+          "file": "source-overlays/toxic-spit-2.png",
+          "nonzero_alpha_count": 18805,
+          "opaque_alpha_count": 18805,
+          "partial_alpha_count": 0,
+          "raw_alpha_sha256": "ef88e71f7ee4751acbc027be666432231963c38020ffa9c9e93c0f1f43237bea",
+          "raw_rgba_sha256": "16a0e87b9b3e891d712344dca970a4ab91e56999d329cfd359db09e598d57538",
+          "retained_source_rgb_sha256": "04fff7f7047c163abe015df73567efc486ce2d81b19009e57678ebd374e1401b",
+          "texture_size": {
+            "height": 121,
+            "width": 410
+          },
+          "visible_bounds": {
+            "h": 93,
+            "w": 398,
+            "x": 0,
+            "y": 7
+          }
+        }
+      },
+      "frameRgbaSha256": "4839b7608ffecb92b0985a616fe0dbdf35117e60d36811c6d7f551948bd8761a",
+      "frameFile": "frames/toxic-spit-2.png",
+      "visibleBoundsInFrame": [
+        12,
+        7,
+        132,
+        100
+      ]
+    },
+    "toxic-spit-3": {
+      "cellRect": [
+        1428,
+        267,
+        426,
+        137
+      ],
+      "artRect": [
+        1436,
+        275,
+        410,
+        121
+      ],
+      "logicalPivotInCell": [
+        183,
+        107
+      ],
+      "logicalPivot": {
+        "x": 175,
+        "y": 99
+      },
+      "sourceRect": {
+        "h": 121,
+        "w": 410,
+        "x": 210,
+        "y": 485
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": {
+        "excluded_alpha_positive_count": 13004,
+        "file_sha256": "fb0831a498bc67d511191550d22202c1262bfc5bf77a7bb59b2d2f4a3701cb67",
+        "path": "tools/asset-pipeline/masks/boss-trash-dash/toxic-spit-4.png",
+        "purpose": "retain the reviewed branded pose component while excluding alpha-positive neighboring pose pixels",
+        "raw_mask_sha256": "4cf284f48c002933851e1b4bbb79217acc5d526c80f914046f41023d9bb248f5",
+        "selected_alpha_positive_count": 5801,
+        "source_alignment": {
+          "height": 121,
+          "origin": {
+            "x": 210,
+            "y": 485
+          },
+          "width": 410
+        },
+        "source_overlay": {
+          "edge_alpha_contact": {
+            "bottom": 0,
+            "left": 39,
+            "right": 0,
+            "top": 0
+          },
+          "file": "source-overlays/toxic-spit-3.png",
+          "nonzero_alpha_count": 18805,
+          "opaque_alpha_count": 18805,
+          "partial_alpha_count": 0,
+          "raw_alpha_sha256": "ef88e71f7ee4751acbc027be666432231963c38020ffa9c9e93c0f1f43237bea",
+          "raw_rgba_sha256": "de5b457c69739240b7d718d6885bfd73601a55d5efcf25fab0107b299157a7b4",
+          "retained_source_rgb_sha256": "0ea62f08069fddeddb5515f2af69e8a33984f2bc2d9827f819b28027ae4b7083",
+          "texture_size": {
+            "height": 121,
+            "width": 410
+          },
+          "visible_bounds": {
+            "h": 93,
+            "w": 398,
+            "x": 0,
+            "y": 7
+          }
+        }
+      },
+      "frameRgbaSha256": "7875c8fcb06be67f2d26f4fbcb40414e9131e40bf2b7b4f4895fcb6d91b25511",
+      "frameFile": "frames/toxic-spit-3.png",
+      "visibleBoundsInFrame": [
+        132,
+        8,
+        232,
+        100
+      ]
+    },
+    "toxic-spit-4": {
+      "cellRect": [
+        0,
+        404,
+        426,
+        137
+      ],
+      "artRect": [
+        8,
+        412,
+        410,
+        121
+      ],
+      "logicalPivotInCell": [
+        277,
+        107
+      ],
+      "logicalPivot": {
+        "x": 269,
+        "y": 99
+      },
+      "sourceRect": {
+        "h": 121,
+        "w": 410,
+        "x": 210,
+        "y": 485
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": {
+        "excluded_alpha_positive_count": 11993,
+        "file_sha256": "570638a678cddef3e585a4a3037fecbd26f81547b3ce9e713266e72fb25baf5c",
+        "path": "tools/asset-pipeline/masks/boss-trash-dash/toxic-spit-5.png",
+        "purpose": "retain the reviewed branded pose component while excluding alpha-positive neighboring pose pixels",
+        "raw_mask_sha256": "2f104cffdbe675d3eba18e9a379f58e966a798cfe12401f86bd6848616767ef8",
+        "selected_alpha_positive_count": 6812,
+        "source_alignment": {
+          "height": 121,
+          "origin": {
+            "x": 210,
+            "y": 485
+          },
+          "width": 410
+        },
+        "source_overlay": {
+          "edge_alpha_contact": {
+            "bottom": 0,
+            "left": 39,
+            "right": 0,
+            "top": 0
+          },
+          "file": "source-overlays/toxic-spit-4.png",
+          "nonzero_alpha_count": 18805,
+          "opaque_alpha_count": 18805,
+          "partial_alpha_count": 0,
+          "raw_alpha_sha256": "ef88e71f7ee4751acbc027be666432231963c38020ffa9c9e93c0f1f43237bea",
+          "raw_rgba_sha256": "c8db59757970f5a3527cd47bc12ed2346eeec8b660859147a8edf162c8378857",
+          "retained_source_rgb_sha256": "bf636355292dca8ba06456a1f49ff2f5e18b44b12e9c33b2651d8aa444bd7403",
+          "texture_size": {
+            "height": 121,
+            "width": 410
+          },
+          "visible_bounds": {
+            "h": 93,
+            "w": 398,
+            "x": 0,
+            "y": 7
+          }
+        }
+      },
+      "frameRgbaSha256": "a8f3d2f314baa659d943e88480482f8401c5f8a9f62c437449e4da3102688934",
+      "frameFile": "frames/toxic-spit-4.png",
+      "visibleBoundsInFrame": [
+        232,
+        8,
+        398,
+        100
+      ]
+    },
+    "jump-slam-0": {
+      "cellRect": [
+        426,
+        404,
+        168,
+        97
+      ],
+      "artRect": [
+        434,
+        412,
+        152,
+        81
+      ],
+      "logicalPivotInCell": [
+        84,
+        88
+      ],
+      "logicalPivot": {
+        "x": 76,
+        "y": 80
+      },
+      "sourceRect": {
+        "h": 81,
+        "w": 152,
+        "x": 642,
+        "y": 504
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "c5ed270c06d1758ab71964e5d377cecd677170ed304ff2558974bd810ee91352",
+      "frameFile": "frames/jump-slam-0.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        152,
+        81
+      ]
+    },
+    "jump-slam-1": {
+      "cellRect": [
+        594,
+        404,
+        114,
+        126
+      ],
+      "artRect": [
+        602,
+        412,
+        98,
+        110
+      ],
+      "logicalPivotInCell": [
+        57,
+        117
+      ],
+      "logicalPivot": {
+        "x": 49,
+        "y": 109
+      },
+      "sourceRect": {
+        "h": 110,
+        "w": 98,
+        "x": 876,
+        "y": 485
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "f90346170171a375597ef1938ebcbfe628d560bdea2eff6270bbc4fe5b8a8dc0",
+      "frameFile": "frames/jump-slam-1.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        98,
+        110
+      ]
+    },
+    "jump-slam-2": {
+      "cellRect": [
+        708,
+        404,
+        138,
+        126
+      ],
+      "artRect": [
+        716,
+        412,
+        122,
+        110
+      ],
+      "logicalPivotInCell": [
+        69,
+        117
+      ],
+      "logicalPivot": {
+        "x": 61,
+        "y": 109
+      },
+      "sourceRect": {
+        "h": 110,
+        "w": 122,
+        "x": 998,
+        "y": 488
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "f1c2105d6b870c411c117842433280e07651e950c7650f1de9dec678bdd6685d",
+      "frameFile": "frames/jump-slam-2.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        122,
+        110
+      ]
+    },
+    "jump-slam-3": {
+      "cellRect": [
+        846,
+        404,
+        140,
+        136
+      ],
+      "artRect": [
+        854,
+        412,
+        124,
+        120
+      ],
+      "logicalPivotInCell": [
+        70,
+        127
+      ],
+      "logicalPivot": {
+        "x": 62,
+        "y": 119
+      },
+      "sourceRect": {
+        "h": 120,
+        "w": 124,
+        "x": 1120,
+        "y": 486
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "50d7026cde07f7cda35e9860b92b3190957cf0ad2c2227c792458dee874b3007",
+      "frameFile": "frames/jump-slam-3.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        124,
+        120
+      ]
+    },
+    "jump-slam-4": {
+      "cellRect": [
+        986,
+        404,
+        176,
+        108
+      ],
+      "artRect": [
+        994,
+        412,
+        160,
+        92
+      ],
+      "logicalPivotInCell": [
+        88,
+        99
+      ],
+      "logicalPivot": {
+        "x": 80,
+        "y": 91
+      },
+      "sourceRect": {
+        "h": 92,
+        "w": 160,
+        "x": 1248,
+        "y": 514
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "602b656ec742f94dde18fe37fdaf46a8807cf11e02ae5c0f102b7c0183469d5a",
+      "frameFile": "frames/jump-slam-4.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        160,
+        92
+      ]
+    },
+    "hit-light-0": {
+      "cellRect": [
+        1162,
+        404,
+        113,
+        103
+      ],
+      "artRect": [
+        1170,
+        412,
+        97,
+        87
+      ],
+      "logicalPivotInCell": [
+        56,
+        94
+      ],
+      "logicalPivot": {
+        "x": 48,
+        "y": 86
+      },
+      "sourceRect": {
+        "h": 87,
+        "w": 97,
+        "x": 25,
+        "y": 644
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "577e871c58415c56d0fa278a55cb76189e77c2d3d52433ce6b986bcafcce06c8",
+      "frameFile": "frames/hit-light-0.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        97,
+        87
+      ]
+    },
+    "hit-light-1": {
+      "cellRect": [
+        1275,
+        404,
+        116,
+        102
+      ],
+      "artRect": [
+        1283,
+        412,
+        100,
+        86
+      ],
+      "logicalPivotInCell": [
+        58,
+        93
+      ],
+      "logicalPivot": {
+        "x": 50,
+        "y": 85
+      },
+      "sourceRect": {
+        "h": 86,
+        "w": 100,
+        "x": 125,
+        "y": 644
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "ee9a5034aa1c925ac33d5e09a633a3b25a11aee3ab2766b9915ff940f7fb1578",
+      "frameFile": "frames/hit-light-1.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        100,
+        86
+      ]
+    },
+    "hit-light-2": {
+      "cellRect": [
+        1391,
+        404,
+        114,
+        98
+      ],
+      "artRect": [
+        1399,
+        412,
+        98,
+        82
+      ],
+      "logicalPivotInCell": [
+        57,
+        89
+      ],
+      "logicalPivot": {
+        "x": 49,
+        "y": 81
+      },
+      "sourceRect": {
+        "h": 82,
+        "w": 98,
+        "x": 225,
+        "y": 647
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "ac877b73f927d78f151a0f7aa5d5a70a4d80b414c7694b5f1a1ea5e1ba0f917d",
+      "frameFile": "frames/hit-light-2.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        98,
+        82
+      ]
+    },
+    "hit-heavy-0": {
+      "cellRect": [
+        1505,
+        404,
+        114,
+        96
+      ],
+      "artRect": [
+        1513,
+        412,
+        98,
+        80
+      ],
+      "logicalPivotInCell": [
+        57,
+        87
+      ],
+      "logicalPivot": {
+        "x": 49,
+        "y": 79
+      },
+      "sourceRect": {
+        "h": 80,
+        "w": 98,
+        "x": 328,
+        "y": 647
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "86ce44b3eec850d7faeb365d50939eb04cb63fbf531cc0c2ad87667f64a63ca6",
+      "frameFile": "frames/hit-heavy-0.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        98,
+        80
+      ]
+    },
+    "hit-heavy-1": {
+      "cellRect": [
+        1619,
+        404,
+        116,
+        97
+      ],
+      "artRect": [
+        1627,
+        412,
+        100,
+        81
+      ],
+      "logicalPivotInCell": [
+        58,
+        88
+      ],
+      "logicalPivot": {
+        "x": 50,
+        "y": 80
+      },
+      "sourceRect": {
+        "h": 81,
+        "w": 100,
+        "x": 426,
+        "y": 646
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "35a9a67ca712c06b988eb4c1f2d4e0bb87281b70cadb6e6cca93498fb8fc8cbf",
+      "frameFile": "frames/hit-heavy-1.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        100,
+        81
+      ]
+    },
+    "hit-heavy-2": {
+      "cellRect": [
+        1735,
+        404,
+        111,
+        96
+      ],
+      "artRect": [
+        1743,
+        412,
+        95,
+        80
+      ],
+      "logicalPivotInCell": [
+        55,
+        87
+      ],
+      "logicalPivot": {
+        "x": 47,
+        "y": 79
+      },
+      "sourceRect": {
+        "h": 80,
+        "w": 95,
+        "x": 526,
+        "y": 649
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "be84332a306a9ad2a2d9820caf16f240b0e62b85784d2c19c67065eb34611bfb",
+      "frameFile": "frames/hit-heavy-2.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        95,
+        80
+      ]
+    },
+    "stunned-vulnerable-0": {
+      "cellRect": [
+        1846,
+        404,
+        115,
+        97
+      ],
+      "artRect": [
+        1854,
+        412,
+        99,
+        81
+      ],
+      "logicalPivotInCell": [
+        57,
+        88
+      ],
+      "logicalPivot": {
+        "x": 49,
+        "y": 80
+      },
+      "sourceRect": {
+        "h": 81,
+        "w": 99,
+        "x": 626,
+        "y": 646
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "7542157fefe79434248aeea1eb293b4725667968d3d70e834f1c8493c0de3bfd",
+      "frameFile": "frames/stunned-vulnerable-0.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        99,
+        81
+      ]
+    },
+    "stunned-vulnerable-1": {
+      "cellRect": [
+        0,
+        541,
+        116,
+        100
+      ],
+      "artRect": [
+        8,
+        549,
+        100,
+        84
+      ],
+      "logicalPivotInCell": [
+        58,
+        91
+      ],
+      "logicalPivot": {
+        "x": 50,
+        "y": 83
+      },
+      "sourceRect": {
+        "h": 84,
+        "w": 100,
+        "x": 729,
+        "y": 644
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "f3ed479f0cb31e45f3576e4a9cda9e66e66a92b1f37d8c8e21ba699b1ebf7c2d",
+      "frameFile": "frames/stunned-vulnerable-1.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        100,
+        84
+      ]
+    },
+    "stunned-vulnerable-2": {
+      "cellRect": [
+        116,
+        541,
+        124,
+        105
+      ],
+      "artRect": [
+        124,
+        549,
+        108,
+        89
+      ],
+      "logicalPivotInCell": [
+        62,
+        96
+      ],
+      "logicalPivot": {
+        "x": 54,
+        "y": 88
+      },
+      "sourceRect": {
+        "h": 89,
+        "w": 108,
+        "x": 831,
+        "y": 638
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "84fa788d430c4328922c39d279e805744c3785b3ae6727b97f6d761c6b9ee9bf",
+      "frameFile": "frames/stunned-vulnerable-2.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        108,
+        89
+      ]
+    },
+    "get-up-recovery-0": {
+      "cellRect": [
+        240,
+        541,
+        128,
+        115
+      ],
+      "artRect": [
+        248,
+        549,
+        112,
+        99
+      ],
+      "logicalPivotInCell": [
+        64,
+        106
+      ],
+      "logicalPivot": {
+        "x": 56,
+        "y": 98
+      },
+      "sourceRect": {
+        "h": 99,
+        "w": 112,
+        "x": 956,
+        "y": 628
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "08e90eef8d1efe84edcf80abda5c65f01bbf8e5c315c455e531f4adb4e2466c9",
+      "frameFile": "frames/get-up-recovery-0.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        112,
+        99
+      ]
+    },
+    "get-up-recovery-1": {
+      "cellRect": [
+        368,
+        541,
+        124,
+        104
+      ],
+      "artRect": [
+        376,
+        549,
+        108,
+        88
+      ],
+      "logicalPivotInCell": [
+        62,
+        95
+      ],
+      "logicalPivot": {
+        "x": 54,
+        "y": 87
+      },
+      "sourceRect": {
+        "h": 88,
+        "w": 108,
+        "x": 1146,
+        "y": 646
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "9c0ca814e8ec6ac00eb96435b47d851659ed290eb209cf3f9c773d17671592c5",
+      "frameFile": "frames/get-up-recovery-1.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        108,
+        88
+      ]
+    },
+    "get-up-recovery-2": {
+      "cellRect": [
+        492,
+        541,
+        105,
+        102
+      ],
+      "artRect": [
+        500,
+        549,
+        89,
+        86
+      ],
+      "logicalPivotInCell": [
+        52,
+        93
+      ],
+      "logicalPivot": {
+        "x": 44,
+        "y": 85
+      },
+      "sourceRect": {
+        "h": 86,
+        "w": 89,
+        "x": 1254,
+        "y": 647
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "b99960d3edbb1768577ccc3cda06fe969ed0084f4ab3af109891b84efc51ac81",
+      "frameFile": "frames/get-up-recovery-2.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        89,
+        86
+      ]
+    },
+    "get-up-recovery-3": {
+      "cellRect": [
+        597,
+        541,
+        119,
+        97
+      ],
+      "artRect": [
+        605,
+        549,
+        103,
+        81
+      ],
+      "logicalPivotInCell": [
+        59,
+        88
+      ],
+      "logicalPivot": {
+        "x": 51,
+        "y": 80
+      },
+      "sourceRect": {
+        "h": 81,
+        "w": 103,
+        "x": 1359,
+        "y": 652
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "50d8f08c7381afb51c67ecc59e820c7eb63b330d306c647cfdd975bc34be32dd",
+      "frameFile": "frames/get-up-recovery-3.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        103,
+        81
+      ]
+    },
+    "enraged-phase-0": {
+      "cellRect": [
+        716,
+        541,
+        119,
+        119
+      ],
+      "artRect": [
+        724,
+        549,
+        103,
+        103
+      ],
+      "logicalPivotInCell": [
+        59,
+        110
+      ],
+      "logicalPivot": {
+        "x": 51,
+        "y": 102
+      },
+      "sourceRect": {
+        "h": 103,
+        "w": 103,
+        "x": 16,
+        "y": 764
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "fa3f51036b8b7d1fe421382d572fa4b5fc7fac77eac6ec10fb897255110cf042",
+      "frameFile": "frames/enraged-phase-0.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        103,
+        103
+      ]
+    },
+    "enraged-phase-1": {
+      "cellRect": [
+        835,
+        541,
+        117,
+        116
+      ],
+      "artRect": [
+        843,
+        549,
+        101,
+        100
+      ],
+      "logicalPivotInCell": [
+        58,
+        107
+      ],
+      "logicalPivot": {
+        "x": 50,
+        "y": 99
+      },
+      "sourceRect": {
+        "h": 100,
+        "w": 101,
+        "x": 131,
+        "y": 767
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "cb34d26c0cafc70af88a81dd0b4a0388849144d2d93b610d727381a527785c2b",
+      "frameFile": "frames/enraged-phase-1.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        101,
+        100
+      ]
+    },
+    "enraged-phase-2": {
+      "cellRect": [
+        952,
+        541,
+        125,
+        118
+      ],
+      "artRect": [
+        960,
+        549,
+        109,
+        102
+      ],
+      "logicalPivotInCell": [
+        62,
+        109
+      ],
+      "logicalPivot": {
+        "x": 54,
+        "y": 101
+      },
+      "sourceRect": {
+        "h": 102,
+        "w": 109,
+        "x": 242,
+        "y": 765
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "c8fcf70aaa282b3774d514f3edc7e673781c4ea1600c121ae8bf9f0d1ff97138",
+      "frameFile": "frames/enraged-phase-2.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        109,
+        102
+      ]
+    },
+    "enraged-phase-3": {
+      "cellRect": [
+        1077,
+        541,
+        118,
+        123
+      ],
+      "artRect": [
+        1085,
+        549,
+        102,
+        107
+      ],
+      "logicalPivotInCell": [
+        59,
+        114
+      ],
+      "logicalPivot": {
+        "x": 51,
+        "y": 106
+      },
+      "sourceRect": {
+        "h": 107,
+        "w": 102,
+        "x": 362,
+        "y": 760
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "13b43e90bac77b0284777df718422a12eb615046df1c50411f6b28efb4f595bf",
+      "frameFile": "frames/enraged-phase-3.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        102,
+        107
+      ]
+    },
+    "enraged-phase-4": {
+      "cellRect": [
+        1195,
+        541,
+        132,
+        120
+      ],
+      "artRect": [
+        1203,
+        549,
+        116,
+        104
+      ],
+      "logicalPivotInCell": [
+        66,
+        111
+      ],
+      "logicalPivot": {
+        "x": 58,
+        "y": 103
+      },
+      "sourceRect": {
+        "h": 104,
+        "w": 116,
+        "x": 473,
+        "y": 763
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "ccf5d0d1efabcc677029a4b7b42b4ad35b23a41f58bdf122c2fb4e5613f343f1",
+      "frameFile": "frames/enraged-phase-4.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        116,
+        104
+      ]
+    },
+    "power-slam-0": {
+      "cellRect": [
+        1327,
+        541,
+        144,
+        100
+      ],
+      "artRect": [
+        1335,
+        549,
+        128,
+        84
+      ],
+      "logicalPivotInCell": [
+        72,
+        91
+      ],
+      "logicalPivot": {
+        "x": 64,
+        "y": 83
+      },
+      "sourceRect": {
+        "h": 84,
+        "w": 128,
+        "x": 596,
+        "y": 786
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "4bc0e680a5a30aeb2184319e830331dcadf63fb80060925f2d2bbab42e94a8f1",
+      "frameFile": "frames/power-slam-0.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        128,
+        84
+      ]
+    },
+    "power-slam-1": {
+      "cellRect": [
+        1471,
+        541,
+        161,
+        100
+      ],
+      "artRect": [
+        1479,
+        549,
+        145,
+        84
+      ],
+      "logicalPivotInCell": [
+        80,
+        91
+      ],
+      "logicalPivot": {
+        "x": 72,
+        "y": 83
+      },
+      "sourceRect": {
+        "h": 84,
+        "w": 145,
+        "x": 746,
+        "y": 787
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "f9daec58441e3606c1352a4459fc7b672519dd5aef071d5c5e03ede808d65a1c",
+      "frameFile": "frames/power-slam-1.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        145,
+        84
+      ]
+    },
+    "power-slam-2": {
+      "cellRect": [
+        1632,
+        541,
+        147,
+        105
+      ],
+      "artRect": [
+        1640,
+        549,
+        131,
+        89
+      ],
+      "logicalPivotInCell": [
+        73,
+        96
+      ],
+      "logicalPivot": {
+        "x": 65,
+        "y": 88
+      },
+      "sourceRect": {
+        "h": 89,
+        "w": 131,
+        "x": 901,
+        "y": 785
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "7a2da1974b96e746a95fdc95d6da12a113477dfaa1bca0e895aa0e8ab9e9f809",
+      "frameFile": "frames/power-slam-2.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        131,
+        89
+      ]
+    },
+    "power-slam-3": {
+      "cellRect": [
+        1779,
+        541,
+        144,
+        111
+      ],
+      "artRect": [
+        1787,
+        549,
+        128,
+        95
+      ],
+      "logicalPivotInCell": [
+        72,
+        102
+      ],
+      "logicalPivot": {
+        "x": 64,
+        "y": 94
+      },
+      "sourceRect": {
+        "h": 95,
+        "w": 128,
+        "x": 1040,
+        "y": 780
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "9a4f0093cf32442e9f995564b8a061dd9e6ff6f918197954b8ae61df847068be",
+      "frameFile": "frames/power-slam-3.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        128,
+        95
+      ]
+    },
+    "power-slam-4": {
+      "cellRect": [
+        0,
+        664,
+        136,
+        116
+      ],
+      "artRect": [
+        8,
+        672,
+        120,
+        100
+      ],
+      "logicalPivotInCell": [
+        68,
+        107
+      ],
+      "logicalPivot": {
+        "x": 60,
+        "y": 99
+      },
+      "sourceRect": {
+        "h": 100,
+        "w": 120,
+        "x": 1175,
+        "y": 774
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "57435cb4fc447e2eee5216c5ca5f7761dd39178f052875d99e0c9ad71a6f2829",
+      "frameFile": "frames/power-slam-4.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        120,
+        100
+      ]
+    },
+    "power-slam-5": {
+      "cellRect": [
+        136,
+        664,
+        177,
+        113
+      ],
+      "artRect": [
+        144,
+        672,
+        161,
+        97
+      ],
+      "logicalPivotInCell": [
+        88,
+        104
+      ],
+      "logicalPivot": {
+        "x": 80,
+        "y": 96
+      },
+      "sourceRect": {
+        "h": 97,
+        "w": 161,
+        "x": 1298,
+        "y": 777
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "468b32bbdb1f939273e926100bcd84280dc6dbcbec71ac4f447cdaa528ebf80d",
+      "frameFile": "frames/power-slam-5.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        161,
+        97
+      ]
+    },
+    "emerge_01": {
+      "cellRect": [
+        313,
+        664,
+        144,
+        144
+      ],
+      "artRect": [
+        321,
+        672,
+        128,
+        128
+      ],
+      "logicalPivotInCell": [
+        72,
+        120
+      ],
+      "logicalPivot": {
+        "x": 64,
+        "y": 112
+      },
+      "sourceRect": {
+        "x": 650,
+        "y": 960,
+        "w": 128,
+        "h": 128
+      },
+      "sourceAuthority": "approved-canonical-board",
+      "ownershipMask": null,
+      "frameRgbaSha256": "d175a6fc04a710f53321e474428e3e70b7db351bf233435ad6aaff261a2d4842",
+      "frameFile": "frames/emerge_01.png",
+      "visibleBoundsInFrame": [
+        33,
+        82,
+        88,
+        113
+      ]
+    },
+    "emerge_02": {
+      "cellRect": [
+        457,
+        664,
+        144,
+        144
+      ],
+      "artRect": [
+        465,
+        672,
+        128,
+        128
+      ],
+      "logicalPivotInCell": [
+        72,
+        120
+      ],
+      "logicalPivot": {
+        "x": 64,
+        "y": 112
+      },
+      "sourceRect": {
+        "x": 735,
+        "y": 960,
+        "w": 128,
+        "h": 128
+      },
+      "sourceAuthority": "approved-canonical-board",
+      "ownershipMask": null,
+      "frameRgbaSha256": "f5632fc08225807e29cca3db272a489779968c296cf670f78738191b45ff4d42",
+      "frameFile": "frames/emerge_02.png",
+      "visibleBoundsInFrame": [
+        9,
+        68,
+        89,
+        113
+      ]
+    },
+    "emerge_03": {
+      "cellRect": [
+        601,
+        664,
+        144,
+        144
+      ],
+      "artRect": [
+        609,
+        672,
+        128,
+        128
+      ],
+      "logicalPivotInCell": [
+        72,
+        120
+      ],
+      "logicalPivot": {
+        "x": 64,
+        "y": 112
+      },
+      "sourceRect": {
+        "x": 820,
+        "y": 960,
+        "w": 128,
+        "h": 128
+      },
+      "sourceAuthority": "approved-canonical-board",
+      "ownershipMask": null,
+      "frameRgbaSha256": "4208dc5afad9c3af8f61906b41a53d1d298ffa966841f43cd5fb1746af6b9317",
+      "frameFile": "frames/emerge_03.png",
+      "visibleBoundsInFrame": [
+        12,
+        56,
+        99,
+        113
+      ]
+    },
+    "retreat_01": {
+      "cellRect": [
+        745,
+        664,
+        144,
+        144
+      ],
+      "artRect": [
+        753,
+        672,
+        128,
+        128
+      ],
+      "logicalPivotInCell": [
+        72,
+        120
+      ],
+      "logicalPivot": {
+        "x": 64,
+        "y": 112
+      },
+      "sourceRect": {
+        "x": 930,
+        "y": 960,
+        "w": 128,
+        "h": 128
+      },
+      "sourceAuthority": "approved-canonical-board",
+      "ownershipMask": null,
+      "frameRgbaSha256": "58aca64336329ad87032cf0fbb5bd642d8bbcee9488116f20197c628f8640348",
+      "frameFile": "frames/retreat_01.png",
+      "visibleBoundsInFrame": [
+        21,
+        94,
+        92,
+        113
+      ]
+    },
+    "retreat_02": {
+      "cellRect": [
+        889,
+        664,
+        144,
+        144
+      ],
+      "artRect": [
+        897,
+        672,
+        128,
+        128
+      ],
+      "logicalPivotInCell": [
+        72,
+        120
+      ],
+      "logicalPivot": {
+        "x": 64,
+        "y": 112
+      },
+      "sourceRect": {
+        "x": 1025,
+        "y": 960,
+        "w": 128,
+        "h": 128
+      },
+      "sourceAuthority": "approved-canonical-board",
+      "ownershipMask": null,
+      "frameRgbaSha256": "ad239e20d079b6e929322a902c9222e65f0cacf5ca652a7ecd1ba8c560155818",
+      "frameFile": "frames/retreat_02.png",
+      "visibleBoundsInFrame": [
+        13,
+        96,
+        76,
+        113
+      ]
+    },
+    "retreat_03": {
+      "cellRect": [
+        1033,
+        664,
+        144,
+        144
+      ],
+      "artRect": [
+        1041,
+        672,
+        128,
+        128
+      ],
+      "logicalPivotInCell": [
+        72,
+        120
+      ],
+      "logicalPivot": {
+        "x": 64,
+        "y": 112
+      },
+      "sourceRect": {
+        "x": 1115,
+        "y": 960,
+        "w": 128,
+        "h": 128
+      },
+      "sourceAuthority": "approved-canonical-board",
+      "ownershipMask": null,
+      "frameRgbaSha256": "533d74ccd25fba23003c9f484c66dbcfb1feafcfad43a6bceb358d55548d3b82",
+      "frameFile": "frames/retreat_03.png",
+      "visibleBoundsInFrame": [
+        17,
+        101,
+        66,
+        113
+      ]
+    },
+    "defeat_01": {
+      "cellRect": [
+        1177,
+        664,
+        144,
+        144
+      ],
+      "artRect": [
+        1185,
+        672,
+        128,
+        128
+      ],
+      "logicalPivotInCell": [
+        72,
+        120
+      ],
+      "logicalPivot": {
+        "x": 64,
+        "y": 112
+      },
+      "sourceRect": {
+        "x": 0,
+        "y": 960,
+        "w": 128,
+        "h": 128
+      },
+      "sourceAuthority": "approved-canonical-board",
+      "ownershipMask": null,
+      "frameRgbaSha256": "405b47105fa8355b9de3f8ba7da0115a222f56a6b714aff710993d981778ec1a",
+      "frameFile": "frames/defeat_01.png",
+      "visibleBoundsInFrame": [
+        24,
+        47,
+        126,
+        113
+      ]
+    },
+    "defeat_02": {
+      "cellRect": [
+        1321,
+        664,
+        144,
+        144
+      ],
+      "artRect": [
+        1329,
+        672,
+        128,
+        128
+      ],
+      "logicalPivotInCell": [
+        72,
+        120
+      ],
+      "logicalPivot": {
+        "x": 64,
+        "y": 112
+      },
+      "sourceRect": {
+        "x": 110,
+        "y": 960,
+        "w": 128,
+        "h": 128
+      },
+      "sourceAuthority": "approved-canonical-board",
+      "ownershipMask": null,
+      "frameRgbaSha256": "ac7fb7455180eb95188ee1da415c0af9c39fb6199cce9a1fa875775cc97404dc",
+      "frameFile": "frames/defeat_02.png",
+      "visibleBoundsInFrame": [
+        16,
+        54,
+        114,
+        113
+      ]
+    },
+    "defeat_03": {
+      "cellRect": [
+        1465,
+        664,
+        144,
+        144
+      ],
+      "artRect": [
+        1473,
+        672,
+        128,
+        128
+      ],
+      "logicalPivotInCell": [
+        72,
+        120
+      ],
+      "logicalPivot": {
+        "x": 64,
+        "y": 112
+      },
+      "sourceRect": {
+        "x": 220,
+        "y": 960,
+        "w": 128,
+        "h": 128
+      },
+      "sourceAuthority": "approved-canonical-board",
+      "ownershipMask": null,
+      "frameRgbaSha256": "25d853a46e5b31a638cb235cb55a6ef6107a64f381168fa43d6e81918ee262f7",
+      "frameFile": "frames/defeat_03.png",
+      "visibleBoundsInFrame": [
+        12,
+        48,
+        104,
+        113
+      ]
+    },
+    "defeat_04": {
+      "cellRect": [
+        1609,
+        664,
+        144,
+        144
+      ],
+      "artRect": [
+        1617,
+        672,
+        128,
+        128
+      ],
+      "logicalPivotInCell": [
+        72,
+        120
+      ],
+      "logicalPivot": {
+        "x": 64,
+        "y": 112
+      },
+      "sourceRect": {
+        "x": 325,
+        "y": 960,
+        "w": 128,
+        "h": 128
+      },
+      "sourceAuthority": "approved-canonical-board",
+      "ownershipMask": null,
+      "frameRgbaSha256": "5f642e0a08bccc6b54ed6969e42452265b345757313bb1e2ebf48053d8c301bb",
+      "frameFile": "frames/defeat_04.png",
+      "visibleBoundsInFrame": [
+        12,
+        39,
+        87,
+        113
+      ]
+    },
+    "defeat_05": {
+      "cellRect": [
+        1753,
+        664,
+        144,
+        144
+      ],
+      "artRect": [
+        1761,
+        672,
+        128,
+        128
+      ],
+      "logicalPivotInCell": [
+        72,
+        120
+      ],
+      "logicalPivot": {
+        "x": 64,
+        "y": 112
+      },
+      "sourceRect": {
+        "x": 410,
+        "y": 960,
+        "w": 128,
+        "h": 128
+      },
+      "sourceAuthority": "approved-canonical-board",
+      "ownershipMask": null,
+      "frameRgbaSha256": "90f30f004df6e2568f425bb1c6cbdc6115c4f6cc504e1c59564a618801af8eb2",
+      "frameFile": "frames/defeat_05.png",
+      "visibleBoundsInFrame": [
+        9,
+        43,
+        98,
+        113
+      ]
+    },
+    "defeat_06": {
+      "cellRect": [
+        1897,
+        664,
+        144,
+        144
+      ],
+      "artRect": [
+        1905,
+        672,
+        128,
+        128
+      ],
+      "logicalPivotInCell": [
+        72,
+        120
+      ],
+      "logicalPivot": {
+        "x": 64,
+        "y": 112
+      },
+      "sourceRect": {
+        "x": 500,
+        "y": 960,
+        "w": 128,
+        "h": 128
+      },
+      "sourceAuthority": "approved-canonical-board",
+      "ownershipMask": null,
+      "frameRgbaSha256": "b3aacd87feb02beaec8c0dbf4718b4fced86c0f89df8ba36cd33216d66057337",
+      "frameFile": "frames/defeat_06.png",
+      "visibleBoundsInFrame": [
+        10,
+        47,
+        77,
+        113
+      ]
+    },
+    "defeat_07": {
+      "cellRect": [
+        0,
+        808,
+        144,
+        144
+      ],
+      "artRect": [
+        8,
+        816,
+        128,
+        128
+      ],
+      "logicalPivotInCell": [
+        72,
+        120
+      ],
+      "logicalPivot": {
+        "x": 64,
+        "y": 112
+      },
+      "sourceRect": {
+        "x": 575,
+        "y": 960,
+        "w": 128,
+        "h": 128
+      },
+      "sourceAuthority": "approved-canonical-board",
+      "ownershipMask": null,
+      "frameRgbaSha256": "758c4f688a40c6d33dd175964f0adf35310e7bb9f1252934c301416feb5524af",
+      "frameFile": "frames/defeat_07.png",
+      "visibleBoundsInFrame": [
+        5,
+        70,
+        75,
+        113
+      ]
+    },
+    "ooze-spit-small-0": {
+      "cellRect": [
+        144,
+        808,
+        61,
+        39
+      ],
+      "artRect": [
+        152,
+        816,
+        45,
+        23
+      ],
+      "logicalPivotInCell": [
+        30,
+        31
+      ],
+      "logicalPivot": {
+        "x": 22,
+        "y": 23
+      },
+      "sourceRect": {
+        "x": 24,
+        "y": 943,
+        "w": 45,
+        "h": 23
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "1186ad02b43411ce6db334ece9ab256c27f60c34b7e288766b5184b684f7a892",
+      "frameFile": "frames/ooze-spit-small-0.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        45,
+        23
+      ]
+    },
+    "ooze-spit-small-1": {
+      "cellRect": [
+        205,
+        808,
+        60,
+        44
+      ],
+      "artRect": [
+        213,
+        816,
+        44,
+        28
+      ],
+      "logicalPivotInCell": [
+        30,
+        36
+      ],
+      "logicalPivot": {
+        "x": 22,
+        "y": 28
+      },
+      "sourceRect": {
+        "x": 74,
+        "y": 939,
+        "w": 44,
+        "h": 28
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "5e6d6de72299ca0516058289f4e7855b99b9a0633af5a0fb8bd8dbe8f7231239",
+      "frameFile": "frames/ooze-spit-small-1.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        44,
+        28
+      ]
+    },
+    "ooze-spit-large-0": {
+      "cellRect": [
+        265,
+        808,
+        80,
+        58
+      ],
+      "artRect": [
+        273,
+        816,
+        64,
+        42
+      ],
+      "logicalPivotInCell": [
+        40,
+        50
+      ],
+      "logicalPivot": {
+        "x": 32,
+        "y": 42
+      },
+      "sourceRect": {
+        "x": 161,
+        "y": 933,
+        "w": 64,
+        "h": 42
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "f2acc71fd00ff9792e9e1c0c5675b98b50f80c6ac4a3270ec475f1caaf6efe12",
+      "frameFile": "frames/ooze-spit-large-0.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        64,
+        42
+      ]
+    },
+    "ooze-spit-large-1": {
+      "cellRect": [
+        345,
+        808,
+        89,
+        57
+      ],
+      "artRect": [
+        353,
+        816,
+        73,
+        41
+      ],
+      "logicalPivotInCell": [
+        44,
+        49
+      ],
+      "logicalPivot": {
+        "x": 36,
+        "y": 41
+      },
+      "sourceRect": {
+        "x": 220,
+        "y": 934,
+        "w": 73,
+        "h": 41
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "bd6ed8b88be04de871d47c5fe374d29d9793dc0b3611aa61ee30430a1cbc908d",
+      "frameFile": "frames/ooze-spit-large-1.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        73,
+        41
+      ]
+    },
+    "ooze-splash-impact-0": {
+      "cellRect": [
+        434,
+        808,
+        122,
+        85
+      ],
+      "artRect": [
+        442,
+        816,
+        106,
+        69
+      ],
+      "logicalPivotInCell": [
+        61,
+        77
+      ],
+      "logicalPivot": {
+        "x": 53,
+        "y": 69
+      },
+      "sourceRect": {
+        "x": 309,
+        "y": 914,
+        "w": 106,
+        "h": 69
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "0af8bb9b66fac4acedea5e57c8b3bfbc7e2503b9f70ec58da33a507b6ae43d0a",
+      "frameFile": "frames/ooze-splash-impact-0.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        106,
+        69
+      ]
+    },
+    "ooze-splash-impact-1": {
+      "cellRect": [
+        556,
+        808,
+        126,
+        84
+      ],
+      "artRect": [
+        564,
+        816,
+        110,
+        68
+      ],
+      "logicalPivotInCell": [
+        63,
+        76
+      ],
+      "logicalPivot": {
+        "x": 55,
+        "y": 68
+      },
+      "sourceRect": {
+        "x": 415,
+        "y": 916,
+        "w": 110,
+        "h": 68
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "cc034d35d832ce243e1a6e48e5bda116cc20ad69c86d365783fbe35db142b4b3",
+      "frameFile": "frames/ooze-splash-impact-1.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        110,
+        68
+      ]
+    },
+    "slam-impact-0": {
+      "cellRect": [
+        682,
+        808,
+        97,
+        88
+      ],
+      "artRect": [
+        690,
+        816,
+        81,
+        72
+      ],
+      "logicalPivotInCell": [
+        48,
+        80
+      ],
+      "logicalPivot": {
+        "x": 40,
+        "y": 72
+      },
+      "sourceRect": {
+        "x": 544,
+        "y": 911,
+        "w": 81,
+        "h": 72
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "0038a063fb25386953982e00240ed40983f43a7eedbbc51af9f7275b6feafa20",
+      "frameFile": "frames/slam-impact-0.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        81,
+        72
+      ]
+    },
+    "slam-impact-1": {
+      "cellRect": [
+        779,
+        808,
+        106,
+        73
+      ],
+      "artRect": [
+        787,
+        816,
+        90,
+        57
+      ],
+      "logicalPivotInCell": [
+        53,
+        65
+      ],
+      "logicalPivot": {
+        "x": 45,
+        "y": 57
+      },
+      "sourceRect": {
+        "x": 625,
+        "y": 926,
+        "w": 90,
+        "h": 57
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "3fa79e14c77e9b0139e0657d296a7f59b7b89e80c0a5ef3cd74f94d687f9d6ca",
+      "frameFile": "frames/slam-impact-1.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        90,
+        57
+      ]
+    },
+    "dust-debris-0": {
+      "cellRect": [
+        885,
+        808,
+        101,
+        68
+      ],
+      "artRect": [
+        893,
+        816,
+        85,
+        52
+      ],
+      "logicalPivotInCell": [
+        50,
+        60
+      ],
+      "logicalPivot": {
+        "x": 42,
+        "y": 52
+      },
+      "sourceRect": {
+        "x": 752,
+        "y": 930,
+        "w": 85,
+        "h": 52
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "cca68b3d73da4f0c89e2a85b0ddba85e458a999297a0c2113c97fbcdcf7b86b2",
+      "frameFile": "frames/dust-debris-0.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        85,
+        52
+      ]
+    },
+    "dust-debris-1": {
+      "cellRect": [
+        986,
+        808,
+        91,
+        64
+      ],
+      "artRect": [
+        994,
+        816,
+        75,
+        48
+      ],
+      "logicalPivotInCell": [
+        45,
+        56
+      ],
+      "logicalPivot": {
+        "x": 37,
+        "y": 48
+      },
+      "sourceRect": {
+        "x": 855,
+        "y": 933,
+        "w": 75,
+        "h": 48
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "5ba2c9f50b9c1ff69dab46067214d033729b7d055e8b2b2722a8de449f71590a",
+      "frameFile": "frames/dust-debris-1.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        75,
+        48
+      ]
+    },
+    "tossed-trash-clump-0": {
+      "cellRect": [
+        1077,
+        808,
+        94,
+        58
+      ],
+      "artRect": [
+        1085,
+        816,
+        78,
+        42
+      ],
+      "logicalPivotInCell": [
+        47,
+        50
+      ],
+      "logicalPivot": {
+        "x": 39,
+        "y": 42
+      },
+      "sourceRect": {
+        "x": 958,
+        "y": 944,
+        "w": 78,
+        "h": 42
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "a0566447cc85c60220ba9ab9e84363c20ae49ed18ed4b427b188b5c853b043bd",
+      "frameFile": "frames/tossed-trash-clump-0.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        78,
+        42
+      ]
+    },
+    "tossed-trash-clump-1": {
+      "cellRect": [
+        1171,
+        808,
+        75,
+        54
+      ],
+      "artRect": [
+        1179,
+        816,
+        59,
+        38
+      ],
+      "logicalPivotInCell": [
+        37,
+        46
+      ],
+      "logicalPivot": {
+        "x": 29,
+        "y": 38
+      },
+      "sourceRect": {
+        "x": 1051,
+        "y": 947,
+        "w": 59,
+        "h": 38
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "7ca245eaedf47c43e3710cace852c94efa88c3f0c167a5323dfc2a00ca4f14d1",
+      "frameFile": "frames/tossed-trash-clump-1.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        59,
+        38
+      ]
+    },
+    "ooze-puddles-various": {
+      "cellRect": [
+        1246,
+        808,
+        83,
+        48
+      ],
+      "artRect": [
+        1254,
+        816,
+        67,
+        32
+      ],
+      "logicalPivotInCell": [
+        41,
+        40
+      ],
+      "logicalPivot": {
+        "x": 33,
+        "y": 32
+      },
+      "sourceRect": {
+        "x": 1139,
+        "y": 958,
+        "w": 67,
+        "h": 32
+      },
+      "sourceAuthority": "approved-transparent-sheet",
+      "ownershipMask": null,
+      "frameRgbaSha256": "4041a2554e239cfcf289308296a23d22e15256efab693cff6ffd380ca47d257a",
+      "frameFile": "frames/ooze-puddles-various.png",
+      "visibleBoundsInFrame": [
+        0,
+        0,
+        67,
+        32
+      ]
+    }
+  },
+  "operationCounts": {
+    "PRESERVE EXACTLY - REPOSITION FOR ISOLATION": 96,
+    "GENERATE NEW": 0,
+    "REPLACE UNAPPROVED": 0
+  },
+  "provenance": {
+    "method": "lossless RGBA frame relocation with reviewed ownership masks for contaminated toxic-spit regions",
+    "aiGenerationUsed": false,
+    "resizingUsed": false,
+    "redrawingUsed": false,
+    "filteringUsed": false,
+    "rebuildCommand": "python3 tools/asset_pipeline/build_boss_trash_dash_isolated.py"
+  }
+}

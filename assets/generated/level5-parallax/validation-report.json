@@ -1,0 +1,311 @@
+{
+  "schema_version": 1,
+  "status": "asset-stage-validated",
+  "runtime_size": [
+    1320,
+    540
+  ],
+  "parallax_speeds": {
+    "far": 0.018,
+    "middle": 0.055,
+    "close": 0.13
+  },
+  "processing": "centered aspect-preserving nearest-neighbor contain; local magenta removal; binary alpha",
+  "records": [
+    {
+      "stage": "low-earth-orbit",
+      "layer": "far",
+      "source": "assets/generated/level5-parallax/sources/level5-low-earth-orbit-far-source.png",
+      "output": "assets/generated/level5-parallax/processed/level5-low-earth-orbit-far.png",
+      "dimensions": [
+        1320,
+        540
+      ],
+      "sha256": "54a1f7f71a1c4e07453e0e8a6f77ea863eee7e07f4681beafea26c6d9c7a269c",
+      "alpha_values": [
+        255
+      ],
+      "opaque_pixels": 712800,
+      "transparent_pixels": 0,
+      "partial_alpha_pixels": 0,
+      "opaque_coverage": 1.0,
+      "visible_magenta_pixels": 0
+    },
+    {
+      "stage": "low-earth-orbit",
+      "layer": "middle",
+      "source": "assets/generated/level5-parallax/sources/level5-low-earth-orbit-middle-source.png",
+      "output": "assets/generated/level5-parallax/processed/level5-low-earth-orbit-middle.png",
+      "dimensions": [
+        1320,
+        540
+      ],
+      "sha256": "6b8338fb5ec31ffcc10766fc5a3ea53df4769b58be262c95d2a06021d02fcb24",
+      "alpha_values": [
+        0,
+        255
+      ],
+      "opaque_pixels": 131710,
+      "transparent_pixels": 581090,
+      "partial_alpha_pixels": 0,
+      "opaque_coverage": 0.184778,
+      "visible_magenta_pixels": 0
+    },
+    {
+      "stage": "low-earth-orbit",
+      "layer": "close",
+      "source": "assets/generated/level5-parallax/sources/level5-low-earth-orbit-close-source.png",
+      "output": "assets/generated/level5-parallax/processed/level5-low-earth-orbit-close.png",
+      "dimensions": [
+        1320,
+        540
+      ],
+      "sha256": "08e7bb7b220dc3320af7c8d27d8914550fec1addcda1c93671684507463b0fe7",
+      "alpha_values": [
+        0,
+        255
+      ],
+      "opaque_pixels": 50349,
+      "transparent_pixels": 662451,
+      "partial_alpha_pixels": 0,
+      "opaque_coverage": 0.070636,
+      "visible_magenta_pixels": 0
+    },
+    {
+      "stage": "satellite-graveyard",
+      "layer": "far",
+      "source": "assets/generated/level5-parallax/sources/level5-satellite-graveyard-far-source.png",
+      "output": "assets/generated/level5-parallax/processed/level5-satellite-graveyard-far.png",
+      "dimensions": [
+        1320,
+        540
+      ],
+      "sha256": "800e56b40fb8ffcb368024165ea0dd27312a60cad6adb19f6a61adbdeced985d",
+      "alpha_values": [
+        255
+      ],
+      "opaque_pixels": 712800,
+      "transparent_pixels": 0,
+      "partial_alpha_pixels": 0,
+      "opaque_coverage": 1.0,
+      "visible_magenta_pixels": 0
+    },
+    {
+      "stage": "satellite-graveyard",
+      "layer": "middle",
+      "source": "assets/generated/level5-parallax/sources/level5-satellite-graveyard-middle-source.png",
+      "output": "assets/generated/level5-parallax/processed/level5-satellite-graveyard-middle.png",
+      "dimensions": [
+        1320,
+        540
+      ],
+      "sha256": "34840211f4ce42c150ef8353fc63c9768333c2180c1a9b6cd564691a5cc0e13b",
+      "alpha_values": [
+        0,
+        255
+      ],
+      "opaque_pixels": 63081,
+      "transparent_pixels": 649719,
+      "partial_alpha_pixels": 0,
+      "opaque_coverage": 0.088497,
+      "visible_magenta_pixels": 0
+    },
+    {
+      "stage": "satellite-graveyard",
+      "layer": "close",
+      "source": "assets/generated/level5-parallax/sources/level5-satellite-graveyard-close-source.png",
+      "output": "assets/generated/level5-parallax/processed/level5-satellite-graveyard-close.png",
+      "dimensions": [
+        1320,
+        540
+      ],
+      "sha256": "ce31465cc56ed4100905b73d3a1f24d69e4db3004ce5ec4247e76232d3d8c694",
+      "alpha_values": [
+        0,
+        255
+      ],
+      "opaque_pixels": 48120,
+      "transparent_pixels": 664680,
+      "partial_alpha_pixels": 0,
+      "opaque_coverage": 0.067508,
+      "visible_magenta_pixels": 0
+    },
+    {
+      "stage": "nebula-asteroid-mine",
+      "layer": "far",
+      "source": "assets/generated/level5-parallax/sources/level5-nebula-asteroid-mine-far-source.png",
+      "output": "assets/generated/level5-parallax/processed/level5-nebula-asteroid-mine-far.png",
+      "dimensions": [
+        1320,
+        540
+      ],
+      "sha256": "13135f3e2d7ec1a8290f786a444509f1fbcfb037487c9d2f61d13e7dd0044f63",
+      "alpha_values": [
+        255
+      ],
+      "opaque_pixels": 712800,
+      "transparent_pixels": 0,
+      "partial_alpha_pixels": 0,
+      "opaque_coverage": 1.0,
+      "visible_magenta_pixels": 0
+    },
+    {
+      "stage": "nebula-asteroid-mine",
+      "layer": "middle",
+      "source": "assets/generated/level5-parallax/sources/level5-nebula-asteroid-mine-middle-source.png",
+      "output": "assets/generated/level5-parallax/processed/level5-nebula-asteroid-mine-middle.png",
+      "dimensions": [
+        1320,
+        540
+      ],
+      "sha256": "b89140e0716c85d062f3b58f5beba878896aefc0636ad912431395d45a590f67",
+      "alpha_values": [
+        0,
+        255
+      ],
+      "opaque_pixels": 166710,
+      "transparent_pixels": 546090,
+      "partial_alpha_pixels": 0,
+      "opaque_coverage": 0.23388,
+      "visible_magenta_pixels": 0
+    },
+    {
+      "stage": "nebula-asteroid-mine",
+      "layer": "close",
+      "source": "assets/generated/level5-parallax/sources/level5-nebula-asteroid-mine-close-source.png",
+      "output": "assets/generated/level5-parallax/processed/level5-nebula-asteroid-mine-close.png",
+      "dimensions": [
+        1320,
+        540
+      ],
+      "sha256": "dc5349710f4be7e25960b27b896ba8bdc1ddec682db046359be6a42ecd786904",
+      "alpha_values": [
+        0,
+        255
+      ],
+      "opaque_pixels": 59369,
+      "transparent_pixels": 653431,
+      "partial_alpha_pixels": 0,
+      "opaque_coverage": 0.08329,
+      "visible_magenta_pixels": 0
+    },
+    {
+      "stage": "abandoned-alien-station",
+      "layer": "far",
+      "source": "assets/generated/level5-parallax/sources/level5-abandoned-alien-station-far-source.png",
+      "output": "assets/generated/level5-parallax/processed/level5-abandoned-alien-station-far.png",
+      "dimensions": [
+        1320,
+        540
+      ],
+      "sha256": "698eee8a08073429df998cb01ffb1113015c7ce9a292b52d7c6b410947a2d709",
+      "alpha_values": [
+        255
+      ],
+      "opaque_pixels": 712800,
+      "transparent_pixels": 0,
+      "partial_alpha_pixels": 0,
+      "opaque_coverage": 1.0,
+      "visible_magenta_pixels": 0
+    },
+    {
+      "stage": "abandoned-alien-station",
+      "layer": "middle",
+      "source": "assets/generated/level5-parallax/sources/level5-abandoned-alien-station-middle-source.png",
+      "output": "assets/generated/level5-parallax/processed/level5-abandoned-alien-station-middle.png",
+      "dimensions": [
+        1320,
+        540
+      ],
+      "sha256": "5f98ccc8719e55622225cba766f88a3a98c2a559f8b555ae4183ca85d045e33e",
+      "alpha_values": [
+        0,
+        255
+      ],
+      "opaque_pixels": 124898,
+      "transparent_pixels": 587902,
+      "partial_alpha_pixels": 0,
+      "opaque_coverage": 0.175222,
+      "visible_magenta_pixels": 0
+    },
+    {
+      "stage": "abandoned-alien-station",
+      "layer": "close",
+      "source": "assets/generated/level5-parallax/sources/level5-abandoned-alien-station-close-source.png",
+      "output": "assets/generated/level5-parallax/processed/level5-abandoned-alien-station-close.png",
+      "dimensions": [
+        1320,
+        540
+      ],
+      "sha256": "ff36213e20aa1b41eb4bd97139d15d154cedd0bee0263bf52482d0011ee3c9e5",
+      "alpha_values": [
+        0,
+        255
+      ],
+      "opaque_pixels": 48963,
+      "transparent_pixels": 663837,
+      "partial_alpha_pixels": 0,
+      "opaque_coverage": 0.068691,
+      "visible_magenta_pixels": 0
+    },
+    {
+      "stage": "intergalactic-junk-world",
+      "layer": "far",
+      "source": "assets/generated/level5-parallax/sources/level5-intergalactic-junk-world-far-source.png",
+      "output": "assets/generated/level5-parallax/processed/level5-intergalactic-junk-world-far.png",
+      "dimensions": [
+        1320,
+        540
+      ],
+      "sha256": "9a3077e6750821ef6055bbdd15536e3b183fee03106069a55ca11d42cd6d4e4d",
+      "alpha_values": [
+        255
+      ],
+      "opaque_pixels": 712800,
+      "transparent_pixels": 0,
+      "partial_alpha_pixels": 0,
+      "opaque_coverage": 1.0,
+      "visible_magenta_pixels": 0
+    },
+    {
+      "stage": "intergalactic-junk-world",
+      "layer": "middle",
+      "source": "assets/generated/level5-parallax/sources/level5-intergalactic-junk-world-middle-source.png",
+      "output": "assets/generated/level5-parallax/processed/level5-intergalactic-junk-world-middle.png",
+      "dimensions": [
+        1320,
+        540
+      ],
+      "sha256": "6b6578bc43793a67cf3339b390204bb16ac2b4196d28aac4034f97a6fc38ac84",
+      "alpha_values": [
+        0,
+        255
+      ],
+      "opaque_pixels": 218364,
+      "transparent_pixels": 494436,
+      "partial_alpha_pixels": 0,
+      "opaque_coverage": 0.306347,
+      "visible_magenta_pixels": 0
+    },
+    {
+      "stage": "intergalactic-junk-world",
+      "layer": "close",
+      "source": "assets/generated/level5-parallax/sources/level5-intergalactic-junk-world-close-source.png",
+      "output": "assets/generated/level5-parallax/processed/level5-intergalactic-junk-world-close.png",
+      "dimensions": [
+        1320,
+        540
+      ],
+      "sha256": "34b67fbc101badb0d27eb3927750c1822154f229a430613bd9007e7f5584d991",
+      "alpha_values": [
+        0,
+        255
+      ],
+      "opaque_pixels": 60377,
+      "transparent_pixels": 652423,
+      "partial_alpha_pixels": 0,
+      "opaque_coverage": 0.084704,
+      "visible_magenta_pixels": 0
+    }
+  ]
+}

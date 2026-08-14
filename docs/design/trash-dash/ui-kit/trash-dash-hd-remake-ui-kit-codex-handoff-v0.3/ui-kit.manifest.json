@@ -1,0 +1,235 @@
+{
+  "$schema": "trash-dash-ui-kit-manifest-v2",
+  "version": "0.3.0",
+  "productName": "Trash Dash HD Remake",
+  "workingLabelInConceptArt": "Trash Dash V2",
+  "styleName": "Reclaimed Playground",
+  "authorityOrder": [
+    "written-contracts-and-tokens",
+    "overall-concept-board",
+    "phase-concept-board",
+    "phase-source-sheet",
+    "implementation-judgment-within-contract"
+  ],
+  "components": [
+    {
+      "id": "td.menu.hero",
+      "name": "Main Menu Hero Panel",
+      "states": [
+        "default",
+        "focused-child",
+        "transitioning"
+      ],
+      "requiredMotion": [
+        "td.slideIn",
+        "td.wiggle"
+      ],
+      "notes": "Hero surface containing Play, Level Select, and Settings. Ambient character or junk reactions must never block navigation."
+    },
+    {
+      "id": "td.button.primary",
+      "name": "Primary Button",
+      "states": [
+        "default",
+        "hover",
+        "focus",
+        "pressed",
+        "selected",
+        "disabled",
+        "locked"
+      ],
+      "requiredMotion": [
+        "td.lift",
+        "td.press",
+        "td.wiggle"
+      ]
+    },
+    {
+      "id": "td.button.secondary",
+      "name": "Secondary Button",
+      "states": [
+        "default",
+        "hover",
+        "focus",
+        "pressed",
+        "disabled",
+        "locked"
+      ],
+      "requiredMotion": [
+        "td.lift",
+        "td.press"
+      ]
+    },
+    {
+      "id": "td.navigation.tabs",
+      "name": "Tab Navigation",
+      "states": [
+        "inactive",
+        "hover",
+        "focus",
+        "selected",
+        "disabled"
+      ],
+      "requiredMotion": [
+        "td.lift",
+        "td.pageShift"
+      ]
+    },
+    {
+      "id": "td.notification.toast",
+      "name": "Small Notification",
+      "variants": [
+        "pickup",
+        "information",
+        "milestone",
+        "currency"
+      ],
+      "states": [
+        "entering",
+        "visible",
+        "exiting"
+      ],
+      "requiredMotion": [
+        "td.pop",
+        "td.peelOut"
+      ]
+    },
+    {
+      "id": "td.alert.warning",
+      "name": "Warning Alert",
+      "variants": [
+        "danger",
+        "boss",
+        "low-health"
+      ],
+      "states": [
+        "entering",
+        "impact",
+        "visible",
+        "exiting"
+      ],
+      "requiredMotion": [
+        "td.slam",
+        "td.shake",
+        "td.swing"
+      ]
+    },
+    {
+      "id": "td.hud.objectives",
+      "name": "Objective Tracker",
+      "states": [
+        "collapsed",
+        "expanded",
+        "updated",
+        "completed"
+      ],
+      "requiredMotion": [
+        "td.slideIn",
+        "td.stamp"
+      ]
+    },
+    {
+      "id": "td.menu.pause",
+      "name": "Pause Menu, Junk Box",
+      "states": [
+        "closed",
+        "opening",
+        "open",
+        "closing"
+      ],
+      "requiredMotion": [
+        "td.slideIn",
+        "td.flapOpen"
+      ],
+      "notes": "Gameplay freezes before opening animation. Input may resume as soon as interactive controls reach their usable positions."
+    },
+    {
+      "id": "td.reward.unlock",
+      "name": "Unlock Reward Card",
+      "variants": [
+        "common",
+        "rare",
+        "hero"
+      ],
+      "states": [
+        "entering",
+        "revealing",
+        "visible",
+        "dismissed"
+      ],
+      "requiredMotion": [
+        "td.cardReveal",
+        "td.stamp",
+        "td.celebrationBurst"
+      ]
+    },
+    {
+      "id": "td.results.levelClear",
+      "name": "Level Clear Results Panel",
+      "states": [
+        "intro",
+        "counting",
+        "rewards",
+        "ready"
+      ],
+      "requiredMotion": [
+        "td.slam",
+        "td.stamp",
+        "td.countUp",
+        "td.celebrationBurst"
+      ],
+      "notes": "Sequence is skippable and must resolve immediately to the final state when skipped."
+    },
+    {
+      "id": "td.character.select",
+      "name": "Character Select",
+      "variants": [
+        "trashy",
+        "jimothy"
+      ],
+      "states": [
+        "unselected",
+        "hover",
+        "focus",
+        "selected",
+        "confirmed"
+      ],
+      "requiredMotion": [
+        "td.lift",
+        "td.wiggle",
+        "td.stamp"
+      ],
+      "notes": "Trashy and Jimothy are equal playable choices. Selected state must use more than color alone."
+    }
+  ],
+  "sourcePhases": [
+    {
+      "id": "phase-01",
+      "name": "Buttons and Tabs",
+      "source": "source-sheets/phase-01-buttons-tabs.png",
+      "reference": "reference/concept-boards/01-buttons-tabs.png"
+    },
+    {
+      "id": "phase-02",
+      "name": "Panels and Containers",
+      "source": "source-sheets/phase-02-panels-containers.png",
+      "reference": "reference/concept-boards/02-panels-containers.png"
+    },
+    {
+      "id": "phase-03",
+      "name": "HUD, Notifications, and Alerts",
+      "source": "source-sheets/phase-03-hud-notifications-alerts.png",
+      "reference": "reference/concept-boards/03-hud-notifications-alerts.png"
+    },
+    {
+      "id": "phase-04",
+      "name": "Results, Rewards, and Character Select",
+      "source": "source-sheets/phase-04-results-character-select.png",
+      "reference": "reference/concept-boards/04-results-character-select.png"
+    }
+  ],
+  "motionReference": "reference/motion/ui-motion-reference.png",
+  "regionManifest": "manifests/sprite-regions.json",
+  "runtimeReady": false,
+  "requiresExtractionAndQA": true
+}

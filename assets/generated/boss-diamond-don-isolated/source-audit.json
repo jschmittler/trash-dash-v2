@@ -1,0 +1,108 @@
+{
+  "boss": "The Diamond Don",
+  "canonId": "boss.level-06-secret.diamond-don",
+  "canonicalBoard": {
+    "path": "docs/design/trash-dash/reference/characters/level-06/sprites/boss-diamond-don.png",
+    "sha256": "f6132b478842f9cf6a5d54b32072e3ac1027aad3b1835350b40be680b483f5ac",
+    "size": [
+      1448,
+      1086
+    ],
+    "mode": "RGB"
+  },
+  "acceptedTransparentAtlas": {
+    "path": "docs/design/trash-dash/character-animation/phase-05-codex-integration/phase-04-bosses/final/boss-diamond-don-transparent.png",
+    "sha256": "7376000f332ef2ee4d58602b0843018c908ccbb0cd014fefb8e38d3704252bb8",
+    "attachedCopySha256": "7376000f332ef2ee4d58602b0843018c908ccbb0cd014fefb8e38d3704252bb8",
+    "size": [
+      1536,
+      1024
+    ],
+    "mode": "RGBA",
+    "visibleBounds": [
+      6,
+      9,
+      1536,
+      1020
+    ],
+    "visiblePixelCount": 590058,
+    "opaquePixelCount": 590058,
+    "transparentPixelCount": 982806,
+    "partialAlphaPixelCount": 0
+  },
+  "sequenceAudit": {
+    "emerge": {
+      "classification": "EXISTS - COMPLETE",
+      "orderedFrames": [
+        "curse-effect-00",
+        "skull-motif-00",
+        "curse-phase-03",
+        "curse-phase-02",
+        "curse-phase-01",
+        "curse-phase-00",
+        "curse-reveal-00",
+        "command-summon-00",
+        "idle-swagger-00"
+      ],
+      "startState": "approved detached violet-green curse symbol",
+      "intermediateMotion": "approved skull motif, curse smoke, materialized cursed body, command pose, and settling gesture",
+      "endState": "idle-swagger-00 active heavyweight stance",
+      "continuity": "approved curse vocabulary materializes the exact boss and resolves to active idle",
+      "loop": false
+    },
+    "retreat": {
+      "classification": "EXISTS - COMPLETE",
+      "orderedFrames": [
+        "idle-swagger-00",
+        "command-summon-00",
+        "curse-reveal-00",
+        "curse-phase-00",
+        "curse-phase-01",
+        "curse-phase-02",
+        "curse-phase-03",
+        "skull-motif-00",
+        "curse-effect-00"
+      ],
+      "startState": "idle-swagger-00 active heavyweight stance",
+      "intermediateMotion": "intentional approved command and curse withdrawal without hit, fall, or exhaustion frames",
+      "endState": "approved detached violet-green curse symbol inactive/exit state",
+      "continuity": "active boss intentionally withdraws through reversible canonical curse vocabulary",
+      "loop": false
+    },
+    "defeat": {
+      "classification": "EXISTS - COMPLETE",
+      "orderedFrames": [
+        "hit-react-00",
+        "hit-react-01",
+        "hit-react-02",
+        "hit-react-03",
+        "defeat-recovery-00",
+        "defeat-recovery-01",
+        "defeat-recovery-02",
+        "defeat-recovery-03",
+        "defeat-recovery-04"
+      ],
+      "startState": "approved hit reaction with yellow stars",
+      "intermediateMotion": "approved stagger, collapse, prone hold, rubble settling, kneel, and exhausted recovery",
+      "endState": "approved softened seated Diamond Don, visibly identifiable with hat, clothing, tail, accessories, baseball material, and separated equipment",
+      "continuity": "approved loss progression ends on the exact living identifiable boss without gore or invented damage",
+      "loop": false
+    }
+  },
+  "defects": {
+    "missingOrIncompleteAnimations": false,
+    "crossFrameSpriteOrEffectOverlap": true,
+    "neighboringFrameBleedRisk": true,
+    "visiblePixelsTouchingAcceptedAtlasBoundary": true,
+    "ambiguousBatOwnershipBeforeManifest": true,
+    "ambiguousBaseballOwnershipBeforeManifest": true,
+    "ambiguousRubbleShockwaveOwnershipBeforeManifest": true,
+    "ambiguousCurseSkullMineMinionOwnershipBeforeManifest": true,
+    "ambiguousCoinChainStarDustHatAndDetachedPropOwnershipBeforeManifest": true,
+    "insufficientTransparentGutters": true,
+    "missingEmergeFrames": false,
+    "missingRetreatFrames": false,
+    "missingDefeatFrames": false
+  },
+  "resolution": "approved-only sequence composition plus reviewed rectangular ownership extraction and variable-cell repack; no artwork generation"
+}
