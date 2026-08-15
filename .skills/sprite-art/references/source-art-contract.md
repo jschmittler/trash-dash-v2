@@ -13,7 +13,7 @@
 
 ## Source integrity
 
-Preserve approved identity, silhouette, anatomy, markings, clothing, equipment, perspective, palette, and gameplay scale unless the user explicitly requests a redesign. Treat `docs/design/trash-dash/reference/` as immutable design reference, store derived working outputs under `assets/generated/`, and promote only release-gated files to `assets/runtime/`. Record source layout, baseline, frame order, and intended consumer in a nearby manifest or README.
+Preserve approved identity, silhouette, anatomy, markings, clothing, equipment, perspective, palette, and gameplay scale unless the user explicitly requests a redesign. Treat `docs/design/trash-dash/library/` as immutable design reference, store derived working outputs under `assets/generated/`, and promote only release-gated files to `assets/runtime/`. Record source layout, baseline, frame order, and intended consumer in a nearby manifest or README.
 
 Every generated sheet must state cell size, rows, columns, read order, canonical facing, baseline/attachment contract, key color if used, and whether detached pixels are intentional. Keep source, processed, runtime, and contact-sheet artifacts distinct.
 

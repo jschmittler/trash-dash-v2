@@ -27,7 +27,7 @@ Read [Composition and Encounters](references/composition-and-encounters.md) for 
 
 ## Canonical V2 sources
 
-Read `../../docs/design/trash-dash/docs/game/enemies.md`, `../../docs/design/trash-dash/docs/game/LEVEL_LAYOUT_GUIDANCE.md`, and `../../docs/architecture/ENCOUNTER_CONTRACT.md` for encounter teaching, support, patrol, population, and density rules.
+Read `../../docs/design/trash-dash/manuals/enemies/legacy-enemies.md`, `../../docs/design/trash-dash/manuals/levels/LEVEL_LAYOUT_GUIDANCE.md`, and `../../docs/architecture/ENCOUNTER_CONTRACT.md` for encounter teaching, support, patrol, population, and density rules.
 
 ## Handoff
 

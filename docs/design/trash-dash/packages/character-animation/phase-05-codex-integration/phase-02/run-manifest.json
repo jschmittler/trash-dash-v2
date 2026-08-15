@@ -1,0 +1,48 @@
+{
+  "project": "Trash Dash",
+  "phase": "02-enemy-animation-source-sheets",
+  "status": "complete",
+  "workflow": "game-character-sprites",
+  "reference_policy": "Approved branded source sheets are the visual truth. Preserve every approved pose, prop, projectile, FX element, silhouette, proportion, palette, and motion extreme. Remove presentation-only labels, dividers, and dark backgrounds. Do not crop or invent poses.",
+  "output_contract": {
+    "type": "reference-complete transparent animation source sheets",
+    "runtime_atlas": false,
+    "native_cell_size": null,
+    "notes": "Phase 02 source sheets precede fixed-cell runtime assembly. Native cell size will be selected during runtime integration."
+  },
+  "enemies": [
+    {"level": 1, "name": "Mosquito", "source": "source-pack/characters/level-01/sprites/mosquito.png"},
+    {"level": 1, "name": "Opossum Pilfer", "source": "source-pack/characters/level-01/sprites/opossum-pilfer.png"},
+    {"level": 1, "name": "Pigeon", "source": "source-pack/characters/level-01/sprites/pigeon.png"},
+    {"level": 1, "name": "Snake", "source": "source-pack/characters/level-01/sprites/snake.png"},
+    {"level": 1, "name": "Spider", "source": "source-pack/characters/level-01/sprites/spider.png"},
+    {"level": 2, "name": "Bee", "source": "source-pack/characters/level-02/sprites/bee.png"},
+    {"level": 2, "name": "Dog", "source": "source-pack/characters/level-02/sprites/dog.png"},
+    {"level": 2, "name": "Moth Dustwing", "source": "source-pack/characters/level-02/sprites/moth-dustwing.png"},
+    {"level": 2, "name": "Skunk", "source": "source-pack/characters/level-02/sprites/skunk.png"},
+    {"level": 2, "name": "Squirrel", "source": "source-pack/characters/level-02/sprites/squirel.png"}
+  ],
+  "generation": {
+    "method": "imagegen edit",
+    "used_approved_references": true,
+    "procedural": false,
+    "text_only": false
+  },
+  "outputs": [
+    "final/mosquito-transparent.png",
+    "final/opossum-pilfer-transparent.png",
+    "final/pigeon-transparent.png",
+    "final/snake-transparent.png",
+    "final/spider-transparent.png",
+    "final/bee-transparent.png",
+    "final/dog-transparent.png",
+    "final/moth-dustwing-transparent.png",
+    "final/skunk-transparent.png",
+    "final/squirrel-transparent.png"
+  ],
+  "visual_review": {
+    "accepted": true,
+    "path": "qa/visual-review.json",
+    "notes": "Passed combined visual review and transparent-edge geometry checks."
+  }
+}

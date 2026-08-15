@@ -1,0 +1,347 @@
+{
+  "$schema": "trash-dash-ui-asset-manifest-v1",
+  "version": "0.3.0",
+  "generated": "2026-08-12",
+  "files": [
+    {
+      "path": "AGENTS_UI_KIT_SNIPPET.md",
+      "role": "contract-or-tool",
+      "authority": "canonical-written",
+      "status": "approved",
+      "description": "UI Kit contract, manifest, or tool.",
+      "bytes": 1034,
+      "sha256": "beb456431debd641b113c9024e6a1483b5edc7a29c8062492a2f4592fb6a71f3",
+      "runtimeReady": false
+    },
+    {
+      "path": "CODEX_IMPORT_PROMPT.md",
+      "role": "contract-or-tool",
+      "authority": "canonical-written",
+      "status": "approved",
+      "description": "UI Kit contract, manifest, or tool.",
+      "bytes": 9031,
+      "sha256": "1ba46f0f0d9606e202174e29f94b472df071852f27df6236ec722384d44178cd",
+      "runtimeReady": false
+    },
+    {
+      "path": "README.md",
+      "role": "contract-or-tool",
+      "authority": "canonical-written",
+      "status": "approved",
+      "description": "UI Kit contract, manifest, or tool.",
+      "bytes": 2191,
+      "sha256": "ad2711ac7ea3fa3c80e6df37e52e673495d33d8f62bf44b1839883a64ab23d5c",
+      "runtimeReady": false
+    },
+    {
+      "path": "contracts/ui-kit.types.ts",
+      "role": "contract-or-tool",
+      "authority": "canonical-written",
+      "status": "approved",
+      "description": "UI Kit contract, manifest, or tool.",
+      "bytes": 1849,
+      "sha256": "cb1441d96254f21d79b4c3584b2466cb4a0737149f76ea78613ea56a765c32c1",
+      "runtimeReady": false
+    },
+    {
+      "path": "docs/APPROVAL_AND_AUTHORITY.md",
+      "role": "contract-or-tool",
+      "authority": "canonical-written",
+      "status": "approved",
+      "description": "UI Kit contract, manifest, or tool.",
+      "bytes": 2339,
+      "sha256": "9a73a8406b727f9933263686e3786551bb2e3e0a71a00773cad4c497ec244148",
+      "runtimeReady": false
+    },
+    {
+      "path": "docs/ASSET_CATALOG.md",
+      "role": "contract-or-tool",
+      "authority": "canonical-written",
+      "status": "approved",
+      "description": "UI Kit contract, manifest, or tool.",
+      "bytes": 5450,
+      "sha256": "14899105ed05117aefc55a3893368b780042b733d844133f07e09388c39cca69",
+      "runtimeReady": false
+    },
+    {
+      "path": "docs/ASSET_EXTRACTION_AND_RUNTIME_USE.md",
+      "role": "contract-or-tool",
+      "authority": "canonical-written",
+      "status": "approved",
+      "description": "UI Kit contract, manifest, or tool.",
+      "bytes": 4407,
+      "sha256": "490ab2b0c0d42e318365d3b39d6cf835c98403d82ed26de91be232242c18df29",
+      "runtimeReady": false
+    },
+    {
+      "path": "docs/COMPONENTS.md",
+      "role": "contract-or-tool",
+      "authority": "canonical-written",
+      "status": "approved",
+      "description": "UI Kit contract, manifest, or tool.",
+      "bytes": 6786,
+      "sha256": "be8e5a1f61241c90367a25a0782359be98e2e1b1a131c08d753251d0490fd21a",
+      "runtimeReady": false
+    },
+    {
+      "path": "docs/IMPLEMENTATION.md",
+      "role": "contract-or-tool",
+      "authority": "canonical-written",
+      "status": "approved",
+      "description": "UI Kit contract, manifest, or tool.",
+      "bytes": 4334,
+      "sha256": "e24339f8043bfa7884a2932e6f57024b0eef054364f9cee7c403ee8614b221a6",
+      "runtimeReady": false
+    },
+    {
+      "path": "docs/MOTION.md",
+      "role": "contract-or-tool",
+      "authority": "canonical-written",
+      "status": "approved",
+      "description": "UI Kit contract, manifest, or tool.",
+      "bytes": 5519,
+      "sha256": "712cbb02e620fd34a91ca001a5f93efe1326512e7240e59240a82d29441d65f2",
+      "runtimeReady": false
+    },
+    {
+      "path": "docs/UI_KIT_BRIEF.md",
+      "role": "contract-or-tool",
+      "authority": "canonical-written",
+      "status": "approved",
+      "description": "UI Kit contract, manifest, or tool.",
+      "bytes": 7388,
+      "sha256": "d4b6bb24496eef6a1862e562cd7fbc40a54c5f8177207aabc6c5ff0b06cb1975",
+      "runtimeReady": false
+    },
+    {
+      "path": "manifests/sprite-regions.json",
+      "role": "contract-or-tool",
+      "authority": "canonical-written",
+      "status": "approved",
+      "description": "UI Kit contract, manifest, or tool.",
+      "bytes": 12585,
+      "sha256": "0b692756a77908190b8661977445f945fcde9ff5bc662777bf95eb79b2f765fd",
+      "runtimeReady": false
+    },
+    {
+      "path": "reference/concept-boards/00-overall-ui-kit.png",
+      "role": "concept-board",
+      "authority": "canonical",
+      "status": "approved",
+      "description": "Overall UI Kit visual authority.",
+      "bytes": 2841321,
+      "sha256": "ac7ac68d61b008b9a354439fdf0ef768a15af3d7f124fa4a05b53cdab2fbf1f5",
+      "image": {
+        "size": [
+          1448,
+          1086
+        ],
+        "mode": "RGB"
+      },
+      "runtimeReady": false
+    },
+    {
+      "path": "reference/concept-boards/01-buttons-tabs.png",
+      "role": "concept-board",
+      "authority": "canonical-phase",
+      "status": "approved",
+      "description": "Buttons and tabs visual reference.",
+      "bytes": 2501007,
+      "sha256": "091e3a0b9359829bcefc17106e23e3ab2d9fdd439342dc6b6e4907162259bb83",
+      "image": {
+        "size": [
+          1448,
+          1086
+        ],
+        "mode": "RGB"
+      },
+      "runtimeReady": false
+    },
+    {
+      "path": "reference/concept-boards/02-panels-containers.png",
+      "role": "concept-board",
+      "authority": "canonical-phase",
+      "status": "approved",
+      "description": "Panels and containers visual reference.",
+      "bytes": 2713096,
+      "sha256": "957d2811aeff76b0371730fcfa1c94d138f28bb9a9961d471ccf431c024a4a75",
+      "image": {
+        "size": [
+          1448,
+          1086
+        ],
+        "mode": "RGB"
+      },
+      "runtimeReady": false
+    },
+    {
+      "path": "reference/concept-boards/03-hud-notifications-alerts.png",
+      "role": "concept-board",
+      "authority": "canonical-phase",
+      "status": "approved",
+      "description": "HUD, notifications, and alerts visual reference.",
+      "bytes": 2661741,
+      "sha256": "7b1d4728374685cc45fa179b215c3c8eb15175610597cb17ac5526b3755fa681",
+      "image": {
+        "size": [
+          1448,
+          1086
+        ],
+        "mode": "RGB"
+      },
+      "runtimeReady": false
+    },
+    {
+      "path": "reference/concept-boards/04-results-character-select.png",
+      "role": "concept-board",
+      "authority": "canonical-phase",
+      "status": "approved",
+      "description": "Results, rewards, and Character Select visual reference.",
+      "bytes": 2791749,
+      "sha256": "5d225638f0f69f1ad5c6f326d46d9aad55055462ee2e5c380640f03806ed217d",
+      "image": {
+        "size": [
+          1448,
+          1086
+        ],
+        "mode": "RGB"
+      },
+      "runtimeReady": false
+    },
+    {
+      "path": "reference/motion/ui-motion-reference.png",
+      "role": "motion-board",
+      "authority": "behavioral-reference",
+      "status": "approved",
+      "description": "Motion sequence reference reconstructed from the approved motion direction and current assets.",
+      "bytes": 1043171,
+      "sha256": "c99623cee6dad7c945b8110392d9ab5de1ce0fd317cc670b13076fe73fa924a9",
+      "image": {
+        "size": [
+          1536,
+          1024
+        ],
+        "mode": "RGB"
+      },
+      "runtimeReady": false
+    },
+    {
+      "path": "source-sheets/phase-01-buttons-tabs.png",
+      "role": "source-sheet",
+      "authority": "approved-extraction-source",
+      "status": "approved",
+      "description": "Approved Phase 1 source sheet.",
+      "bytes": 2643129,
+      "sha256": "c6b986000df38ff0118f1e3b57670db9b5ec6d2b4e2f5b07a4ef0011b25b68a7",
+      "image": {
+        "size": [
+          1536,
+          1024
+        ],
+        "mode": "RGBA"
+      },
+      "runtimeReady": false
+    },
+    {
+      "path": "source-sheets/phase-02-panels-containers.png",
+      "role": "source-sheet",
+      "authority": "approved-extraction-source",
+      "status": "approved",
+      "description": "Approved Phase 2 source sheet.",
+      "bytes": 3151811,
+      "sha256": "e350c7f6950b0171f21fed58bb56a12fc24ab00a0c8f23251fff4bfd6ef29eaa",
+      "image": {
+        "size": [
+          1536,
+          1024
+        ],
+        "mode": "RGBA"
+      },
+      "runtimeReady": false
+    },
+    {
+      "path": "source-sheets/phase-03-hud-notifications-alerts.png",
+      "role": "source-sheet",
+      "authority": "approved-extraction-source",
+      "status": "approved",
+      "description": "Approved Phase 3 source sheet with optional exploratory regions.",
+      "bytes": 2885707,
+      "sha256": "9d4803f0ae03f15c65182bffb5699bf4aa57c3c1a39d92464fe498432a96e073",
+      "image": {
+        "size": [
+          1536,
+          1024
+        ],
+        "mode": "RGBA"
+      },
+      "runtimeReady": false
+    },
+    {
+      "path": "source-sheets/phase-04-results-character-select.png",
+      "role": "source-sheet",
+      "authority": "approved-extraction-source",
+      "status": "approved",
+      "description": "Corrected approved Phase 4 source sheet.",
+      "bytes": 3226867,
+      "sha256": "66314728decd03cdbc0fb55870ad4ef8db91d2f269cfda198bd0df5e0308dc3c",
+      "image": {
+        "size": [
+          1536,
+          1024
+        ],
+        "mode": "RGBA"
+      },
+      "runtimeReady": false
+    },
+    {
+      "path": "tokens/motion.tokens.json",
+      "role": "contract-or-tool",
+      "authority": "canonical-written",
+      "status": "approved",
+      "description": "UI Kit contract, manifest, or tool.",
+      "bytes": 3285,
+      "sha256": "7b9182f65e488a551e0261f3888898d614043ca3eddbefcdd90f037b12a3b2c3",
+      "runtimeReady": false
+    },
+    {
+      "path": "tokens/ui.tokens.json",
+      "role": "contract-or-tool",
+      "authority": "canonical-written",
+      "status": "approved",
+      "description": "UI Kit contract, manifest, or tool.",
+      "bytes": 2257,
+      "sha256": "a24247a30054632a15ae736f8b7889f3c613535e55d66586516a39321720f537",
+      "runtimeReady": false
+    },
+    {
+      "path": "tools/extract_ui_sources.py",
+      "role": "contract-or-tool",
+      "authority": "canonical-written",
+      "status": "approved",
+      "description": "UI Kit contract, manifest, or tool.",
+      "bytes": 4025,
+      "sha256": "7f73d357d6ec5a8ef0d8610afa57d594c91aa6a769e880b54fbff46d98158f6c",
+      "runtimeReady": false
+    },
+    {
+      "path": "tools/validate_ui_package.py",
+      "role": "contract-or-tool",
+      "authority": "canonical-written",
+      "status": "approved",
+      "description": "UI Kit contract, manifest, or tool.",
+      "bytes": 1581,
+      "sha256": "defb4524efdfa3d07d9ffd33d1d9089d3d8ef934cc872c89f7193d5bf949d850",
+      "runtimeReady": false
+    },
+    {
+      "path": "ui-kit.manifest.json",
+      "role": "contract-or-tool",
+      "authority": "canonical-written",
+      "status": "approved",
+      "description": "UI Kit contract, manifest, or tool.",
+      "bytes": 5414,
+      "sha256": "637dc1786cbd20d1ebfb94aef74ba558212365c8732d650318c9736ea63c00f6",
+      "runtimeReady": false
+    }
+  ]
+}

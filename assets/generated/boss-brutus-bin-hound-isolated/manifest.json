@@ -1,0 +1,7180 @@
+{
+  "assetName": "boss-brutus-bin-hound-isolated",
+  "canonId": "boss.level-02.brutus-bin-hound",
+  "status": "artwork-approved",
+  "approval": {
+    "approvedBy": "project-owner",
+    "approvedOn": "2026-08-13",
+    "scope": "Level 2 Brutus Bin Hound isolated artwork package",
+    "runtimePromotionAuthorized": false
+  },
+  "canonicalFacing": "right",
+  "approvedSource": "docs/design/trash-dash/library/characters/bosses/brutus-bin-hound/sprites/animation-source/boss-brutus-bin-hound-transparent.png",
+  "approvedSourceSha256": "2fb68f090e668dc662dbf5d92a08f15699a0f4afc8f5d864da82d27927da1cf1",
+  "canonicalVisualAuthority": "docs/design/trash-dash/library/characters/bosses/brutus-bin-hound/sprites/reference/boss-brutus-bin-hound.png",
+  "canonicalVisualSha256": "ddf2eb77ad8f16aa164a934b08ea6b64c0679c24bf9c3a92a4fa444813c25c1c",
+  "sheet": {
+    "file": "assets/generated/boss-brutus-bin-hound-isolated/boss-brutus-bin-hound-isolated.png",
+    "size": [
+      2048,
+      893
+    ],
+    "mode": "RGBA",
+    "background": "transparent",
+    "layout": "manifest-defined-variable-rectangles",
+    "gutterPixels": 8,
+    "readingOrder": "state order then ordered frame index"
+  },
+  "sourcePixelScale": 1,
+  "outputPixelScale": 1,
+  "states": [
+    {
+      "id": "reference-large",
+      "orderedFrames": [
+        "reference-large-00"
+      ],
+      "frameCount": 1,
+      "loop": false,
+      "progression": "reference-only",
+      "timing": {
+        "basis": "approved-source-order",
+        "durationMs": null,
+        "status": "not-promoted; runtime timing intentionally not invented"
+      }
+    },
+    {
+      "id": "idle",
+      "orderedFrames": [
+        "idle-00",
+        "idle-01",
+        "idle-02",
+        "idle-03",
+        "idle-04",
+        "idle-05",
+        "idle-06",
+        "idle-07",
+        "idle-08"
+      ],
+      "frameCount": 9,
+      "loop": true,
+      "progression": "ambient loop",
+      "timing": {
+        "basis": "approved-source-order",
+        "durationMs": null,
+        "status": "not-promoted; runtime timing intentionally not invented"
+      }
+    },
+    {
+      "id": "bark-telegraph",
+      "orderedFrames": [
+        "bark-telegraph-00",
+        "bark-telegraph-01",
+        "bark-telegraph-02",
+        "bark-telegraph-03",
+        "bark-telegraph-04",
+        "bark-telegraph-05",
+        "bark-telegraph-06"
+      ],
+      "frameCount": 7,
+      "loop": false,
+      "progression": "warning tell to bark release",
+      "timing": {
+        "basis": "approved-source-order",
+        "durationMs": null,
+        "status": "not-promoted; runtime timing intentionally not invented"
+      }
+    },
+    {
+      "id": "walk-run",
+      "orderedFrames": [
+        "walk-run-00",
+        "walk-run-01",
+        "walk-run-02",
+        "walk-run-03",
+        "walk-run-04",
+        "walk-run-05",
+        "walk-run-06",
+        "walk-run-07",
+        "walk-run-08",
+        "walk-run-09"
+      ],
+      "frameCount": 10,
+      "loop": true,
+      "progression": "ordered locomotion progression",
+      "timing": {
+        "basis": "approved-source-order",
+        "durationMs": null,
+        "status": "not-promoted; runtime timing intentionally not invented"
+      }
+    },
+    {
+      "id": "roar",
+      "orderedFrames": [
+        "roar-00",
+        "roar-01",
+        "roar-02",
+        "roar-03"
+      ],
+      "frameCount": 4,
+      "loop": false,
+      "progression": "intimidation bark progression",
+      "timing": {
+        "basis": "approved-source-order",
+        "durationMs": null,
+        "status": "not-promoted; runtime timing intentionally not invented"
+      }
+    },
+    {
+      "id": "hit-reaction",
+      "orderedFrames": [
+        "hit-reaction-00",
+        "hit-reaction-01",
+        "hit-reaction-02"
+      ],
+      "frameCount": 3,
+      "loop": false,
+      "progression": "light to heavy reaction poses",
+      "timing": {
+        "basis": "approved-source-order",
+        "durationMs": null,
+        "status": "not-promoted; runtime timing intentionally not invented"
+      }
+    },
+    {
+      "id": "crash-stunned",
+      "orderedFrames": [
+        "crash-stunned-00",
+        "crash-stunned-01",
+        "crash-stunned-02",
+        "crash-stunned-03"
+      ],
+      "frameCount": 4,
+      "loop": false,
+      "progression": "impact to dazed hold",
+      "timing": {
+        "basis": "approved-source-order",
+        "durationMs": null,
+        "status": "not-promoted; runtime timing intentionally not invented"
+      }
+    },
+    {
+      "id": "recovery",
+      "orderedFrames": [
+        "recovery-00",
+        "recovery-01",
+        "recovery-02",
+        "recovery-03"
+      ],
+      "frameCount": 4,
+      "loop": false,
+      "progression": "stunned recovery to active",
+      "timing": {
+        "basis": "approved-source-order",
+        "durationMs": null,
+        "status": "not-promoted; runtime timing intentionally not invented"
+      }
+    },
+    {
+      "id": "enraged",
+      "orderedFrames": [
+        "enraged-00",
+        "enraged-01",
+        "enraged-02",
+        "enraged-03",
+        "enraged-04",
+        "enraged-05"
+      ],
+      "frameCount": 6,
+      "loop": true,
+      "progression": "faster aggressive locomotion",
+      "timing": {
+        "basis": "approved-source-order",
+        "durationMs": null,
+        "status": "not-promoted; runtime timing intentionally not invented"
+      }
+    },
+    {
+      "id": "emerge",
+      "orderedFrames": [
+        "emerge-00",
+        "emerge-01",
+        "emerge-02",
+        "emerge-03"
+      ],
+      "frameCount": 4,
+      "loop": false,
+      "progression": "closed shell to active state",
+      "timing": {
+        "basis": "approved-source-order",
+        "durationMs": null,
+        "status": "not-promoted; runtime timing intentionally not invented"
+      }
+    },
+    {
+      "id": "turn-around",
+      "orderedFrames": [
+        "turn-around-00",
+        "turn-around-01",
+        "turn-around-02",
+        "turn-around-03"
+      ],
+      "frameCount": 4,
+      "loop": false,
+      "progression": "ordered facing transition",
+      "timing": {
+        "basis": "approved-source-order",
+        "durationMs": null,
+        "status": "not-promoted; runtime timing intentionally not invented"
+      }
+    },
+    {
+      "id": "retreat",
+      "orderedFrames": [
+        "retreat-00",
+        "retreat-01",
+        "retreat-02",
+        "retreat-03",
+        "retreat-04"
+      ],
+      "frameCount": 5,
+      "loop": false,
+      "progression": "active state to intentional exit",
+      "timing": {
+        "basis": "approved-source-order",
+        "durationMs": null,
+        "status": "not-promoted; runtime timing intentionally not invented"
+      }
+    },
+    {
+      "id": "defeat",
+      "orderedFrames": [
+        "defeat-00",
+        "defeat-01",
+        "defeat-02",
+        "defeat-03",
+        "defeat-04"
+      ],
+      "frameCount": 5,
+      "loop": false,
+      "progression": "collapse to pacified pool state",
+      "timing": {
+        "basis": "approved-source-order",
+        "durationMs": null,
+        "status": "not-promoted; runtime timing intentionally not invented"
+      }
+    },
+    {
+      "id": "idle-variants",
+      "orderedFrames": [
+        "idle-variant-00",
+        "idle-variant-01"
+      ],
+      "frameCount": 2,
+      "loop": true,
+      "progression": "approved ambient variants",
+      "timing": {
+        "basis": "approved-source-order",
+        "durationMs": null,
+        "status": "not-promoted; runtime timing intentionally not invented"
+      }
+    },
+    {
+      "id": "dig",
+      "orderedFrames": [
+        "dig-00"
+      ],
+      "frameCount": 1,
+      "loop": true,
+      "progression": "approved dirt-kick action",
+      "timing": {
+        "basis": "approved-source-order",
+        "durationMs": null,
+        "status": "not-promoted; runtime timing intentionally not invented"
+      }
+    },
+    {
+      "id": "reference-child",
+      "orderedFrames": [
+        "reference-child-00"
+      ],
+      "frameCount": 1,
+      "loop": false,
+      "progression": "scale-reference-only",
+      "timing": {
+        "basis": "approved-source-order",
+        "durationMs": null,
+        "status": "not-promoted; runtime timing intentionally not invented"
+      }
+    },
+    {
+      "id": "rolling-can",
+      "orderedFrames": [
+        "rolling-can-00",
+        "rolling-can-01",
+        "rolling-can-02",
+        "rolling-can-03"
+      ],
+      "frameCount": 4,
+      "loop": false,
+      "progression": "ordered projectile/damage progression",
+      "timing": {
+        "basis": "approved-source-order",
+        "durationMs": null,
+        "status": "not-promoted; runtime timing intentionally not invented"
+      }
+    },
+    {
+      "id": "sprinkler-hydrant",
+      "orderedFrames": [
+        "sprinkler-hydrant-00",
+        "sprinkler-hydrant-01",
+        "sprinkler-hydrant-02",
+        "sprinkler-hydrant-03",
+        "sprinkler-hydrant-04"
+      ],
+      "frameCount": 5,
+      "loop": false,
+      "progression": "ordered standalone hazard variants",
+      "timing": {
+        "basis": "approved-source-order",
+        "durationMs": null,
+        "status": "not-promoted; runtime timing intentionally not invented"
+      }
+    },
+    {
+      "id": "water-splash",
+      "orderedFrames": [
+        "water-splash-00",
+        "water-splash-01",
+        "water-splash-02"
+      ],
+      "frameCount": 3,
+      "loop": false,
+      "progression": "ordered standalone splash progression",
+      "timing": {
+        "basis": "approved-source-order",
+        "durationMs": null,
+        "status": "not-promoted; runtime timing intentionally not invented"
+      }
+    },
+    {
+      "id": "water-droplets",
+      "orderedFrames": [
+        "water-droplets-00"
+      ],
+      "frameCount": 1,
+      "loop": false,
+      "progression": "standalone effect strip",
+      "timing": {
+        "basis": "approved-source-order",
+        "durationMs": null,
+        "status": "not-promoted; runtime timing intentionally not invented"
+      }
+    },
+    {
+      "id": "impact-stars",
+      "orderedFrames": [
+        "impact-stars-00"
+      ],
+      "frameCount": 1,
+      "loop": false,
+      "progression": "standalone effect strip",
+      "timing": {
+        "basis": "approved-source-order",
+        "durationMs": null,
+        "status": "not-promoted; runtime timing intentionally not invented"
+      }
+    },
+    {
+      "id": "dust-speed-puffs",
+      "orderedFrames": [
+        "dust-speed-puff-00",
+        "dust-speed-puff-01",
+        "dust-speed-puff-02",
+        "dust-speed-puff-03",
+        "dust-speed-puff-04",
+        "dust-speed-puff-05",
+        "dust-speed-puff-06",
+        "dust-speed-puff-07",
+        "dust-speed-puff-08"
+      ],
+      "frameCount": 9,
+      "loop": false,
+      "progression": "standalone effect variants",
+      "timing": {
+        "basis": "approved-source-order",
+        "durationMs": null,
+        "status": "not-promoted; runtime timing intentionally not invented"
+      }
+    },
+    {
+      "id": "drip-strip",
+      "orderedFrames": [
+        "drip-strip-00"
+      ],
+      "frameCount": 1,
+      "loop": false,
+      "progression": "standalone effect strip",
+      "timing": {
+        "basis": "approved-source-order",
+        "durationMs": null,
+        "status": "not-promoted; runtime timing intentionally not invented"
+      }
+    },
+    {
+      "id": "misc-trash",
+      "orderedFrames": [
+        "misc-trash-00",
+        "misc-trash-01",
+        "misc-trash-02",
+        "misc-trash-03",
+        "misc-trash-04",
+        "misc-trash-05"
+      ],
+      "frameCount": 6,
+      "loop": false,
+      "progression": "standalone gameplay detail sprites",
+      "timing": {
+        "basis": "approved-source-order",
+        "durationMs": null,
+        "status": "not-promoted; runtime timing intentionally not invented"
+      }
+    },
+    {
+      "id": "close-up-heads",
+      "orderedFrames": [
+        "close-up-head-00",
+        "close-up-head-01",
+        "close-up-head-02"
+      ],
+      "frameCount": 3,
+      "loop": false,
+      "progression": "reference-only expression sprites",
+      "timing": {
+        "basis": "approved-source-order",
+        "durationMs": null,
+        "status": "not-promoted; runtime timing intentionally not invented"
+      }
+    }
+  ],
+  "frames": {
+    "reference-large-00": {
+      "state": "reference-large",
+      "stateFrameIndex": 0,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        0,
+        0,
+        300,
+        232
+      ],
+      "sourceRect": [
+        19,
+        11,
+        245,
+        184
+      ],
+      "sourceVisibleBounds": [
+        21,
+        13,
+        262,
+        193
+      ],
+      "componentCount": 1,
+      "frameFile": "frames/reference-large-00.png",
+      "frameSize": [
+        245,
+        184
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        243,
+        182
+      ],
+      "pivotType": "reference-bottom-center",
+      "pivotInFrame": [
+        122,
+        181
+      ],
+      "effectOwnership": "standalone-effect-or-reference-sprite",
+      "timing": {
+        "stateFrameIndex": 0,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "d322c8c07ebc78c73a7cc0a540b4c513bf88e2e5883f1cb07b53f109b8fdf394",
+      "visiblePixelSha256": "b8af2d03f7440dc921a9b32e744362b65c1893c27148d8df9457009f0c01c5af",
+      "visiblePixelCount": 31994,
+      "cellRect": [
+        0,
+        0,
+        261,
+        200
+      ],
+      "artRect": [
+        8,
+        8,
+        245,
+        184
+      ],
+      "pivotInCell": [
+        130,
+        189
+      ]
+    },
+    "idle-00": {
+      "state": "idle",
+      "stateFrameIndex": 0,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        300,
+        0,
+        438,
+        114
+      ],
+      "sourceRect": [
+        316,
+        18,
+        112,
+        86
+      ],
+      "sourceVisibleBounds": [
+        318,
+        20,
+        426,
+        102
+      ],
+      "componentCount": 1,
+      "frameFile": "frames/idle-00.png",
+      "frameSize": [
+        112,
+        86
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        110,
+        84
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        56,
+        83
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 0,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "21c40ac44cc43bc7e60cf748578dd8b6a6770c58efe7226cbc787d296a3d750b",
+      "visiblePixelSha256": "04c2f90a6f33f6f978e8a470fbead6032a81bd207a37f1159c8363d8761b0590",
+      "visiblePixelCount": 6569,
+      "cellRect": [
+        261,
+        0,
+        128,
+        102
+      ],
+      "artRect": [
+        269,
+        8,
+        112,
+        86
+      ],
+      "pivotInCell": [
+        64,
+        91
+      ]
+    },
+    "idle-01": {
+      "state": "idle",
+      "stateFrameIndex": 1,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        438,
+        0,
+        560,
+        114
+      ],
+      "sourceRect": [
+        445,
+        19,
+        108,
+        85
+      ],
+      "sourceVisibleBounds": [
+        447,
+        21,
+        551,
+        102
+      ],
+      "componentCount": 1,
+      "frameFile": "frames/idle-01.png",
+      "frameSize": [
+        108,
+        85
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        106,
+        83
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        53,
+        82
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 1,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "f863a538fa7bd5e146e7789cdaa926ede0cb4a7f1ad64225406d65ded3b88d31",
+      "visiblePixelSha256": "60eecc4e15e5497d8d4bdbd09b820062e61ec41c4fe65303b2ad74533fedf8e3",
+      "visiblePixelCount": 6218,
+      "cellRect": [
+        389,
+        0,
+        124,
+        101
+      ],
+      "artRect": [
+        397,
+        8,
+        108,
+        85
+      ],
+      "pivotInCell": [
+        61,
+        90
+      ]
+    },
+    "idle-02": {
+      "state": "idle",
+      "stateFrameIndex": 2,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        560,
+        0,
+        690,
+        114
+      ],
+      "sourceRect": [
+        569,
+        19,
+        112,
+        86
+      ],
+      "sourceVisibleBounds": [
+        571,
+        21,
+        679,
+        103
+      ],
+      "componentCount": 1,
+      "frameFile": "frames/idle-02.png",
+      "frameSize": [
+        112,
+        86
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        110,
+        84
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        55,
+        83
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 2,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "1614cb636cc50b7d7aa30d95ac415412d81651d0e0ade4847d8ec9f90b95a12c",
+      "visiblePixelSha256": "172f43a922d8c2b40df7445314a5f1b0e73ae327ee80e6e9cdb62c5747b2a315",
+      "visiblePixelCount": 6487,
+      "cellRect": [
+        513,
+        0,
+        128,
+        102
+      ],
+      "artRect": [
+        521,
+        8,
+        112,
+        86
+      ],
+      "pivotInCell": [
+        63,
+        91
+      ]
+    },
+    "idle-03": {
+      "state": "idle",
+      "stateFrameIndex": 3,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        690,
+        0,
+        820,
+        114
+      ],
+      "sourceRect": [
+        698,
+        18,
+        110,
+        87
+      ],
+      "sourceVisibleBounds": [
+        700,
+        20,
+        806,
+        103
+      ],
+      "componentCount": 2,
+      "frameFile": "frames/idle-03.png",
+      "frameSize": [
+        110,
+        87
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        108,
+        85
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        54,
+        84
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 3,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "38e92e2244731092a53bd6b84d79c72f9ec9045f0010c796b446000336f4dc0c",
+      "visiblePixelSha256": "652edd329bd16ee8cb1b47319fef6d015d12eb0d4d51f9446825951d3c790ea6",
+      "visiblePixelCount": 6580,
+      "cellRect": [
+        641,
+        0,
+        126,
+        103
+      ],
+      "artRect": [
+        649,
+        8,
+        110,
+        87
+      ],
+      "pivotInCell": [
+        62,
+        92
+      ]
+    },
+    "idle-04": {
+      "state": "idle",
+      "stateFrameIndex": 4,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        820,
+        0,
+        956,
+        114
+      ],
+      "sourceRect": [
+        833,
+        18,
+        115,
+        88
+      ],
+      "sourceVisibleBounds": [
+        835,
+        20,
+        946,
+        104
+      ],
+      "componentCount": 1,
+      "frameFile": "frames/idle-04.png",
+      "frameSize": [
+        115,
+        88
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        113,
+        86
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        57,
+        85
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 4,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "8c2afd30e37739ebbfed005c842bb26fe484fcdb1873de6f3d19a220ad9e2514",
+      "visiblePixelSha256": "27aa41c68076d94c521adc3a5f4668c485704ddcae7cf7c4348aa953f30e2a20",
+      "visiblePixelCount": 6976,
+      "cellRect": [
+        767,
+        0,
+        131,
+        104
+      ],
+      "artRect": [
+        775,
+        8,
+        115,
+        88
+      ],
+      "pivotInCell": [
+        65,
+        93
+      ]
+    },
+    "idle-05": {
+      "state": "idle",
+      "stateFrameIndex": 5,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        956,
+        0,
+        1084,
+        114
+      ],
+      "sourceRect": [
+        964,
+        17,
+        113,
+        89
+      ],
+      "sourceVisibleBounds": [
+        966,
+        19,
+        1075,
+        104
+      ],
+      "componentCount": 2,
+      "frameFile": "frames/idle-05.png",
+      "frameSize": [
+        113,
+        89
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        111,
+        87
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        56,
+        86
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 5,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "50bc7c54534cd3d848a29b71ed670a7da0e40cb20600215c54b62f04b81f2e75",
+      "visiblePixelSha256": "8346984aa5b811ca0395e41b9d4f075e6592eff59ee1b4ba6399bd9af2d2dd2e",
+      "visiblePixelCount": 6958,
+      "cellRect": [
+        898,
+        0,
+        129,
+        105
+      ],
+      "artRect": [
+        906,
+        8,
+        113,
+        89
+      ],
+      "pivotInCell": [
+        64,
+        94
+      ]
+    },
+    "idle-06": {
+      "state": "idle",
+      "stateFrameIndex": 6,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1084,
+        0,
+        1209,
+        114
+      ],
+      "sourceRect": [
+        1091,
+        18,
+        111,
+        88
+      ],
+      "sourceVisibleBounds": [
+        1093,
+        20,
+        1200,
+        104
+      ],
+      "componentCount": 1,
+      "frameFile": "frames/idle-06.png",
+      "frameSize": [
+        111,
+        88
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        109,
+        86
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        55,
+        85
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 6,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "d6558907801fdccdb1d01ec1136e68d021d61d8798568f75813caf6b83a20b03",
+      "visiblePixelSha256": "51a8e1480c51e29f058777153af2ba8b66c24d69d215844db5a88624e0b4d760",
+      "visiblePixelCount": 6764,
+      "cellRect": [
+        1027,
+        0,
+        127,
+        104
+      ],
+      "artRect": [
+        1035,
+        8,
+        111,
+        88
+      ],
+      "pivotInCell": [
+        63,
+        93
+      ]
+    },
+    "idle-07": {
+      "state": "idle",
+      "stateFrameIndex": 7,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1209,
+        0,
+        1330,
+        114
+      ],
+      "sourceRect": [
+        1216,
+        19,
+        110,
+        87
+      ],
+      "sourceVisibleBounds": [
+        1218,
+        21,
+        1324,
+        104
+      ],
+      "componentCount": 1,
+      "frameFile": "frames/idle-07.png",
+      "frameSize": [
+        110,
+        87
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        108,
+        85
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        54,
+        84
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 7,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "8eea359405c46c0366572d709211e95c24426909bccc7486dae9dcd59117c13b",
+      "visiblePixelSha256": "6e94577dfab4f6f84e0cd944b5257dee4e1f83f4969e6c020da8aa6f27852f30",
+      "visiblePixelCount": 6733,
+      "cellRect": [
+        1154,
+        0,
+        126,
+        103
+      ],
+      "artRect": [
+        1162,
+        8,
+        110,
+        87
+      ],
+      "pivotInCell": [
+        62,
+        92
+      ]
+    },
+    "idle-08": {
+      "state": "idle",
+      "stateFrameIndex": 8,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1330,
+        0,
+        1536,
+        114
+      ],
+      "sourceRect": [
+        1333,
+        23,
+        147,
+        83
+      ],
+      "sourceVisibleBounds": [
+        1335,
+        25,
+        1478,
+        104
+      ],
+      "componentCount": 5,
+      "frameFile": "frames/idle-08.png",
+      "frameSize": [
+        147,
+        83
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        145,
+        81
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        61,
+        80
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 8,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "448a5260e517327d6dfdbddfdc9a465cf046f6fde7fb83a7254336de1ca3db9c",
+      "visiblePixelSha256": "bd3009c6ffe83c8e97780b3883576d5129a995364f91021401fd6210033ba9df",
+      "visiblePixelCount": 7210,
+      "cellRect": [
+        1280,
+        0,
+        163,
+        99
+      ],
+      "artRect": [
+        1288,
+        8,
+        147,
+        83
+      ],
+      "pivotInCell": [
+        69,
+        88
+      ]
+    },
+    "bark-telegraph-00": {
+      "state": "bark-telegraph",
+      "stateFrameIndex": 0,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        300,
+        114,
+        448,
+        232
+      ],
+      "sourceRect": [
+        306,
+        124,
+        129,
+        92
+      ],
+      "sourceVisibleBounds": [
+        308,
+        126,
+        433,
+        214
+      ],
+      "componentCount": 1,
+      "frameFile": "frames/bark-telegraph-00.png",
+      "frameSize": [
+        129,
+        92
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        127,
+        90
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        64,
+        89
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 0,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "9b592572abd13ff31e954304e0de3565a5e3a7cb19e0acb958daf5a67dd76053",
+      "visiblePixelSha256": "6e57bfe3af7baf812103ec2f41c141df594b4ad81de34699a7c4cdd67a1ee024",
+      "visiblePixelCount": 8524,
+      "cellRect": [
+        1443,
+        0,
+        145,
+        108
+      ],
+      "artRect": [
+        1451,
+        8,
+        129,
+        92
+      ],
+      "pivotInCell": [
+        72,
+        97
+      ]
+    },
+    "bark-telegraph-01": {
+      "state": "bark-telegraph",
+      "stateFrameIndex": 1,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        448,
+        114,
+        640,
+        232
+      ],
+      "sourceRect": [
+        462,
+        124,
+        166,
+        92
+      ],
+      "sourceVisibleBounds": [
+        464,
+        126,
+        626,
+        214
+      ],
+      "componentCount": 6,
+      "frameFile": "frames/bark-telegraph-01.png",
+      "frameSize": [
+        166,
+        92
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        164,
+        90
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        63,
+        89
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 1,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "f7a550c6e2cb174008c8ae8c098d1530d65f4f5b8e903262087814ccc469bde9",
+      "visiblePixelSha256": "ccdc909ff54bf0cb06706f59580c5750490856673e3280edbbd9962f0b4172e8",
+      "visiblePixelCount": 8451,
+      "cellRect": [
+        1588,
+        0,
+        182,
+        108
+      ],
+      "artRect": [
+        1596,
+        8,
+        166,
+        92
+      ],
+      "pivotInCell": [
+        71,
+        97
+      ]
+    },
+    "bark-telegraph-02": {
+      "state": "bark-telegraph",
+      "stateFrameIndex": 2,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        640,
+        114,
+        830,
+        232
+      ],
+      "sourceRect": [
+        653,
+        126,
+        160,
+        91
+      ],
+      "sourceVisibleBounds": [
+        655,
+        128,
+        811,
+        215
+      ],
+      "componentCount": 4,
+      "frameFile": "frames/bark-telegraph-02.png",
+      "frameSize": [
+        160,
+        91
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        158,
+        89
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        65,
+        88
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 2,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "b42e243558ed0ca326b3878ce9c8582561bceb0573b06294790fb8bcbf3a5ac8",
+      "visiblePixelSha256": "a04af159348b2efe55fe6a6fcf7dd52eb5001537dbd08ead044d29091c43bbb9",
+      "visiblePixelCount": 8497,
+      "cellRect": [
+        1770,
+        0,
+        176,
+        107
+      ],
+      "artRect": [
+        1778,
+        8,
+        160,
+        91
+      ],
+      "pivotInCell": [
+        73,
+        96
+      ]
+    },
+    "bark-telegraph-03": {
+      "state": "bark-telegraph",
+      "stateFrameIndex": 3,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        830,
+        114,
+        1015,
+        232
+      ],
+      "sourceRect": [
+        846,
+        121,
+        168,
+        96
+      ],
+      "sourceVisibleBounds": [
+        848,
+        123,
+        1012,
+        215
+      ],
+      "componentCount": 7,
+      "frameFile": "frames/bark-telegraph-03.png",
+      "frameSize": [
+        168,
+        96
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        166,
+        94
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        62,
+        93
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 3,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "18524c450aeab547dc553a4e7953fa9339a1ff2a36473a4952464cc9d230ff8c",
+      "visiblePixelSha256": "c1f71cc128368ec266de8d18a120c36efc4a0ecf7a924f68129edf64832b270c",
+      "visiblePixelCount": 8749,
+      "cellRect": [
+        0,
+        200,
+        184,
+        112
+      ],
+      "artRect": [
+        8,
+        208,
+        168,
+        96
+      ],
+      "pivotInCell": [
+        70,
+        101
+      ]
+    },
+    "bark-telegraph-04": {
+      "state": "bark-telegraph",
+      "stateFrameIndex": 4,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1015,
+        114,
+        1148,
+        232
+      ],
+      "sourceRect": [
+        1016,
+        123,
+        133,
+        94
+      ],
+      "sourceVisibleBounds": [
+        1018,
+        125,
+        1147,
+        215
+      ],
+      "componentCount": 4,
+      "frameFile": "frames/bark-telegraph-04.png",
+      "frameSize": [
+        133,
+        94
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        131,
+        92
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        70,
+        91
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 4,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "f375269b1a5d5fa34e9bf6e5a4d0296373bc4b9a29fb850dfbf179a64a8adbaa",
+      "visiblePixelSha256": "89a19d6d112b4945e371be6d3ef3775d1d27dd5d53809502c660bb9fe9ebe7f3",
+      "visiblePixelCount": 7874,
+      "cellRect": [
+        184,
+        200,
+        149,
+        110
+      ],
+      "artRect": [
+        192,
+        208,
+        133,
+        94
+      ],
+      "pivotInCell": [
+        78,
+        99
+      ]
+    },
+    "bark-telegraph-05": {
+      "state": "bark-telegraph",
+      "stateFrameIndex": 5,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1148,
+        114,
+        1305,
+        232
+      ],
+      "sourceRect": [
+        1148,
+        124,
+        159,
+        91
+      ],
+      "sourceVisibleBounds": [
+        1150,
+        126,
+        1305,
+        213
+      ],
+      "componentCount": 12,
+      "frameFile": "frames/bark-telegraph-05.png",
+      "frameSize": [
+        159,
+        91
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        157,
+        89
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        97,
+        88
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 5,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "b8e66c17df12a64503dbdbc489586cd08fabbacf3e1cfac3578a31cb079d5ad9",
+      "visiblePixelSha256": "46847663f2441279efaf3ffb2da3bc086d6bb357262abc851e91ca119c3b9597",
+      "visiblePixelCount": 7364,
+      "cellRect": [
+        333,
+        200,
+        175,
+        107
+      ],
+      "artRect": [
+        341,
+        208,
+        159,
+        91
+      ],
+      "pivotInCell": [
+        105,
+        96
+      ]
+    },
+    "bark-telegraph-06": {
+      "state": "bark-telegraph",
+      "stateFrameIndex": 6,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1305,
+        114,
+        1536,
+        232
+      ],
+      "sourceRect": [
+        1304,
+        121,
+        183,
+        96
+      ],
+      "sourceVisibleBounds": [
+        1306,
+        123,
+        1485,
+        215
+      ],
+      "componentCount": 8,
+      "frameFile": "frames/bark-telegraph-06.png",
+      "frameSize": [
+        183,
+        96
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        181,
+        94
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        84,
+        93
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 6,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "b9fe89744e131f492ca7a45e72c02f78dcc32c397164ed316b04b1bbd4ad1324",
+      "visiblePixelSha256": "ea647ad1e315d10ec07e3480a3af9960f95648d2c5454db22cc4334a2523bd6d",
+      "visiblePixelCount": 8291,
+      "cellRect": [
+        508,
+        200,
+        199,
+        112
+      ],
+      "artRect": [
+        516,
+        208,
+        183,
+        96
+      ],
+      "pivotInCell": [
+        92,
+        101
+      ]
+    },
+    "walk-run-00": {
+      "state": "walk-run",
+      "stateFrameIndex": 0,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        0,
+        232,
+        144,
+        329
+      ],
+      "sourceRect": [
+        23,
+        230,
+        119,
+        73
+      ],
+      "sourceVisibleBounds": [
+        25,
+        232,
+        140,
+        301
+      ],
+      "componentCount": 5,
+      "frameFile": "frames/walk-run-00.png",
+      "frameSize": [
+        119,
+        73
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        117,
+        71
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        59,
+        70
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 0,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "969fd49a7af031a29e9d907b8a100024361ac12f7c108820525c501d28c9b064",
+      "visiblePixelSha256": "67ef5ad40e971213afbb6564d2de5bcccf68c45ffd6b32201c033d1a18df0525",
+      "visiblePixelCount": 5132,
+      "cellRect": [
+        707,
+        200,
+        135,
+        89
+      ],
+      "artRect": [
+        715,
+        208,
+        119,
+        73
+      ],
+      "pivotInCell": [
+        67,
+        78
+      ]
+    },
+    "walk-run-01": {
+      "state": "walk-run",
+      "stateFrameIndex": 1,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        144,
+        232,
+        275,
+        329
+      ],
+      "sourceRect": [
+        135,
+        231,
+        141,
+        72
+      ],
+      "sourceVisibleBounds": [
+        137,
+        233,
+        274,
+        301
+      ],
+      "componentCount": 2,
+      "frameFile": "frames/walk-run-01.png",
+      "frameSize": [
+        141,
+        72
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        139,
+        70
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        70,
+        69
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 1,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "303862ca18767bfdc50551d21f895aa5961f2272146fadbfd216c551d8464e0b",
+      "visiblePixelSha256": "3f7f4e2921199d077a8b5e0d846b49edac34b9559dd9f5c3b1189c11675f7593",
+      "visiblePixelCount": 5440,
+      "cellRect": [
+        842,
+        200,
+        157,
+        88
+      ],
+      "artRect": [
+        850,
+        208,
+        141,
+        72
+      ],
+      "pivotInCell": [
+        78,
+        77
+      ]
+    },
+    "walk-run-02": {
+      "state": "walk-run",
+      "stateFrameIndex": 2,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        275,
+        232,
+        414,
+        329
+      ],
+      "sourceRect": [
+        276,
+        232,
+        137,
+        71
+      ],
+      "sourceVisibleBounds": [
+        278,
+        234,
+        411,
+        301
+      ],
+      "componentCount": 8,
+      "frameFile": "frames/walk-run-02.png",
+      "frameSize": [
+        137,
+        71
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        135,
+        69
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        68,
+        68
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 2,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "8c6c2225f3cd8903a8e3c20e1d2f8631b7e297f4baeaf8c0f689c2fe0998da3d",
+      "visiblePixelSha256": "6d5e9efeadbc451398177c5c375336932ed47a154e472c561e646a4a87b09566",
+      "visiblePixelCount": 5206,
+      "cellRect": [
+        999,
+        200,
+        153,
+        87
+      ],
+      "artRect": [
+        1007,
+        208,
+        137,
+        71
+      ],
+      "pivotInCell": [
+        76,
+        76
+      ]
+    },
+    "walk-run-03": {
+      "state": "walk-run",
+      "stateFrameIndex": 3,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        414,
+        232,
+        544,
+        329
+      ],
+      "sourceRect": [
+        422,
+        233,
+        121,
+        71
+      ],
+      "sourceVisibleBounds": [
+        424,
+        235,
+        541,
+        302
+      ],
+      "componentCount": 3,
+      "frameFile": "frames/walk-run-03.png",
+      "frameSize": [
+        121,
+        71
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        119,
+        69
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        60,
+        68
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 3,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "a4e6ae30bff46cdd2188b4ad8da56e6e3a49bd7c89245c7ca65f2825c6f98a3f",
+      "visiblePixelSha256": "4943a97f20cea36615c6c010ae26555d1b2578e76f34a6a0f692dcecba0cdcdf",
+      "visiblePixelCount": 5019,
+      "cellRect": [
+        1152,
+        200,
+        137,
+        87
+      ],
+      "artRect": [
+        1160,
+        208,
+        121,
+        71
+      ],
+      "pivotInCell": [
+        68,
+        76
+      ]
+    },
+    "walk-run-04": {
+      "state": "walk-run",
+      "stateFrameIndex": 4,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        544,
+        232,
+        686,
+        329
+      ],
+      "sourceRect": [
+        548,
+        234,
+        115,
+        71
+      ],
+      "sourceVisibleBounds": [
+        550,
+        236,
+        661,
+        303
+      ],
+      "componentCount": 4,
+      "frameFile": "frames/walk-run-04.png",
+      "frameSize": [
+        115,
+        71
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        113,
+        69
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        57,
+        68
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 4,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "480bad7ef42ef8ee64138c31c6c49c1b747c29ebf7bee2ad6d67c07725de5c9f",
+      "visiblePixelSha256": "bce2f22066d01b25a9e1b36be6c086bb569d4da369e7a80c3ba78ebc26c1ece0",
+      "visiblePixelCount": 4787,
+      "cellRect": [
+        1289,
+        200,
+        131,
+        87
+      ],
+      "artRect": [
+        1297,
+        208,
+        115,
+        71
+      ],
+      "pivotInCell": [
+        65,
+        76
+      ]
+    },
+    "walk-run-05": {
+      "state": "walk-run",
+      "stateFrameIndex": 5,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        686,
+        232,
+        848,
+        329
+      ],
+      "sourceRect": [
+        681,
+        237,
+        169,
+        67
+      ],
+      "sourceVisibleBounds": [
+        683,
+        239,
+        848,
+        302
+      ],
+      "componentCount": 8,
+      "frameFile": "frames/walk-run-05.png",
+      "frameSize": [
+        169,
+        67
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        167,
+        65
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        87,
+        64
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 5,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "0a61f6cca44a16cf4454e45c6831ea89337e386c4f22a8ffe1270e5fe3140831",
+      "visiblePixelSha256": "2e9309c34ab85b6426a767e871e411f91a36229a66e11525b2ecfacc4dcdb390",
+      "visiblePixelCount": 6260,
+      "cellRect": [
+        1420,
+        200,
+        185,
+        83
+      ],
+      "artRect": [
+        1428,
+        208,
+        169,
+        67
+      ],
+      "pivotInCell": [
+        95,
+        72
+      ]
+    },
+    "walk-run-06": {
+      "state": "walk-run",
+      "stateFrameIndex": 6,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        848,
+        232,
+        993,
+        329
+      ],
+      "sourceRect": [
+        868,
+        238,
+        114,
+        70
+      ],
+      "sourceVisibleBounds": [
+        870,
+        240,
+        980,
+        306
+      ],
+      "componentCount": 3,
+      "frameFile": "frames/walk-run-06.png",
+      "frameSize": [
+        114,
+        70
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        112,
+        68
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        58,
+        67
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 6,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "7859e5206db26e0e527381fc9db9548ba20bc23c3c00df5cd666da87bba0e6f6",
+      "visiblePixelSha256": "751cdcbe3fd1d2056c337e547cdab322a06f68e6dd1b4a75d3340491e485c1ff",
+      "visiblePixelCount": 4958,
+      "cellRect": [
+        1605,
+        200,
+        130,
+        86
+      ],
+      "artRect": [
+        1613,
+        208,
+        114,
+        70
+      ],
+      "pivotInCell": [
+        66,
+        75
+      ]
+    },
+    "walk-run-07": {
+      "state": "walk-run",
+      "stateFrameIndex": 7,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        993,
+        232,
+        1136,
+        329
+      ],
+      "sourceRect": [
+        996,
+        235,
+        127,
+        72
+      ],
+      "sourceVisibleBounds": [
+        998,
+        237,
+        1121,
+        305
+      ],
+      "componentCount": 2,
+      "frameFile": "frames/walk-run-07.png",
+      "frameSize": [
+        127,
+        72
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        125,
+        70
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        63,
+        69
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 7,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "b8ff75be14ab5eef58e9491b4e580dbd9b4f3085f2b98bae0fcf855d76e94a96",
+      "visiblePixelSha256": "6623fdc041c2e8fbc5f4cc891dae69e70f53b5d3f9a0d20ac4c8fae493f1642d",
+      "visiblePixelCount": 5697,
+      "cellRect": [
+        1735,
+        200,
+        143,
+        88
+      ],
+      "artRect": [
+        1743,
+        208,
+        127,
+        72
+      ],
+      "pivotInCell": [
+        71,
+        77
+      ]
+    },
+    "walk-run-08": {
+      "state": "walk-run",
+      "stateFrameIndex": 8,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1136,
+        232,
+        1302,
+        329
+      ],
+      "sourceRect": [
+        1142,
+        234,
+        157,
+        75
+      ],
+      "sourceVisibleBounds": [
+        1144,
+        236,
+        1297,
+        307
+      ],
+      "componentCount": 5,
+      "frameFile": "frames/walk-run-08.png",
+      "frameSize": [
+        157,
+        75
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        155,
+        73
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        70,
+        72
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 8,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "11621fd77ca67be3436aa3a08a048584a9de3f2bf37bd9cdc5a2161901a9f851",
+      "visiblePixelSha256": "a14d8eaa22dc49812737268a42f2739fb0cf5cf891d35afbc9a0b25ca592bbec",
+      "visiblePixelCount": 5978,
+      "cellRect": [
+        0,
+        312,
+        173,
+        91
+      ],
+      "artRect": [
+        8,
+        320,
+        157,
+        75
+      ],
+      "pivotInCell": [
+        78,
+        80
+      ]
+    },
+    "walk-run-09": {
+      "state": "walk-run",
+      "stateFrameIndex": 9,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1302,
+        232,
+        1536,
+        329
+      ],
+      "sourceRect": [
+        1296,
+        232,
+        195,
+        78
+      ],
+      "sourceVisibleBounds": [
+        1298,
+        234,
+        1489,
+        308
+      ],
+      "componentCount": 14,
+      "frameFile": "frames/walk-run-09.png",
+      "frameSize": [
+        195,
+        78
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        193,
+        76
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        96,
+        75
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 9,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "6d2a54a80a4ad16088ca30e75a21fa6e84e7448b2bf089d142c2f14dc99d4e3d",
+      "visiblePixelSha256": "47f5b8e2048de07fd8044e35ca40b9653f993352d92143ec9ce6f9a351c3da57",
+      "visiblePixelCount": 6933,
+      "cellRect": [
+        173,
+        312,
+        211,
+        94
+      ],
+      "artRect": [
+        181,
+        320,
+        195,
+        78
+      ],
+      "pivotInCell": [
+        104,
+        83
+      ]
+    },
+    "roar-00": {
+      "state": "roar",
+      "stateFrameIndex": 0,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        0,
+        329,
+        138,
+        438
+      ],
+      "sourceRect": [
+        30,
+        327,
+        95,
+        87
+      ],
+      "sourceVisibleBounds": [
+        32,
+        329,
+        123,
+        412
+      ],
+      "componentCount": 1,
+      "frameFile": "frames/roar-00.png",
+      "frameSize": [
+        95,
+        87
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        93,
+        85
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        47,
+        84
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 0,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "12fa0f009377111b2232e0d219c759e72b347dc8f371588b8922aac09a1c4faf",
+      "visiblePixelSha256": "755749d583012bf531cc20188601a3616301c1b4c97e2ae0c1682dfeaf43bc24",
+      "visiblePixelCount": 5624,
+      "cellRect": [
+        384,
+        312,
+        111,
+        103
+      ],
+      "artRect": [
+        392,
+        320,
+        95,
+        87
+      ],
+      "pivotInCell": [
+        55,
+        92
+      ]
+    },
+    "roar-01": {
+      "state": "roar",
+      "stateFrameIndex": 1,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        138,
+        329,
+        258,
+        438
+      ],
+      "sourceRect": [
+        132,
+        338,
+        130,
+        76
+      ],
+      "sourceVisibleBounds": [
+        134,
+        340,
+        260,
+        412
+      ],
+      "componentCount": 5,
+      "frameFile": "frames/roar-01.png",
+      "frameSize": [
+        130,
+        76
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        128,
+        74
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        66,
+        73
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 1,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "381719b9a41e335b16328247ce68012894b09608aaafcfa31d7a993164954ff2",
+      "visiblePixelSha256": "366672a76c5e227b1451f7572ef54dcb32a87b8879fc8e0e837231bfc384204f",
+      "visiblePixelCount": 4563,
+      "cellRect": [
+        495,
+        312,
+        146,
+        92
+      ],
+      "artRect": [
+        503,
+        320,
+        130,
+        76
+      ],
+      "pivotInCell": [
+        74,
+        81
+      ]
+    },
+    "roar-02": {
+      "state": "roar",
+      "stateFrameIndex": 2,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        258,
+        329,
+        376,
+        438
+      ],
+      "sourceRect": [
+        250,
+        336,
+        135,
+        78
+      ],
+      "sourceVisibleBounds": [
+        252,
+        338,
+        383,
+        412
+      ],
+      "componentCount": 6,
+      "frameFile": "frames/roar-02.png",
+      "frameSize": [
+        135,
+        78
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        133,
+        76
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        66,
+        75
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 2,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "cbb6546f1a84ae8756e9af2983b58fd5aa5364f6e75d43a83226644b73b5fe8d",
+      "visiblePixelSha256": "db7b9aa995ae944df18969a2ad6f58af8bfec0c714873530edbeda0138106609",
+      "visiblePixelCount": 4675,
+      "cellRect": [
+        641,
+        312,
+        151,
+        94
+      ],
+      "artRect": [
+        649,
+        320,
+        135,
+        78
+      ],
+      "pivotInCell": [
+        74,
+        83
+      ]
+    },
+    "roar-03": {
+      "state": "roar",
+      "stateFrameIndex": 3,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        376,
+        329,
+        515,
+        438
+      ],
+      "sourceRect": [
+        366,
+        331,
+        145,
+        83
+      ],
+      "sourceVisibleBounds": [
+        368,
+        333,
+        509,
+        412
+      ],
+      "componentCount": 8,
+      "frameFile": "frames/roar-03.png",
+      "frameSize": [
+        145,
+        83
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        143,
+        81
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        69,
+        80
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 3,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "729b3b7ae793912c02d43915f55b23f8ee08fed29033bd9a1394b2833a1e4876",
+      "visiblePixelSha256": "1c63005a7ceed00040daf4942409575e768cd0cd0fa300e267489e43f2e0b6cd",
+      "visiblePixelCount": 5256,
+      "cellRect": [
+        792,
+        312,
+        161,
+        99
+      ],
+      "artRect": [
+        800,
+        320,
+        145,
+        83
+      ],
+      "pivotInCell": [
+        77,
+        88
+      ]
+    },
+    "hit-reaction-00": {
+      "state": "hit-reaction",
+      "stateFrameIndex": 0,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        515,
+        329,
+        618,
+        438
+      ],
+      "sourceRect": [
+        519,
+        344,
+        98,
+        68
+      ],
+      "sourceVisibleBounds": [
+        521,
+        346,
+        615,
+        410
+      ],
+      "componentCount": 4,
+      "frameFile": "frames/hit-reaction-00.png",
+      "frameSize": [
+        98,
+        68
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        96,
+        66
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        49,
+        65
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 0,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "48b5a5f8232236b4a409e55ad79cc7a3340fc4ec6aec9065dad19c0f4b8adf9d",
+      "visiblePixelSha256": "01b8bb4f0ad8ec036c5c0c6d9ccb469feee8a7454cec9598d948b99582e25116",
+      "visiblePixelCount": 4218,
+      "cellRect": [
+        953,
+        312,
+        114,
+        84
+      ],
+      "artRect": [
+        961,
+        320,
+        98,
+        68
+      ],
+      "pivotInCell": [
+        57,
+        73
+      ]
+    },
+    "hit-reaction-01": {
+      "state": "hit-reaction",
+      "stateFrameIndex": 1,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        618,
+        329,
+        731,
+        438
+      ],
+      "sourceRect": [
+        618,
+        340,
+        115,
+        73
+      ],
+      "sourceVisibleBounds": [
+        620,
+        342,
+        731,
+        411
+      ],
+      "componentCount": 4,
+      "frameFile": "frames/hit-reaction-01.png",
+      "frameSize": [
+        115,
+        73
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        113,
+        71
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        52,
+        70
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 1,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "964fbea1ae375d62d6afdf82df957e6ebbcd3235e96dadcebc1ff734e964393e",
+      "visiblePixelSha256": "f38cf486bec9595f0bf5e7fe78a81740b4d5d71bd6c25a5f2917407000264167",
+      "visiblePixelCount": 4980,
+      "cellRect": [
+        1067,
+        312,
+        131,
+        89
+      ],
+      "artRect": [
+        1075,
+        320,
+        115,
+        73
+      ],
+      "pivotInCell": [
+        60,
+        78
+      ]
+    },
+    "hit-reaction-02": {
+      "state": "hit-reaction",
+      "stateFrameIndex": 2,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        731,
+        329,
+        875,
+        438
+      ],
+      "sourceRect": [
+        730,
+        337,
+        141,
+        74
+      ],
+      "sourceVisibleBounds": [
+        732,
+        339,
+        869,
+        409
+      ],
+      "componentCount": 13,
+      "frameFile": "frames/hit-reaction-02.png",
+      "frameSize": [
+        141,
+        74
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        139,
+        72
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        63,
+        71
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 2,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "260115b92fa3a123428320f62bbaa2299c0f4323fcd19bd6b67f03ba7a07918e",
+      "visiblePixelSha256": "c0fe7b76cad773c10cd95f878ea85e0391dfcffec8c5dbc9af794cf4df247f04",
+      "visiblePixelCount": 5526,
+      "cellRect": [
+        1198,
+        312,
+        157,
+        90
+      ],
+      "artRect": [
+        1206,
+        320,
+        141,
+        74
+      ],
+      "pivotInCell": [
+        71,
+        79
+      ]
+    },
+    "crash-stunned-00": {
+      "state": "crash-stunned",
+      "stateFrameIndex": 0,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        875,
+        329,
+        1000,
+        438
+      ],
+      "sourceRect": [
+        878,
+        332,
+        123,
+        79
+      ],
+      "sourceVisibleBounds": [
+        880,
+        334,
+        999,
+        409
+      ],
+      "componentCount": 13,
+      "frameFile": "frames/crash-stunned-00.png",
+      "frameSize": [
+        123,
+        79
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        121,
+        77
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        52,
+        76
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 0,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "eeeb7e92667a93f0c96c53cc4542bd0a829371c5bdff43cf88bc7561e9db83f9",
+      "visiblePixelSha256": "712a39acb6fd5ac879f136aa9da6cb4ab2e6c45630f68c812995a96118b4b87d",
+      "visiblePixelCount": 5052,
+      "cellRect": [
+        1355,
+        312,
+        139,
+        95
+      ],
+      "artRect": [
+        1363,
+        320,
+        123,
+        79
+      ],
+      "pivotInCell": [
+        60,
+        84
+      ]
+    },
+    "crash-stunned-01": {
+      "state": "crash-stunned",
+      "stateFrameIndex": 1,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1000,
+        329,
+        1128,
+        438
+      ],
+      "sourceRect": [
+        997,
+        348,
+        129,
+        64
+      ],
+      "sourceVisibleBounds": [
+        999,
+        350,
+        1124,
+        410
+      ],
+      "componentCount": 5,
+      "frameFile": "frames/crash-stunned-01.png",
+      "frameSize": [
+        129,
+        64
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        127,
+        62
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        71,
+        61
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 1,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "f20319c2e5059e7ef3ea0d5e07c22d1106deb7f69ab70c1a5500eaacf1d2cb59",
+      "visiblePixelSha256": "0ce48f69293e907156333c4f26661cf0819092bd33f43309da594781ea4ec95a",
+      "visiblePixelCount": 4624,
+      "cellRect": [
+        1494,
+        312,
+        145,
+        80
+      ],
+      "artRect": [
+        1502,
+        320,
+        129,
+        64
+      ],
+      "pivotInCell": [
+        79,
+        69
+      ]
+    },
+    "crash-stunned-02": {
+      "state": "crash-stunned",
+      "stateFrameIndex": 2,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1128,
+        329,
+        1262,
+        438
+      ],
+      "sourceRect": [
+        1129,
+        339,
+        129,
+        73
+      ],
+      "sourceVisibleBounds": [
+        1131,
+        341,
+        1256,
+        410
+      ],
+      "componentCount": 6,
+      "frameFile": "frames/crash-stunned-02.png",
+      "frameSize": [
+        129,
+        73
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        127,
+        71
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        62,
+        70
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 2,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "dacee502ee88910d43f46ec10f6d550846b2b39e4fef2f6fcd1a910d1d8f90be",
+      "visiblePixelSha256": "7cf59f5b17984c7fe0b84b06e60b55e95c54deb6c36d6715e105e9fb1e3ea80c",
+      "visiblePixelCount": 5119,
+      "cellRect": [
+        1639,
+        312,
+        145,
+        89
+      ],
+      "artRect": [
+        1647,
+        320,
+        129,
+        73
+      ],
+      "pivotInCell": [
+        70,
+        78
+      ]
+    },
+    "crash-stunned-03": {
+      "state": "crash-stunned",
+      "stateFrameIndex": 3,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1262,
+        329,
+        1536,
+        438
+      ],
+      "sourceRect": [
+        1266,
+        335,
+        141,
+        78
+      ],
+      "sourceVisibleBounds": [
+        1268,
+        337,
+        1405,
+        411
+      ],
+      "componentCount": 14,
+      "frameFile": "frames/crash-stunned-03.png",
+      "frameSize": [
+        141,
+        78
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        139,
+        76
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        71,
+        75
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 3,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "d4b530452013b13f607ad3730a6cec543caa6b8b490f671a5bb5cf4abd871f9a",
+      "visiblePixelSha256": "ffd286ee08d529d9f6c1f115a7dd06efae22777418db4907f0fd0abaf8c26cb6",
+      "visiblePixelCount": 5410,
+      "cellRect": [
+        1784,
+        312,
+        157,
+        94
+      ],
+      "artRect": [
+        1792,
+        320,
+        141,
+        78
+      ],
+      "pivotInCell": [
+        79,
+        83
+      ]
+    },
+    "recovery-00": {
+      "state": "recovery",
+      "stateFrameIndex": 0,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        0,
+        438,
+        130,
+        536
+      ],
+      "sourceRect": [
+        19,
+        438,
+        106,
+        71
+      ],
+      "sourceVisibleBounds": [
+        21,
+        440,
+        123,
+        507
+      ],
+      "componentCount": 10,
+      "frameFile": "frames/recovery-00.png",
+      "frameSize": [
+        106,
+        71
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        104,
+        69
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        53,
+        68
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 0,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "a9c4c6842a34e462c4df37845799253486d962f881452b862b18e6f1da162f91",
+      "visiblePixelSha256": "aaea652b9eb64b5328510d61ad18702d27a7c60ab8aead87476d74833ec1e2da",
+      "visiblePixelCount": 4313,
+      "cellRect": [
+        0,
+        415,
+        122,
+        87
+      ],
+      "artRect": [
+        8,
+        423,
+        106,
+        71
+      ],
+      "pivotInCell": [
+        61,
+        76
+      ]
+    },
+    "recovery-01": {
+      "state": "recovery",
+      "stateFrameIndex": 1,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        130,
+        438,
+        232,
+        536
+      ],
+      "sourceRect": [
+        127,
+        437,
+        103,
+        73
+      ],
+      "sourceVisibleBounds": [
+        129,
+        439,
+        228,
+        508
+      ],
+      "componentCount": 7,
+      "frameFile": "frames/recovery-01.png",
+      "frameSize": [
+        103,
+        73
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        101,
+        71
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        61,
+        70
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 1,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "64df2a17986fd50cfc5a74cd721d43d64e99f7b9a937cec5320a8fe50668470c",
+      "visiblePixelSha256": "a076b183b8a12dae2695717f42e109b3720a417578907dba1b703d4efa2fc2c3",
+      "visiblePixelCount": 4536,
+      "cellRect": [
+        122,
+        415,
+        119,
+        89
+      ],
+      "artRect": [
+        130,
+        423,
+        103,
+        73
+      ],
+      "pivotInCell": [
+        69,
+        78
+      ]
+    },
+    "recovery-02": {
+      "state": "recovery",
+      "stateFrameIndex": 2,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        232,
+        438,
+        330,
+        536
+      ],
+      "sourceRect": [
+        228,
+        437,
+        106,
+        73
+      ],
+      "sourceVisibleBounds": [
+        230,
+        439,
+        332,
+        508
+      ],
+      "componentCount": 3,
+      "frameFile": "frames/recovery-02.png",
+      "frameSize": [
+        106,
+        73
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        104,
+        71
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        48,
+        70
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 2,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "c151950d98815a39613ebea4d384433667947d24b996766dbff55ab6d6850809",
+      "visiblePixelSha256": "db7175cb5748fc02f3801ed358868e6ac7736d88a5e206b1cf6aabad38dabfcb",
+      "visiblePixelCount": 4527,
+      "cellRect": [
+        241,
+        415,
+        122,
+        89
+      ],
+      "artRect": [
+        249,
+        423,
+        106,
+        73
+      ],
+      "pivotInCell": [
+        56,
+        78
+      ]
+    },
+    "recovery-03": {
+      "state": "recovery",
+      "stateFrameIndex": 3,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        330,
+        438,
+        450,
+        536
+      ],
+      "sourceRect": [
+        327,
+        436,
+        114,
+        74
+      ],
+      "sourceVisibleBounds": [
+        329,
+        438,
+        439,
+        508
+      ],
+      "componentCount": 3,
+      "frameFile": "frames/recovery-03.png",
+      "frameSize": [
+        114,
+        74
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        112,
+        72
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        57,
+        71
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 3,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "399d044cda1f436f391f1a33789edb4d0ed7e4693cd7ce76a9173ae87eeac25d",
+      "visiblePixelSha256": "68c36a00a55ce5c7a82da710ee6d8376df4d06bfda0ff1eafa20a8b1ca96e99f",
+      "visiblePixelCount": 5039,
+      "cellRect": [
+        363,
+        415,
+        130,
+        90
+      ],
+      "artRect": [
+        371,
+        423,
+        114,
+        74
+      ],
+      "pivotInCell": [
+        65,
+        79
+      ]
+    },
+    "enraged-00": {
+      "state": "enraged",
+      "stateFrameIndex": 0,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        450,
+        438,
+        629,
+        536
+      ],
+      "sourceRect": [
+        461,
+        440,
+        176,
+        73
+      ],
+      "sourceVisibleBounds": [
+        463,
+        442,
+        635,
+        511
+      ],
+      "componentCount": 10,
+      "frameFile": "frames/enraged-00.png",
+      "frameSize": [
+        176,
+        73
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        174,
+        71
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        80,
+        70
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 0,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "89b8b83d2b5217c3d08b0b0945f9f754f51eeaf82f2acbcee1b8d60635512efd",
+      "visiblePixelSha256": "28b22b07158733e45a00494c43491931eecb8188ac84c5b2edaa7e1c355c4807",
+      "visiblePixelCount": 6539,
+      "cellRect": [
+        493,
+        415,
+        192,
+        89
+      ],
+      "artRect": [
+        501,
+        423,
+        176,
+        73
+      ],
+      "pivotInCell": [
+        88,
+        78
+      ]
+    },
+    "enraged-01": {
+      "state": "enraged",
+      "stateFrameIndex": 1,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        629,
+        438,
+        779,
+        536
+      ],
+      "sourceRect": [
+        632,
+        437,
+        148,
+        75
+      ],
+      "sourceVisibleBounds": [
+        634,
+        439,
+        778,
+        510
+      ],
+      "componentCount": 13,
+      "frameFile": "frames/enraged-01.png",
+      "frameSize": [
+        148,
+        75
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        146,
+        73
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        84,
+        72
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 1,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "0f75f4d2df3de50d9f2679b153e1eab4b163a957fedfb2acb544156f84ef888b",
+      "visiblePixelSha256": "381f8c1aa62beef4ac04c47bcb6511eaea8fb882809ee4026b19869311899fac",
+      "visiblePixelCount": 6391,
+      "cellRect": [
+        685,
+        415,
+        164,
+        91
+      ],
+      "artRect": [
+        693,
+        423,
+        148,
+        75
+      ],
+      "pivotInCell": [
+        92,
+        80
+      ]
+    },
+    "enraged-02": {
+      "state": "enraged",
+      "stateFrameIndex": 2,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        779,
+        438,
+        907,
+        536
+      ],
+      "sourceRect": [
+        781,
+        443,
+        117,
+        69
+      ],
+      "sourceVisibleBounds": [
+        783,
+        445,
+        896,
+        510
+      ],
+      "componentCount": 5,
+      "frameFile": "frames/enraged-02.png",
+      "frameSize": [
+        117,
+        69
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        115,
+        67
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        58,
+        66
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 2,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "4967e30673608a880b5c3da48de9bec24dd34d4a457fc86a65951159440f038d",
+      "visiblePixelSha256": "5857d80d20fcdaaac1ecc773990db145ffd088f49aeb23f8fcdfd48df04c4576",
+      "visiblePixelCount": 5379,
+      "cellRect": [
+        849,
+        415,
+        133,
+        85
+      ],
+      "artRect": [
+        857,
+        423,
+        117,
+        69
+      ],
+      "pivotInCell": [
+        66,
+        74
+      ]
+    },
+    "enraged-03": {
+      "state": "enraged",
+      "stateFrameIndex": 3,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        907,
+        438,
+        1072,
+        536
+      ],
+      "sourceRect": [
+        908,
+        440,
+        156,
+        72
+      ],
+      "sourceVisibleBounds": [
+        910,
+        442,
+        1062,
+        510
+      ],
+      "componentCount": 12,
+      "frameFile": "frames/enraged-03.png",
+      "frameSize": [
+        156,
+        72
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        154,
+        70
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        65,
+        69
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 3,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "18229ec8416fe93b14409ef653e513464b1eb4924237c05298702c32b65e46a7",
+      "visiblePixelSha256": "268d183a2bb23d9740908f738cbca4a3c3d7dd62d4db1f0dc9c1a20f6fb6525a",
+      "visiblePixelCount": 6113,
+      "cellRect": [
+        982,
+        415,
+        172,
+        88
+      ],
+      "artRect": [
+        990,
+        423,
+        156,
+        72
+      ],
+      "pivotInCell": [
+        73,
+        77
+      ]
+    },
+    "enraged-04": {
+      "state": "enraged",
+      "stateFrameIndex": 4,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1072,
+        438,
+        1253,
+        536
+      ],
+      "sourceRect": [
+        1060,
+        436,
+        192,
+        75
+      ],
+      "sourceVisibleBounds": [
+        1062,
+        438,
+        1250,
+        509
+      ],
+      "componentCount": 13,
+      "frameFile": "frames/enraged-04.png",
+      "frameSize": [
+        192,
+        75
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        190,
+        73
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        110,
+        71
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 4,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "f349e825a600a784672fe340658f1b93363aedc047642586ed7e2a13a6f3a3ff",
+      "visiblePixelSha256": "165d7a52b0079b5fb3b838868022d192d020d3ab60c03eb6759926f781b73ddf",
+      "visiblePixelCount": 7308,
+      "cellRect": [
+        1154,
+        415,
+        208,
+        91
+      ],
+      "artRect": [
+        1162,
+        423,
+        192,
+        75
+      ],
+      "pivotInCell": [
+        118,
+        79
+      ]
+    },
+    "enraged-05": {
+      "state": "enraged",
+      "stateFrameIndex": 5,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1253,
+        438,
+        1536,
+        536
+      ],
+      "sourceRect": [
+        1242,
+        443,
+        186,
+        71
+      ],
+      "sourceVisibleBounds": [
+        1244,
+        445,
+        1426,
+        512
+      ],
+      "componentCount": 4,
+      "frameFile": "frames/enraged-05.png",
+      "frameSize": [
+        186,
+        71
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        184,
+        69
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        92,
+        68
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 5,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "7a9b1a9d29c4ea45bad321d18abba64026e531855ef0e1492a969ee622664874",
+      "visiblePixelSha256": "39aacb9649e100825edd06ec79c795d1535c9b047dce373fff1afd678710bc45",
+      "visiblePixelCount": 8334,
+      "cellRect": [
+        1362,
+        415,
+        202,
+        87
+      ],
+      "artRect": [
+        1370,
+        423,
+        186,
+        71
+      ],
+      "pivotInCell": [
+        100,
+        76
+      ]
+    },
+    "emerge-00": {
+      "state": "emerge",
+      "stateFrameIndex": 0,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        0,
+        536,
+        115,
+        638
+      ],
+      "sourceRect": [
+        30,
+        536,
+        67,
+        74
+      ],
+      "sourceVisibleBounds": [
+        32,
+        538,
+        95,
+        608
+      ],
+      "componentCount": 5,
+      "frameFile": "frames/emerge-00.png",
+      "frameSize": [
+        67,
+        74
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        65,
+        72
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        33,
+        71
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 0,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "1eb522a72ce83a1ccfe60c98bf8e958c56dd9fbc5458127490f287476813e88b",
+      "visiblePixelSha256": "99a61de3f2a2df6c75da2a1fb9541dcee51388b2b4f31b6837e462a9d433b764",
+      "visiblePixelCount": 3347,
+      "cellRect": [
+        1564,
+        415,
+        83,
+        90
+      ],
+      "artRect": [
+        1572,
+        423,
+        67,
+        74
+      ],
+      "pivotInCell": [
+        41,
+        79
+      ]
+    },
+    "emerge-01": {
+      "state": "emerge",
+      "stateFrameIndex": 1,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        115,
+        536,
+        235,
+        638
+      ],
+      "sourceRect": [
+        129,
+        541,
+        94,
+        68
+      ],
+      "sourceVisibleBounds": [
+        131,
+        543,
+        221,
+        607
+      ],
+      "componentCount": 1,
+      "frameFile": "frames/emerge-01.png",
+      "frameSize": [
+        94,
+        68
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        92,
+        66
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        47,
+        65
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 1,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "77efdf3834541ce7ff4dc33358ad5c90579d42c44c43b0cbaa3e962acb92ccea",
+      "visiblePixelSha256": "4e24b89d444aa3c7a0c811ea3cd506163b7be5c003dd35e2704782b2edf4fc72",
+      "visiblePixelCount": 4216,
+      "cellRect": [
+        1647,
+        415,
+        110,
+        84
+      ],
+      "artRect": [
+        1655,
+        423,
+        94,
+        68
+      ],
+      "pivotInCell": [
+        55,
+        73
+      ]
+    },
+    "emerge-02": {
+      "state": "emerge",
+      "stateFrameIndex": 2,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        235,
+        536,
+        365,
+        638
+      ],
+      "sourceRect": [
+        250,
+        534,
+        91,
+        75
+      ],
+      "sourceVisibleBounds": [
+        252,
+        536,
+        339,
+        607
+      ],
+      "componentCount": 1,
+      "frameFile": "frames/emerge-02.png",
+      "frameSize": [
+        91,
+        75
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        89,
+        73
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        45,
+        72
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 2,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "5d3b905b5954ef3f449146bed97f53dfb44a280cf2f3dd55c304720099d9e3ea",
+      "visiblePixelSha256": "aa1b490f8b3690a053e2e701dbde61644597bcea50d6a9a4a4980404e34640f7",
+      "visiblePixelCount": 4585,
+      "cellRect": [
+        1757,
+        415,
+        107,
+        91
+      ],
+      "artRect": [
+        1765,
+        423,
+        91,
+        75
+      ],
+      "pivotInCell": [
+        53,
+        80
+      ]
+    },
+    "emerge-03": {
+      "state": "emerge",
+      "stateFrameIndex": 3,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        365,
+        536,
+        510,
+        638
+      ],
+      "sourceRect": [
+        364,
+        536,
+        137,
+        73
+      ],
+      "sourceVisibleBounds": [
+        366,
+        538,
+        499,
+        607
+      ],
+      "componentCount": 6,
+      "frameFile": "frames/emerge-03.png",
+      "frameSize": [
+        137,
+        73
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        135,
+        71
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        79,
+        70
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 3,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "b3dd3af126e13b681d97873e5eb756ad29292f978a3b55ca0e6a63d5025326c1",
+      "visiblePixelSha256": "389c9b2c1cd456aa5aca886fb8cc2b9d7634995b40634422a87cce316c27ff92",
+      "visiblePixelCount": 5545,
+      "cellRect": [
+        1864,
+        415,
+        153,
+        89
+      ],
+      "artRect": [
+        1872,
+        423,
+        137,
+        73
+      ],
+      "pivotInCell": [
+        87,
+        78
+      ]
+    },
+    "turn-around-00": {
+      "state": "turn-around",
+      "stateFrameIndex": 0,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        510,
+        536,
+        625,
+        638
+      ],
+      "sourceRect": [
+        520,
+        541,
+        94,
+        71
+      ],
+      "sourceVisibleBounds": [
+        522,
+        543,
+        612,
+        610
+      ],
+      "componentCount": 6,
+      "frameFile": "frames/turn-around-00.png",
+      "frameSize": [
+        94,
+        71
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        92,
+        69
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        48,
+        68
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 0,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "3501d091b593783c46daf8efc07b194ede056e49d068a5f9d47d5b817924679a",
+      "visiblePixelSha256": "b6775435c1946b8f2e39d8ef8eefdc4fdcfb50c26bf9d6ee425016da98d6c767",
+      "visiblePixelCount": 3368,
+      "cellRect": [
+        0,
+        506,
+        110,
+        87
+      ],
+      "artRect": [
+        8,
+        514,
+        94,
+        71
+      ],
+      "pivotInCell": [
+        56,
+        76
+      ]
+    },
+    "turn-around-01": {
+      "state": "turn-around",
+      "stateFrameIndex": 1,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        625,
+        536,
+        748,
+        638
+      ],
+      "sourceRect": [
+        630,
+        544,
+        115,
+        66
+      ],
+      "sourceVisibleBounds": [
+        632,
+        546,
+        743,
+        608
+      ],
+      "componentCount": 6,
+      "frameFile": "frames/turn-around-01.png",
+      "frameSize": [
+        115,
+        66
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        113,
+        64
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        60,
+        63
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 1,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "7cb7a27d941ec5a8eb50c44ac42314ed1a70204a02e772d590458f94eb5eb12c",
+      "visiblePixelSha256": "0755c42e4f7104f7f80a6816ce73cb934bf8180f089abb1b5ed34267ac42b634",
+      "visiblePixelCount": 4112,
+      "cellRect": [
+        110,
+        506,
+        131,
+        82
+      ],
+      "artRect": [
+        118,
+        514,
+        115,
+        66
+      ],
+      "pivotInCell": [
+        68,
+        71
+      ]
+    },
+    "turn-around-02": {
+      "state": "turn-around",
+      "stateFrameIndex": 2,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        748,
+        536,
+        827,
+        638
+      ],
+      "sourceRect": [
+        750,
+        543,
+        73,
+        65
+      ],
+      "sourceVisibleBounds": [
+        752,
+        545,
+        821,
+        606
+      ],
+      "componentCount": 3,
+      "frameFile": "frames/turn-around-02.png",
+      "frameSize": [
+        73,
+        65
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        71,
+        63
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        36,
+        62
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 2,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "1510c51cd9e236bc51d614d29b66d8b961e6dacd42d1e742aea05ae6d60a3674",
+      "visiblePixelSha256": "e64a6d82605701530ffd0b2ecc6e5f0e8fcbf4f9736dd1cdbad677ec348cb17e",
+      "visiblePixelCount": 3256,
+      "cellRect": [
+        241,
+        506,
+        89,
+        81
+      ],
+      "artRect": [
+        249,
+        514,
+        73,
+        65
+      ],
+      "pivotInCell": [
+        44,
+        70
+      ]
+    },
+    "turn-around-03": {
+      "state": "turn-around",
+      "stateFrameIndex": 3,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        827,
+        536,
+        910,
+        638
+      ],
+      "sourceRect": [
+        830,
+        548,
+        70,
+        65
+      ],
+      "sourceVisibleBounds": [
+        832,
+        550,
+        898,
+        611
+      ],
+      "componentCount": 2,
+      "frameFile": "frames/turn-around-03.png",
+      "frameSize": [
+        70,
+        65
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        68,
+        63
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        34,
+        62
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 3,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "78f6d5271558068a7ba2ca018d860a92ef7fdbf56986797036b1e79e45a3bf74",
+      "visiblePixelSha256": "cf6abb82f7b6db28a0aae1ef3d8f0dcd1c765d18fcd7c12089a6c5a8b7ed8346",
+      "visiblePixelCount": 3085,
+      "cellRect": [
+        330,
+        506,
+        86,
+        81
+      ],
+      "artRect": [
+        338,
+        514,
+        70,
+        65
+      ],
+      "pivotInCell": [
+        42,
+        70
+      ]
+    },
+    "retreat-00": {
+      "state": "retreat",
+      "stateFrameIndex": 0,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        910,
+        536,
+        1022,
+        638
+      ],
+      "sourceRect": [
+        912,
+        539,
+        102,
+        73
+      ],
+      "sourceVisibleBounds": [
+        914,
+        541,
+        1012,
+        610
+      ],
+      "componentCount": 2,
+      "frameFile": "frames/retreat-00.png",
+      "frameSize": [
+        102,
+        73
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        100,
+        71
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        52,
+        70
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 0,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "f5ecd1f9ba4238055b5ed52d83d97a20455ca24a3a398fa13a4f83770ad98862",
+      "visiblePixelSha256": "a1ece7eee418bb2eb3b9e7471fa57ba4339a7344ebc8c6d7882dc89b2b4452e1",
+      "visiblePixelCount": 4790,
+      "cellRect": [
+        416,
+        506,
+        118,
+        89
+      ],
+      "artRect": [
+        424,
+        514,
+        102,
+        73
+      ],
+      "pivotInCell": [
+        60,
+        78
+      ]
+    },
+    "retreat-01": {
+      "state": "retreat",
+      "stateFrameIndex": 1,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1022,
+        536,
+        1111,
+        638
+      ],
+      "sourceRect": [
+        1029,
+        542,
+        77,
+        71
+      ],
+      "sourceVisibleBounds": [
+        1031,
+        544,
+        1104,
+        611
+      ],
+      "componentCount": 2,
+      "frameFile": "frames/retreat-01.png",
+      "frameSize": [
+        77,
+        71
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        75,
+        69
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        38,
+        68
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 1,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "39b09642182832aa80ce10fdbf720897baa41ed91223917975ea863b5642c3d1",
+      "visiblePixelSha256": "d4e72c29efcb1078548643ea03e4ecd3847d12bb412c78b3ac756a23bbc649cb",
+      "visiblePixelCount": 3594,
+      "cellRect": [
+        534,
+        506,
+        93,
+        87
+      ],
+      "artRect": [
+        542,
+        514,
+        77,
+        71
+      ],
+      "pivotInCell": [
+        46,
+        76
+      ]
+    },
+    "retreat-02": {
+      "state": "retreat",
+      "stateFrameIndex": 2,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1111,
+        536,
+        1215,
+        638
+      ],
+      "sourceRect": [
+        1115,
+        548,
+        95,
+        68
+      ],
+      "sourceVisibleBounds": [
+        1117,
+        550,
+        1208,
+        614
+      ],
+      "componentCount": 5,
+      "frameFile": "frames/retreat-02.png",
+      "frameSize": [
+        95,
+        68
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        93,
+        66
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        47,
+        65
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 2,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "5e1c92f4baa5a273ac11865e2306dc5811abf19102d6f917d36fd3315a5b0881",
+      "visiblePixelSha256": "455996b9b342578a7ceecd023257a5fd4c3b98637cc319edb7d1d8b724a7fc19",
+      "visiblePixelCount": 3919,
+      "cellRect": [
+        627,
+        506,
+        111,
+        84
+      ],
+      "artRect": [
+        635,
+        514,
+        95,
+        68
+      ],
+      "pivotInCell": [
+        55,
+        73
+      ]
+    },
+    "retreat-03": {
+      "state": "retreat",
+      "stateFrameIndex": 3,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1215,
+        536,
+        1305,
+        638
+      ],
+      "sourceRect": [
+        1211,
+        551,
+        92,
+        65
+      ],
+      "sourceVisibleBounds": [
+        1213,
+        553,
+        1301,
+        614
+      ],
+      "componentCount": 5,
+      "frameFile": "frames/retreat-03.png",
+      "frameSize": [
+        92,
+        65
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        90,
+        63
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        49,
+        62
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 3,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "7d78c7b2345f14e5e5386f92a913ecc084fdd1383da3d17c8a19f07a26146a7a",
+      "visiblePixelSha256": "f79719fe4e55b7701556940048f02ce38cabe2b9a5ca31894b8ce9f443730e22",
+      "visiblePixelCount": 3538,
+      "cellRect": [
+        738,
+        506,
+        108,
+        81
+      ],
+      "artRect": [
+        746,
+        514,
+        92,
+        65
+      ],
+      "pivotInCell": [
+        57,
+        70
+      ]
+    },
+    "retreat-04": {
+      "state": "retreat",
+      "stateFrameIndex": 4,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1305,
+        536,
+        1536,
+        638
+      ],
+      "sourceRect": [
+        1304,
+        551,
+        129,
+        65
+      ],
+      "sourceVisibleBounds": [
+        1306,
+        553,
+        1431,
+        614
+      ],
+      "componentCount": 9,
+      "frameFile": "frames/retreat-04.png",
+      "frameSize": [
+        129,
+        65
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        127,
+        63
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        44,
+        62
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 4,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "a7b514050bbf674e347972c1e5b9c3deef87f7130afc1b47f58706ab066b6ead",
+      "visiblePixelSha256": "6e67c82229c8b3698575f3048edfbd110cb3bd67ae0e453a3c49ba7863a0213c",
+      "visiblePixelCount": 4291,
+      "cellRect": [
+        846,
+        506,
+        145,
+        81
+      ],
+      "artRect": [
+        854,
+        514,
+        129,
+        65
+      ],
+      "pivotInCell": [
+        52,
+        70
+      ]
+    },
+    "defeat-00": {
+      "state": "defeat",
+      "stateFrameIndex": 0,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        0,
+        638,
+        180,
+        793
+      ],
+      "sourceRect": [
+        16,
+        648,
+        162,
+        92
+      ],
+      "sourceVisibleBounds": [
+        18,
+        650,
+        176,
+        738
+      ],
+      "componentCount": 4,
+      "frameFile": "frames/defeat-00.png",
+      "frameSize": [
+        162,
+        92
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        160,
+        90
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        76,
+        89
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 0,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "337ee232cf815eceee42f73214ddcb0284de0f0b3c8c5b6cd5e31dcf0151995e",
+      "visiblePixelSha256": "79f200d44c80b6329a61116f131c66570414242044bbe4923afcc6c59d02f534",
+      "visiblePixelCount": 8663,
+      "cellRect": [
+        991,
+        506,
+        178,
+        108
+      ],
+      "artRect": [
+        999,
+        514,
+        162,
+        92
+      ],
+      "pivotInCell": [
+        84,
+        97
+      ]
+    },
+    "defeat-01": {
+      "state": "defeat",
+      "stateFrameIndex": 1,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        180,
+        638,
+        335,
+        793
+      ],
+      "sourceRect": [
+        200,
+        636,
+        121,
+        106
+      ],
+      "sourceVisibleBounds": [
+        202,
+        638,
+        319,
+        740
+      ],
+      "componentCount": 15,
+      "frameFile": "frames/defeat-01.png",
+      "frameSize": [
+        121,
+        106
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        119,
+        104
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        56,
+        103
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 1,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "f2f2bd650dd2b6d3975ffad7ae2326578bc4147e99d756a85c15d3d4e2515ac4",
+      "visiblePixelSha256": "806a2a29b55f6f53c50900f912595f864886eb302a7065dec83cdd472aea21e0",
+      "visiblePixelCount": 6933,
+      "cellRect": [
+        1169,
+        506,
+        137,
+        122
+      ],
+      "artRect": [
+        1177,
+        514,
+        121,
+        106
+      ],
+      "pivotInCell": [
+        64,
+        111
+      ]
+    },
+    "defeat-02": {
+      "state": "defeat",
+      "stateFrameIndex": 2,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        335,
+        638,
+        520,
+        793
+      ],
+      "sourceRect": [
+        349,
+        637,
+        162,
+        113
+      ],
+      "sourceVisibleBounds": [
+        351,
+        639,
+        509,
+        748
+      ],
+      "componentCount": 18,
+      "frameFile": "frames/defeat-02.png",
+      "frameSize": [
+        162,
+        113
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        160,
+        111
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        81,
+        110
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 2,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "21d2f6054f3eb0d0a0367e9b4a5adcf09d7781aa295636731ea8be5e70ca35fb",
+      "visiblePixelSha256": "a417628ffc38b9b2dcb2c665231e11b0d0487145b9cc9bb5ecd6fdcca49ef6d8",
+      "visiblePixelCount": 8077,
+      "cellRect": [
+        1306,
+        506,
+        178,
+        129
+      ],
+      "artRect": [
+        1314,
+        514,
+        162,
+        113
+      ],
+      "pivotInCell": [
+        89,
+        118
+      ]
+    },
+    "defeat-03": {
+      "state": "defeat",
+      "stateFrameIndex": 3,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        520,
+        638,
+        710,
+        793
+      ],
+      "sourceRect": [
+        529,
+        639,
+        172,
+        112
+      ],
+      "sourceVisibleBounds": [
+        531,
+        641,
+        699,
+        749
+      ],
+      "componentCount": 16,
+      "frameFile": "frames/defeat-03.png",
+      "frameSize": [
+        172,
+        112
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        170,
+        110
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        85,
+        109
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 3,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "47bd5aaaf9dea0537f86a036079fb300f0dedad79290fe817a86139d386ae3ea",
+      "visiblePixelSha256": "41020f9312525f96ec74d94fc7184908706abc87564f1c6424180c110b6c7a9d",
+      "visiblePixelCount": 11325,
+      "cellRect": [
+        1484,
+        506,
+        188,
+        128
+      ],
+      "artRect": [
+        1492,
+        514,
+        172,
+        112
+      ],
+      "pivotInCell": [
+        93,
+        117
+      ]
+    },
+    "defeat-04": {
+      "state": "defeat",
+      "stateFrameIndex": 4,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        710,
+        638,
+        900,
+        793
+      ],
+      "sourceRect": [
+        720,
+        668,
+        161,
+        81
+      ],
+      "sourceVisibleBounds": [
+        722,
+        670,
+        879,
+        747
+      ],
+      "componentCount": 1,
+      "frameFile": "frames/defeat-04.png",
+      "frameSize": [
+        161,
+        81
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        159,
+        79
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        80,
+        78
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 4,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "7bce028604145a3d09b55bc42405a425a4c3a6f796df963f99a5dcff584b5527",
+      "visiblePixelSha256": "1a837c714f85570a1cefe17c472b8abc1e44990992814ba7ed4772bacce70acd",
+      "visiblePixelCount": 9600,
+      "cellRect": [
+        1672,
+        506,
+        177,
+        97
+      ],
+      "artRect": [
+        1680,
+        514,
+        161,
+        81
+      ],
+      "pivotInCell": [
+        88,
+        86
+      ]
+    },
+    "idle-variant-00": {
+      "state": "idle-variants",
+      "stateFrameIndex": 0,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        900,
+        638,
+        1060,
+        793
+      ],
+      "sourceRect": [
+        924,
+        660,
+        110,
+        94
+      ],
+      "sourceVisibleBounds": [
+        926,
+        662,
+        1032,
+        752
+      ],
+      "componentCount": 1,
+      "frameFile": "frames/idle-variant-00.png",
+      "frameSize": [
+        110,
+        94
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        108,
+        92
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        54,
+        91
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 0,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "445422da05bbc45ee434c46679d6855715be9c0a9ab3d482f8b32cbf0f7c3553",
+      "visiblePixelSha256": "72c1e042ad91418db93e99b9adaab4a9a39910305d91c7775180c1bc734e0cf5",
+      "visiblePixelCount": 7119,
+      "cellRect": [
+        1849,
+        506,
+        126,
+        110
+      ],
+      "artRect": [
+        1857,
+        514,
+        110,
+        94
+      ],
+      "pivotInCell": [
+        62,
+        99
+      ]
+    },
+    "idle-variant-01": {
+      "state": "idle-variants",
+      "stateFrameIndex": 1,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1060,
+        638,
+        1225,
+        793
+      ],
+      "sourceRect": [
+        1085,
+        668,
+        112,
+        87
+      ],
+      "sourceVisibleBounds": [
+        1087,
+        670,
+        1195,
+        753
+      ],
+      "componentCount": 1,
+      "frameFile": "frames/idle-variant-01.png",
+      "frameSize": [
+        112,
+        87
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        110,
+        85
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        55,
+        84
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 1,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "7db080052da5e9d484d6824913a3e852f55866a83d59154418d15b8c25550091",
+      "visiblePixelSha256": "1333a934d235e6aa6ac5601de9c3596a3f4c52b1fbc2bb43b9f01d9827dcde3c",
+      "visiblePixelCount": 6657,
+      "cellRect": [
+        0,
+        635,
+        128,
+        103
+      ],
+      "artRect": [
+        8,
+        643,
+        112,
+        87
+      ],
+      "pivotInCell": [
+        63,
+        92
+      ]
+    },
+    "dig-00": {
+      "state": "dig",
+      "stateFrameIndex": 0,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1225,
+        638,
+        1435,
+        793
+      ],
+      "sourceRect": [
+        1240,
+        660,
+        174,
+        109
+      ],
+      "sourceVisibleBounds": [
+        1242,
+        662,
+        1412,
+        767
+      ],
+      "componentCount": 14,
+      "frameFile": "frames/dig-00.png",
+      "frameSize": [
+        174,
+        109
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        172,
+        107
+      ],
+      "pivotType": "body-ground-contact",
+      "pivotInFrame": [
+        86,
+        106
+      ],
+      "effectOwnership": "integrated-with-emitter-frame",
+      "timing": {
+        "stateFrameIndex": 0,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "6130a97d77f0b72638130747d20df670c4c521240016d387811d786ba8a5bd8e",
+      "visiblePixelSha256": "cac9c9bffd5544aad928e89cd239321bca1587bddb7c46cc57f67eed05138684",
+      "visiblePixelCount": 11378,
+      "cellRect": [
+        128,
+        635,
+        190,
+        125
+      ],
+      "artRect": [
+        136,
+        643,
+        174,
+        109
+      ],
+      "pivotInCell": [
+        94,
+        114
+      ]
+    },
+    "reference-child-00": {
+      "state": "reference-child",
+      "stateFrameIndex": 0,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1435,
+        638,
+        1536,
+        793
+      ],
+      "sourceRect": [
+        1461,
+        656,
+        55,
+        112
+      ],
+      "sourceVisibleBounds": [
+        1463,
+        658,
+        1514,
+        766
+      ],
+      "componentCount": 1,
+      "frameFile": "frames/reference-child-00.png",
+      "frameSize": [
+        55,
+        112
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        53,
+        110
+      ],
+      "pivotType": "reference-bottom-center",
+      "pivotInFrame": [
+        27,
+        109
+      ],
+      "effectOwnership": "standalone-effect-or-reference-sprite",
+      "timing": {
+        "stateFrameIndex": 0,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "3383ab18bd840861fbb3b160b0d0f609bbee22e1d949f85d491ffdacc8dfd71e",
+      "visiblePixelSha256": "a1623bd8251b0bbeaf659d7df2ad088e8a3cadf9d9ec97133a097779b993efb0",
+      "visiblePixelCount": 3433,
+      "cellRect": [
+        318,
+        635,
+        71,
+        128
+      ],
+      "artRect": [
+        326,
+        643,
+        55,
+        112
+      ],
+      "pivotInCell": [
+        35,
+        117
+      ]
+    },
+    "rolling-can-00": {
+      "state": "rolling-can",
+      "stateFrameIndex": 0,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        0,
+        793,
+        98,
+        899
+      ],
+      "sourceRect": [
+        11,
+        794,
+        81,
+        68
+      ],
+      "sourceVisibleBounds": [
+        13,
+        796,
+        90,
+        860
+      ],
+      "componentCount": 12,
+      "frameFile": "frames/rolling-can-00.png",
+      "frameSize": [
+        81,
+        68
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        79,
+        66
+      ],
+      "pivotType": "effect-bottom-center",
+      "pivotInFrame": [
+        40,
+        65
+      ],
+      "effectOwnership": "standalone-effect-or-reference-sprite",
+      "timing": {
+        "stateFrameIndex": 0,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "dbf7fcee4f7e185140967ef39d5a3f5ddfbe8a764030b2e6ac9aa9a78e6e9209",
+      "visiblePixelSha256": "0eaa676441b5862fe294c933da1fea0cb7601b8eaa7bc9d9698f773243e9b25d",
+      "visiblePixelCount": 3460,
+      "cellRect": [
+        389,
+        635,
+        97,
+        84
+      ],
+      "artRect": [
+        397,
+        643,
+        81,
+        68
+      ],
+      "pivotInCell": [
+        48,
+        73
+      ]
+    },
+    "rolling-can-01": {
+      "state": "rolling-can",
+      "stateFrameIndex": 1,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        98,
+        793,
+        175,
+        899
+      ],
+      "sourceRect": [
+        99,
+        801,
+        74,
+        59
+      ],
+      "sourceVisibleBounds": [
+        101,
+        803,
+        171,
+        858
+      ],
+      "componentCount": 5,
+      "frameFile": "frames/rolling-can-01.png",
+      "frameSize": [
+        74,
+        59
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        72,
+        57
+      ],
+      "pivotType": "effect-bottom-center",
+      "pivotInFrame": [
+        37,
+        56
+      ],
+      "effectOwnership": "standalone-effect-or-reference-sprite",
+      "timing": {
+        "stateFrameIndex": 1,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "682f594b913863ea0c0c0341b85d8c2c06d9986e1c1b880b58fdb07549221370",
+      "visiblePixelSha256": "dae7c2ec5d669edd4846b9e22211ff3f4f5defc8b9bf2bb252df9eaa12b80c42",
+      "visiblePixelCount": 2544,
+      "cellRect": [
+        486,
+        635,
+        90,
+        75
+      ],
+      "artRect": [
+        494,
+        643,
+        74,
+        59
+      ],
+      "pivotInCell": [
+        45,
+        64
+      ]
+    },
+    "rolling-can-02": {
+      "state": "rolling-can",
+      "stateFrameIndex": 2,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        175,
+        793,
+        270,
+        899
+      ],
+      "sourceRect": [
+        180,
+        801,
+        78,
+        58
+      ],
+      "sourceVisibleBounds": [
+        182,
+        803,
+        256,
+        857
+      ],
+      "componentCount": 5,
+      "frameFile": "frames/rolling-can-02.png",
+      "frameSize": [
+        78,
+        58
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        76,
+        56
+      ],
+      "pivotType": "effect-bottom-center",
+      "pivotInFrame": [
+        38,
+        55
+      ],
+      "effectOwnership": "standalone-effect-or-reference-sprite",
+      "timing": {
+        "stateFrameIndex": 2,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "d92580612a000f4af3fd558f96abedc0330e7f82b4082d66186bdb58cfc3de5a",
+      "visiblePixelSha256": "391e7e1cafd1e38b46fb202a7bbd32d5f881b0b9ac79ae10a23f942c8a593a27",
+      "visiblePixelCount": 2696,
+      "cellRect": [
+        576,
+        635,
+        94,
+        74
+      ],
+      "artRect": [
+        584,
+        643,
+        78,
+        58
+      ],
+      "pivotInCell": [
+        46,
+        63
+      ]
+    },
+    "rolling-can-03": {
+      "state": "rolling-can",
+      "stateFrameIndex": 3,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        270,
+        793,
+        390,
+        899
+      ],
+      "sourceRect": [
+        273,
+        804,
+        112,
+        68
+      ],
+      "sourceVisibleBounds": [
+        275,
+        806,
+        383,
+        870
+      ],
+      "componentCount": 21,
+      "frameFile": "frames/rolling-can-03.png",
+      "frameSize": [
+        112,
+        68
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        110,
+        66
+      ],
+      "pivotType": "effect-bottom-center",
+      "pivotInFrame": [
+        55,
+        65
+      ],
+      "effectOwnership": "standalone-effect-or-reference-sprite",
+      "timing": {
+        "stateFrameIndex": 3,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "e1174dd7bd2538b7906bd82f236a42042dc9ed1801373a605e5e937d295dd9d2",
+      "visiblePixelSha256": "a93b46e9a7f430f2e97ef8966c644b3af170075863f26c8bb49acac1d0f355aa",
+      "visiblePixelCount": 3292,
+      "cellRect": [
+        670,
+        635,
+        128,
+        84
+      ],
+      "artRect": [
+        678,
+        643,
+        112,
+        68
+      ],
+      "pivotInCell": [
+        63,
+        73
+      ]
+    },
+    "sprinkler-hydrant-00": {
+      "state": "sprinkler-hydrant",
+      "stateFrameIndex": 0,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        390,
+        793,
+        451,
+        899
+      ],
+      "sourceRect": [
+        406,
+        834,
+        28,
+        42
+      ],
+      "sourceVisibleBounds": [
+        408,
+        836,
+        432,
+        874
+      ],
+      "componentCount": 1,
+      "frameFile": "frames/sprinkler-hydrant-00.png",
+      "frameSize": [
+        28,
+        42
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        26,
+        40
+      ],
+      "pivotType": "effect-bottom-center",
+      "pivotInFrame": [
+        14,
+        39
+      ],
+      "effectOwnership": "standalone-effect-or-reference-sprite",
+      "timing": {
+        "stateFrameIndex": 0,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "7fdf46937ce206120e4c469933a4baf512963d8ab2f62024dbbf5c92ed286ee9",
+      "visiblePixelSha256": "56356c6720a416b41284c21027daa72dfa8284e4db53e3e770ab1dd17cb71af4",
+      "visiblePixelCount": 641,
+      "cellRect": [
+        798,
+        635,
+        44,
+        58
+      ],
+      "artRect": [
+        806,
+        643,
+        28,
+        42
+      ],
+      "pivotInCell": [
+        22,
+        47
+      ]
+    },
+    "sprinkler-hydrant-01": {
+      "state": "sprinkler-hydrant",
+      "stateFrameIndex": 1,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        451,
+        793,
+        506,
+        899
+      ],
+      "sourceRect": [
+        463,
+        823,
+        45,
+        63
+      ],
+      "sourceVisibleBounds": [
+        465,
+        825,
+        506,
+        884
+      ],
+      "componentCount": 4,
+      "frameFile": "frames/sprinkler-hydrant-01.png",
+      "frameSize": [
+        45,
+        63
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        43,
+        61
+      ],
+      "pivotType": "effect-bottom-center",
+      "pivotInFrame": [
+        22,
+        60
+      ],
+      "effectOwnership": "standalone-effect-or-reference-sprite",
+      "timing": {
+        "stateFrameIndex": 1,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "4fa1635064f65812230533ac027ebf705f19d72f65e864ae340a5253f0cd1f64",
+      "visiblePixelSha256": "1c9eaf94d3f3496481df52238f32a9f62e309f35cd320dd3c0c6dd439e0d5869",
+      "visiblePixelCount": 690,
+      "cellRect": [
+        842,
+        635,
+        61,
+        79
+      ],
+      "artRect": [
+        850,
+        643,
+        45,
+        63
+      ],
+      "pivotInCell": [
+        30,
+        68
+      ]
+    },
+    "sprinkler-hydrant-02": {
+      "state": "sprinkler-hydrant",
+      "stateFrameIndex": 2,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        506,
+        793,
+        552,
+        899
+      ],
+      "sourceRect": [
+        498,
+        815,
+        61,
+        71
+      ],
+      "sourceVisibleBounds": [
+        500,
+        817,
+        557,
+        884
+      ],
+      "componentCount": 5,
+      "frameFile": "frames/sprinkler-hydrant-02.png",
+      "frameSize": [
+        61,
+        71
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        59,
+        69
+      ],
+      "pivotType": "effect-bottom-center",
+      "pivotInFrame": [
+        30,
+        68
+      ],
+      "effectOwnership": "standalone-effect-or-reference-sprite",
+      "timing": {
+        "stateFrameIndex": 2,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "65ad79dc4a9b5550e0cdcafaadf17a00f594c24f1c9be6b197c49aef1867c46d",
+      "visiblePixelSha256": "20b2f515aa1df0acad9f9f07b971c120a0aa71d7d72166fe4806fe03013dc18f",
+      "visiblePixelCount": 1156,
+      "cellRect": [
+        903,
+        635,
+        77,
+        87
+      ],
+      "artRect": [
+        911,
+        643,
+        61,
+        71
+      ],
+      "pivotInCell": [
+        38,
+        76
+      ]
+    },
+    "sprinkler-hydrant-03": {
+      "state": "sprinkler-hydrant",
+      "stateFrameIndex": 3,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        552,
+        793,
+        612,
+        899
+      ],
+      "sourceRect": [
+        548,
+        812,
+        60,
+        74
+      ],
+      "sourceVisibleBounds": [
+        550,
+        814,
+        606,
+        884
+      ],
+      "componentCount": 12,
+      "frameFile": "frames/sprinkler-hydrant-03.png",
+      "frameSize": [
+        60,
+        74
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        58,
+        72
+      ],
+      "pivotType": "effect-bottom-center",
+      "pivotInFrame": [
+        30,
+        71
+      ],
+      "effectOwnership": "standalone-effect-or-reference-sprite",
+      "timing": {
+        "stateFrameIndex": 3,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "69ab6e59b6326f6cf4a9eef04ce3de8d904f1be1bd0214c12cf653e554150020",
+      "visiblePixelSha256": "83f5ebb1e4aef078919738443c9c81b36a340e26201d66d67823cfc1c1554e55",
+      "visiblePixelCount": 1477,
+      "cellRect": [
+        980,
+        635,
+        76,
+        90
+      ],
+      "artRect": [
+        988,
+        643,
+        60,
+        74
+      ],
+      "pivotInCell": [
+        38,
+        79
+      ]
+    },
+    "sprinkler-hydrant-04": {
+      "state": "sprinkler-hydrant",
+      "stateFrameIndex": 4,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        612,
+        793,
+        720,
+        899
+      ],
+      "sourceRect": [
+        612,
+        791,
+        93,
+        102
+      ],
+      "sourceVisibleBounds": [
+        614,
+        793,
+        703,
+        891
+      ],
+      "componentCount": 18,
+      "frameFile": "frames/sprinkler-hydrant-04.png",
+      "frameSize": [
+        93,
+        102
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        91,
+        100
+      ],
+      "pivotType": "effect-bottom-center",
+      "pivotInFrame": [
+        46,
+        99
+      ],
+      "effectOwnership": "standalone-effect-or-reference-sprite",
+      "timing": {
+        "stateFrameIndex": 4,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "e2bec3d0a9a980fe7c30d29fd00336baf602db8b59567bd9325d191596a49d7f",
+      "visiblePixelSha256": "b3719ab884aefff326cb5a9e7f643bdff84c07394940514bbbb62edec0657f2f",
+      "visiblePixelCount": 2931,
+      "cellRect": [
+        1056,
+        635,
+        109,
+        118
+      ],
+      "artRect": [
+        1064,
+        643,
+        93,
+        102
+      ],
+      "pivotInCell": [
+        54,
+        107
+      ]
+    },
+    "water-splash-00": {
+      "state": "water-splash",
+      "stateFrameIndex": 0,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        720,
+        793,
+        803,
+        899
+      ],
+      "sourceRect": [
+        729,
+        839,
+        73,
+        53
+      ],
+      "sourceVisibleBounds": [
+        731,
+        841,
+        800,
+        890
+      ],
+      "componentCount": 11,
+      "frameFile": "frames/water-splash-00.png",
+      "frameSize": [
+        73,
+        53
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        71,
+        51
+      ],
+      "pivotType": "effect-bottom-center",
+      "pivotInFrame": [
+        36,
+        50
+      ],
+      "effectOwnership": "standalone-effect-or-reference-sprite",
+      "timing": {
+        "stateFrameIndex": 0,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "5a6b058bb5e85c61968b11b53fcde26b8574654e0a91943fe61f2183e4c29d82",
+      "visiblePixelSha256": "6b64a859ee21d91bbed6fa80a6510a92d257d94061bc91934c1b12eebaf8f3e2",
+      "visiblePixelCount": 1441,
+      "cellRect": [
+        1165,
+        635,
+        89,
+        69
+      ],
+      "artRect": [
+        1173,
+        643,
+        73,
+        53
+      ],
+      "pivotInCell": [
+        44,
+        58
+      ]
+    },
+    "water-splash-01": {
+      "state": "water-splash",
+      "stateFrameIndex": 1,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        803,
+        793,
+        882,
+        899
+      ],
+      "sourceRect": [
+        805,
+        835,
+        69,
+        60
+      ],
+      "sourceVisibleBounds": [
+        807,
+        837,
+        872,
+        893
+      ],
+      "componentCount": 9,
+      "frameFile": "frames/water-splash-01.png",
+      "frameSize": [
+        69,
+        60
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        67,
+        58
+      ],
+      "pivotType": "effect-bottom-center",
+      "pivotInFrame": [
+        34,
+        57
+      ],
+      "effectOwnership": "standalone-effect-or-reference-sprite",
+      "timing": {
+        "stateFrameIndex": 1,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "fe8627c5987a371493ca4d7938cef7c9bfc95aa99e6cd14b54e626f447027925",
+      "visiblePixelSha256": "34a3b5f345f5625c470d97126819f895159ca429248f48e2eec7e56cefd99c5d",
+      "visiblePixelCount": 1588,
+      "cellRect": [
+        1254,
+        635,
+        85,
+        76
+      ],
+      "artRect": [
+        1262,
+        643,
+        69,
+        60
+      ],
+      "pivotInCell": [
+        42,
+        65
+      ]
+    },
+    "water-splash-02": {
+      "state": "water-splash",
+      "stateFrameIndex": 2,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        882,
+        793,
+        990,
+        899
+      ],
+      "sourceRect": [
+        883,
+        793,
+        93,
+        105
+      ],
+      "sourceVisibleBounds": [
+        885,
+        795,
+        974,
+        896
+      ],
+      "componentCount": 13,
+      "frameFile": "frames/water-splash-02.png",
+      "frameSize": [
+        93,
+        105
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        91,
+        103
+      ],
+      "pivotType": "effect-bottom-center",
+      "pivotInFrame": [
+        46,
+        102
+      ],
+      "effectOwnership": "standalone-effect-or-reference-sprite",
+      "timing": {
+        "stateFrameIndex": 2,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "452e13c6fb71ec7410e92c4e49ea10dc02e6b0be4e3a06794f1b87ddccdf437f",
+      "visiblePixelSha256": "01cb1e82fa1e8ab3698bd904ebf8940e9fca76c96c228c470d766e83eddf67ff",
+      "visiblePixelCount": 4244,
+      "cellRect": [
+        1339,
+        635,
+        109,
+        121
+      ],
+      "artRect": [
+        1347,
+        643,
+        93,
+        105
+      ],
+      "pivotInCell": [
+        54,
+        110
+      ]
+    },
+    "water-droplets-00": {
+      "state": "water-droplets",
+      "stateFrameIndex": 0,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        990,
+        793,
+        1068,
+        899
+      ],
+      "sourceRect": [
+        994,
+        836,
+        69,
+        56
+      ],
+      "sourceVisibleBounds": [
+        996,
+        838,
+        1061,
+        890
+      ],
+      "componentCount": 11,
+      "frameFile": "frames/water-droplets-00.png",
+      "frameSize": [
+        69,
+        56
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        67,
+        54
+      ],
+      "pivotType": "effect-bottom-center",
+      "pivotInFrame": [
+        34,
+        53
+      ],
+      "effectOwnership": "standalone-effect-or-reference-sprite",
+      "timing": {
+        "stateFrameIndex": 0,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "259f1667e0a110f3d60da8278cd3824501c171e03a73ec205792157eea375833",
+      "visiblePixelSha256": "43b952fdee2376d5ed633fe42e7e16ec1ae099e3006dae2f70b0bab5216e7d04",
+      "visiblePixelCount": 314,
+      "cellRect": [
+        1448,
+        635,
+        85,
+        72
+      ],
+      "artRect": [
+        1456,
+        643,
+        69,
+        56
+      ],
+      "pivotInCell": [
+        42,
+        61
+      ]
+    },
+    "impact-stars-00": {
+      "state": "impact-stars",
+      "stateFrameIndex": 0,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1068,
+        793,
+        1536,
+        899
+      ],
+      "sourceRect": [
+        1068,
+        807,
+        439,
+        82
+      ],
+      "sourceVisibleBounds": [
+        1070,
+        809,
+        1505,
+        887
+      ],
+      "componentCount": 20,
+      "frameFile": "frames/impact-stars-00.png",
+      "frameSize": [
+        439,
+        82
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        437,
+        80
+      ],
+      "pivotType": "effect-bottom-center",
+      "pivotInFrame": [
+        219,
+        79
+      ],
+      "effectOwnership": "standalone-effect-or-reference-sprite",
+      "timing": {
+        "stateFrameIndex": 0,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "efb3229dcda6b0122556d511ae605cdb47c2954bcec63e134894424053806b74",
+      "visiblePixelSha256": "ded2e0a629a2d3a8bd19e1a4cc1efd293f00b776f63399fbb2aeba22c5dcf49a",
+      "visiblePixelCount": 4016,
+      "cellRect": [
+        1533,
+        635,
+        455,
+        98
+      ],
+      "artRect": [
+        1541,
+        643,
+        439,
+        82
+      ],
+      "pivotInCell": [
+        227,
+        87
+      ]
+    },
+    "dust-speed-puff-00": {
+      "state": "dust-speed-puffs",
+      "stateFrameIndex": 0,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        0,
+        899,
+        92,
+        1024
+      ],
+      "sourceRect": [
+        9,
+        940,
+        80,
+        54
+      ],
+      "sourceVisibleBounds": [
+        11,
+        942,
+        87,
+        992
+      ],
+      "componentCount": 5,
+      "frameFile": "frames/dust-speed-puff-00.png",
+      "frameSize": [
+        80,
+        54
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        78,
+        52
+      ],
+      "pivotType": "effect-bottom-center",
+      "pivotInFrame": [
+        39,
+        51
+      ],
+      "effectOwnership": "standalone-effect-or-reference-sprite",
+      "timing": {
+        "stateFrameIndex": 0,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "a53a1ad2ab6865e4de087dfce8074faf59b964f83e68c5d61234d81e144d42d2",
+      "visiblePixelSha256": "02bd6f944af5d8d6d30d08bf5d8aa85d7a43bffe9e124208b5e323a329c8e6a3",
+      "visiblePixelCount": 2082,
+      "cellRect": [
+        0,
+        763,
+        96,
+        70
+      ],
+      "artRect": [
+        8,
+        771,
+        80,
+        54
+      ],
+      "pivotInCell": [
+        47,
+        59
+      ]
+    },
+    "dust-speed-puff-01": {
+      "state": "dust-speed-puffs",
+      "stateFrameIndex": 1,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        92,
+        899,
+        163,
+        1024
+      ],
+      "sourceRect": [
+        94,
+        945,
+        64,
+        46
+      ],
+      "sourceVisibleBounds": [
+        96,
+        947,
+        156,
+        989
+      ],
+      "componentCount": 1,
+      "frameFile": "frames/dust-speed-puff-01.png",
+      "frameSize": [
+        64,
+        46
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        62,
+        44
+      ],
+      "pivotType": "effect-bottom-center",
+      "pivotInFrame": [
+        32,
+        43
+      ],
+      "effectOwnership": "standalone-effect-or-reference-sprite",
+      "timing": {
+        "stateFrameIndex": 1,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "0e5e986109dc95862eaaf99bfb2656ac24b23931f7c544f0599a81a8e97be38e",
+      "visiblePixelSha256": "9eea828aaef655c353f91c3ad292689c845d572984927e89669beedd3b81b1df",
+      "visiblePixelCount": 1572,
+      "cellRect": [
+        96,
+        763,
+        80,
+        62
+      ],
+      "artRect": [
+        104,
+        771,
+        64,
+        46
+      ],
+      "pivotInCell": [
+        40,
+        51
+      ]
+    },
+    "dust-speed-puff-02": {
+      "state": "dust-speed-puffs",
+      "stateFrameIndex": 2,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        163,
+        899,
+        244,
+        1024
+      ],
+      "sourceRect": [
+        166,
+        943,
+        77,
+        45
+      ],
+      "sourceVisibleBounds": [
+        168,
+        945,
+        241,
+        986
+      ],
+      "componentCount": 3,
+      "frameFile": "frames/dust-speed-puff-02.png",
+      "frameSize": [
+        77,
+        45
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        75,
+        43
+      ],
+      "pivotType": "effect-bottom-center",
+      "pivotInFrame": [
+        38,
+        42
+      ],
+      "effectOwnership": "standalone-effect-or-reference-sprite",
+      "timing": {
+        "stateFrameIndex": 2,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "ab10fe97753982440675e73a2b411071639202ca9873b3504fe7a58924fbf8c2",
+      "visiblePixelSha256": "3b3dd1d4e76cb695b06d7e610bb3bd6d0bd0a32158bf226b13321f0633e60cc3",
+      "visiblePixelCount": 1034,
+      "cellRect": [
+        176,
+        763,
+        93,
+        61
+      ],
+      "artRect": [
+        184,
+        771,
+        77,
+        45
+      ],
+      "pivotInCell": [
+        46,
+        50
+      ]
+    },
+    "dust-speed-puff-03": {
+      "state": "dust-speed-puffs",
+      "stateFrameIndex": 3,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        244,
+        899,
+        345,
+        1024
+      ],
+      "sourceRect": [
+        245,
+        946,
+        92,
+        41
+      ],
+      "sourceVisibleBounds": [
+        247,
+        948,
+        335,
+        985
+      ],
+      "componentCount": 3,
+      "frameFile": "frames/dust-speed-puff-03.png",
+      "frameSize": [
+        92,
+        41
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        90,
+        39
+      ],
+      "pivotType": "effect-bottom-center",
+      "pivotInFrame": [
+        45,
+        38
+      ],
+      "effectOwnership": "standalone-effect-or-reference-sprite",
+      "timing": {
+        "stateFrameIndex": 3,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "e8bfe91a32559cd978cf57e7c8765e43b62807b21fc6b1ff2f46aa4b902b9b63",
+      "visiblePixelSha256": "061d330c4668ce042a75a21ac6a2cf39ca79ca0640b1e3ec6cd5bcec6d03db9e",
+      "visiblePixelCount": 1736,
+      "cellRect": [
+        269,
+        763,
+        108,
+        57
+      ],
+      "artRect": [
+        277,
+        771,
+        92,
+        41
+      ],
+      "pivotInCell": [
+        53,
+        46
+      ]
+    },
+    "dust-speed-puff-04": {
+      "state": "dust-speed-puffs",
+      "stateFrameIndex": 4,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        345,
+        899,
+        393,
+        1024
+      ],
+      "sourceRect": [
+        354,
+        953,
+        33,
+        31
+      ],
+      "sourceVisibleBounds": [
+        356,
+        955,
+        385,
+        982
+      ],
+      "componentCount": 1,
+      "frameFile": "frames/dust-speed-puff-04.png",
+      "frameSize": [
+        33,
+        31
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        31,
+        29
+      ],
+      "pivotType": "effect-bottom-center",
+      "pivotInFrame": [
+        16,
+        28
+      ],
+      "effectOwnership": "standalone-effect-or-reference-sprite",
+      "timing": {
+        "stateFrameIndex": 4,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "9b3eedc341dc8f4cb95c9889790a5bfa3874ea6910deb6c519c5a56bdcf32bcd",
+      "visiblePixelSha256": "bcf023c555891165b582d4ea49576ad312810d180f764650674ca151cc028e6c",
+      "visiblePixelCount": 571,
+      "cellRect": [
+        377,
+        763,
+        49,
+        47
+      ],
+      "artRect": [
+        385,
+        771,
+        33,
+        31
+      ],
+      "pivotInCell": [
+        24,
+        36
+      ]
+    },
+    "dust-speed-puff-05": {
+      "state": "dust-speed-puffs",
+      "stateFrameIndex": 5,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        393,
+        899,
+        447,
+        1024
+      ],
+      "sourceRect": [
+        395,
+        927,
+        46,
+        42
+      ],
+      "sourceVisibleBounds": [
+        397,
+        929,
+        439,
+        967
+      ],
+      "componentCount": 1,
+      "frameFile": "frames/dust-speed-puff-05.png",
+      "frameSize": [
+        46,
+        42
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        44,
+        40
+      ],
+      "pivotType": "effect-bottom-center",
+      "pivotInFrame": [
+        23,
+        39
+      ],
+      "effectOwnership": "standalone-effect-or-reference-sprite",
+      "timing": {
+        "stateFrameIndex": 5,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "a1124b972bd675b016ff8e8396075889005e4b399f5a8f62b9243cf717c4e8f2",
+      "visiblePixelSha256": "83bc9288d27162d7d6f701bede2b41a995b5f7ecbb42530d97ecd26212edb8a6",
+      "visiblePixelCount": 1201,
+      "cellRect": [
+        426,
+        763,
+        62,
+        58
+      ],
+      "artRect": [
+        434,
+        771,
+        46,
+        42
+      ],
+      "pivotInCell": [
+        31,
+        47
+      ]
+    },
+    "dust-speed-puff-06": {
+      "state": "dust-speed-puffs",
+      "stateFrameIndex": 6,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        447,
+        899,
+        491,
+        1024
+      ],
+      "sourceRect": [
+        453,
+        947,
+        32,
+        31
+      ],
+      "sourceVisibleBounds": [
+        455,
+        949,
+        483,
+        976
+      ],
+      "componentCount": 1,
+      "frameFile": "frames/dust-speed-puff-06.png",
+      "frameSize": [
+        32,
+        31
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        30,
+        29
+      ],
+      "pivotType": "effect-bottom-center",
+      "pivotInFrame": [
+        15,
+        28
+      ],
+      "effectOwnership": "standalone-effect-or-reference-sprite",
+      "timing": {
+        "stateFrameIndex": 6,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "e835e486dc55c4588a3c96d78d373502fc6f8829d31468c667bab3553e372d45",
+      "visiblePixelSha256": "aa8df9f4dcb037c5c53a37a4c451b868155cac1fb719a5c83edb24e42c9df7be",
+      "visiblePixelCount": 548,
+      "cellRect": [
+        488,
+        763,
+        48,
+        47
+      ],
+      "artRect": [
+        496,
+        771,
+        32,
+        31
+      ],
+      "pivotInCell": [
+        23,
+        36
+      ]
+    },
+    "dust-speed-puff-07": {
+      "state": "dust-speed-puffs",
+      "stateFrameIndex": 7,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        491,
+        899,
+        550,
+        1024
+      ],
+      "sourceRect": [
+        496,
+        928,
+        48,
+        50
+      ],
+      "sourceVisibleBounds": [
+        498,
+        930,
+        542,
+        976
+      ],
+      "componentCount": 1,
+      "frameFile": "frames/dust-speed-puff-07.png",
+      "frameSize": [
+        48,
+        50
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        46,
+        48
+      ],
+      "pivotType": "effect-bottom-center",
+      "pivotInFrame": [
+        24,
+        47
+      ],
+      "effectOwnership": "standalone-effect-or-reference-sprite",
+      "timing": {
+        "stateFrameIndex": 7,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "37cd332076308db6a0fcbeb8183c5fc0506c11a7fe7266f8230151c1d8660ba4",
+      "visiblePixelSha256": "c523995333c764e1f5b092caebace629827c6d891dd121d8ba066da88da3aee3",
+      "visiblePixelCount": 1424,
+      "cellRect": [
+        536,
+        763,
+        64,
+        66
+      ],
+      "artRect": [
+        544,
+        771,
+        48,
+        50
+      ],
+      "pivotInCell": [
+        32,
+        55
+      ]
+    },
+    "dust-speed-puff-08": {
+      "state": "dust-speed-puffs",
+      "stateFrameIndex": 8,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        550,
+        899,
+        640,
+        1024
+      ],
+      "sourceRect": [
+        557,
+        937,
+        74,
+        40
+      ],
+      "sourceVisibleBounds": [
+        559,
+        939,
+        629,
+        975
+      ],
+      "componentCount": 3,
+      "frameFile": "frames/dust-speed-puff-08.png",
+      "frameSize": [
+        74,
+        40
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        72,
+        38
+      ],
+      "pivotType": "effect-bottom-center",
+      "pivotInFrame": [
+        37,
+        37
+      ],
+      "effectOwnership": "standalone-effect-or-reference-sprite",
+      "timing": {
+        "stateFrameIndex": 8,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "614a4525b2c9b93c23e47f6b0aac13d7ab3bcb2cd8677c7b28b2fd5ac285847d",
+      "visiblePixelSha256": "927f7e5fcd2db368c0a269720e7581c4accb6308878a6df1110f72dfcd309ec1",
+      "visiblePixelCount": 1028,
+      "cellRect": [
+        600,
+        763,
+        90,
+        56
+      ],
+      "artRect": [
+        608,
+        771,
+        74,
+        40
+      ],
+      "pivotInCell": [
+        45,
+        45
+      ]
+    },
+    "drip-strip-00": {
+      "state": "drip-strip",
+      "stateFrameIndex": 0,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        640,
+        899,
+        900,
+        1024
+      ],
+      "sourceRect": [
+        651,
+        944,
+        226,
+        56
+      ],
+      "sourceVisibleBounds": [
+        653,
+        946,
+        875,
+        998
+      ],
+      "componentCount": 17,
+      "frameFile": "frames/drip-strip-00.png",
+      "frameSize": [
+        226,
+        56
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        224,
+        54
+      ],
+      "pivotType": "effect-bottom-center",
+      "pivotInFrame": [
+        113,
+        53
+      ],
+      "effectOwnership": "standalone-effect-or-reference-sprite",
+      "timing": {
+        "stateFrameIndex": 0,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "7ba1f8b5215162bc80b5987d9253097e1d3bd80f0254dd42cb329bdf65b7f727",
+      "visiblePixelSha256": "8a0b4211cc03f7acd43ae0f4e369d00fc31ffbc0aba64e508485e4e211717d6c",
+      "visiblePixelCount": 786,
+      "cellRect": [
+        690,
+        763,
+        242,
+        72
+      ],
+      "artRect": [
+        698,
+        771,
+        226,
+        56
+      ],
+      "pivotInCell": [
+        121,
+        61
+      ]
+    },
+    "misc-trash-00": {
+      "state": "misc-trash",
+      "stateFrameIndex": 0,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        900,
+        899,
+        960,
+        1024
+      ],
+      "sourceRect": [
+        916,
+        965,
+        44,
+        26
+      ],
+      "sourceVisibleBounds": [
+        918,
+        967,
+        958,
+        989
+      ],
+      "componentCount": 1,
+      "frameFile": "frames/misc-trash-00.png",
+      "frameSize": [
+        44,
+        26
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        42,
+        24
+      ],
+      "pivotType": "effect-bottom-center",
+      "pivotInFrame": [
+        22,
+        23
+      ],
+      "effectOwnership": "standalone-effect-or-reference-sprite",
+      "timing": {
+        "stateFrameIndex": 0,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "53d852a8bc02b0e5e95f2c5cd1944ccf550922ef13b99627775819059c81047a",
+      "visiblePixelSha256": "6ecfe561e91307444d7dd034dbf17cfe4cb1105cdd544a66a39eba53ab900d2a",
+      "visiblePixelCount": 421,
+      "cellRect": [
+        932,
+        763,
+        60,
+        42
+      ],
+      "artRect": [
+        940,
+        771,
+        44,
+        26
+      ],
+      "pivotInCell": [
+        30,
+        31
+      ]
+    },
+    "misc-trash-01": {
+      "state": "misc-trash",
+      "stateFrameIndex": 1,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        960,
+        899,
+        1005,
+        1024
+      ],
+      "sourceRect": [
+        963,
+        954,
+        38,
+        34
+      ],
+      "sourceVisibleBounds": [
+        965,
+        956,
+        999,
+        986
+      ],
+      "componentCount": 1,
+      "frameFile": "frames/misc-trash-01.png",
+      "frameSize": [
+        38,
+        34
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        36,
+        32
+      ],
+      "pivotType": "effect-bottom-center",
+      "pivotInFrame": [
+        19,
+        31
+      ],
+      "effectOwnership": "standalone-effect-or-reference-sprite",
+      "timing": {
+        "stateFrameIndex": 1,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "1a424f142acbae3819ffdd235204e3612855916215b18f03ff0cad64ee3c2a9e",
+      "visiblePixelSha256": "9fa22c1835e264f8ab47c9196a94d51436463964a268edc8c8439364a7b8bb7d",
+      "visiblePixelCount": 467,
+      "cellRect": [
+        992,
+        763,
+        54,
+        50
+      ],
+      "artRect": [
+        1000,
+        771,
+        38,
+        34
+      ],
+      "pivotInCell": [
+        27,
+        39
+      ]
+    },
+    "misc-trash-02": {
+      "state": "misc-trash",
+      "stateFrameIndex": 2,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1005,
+        899,
+        1043,
+        1024
+      ],
+      "sourceRect": [
+        1015,
+        950,
+        24,
+        41
+      ],
+      "sourceVisibleBounds": [
+        1017,
+        952,
+        1037,
+        989
+      ],
+      "componentCount": 1,
+      "frameFile": "frames/misc-trash-02.png",
+      "frameSize": [
+        24,
+        41
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        22,
+        39
+      ],
+      "pivotType": "effect-bottom-center",
+      "pivotInFrame": [
+        11,
+        38
+      ],
+      "effectOwnership": "standalone-effect-or-reference-sprite",
+      "timing": {
+        "stateFrameIndex": 2,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "149117f00b5dbef97dec79c537eeab355d4f10663b901c3b326f1effd8138597",
+      "visiblePixelSha256": "1e31fb021aaf1ec8d16f9a5df43d90c64a468400b699a76d05a5d239d3409bbe",
+      "visiblePixelCount": 480,
+      "cellRect": [
+        1046,
+        763,
+        40,
+        57
+      ],
+      "artRect": [
+        1054,
+        771,
+        24,
+        41
+      ],
+      "pivotInCell": [
+        19,
+        46
+      ]
+    },
+    "misc-trash-03": {
+      "state": "misc-trash",
+      "stateFrameIndex": 3,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1043,
+        899,
+        1075,
+        1024
+      ],
+      "sourceRect": [
+        1047,
+        942,
+        23,
+        49
+      ],
+      "sourceVisibleBounds": [
+        1049,
+        944,
+        1068,
+        989
+      ],
+      "componentCount": 1,
+      "frameFile": "frames/misc-trash-03.png",
+      "frameSize": [
+        23,
+        49
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        21,
+        47
+      ],
+      "pivotType": "effect-bottom-center",
+      "pivotInFrame": [
+        11,
+        46
+      ],
+      "effectOwnership": "standalone-effect-or-reference-sprite",
+      "timing": {
+        "stateFrameIndex": 3,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "5c73a3931a198a5158b09f1339d3adee8a4b5aa6a365b96ddf9b9ae10f87429a",
+      "visiblePixelSha256": "0db7c34ce800d6f8c10045561bee52b2c626562912f493f27f6a2efc0d0c8de3",
+      "visiblePixelCount": 678,
+      "cellRect": [
+        1086,
+        763,
+        39,
+        65
+      ],
+      "artRect": [
+        1094,
+        771,
+        23,
+        49
+      ],
+      "pivotInCell": [
+        19,
+        54
+      ]
+    },
+    "misc-trash-04": {
+      "state": "misc-trash",
+      "stateFrameIndex": 4,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1075,
+        899,
+        1112,
+        1024
+      ],
+      "sourceRect": [
+        1075,
+        952,
+        34,
+        38
+      ],
+      "sourceVisibleBounds": [
+        1077,
+        954,
+        1107,
+        988
+      ],
+      "componentCount": 1,
+      "frameFile": "frames/misc-trash-04.png",
+      "frameSize": [
+        34,
+        38
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        32,
+        36
+      ],
+      "pivotType": "effect-bottom-center",
+      "pivotInFrame": [
+        17,
+        35
+      ],
+      "effectOwnership": "standalone-effect-or-reference-sprite",
+      "timing": {
+        "stateFrameIndex": 4,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "57ec48c31dca3123d28f12b0c4a3905788ad4ca44ef6e8bd8ca6d2eeea2de711",
+      "visiblePixelSha256": "29ec3f9a965ead6c6469e1d751f66f063db61e1ae9fcbf284f471f515e74f722",
+      "visiblePixelCount": 710,
+      "cellRect": [
+        1125,
+        763,
+        50,
+        54
+      ],
+      "artRect": [
+        1133,
+        771,
+        34,
+        38
+      ],
+      "pivotInCell": [
+        25,
+        43
+      ]
+    },
+    "misc-trash-05": {
+      "state": "misc-trash",
+      "stateFrameIndex": 5,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1112,
+        899,
+        1170,
+        1024
+      ],
+      "sourceRect": [
+        1113,
+        947,
+        38,
+        43
+      ],
+      "sourceVisibleBounds": [
+        1115,
+        949,
+        1149,
+        988
+      ],
+      "componentCount": 1,
+      "frameFile": "frames/misc-trash-05.png",
+      "frameSize": [
+        38,
+        43
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        36,
+        41
+      ],
+      "pivotType": "effect-bottom-center",
+      "pivotInFrame": [
+        19,
+        40
+      ],
+      "effectOwnership": "standalone-effect-or-reference-sprite",
+      "timing": {
+        "stateFrameIndex": 5,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "48ae3636131991ce8e1b9fc51c54dffcd2aedc9db29a8ac4eaae29f660aced92",
+      "visiblePixelSha256": "b61a5c2de574f55d2ece742b566c8187ae26255d10f604bb5e419338672de1f2",
+      "visiblePixelCount": 902,
+      "cellRect": [
+        1175,
+        763,
+        54,
+        59
+      ],
+      "artRect": [
+        1183,
+        771,
+        38,
+        43
+      ],
+      "pivotInCell": [
+        27,
+        48
+      ]
+    },
+    "close-up-head-00": {
+      "state": "close-up-heads",
+      "stateFrameIndex": 0,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1170,
+        899,
+        1294,
+        1024
+      ],
+      "sourceRect": [
+        1177,
+        914,
+        113,
+        95
+      ],
+      "sourceVisibleBounds": [
+        1179,
+        916,
+        1288,
+        1007
+      ],
+      "componentCount": 1,
+      "frameFile": "frames/close-up-head-00.png",
+      "frameSize": [
+        113,
+        95
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        111,
+        93
+      ],
+      "pivotType": "reference-bottom-center",
+      "pivotInFrame": [
+        56,
+        92
+      ],
+      "effectOwnership": "standalone-effect-or-reference-sprite",
+      "timing": {
+        "stateFrameIndex": 0,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "9ee37289e24ed793f437e6c28f35d2e7be381bd758e56667d77785e75493efb5",
+      "visiblePixelSha256": "da555ddda6c5b3cf2317d2e88285c90f5f4c96ba10b762e5d87ec8c56981c10f",
+      "visiblePixelCount": 7715,
+      "cellRect": [
+        1229,
+        763,
+        129,
+        111
+      ],
+      "artRect": [
+        1237,
+        771,
+        113,
+        95
+      ],
+      "pivotInCell": [
+        64,
+        100
+      ]
+    },
+    "close-up-head-01": {
+      "state": "close-up-heads",
+      "stateFrameIndex": 1,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1294,
+        899,
+        1410,
+        1024
+      ],
+      "sourceRect": [
+        1297,
+        917,
+        104,
+        92
+      ],
+      "sourceVisibleBounds": [
+        1299,
+        919,
+        1399,
+        1007
+      ],
+      "componentCount": 1,
+      "frameFile": "frames/close-up-head-01.png",
+      "frameSize": [
+        104,
+        92
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        102,
+        90
+      ],
+      "pivotType": "reference-bottom-center",
+      "pivotInFrame": [
+        51,
+        89
+      ],
+      "effectOwnership": "standalone-effect-or-reference-sprite",
+      "timing": {
+        "stateFrameIndex": 1,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "3445f9594e94c19f205b1fc395678eea4b910bd60a50302efdea04dc9f69fc1a",
+      "visiblePixelSha256": "4682394f98aa3f030e8b147feb17d3a849624939420a2eda3ac3827dd765d403",
+      "visiblePixelCount": 6868,
+      "cellRect": [
+        1358,
+        763,
+        120,
+        108
+      ],
+      "artRect": [
+        1366,
+        771,
+        104,
+        92
+      ],
+      "pivotInCell": [
+        59,
+        97
+      ]
+    },
+    "close-up-head-02": {
+      "state": "close-up-heads",
+      "stateFrameIndex": 2,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1410,
+        899,
+        1536,
+        1024
+      ],
+      "sourceRect": [
+        1416,
+        897,
+        94,
+        114
+      ],
+      "sourceVisibleBounds": [
+        1418,
+        899,
+        1508,
+        1009
+      ],
+      "componentCount": 3,
+      "frameFile": "frames/close-up-head-02.png",
+      "frameSize": [
+        94,
+        114
+      ],
+      "visibleBoundsInFrame": [
+        2,
+        2,
+        92,
+        112
+      ],
+      "pivotType": "reference-bottom-center",
+      "pivotInFrame": [
+        46,
+        111
+      ],
+      "effectOwnership": "standalone-effect-or-reference-sprite",
+      "timing": {
+        "stateFrameIndex": 2,
+        "durationMs": null,
+        "status": "approved source order; runtime timing not promoted"
+      },
+      "frameRgbaSha256": "0d612866d3f81f388e4896e4cfd5fb9b0cb59d6eddd940628cfc58d7480e52a3",
+      "visiblePixelSha256": "59cd2e3c8bbd79655b18f319d9c7b8bd4f197d770a53f8c6657cbfede8a004b2",
+      "visiblePixelCount": 7529,
+      "cellRect": [
+        1478,
+        763,
+        110,
+        130
+      ],
+      "artRect": [
+        1486,
+        771,
+        94,
+        114
+      ],
+      "pivotInCell": [
+        54,
+        119
+      ]
+    }
+  },
+  "operationCounts": {
+    "PRESERVE EXACTLY": 0,
+    "PRESERVE EXACTLY - REPOSITION FOR ISOLATION": 103,
+    "GENERATE NEW": 0,
+    "REPLACE UNAPPROVED": 0
+  },
+  "coverage": {
+    "sourceVisiblePixelCount": 512248,
+    "extractedVisiblePixelCount": 512248,
+    "visiblePixelsOmitted": 0,
+    "visiblePixelsDuplicated": 0
+  },
+  "provenance": {
+    "method": "reviewed connected-alpha ownership masks plus lossless source-scale relocation",
+    "aiGenerationUsed": false,
+    "resizingUsed": false,
+    "redrawingUsed": false,
+    "filteringUsed": false,
+    "rotationUsed": false,
+    "runtimePromotionUsed": false,
+    "rebuildCommand": "python3 tools/asset_pipeline/build_boss_brutus_bin_hound_isolated.py",
+    "verifyCommand": "python3 tools/verify/check_boss_brutus_bin_hound_isolated.py"
+  }
+}

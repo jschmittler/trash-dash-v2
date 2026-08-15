@@ -1,0 +1,1994 @@
+{
+  "boss": "Brutus Bin Hound",
+  "execution": "EXECUTE: boss-brutus-bin-hound",
+  "status": "immutable-pre-generation-manifest",
+  "originalSheetDimensions": [
+    1536,
+    1024
+  ],
+  "outputFormat": "PNG RGBA, source scale 1, manifest-defined variable rectangles",
+  "requiredGutterPixels": 8,
+  "operationCounts": {
+    "PRESERVE EXACTLY": 0,
+    "PRESERVE EXACTLY - REPOSITION FOR ISOLATION": 103,
+    "GENERATE NEW": 0,
+    "REPLACE UNAPPROVED": 0
+  },
+  "sequences": [
+    {
+      "id": "reference-large",
+      "orderedFrames": [
+        "reference-large-00"
+      ],
+      "frameCount": 1,
+      "loop": false,
+      "progression": "reference-only",
+      "timing": {
+        "basis": "approved-source-order",
+        "durationMs": null,
+        "status": "not-promoted; runtime timing intentionally not invented"
+      }
+    },
+    {
+      "id": "idle",
+      "orderedFrames": [
+        "idle-00",
+        "idle-01",
+        "idle-02",
+        "idle-03",
+        "idle-04",
+        "idle-05",
+        "idle-06",
+        "idle-07",
+        "idle-08"
+      ],
+      "frameCount": 9,
+      "loop": true,
+      "progression": "ambient loop",
+      "timing": {
+        "basis": "approved-source-order",
+        "durationMs": null,
+        "status": "not-promoted; runtime timing intentionally not invented"
+      }
+    },
+    {
+      "id": "bark-telegraph",
+      "orderedFrames": [
+        "bark-telegraph-00",
+        "bark-telegraph-01",
+        "bark-telegraph-02",
+        "bark-telegraph-03",
+        "bark-telegraph-04",
+        "bark-telegraph-05",
+        "bark-telegraph-06"
+      ],
+      "frameCount": 7,
+      "loop": false,
+      "progression": "warning tell to bark release",
+      "timing": {
+        "basis": "approved-source-order",
+        "durationMs": null,
+        "status": "not-promoted; runtime timing intentionally not invented"
+      }
+    },
+    {
+      "id": "walk-run",
+      "orderedFrames": [
+        "walk-run-00",
+        "walk-run-01",
+        "walk-run-02",
+        "walk-run-03",
+        "walk-run-04",
+        "walk-run-05",
+        "walk-run-06",
+        "walk-run-07",
+        "walk-run-08",
+        "walk-run-09"
+      ],
+      "frameCount": 10,
+      "loop": true,
+      "progression": "ordered locomotion progression",
+      "timing": {
+        "basis": "approved-source-order",
+        "durationMs": null,
+        "status": "not-promoted; runtime timing intentionally not invented"
+      }
+    },
+    {
+      "id": "roar",
+      "orderedFrames": [
+        "roar-00",
+        "roar-01",
+        "roar-02",
+        "roar-03"
+      ],
+      "frameCount": 4,
+      "loop": false,
+      "progression": "intimidation bark progression",
+      "timing": {
+        "basis": "approved-source-order",
+        "durationMs": null,
+        "status": "not-promoted; runtime timing intentionally not invented"
+      }
+    },
+    {
+      "id": "hit-reaction",
+      "orderedFrames": [
+        "hit-reaction-00",
+        "hit-reaction-01",
+        "hit-reaction-02"
+      ],
+      "frameCount": 3,
+      "loop": false,
+      "progression": "light to heavy reaction poses",
+      "timing": {
+        "basis": "approved-source-order",
+        "durationMs": null,
+        "status": "not-promoted; runtime timing intentionally not invented"
+      }
+    },
+    {
+      "id": "crash-stunned",
+      "orderedFrames": [
+        "crash-stunned-00",
+        "crash-stunned-01",
+        "crash-stunned-02",
+        "crash-stunned-03"
+      ],
+      "frameCount": 4,
+      "loop": false,
+      "progression": "impact to dazed hold",
+      "timing": {
+        "basis": "approved-source-order",
+        "durationMs": null,
+        "status": "not-promoted; runtime timing intentionally not invented"
+      }
+    },
+    {
+      "id": "recovery",
+      "orderedFrames": [
+        "recovery-00",
+        "recovery-01",
+        "recovery-02",
+        "recovery-03"
+      ],
+      "frameCount": 4,
+      "loop": false,
+      "progression": "stunned recovery to active",
+      "timing": {
+        "basis": "approved-source-order",
+        "durationMs": null,
+        "status": "not-promoted; runtime timing intentionally not invented"
+      }
+    },
+    {
+      "id": "enraged",
+      "orderedFrames": [
+        "enraged-00",
+        "enraged-01",
+        "enraged-02",
+        "enraged-03",
+        "enraged-04",
+        "enraged-05"
+      ],
+      "frameCount": 6,
+      "loop": true,
+      "progression": "faster aggressive locomotion",
+      "timing": {
+        "basis": "approved-source-order",
+        "durationMs": null,
+        "status": "not-promoted; runtime timing intentionally not invented"
+      }
+    },
+    {
+      "id": "emerge",
+      "orderedFrames": [
+        "emerge-00",
+        "emerge-01",
+        "emerge-02",
+        "emerge-03"
+      ],
+      "frameCount": 4,
+      "loop": false,
+      "progression": "closed shell to active state",
+      "timing": {
+        "basis": "approved-source-order",
+        "durationMs": null,
+        "status": "not-promoted; runtime timing intentionally not invented"
+      }
+    },
+    {
+      "id": "turn-around",
+      "orderedFrames": [
+        "turn-around-00",
+        "turn-around-01",
+        "turn-around-02",
+        "turn-around-03"
+      ],
+      "frameCount": 4,
+      "loop": false,
+      "progression": "ordered facing transition",
+      "timing": {
+        "basis": "approved-source-order",
+        "durationMs": null,
+        "status": "not-promoted; runtime timing intentionally not invented"
+      }
+    },
+    {
+      "id": "retreat",
+      "orderedFrames": [
+        "retreat-00",
+        "retreat-01",
+        "retreat-02",
+        "retreat-03",
+        "retreat-04"
+      ],
+      "frameCount": 5,
+      "loop": false,
+      "progression": "active state to intentional exit",
+      "timing": {
+        "basis": "approved-source-order",
+        "durationMs": null,
+        "status": "not-promoted; runtime timing intentionally not invented"
+      }
+    },
+    {
+      "id": "defeat",
+      "orderedFrames": [
+        "defeat-00",
+        "defeat-01",
+        "defeat-02",
+        "defeat-03",
+        "defeat-04"
+      ],
+      "frameCount": 5,
+      "loop": false,
+      "progression": "collapse to pacified pool state",
+      "timing": {
+        "basis": "approved-source-order",
+        "durationMs": null,
+        "status": "not-promoted; runtime timing intentionally not invented"
+      }
+    },
+    {
+      "id": "idle-variants",
+      "orderedFrames": [
+        "idle-variant-00",
+        "idle-variant-01"
+      ],
+      "frameCount": 2,
+      "loop": true,
+      "progression": "approved ambient variants",
+      "timing": {
+        "basis": "approved-source-order",
+        "durationMs": null,
+        "status": "not-promoted; runtime timing intentionally not invented"
+      }
+    },
+    {
+      "id": "dig",
+      "orderedFrames": [
+        "dig-00"
+      ],
+      "frameCount": 1,
+      "loop": true,
+      "progression": "approved dirt-kick action",
+      "timing": {
+        "basis": "approved-source-order",
+        "durationMs": null,
+        "status": "not-promoted; runtime timing intentionally not invented"
+      }
+    },
+    {
+      "id": "reference-child",
+      "orderedFrames": [
+        "reference-child-00"
+      ],
+      "frameCount": 1,
+      "loop": false,
+      "progression": "scale-reference-only",
+      "timing": {
+        "basis": "approved-source-order",
+        "durationMs": null,
+        "status": "not-promoted; runtime timing intentionally not invented"
+      }
+    },
+    {
+      "id": "rolling-can",
+      "orderedFrames": [
+        "rolling-can-00",
+        "rolling-can-01",
+        "rolling-can-02",
+        "rolling-can-03"
+      ],
+      "frameCount": 4,
+      "loop": false,
+      "progression": "ordered projectile/damage progression",
+      "timing": {
+        "basis": "approved-source-order",
+        "durationMs": null,
+        "status": "not-promoted; runtime timing intentionally not invented"
+      }
+    },
+    {
+      "id": "sprinkler-hydrant",
+      "orderedFrames": [
+        "sprinkler-hydrant-00",
+        "sprinkler-hydrant-01",
+        "sprinkler-hydrant-02",
+        "sprinkler-hydrant-03",
+        "sprinkler-hydrant-04"
+      ],
+      "frameCount": 5,
+      "loop": false,
+      "progression": "ordered standalone hazard variants",
+      "timing": {
+        "basis": "approved-source-order",
+        "durationMs": null,
+        "status": "not-promoted; runtime timing intentionally not invented"
+      }
+    },
+    {
+      "id": "water-splash",
+      "orderedFrames": [
+        "water-splash-00",
+        "water-splash-01",
+        "water-splash-02"
+      ],
+      "frameCount": 3,
+      "loop": false,
+      "progression": "ordered standalone splash progression",
+      "timing": {
+        "basis": "approved-source-order",
+        "durationMs": null,
+        "status": "not-promoted; runtime timing intentionally not invented"
+      }
+    },
+    {
+      "id": "water-droplets",
+      "orderedFrames": [
+        "water-droplets-00"
+      ],
+      "frameCount": 1,
+      "loop": false,
+      "progression": "standalone effect strip",
+      "timing": {
+        "basis": "approved-source-order",
+        "durationMs": null,
+        "status": "not-promoted; runtime timing intentionally not invented"
+      }
+    },
+    {
+      "id": "impact-stars",
+      "orderedFrames": [
+        "impact-stars-00"
+      ],
+      "frameCount": 1,
+      "loop": false,
+      "progression": "standalone effect strip",
+      "timing": {
+        "basis": "approved-source-order",
+        "durationMs": null,
+        "status": "not-promoted; runtime timing intentionally not invented"
+      }
+    },
+    {
+      "id": "dust-speed-puffs",
+      "orderedFrames": [
+        "dust-speed-puff-00",
+        "dust-speed-puff-01",
+        "dust-speed-puff-02",
+        "dust-speed-puff-03",
+        "dust-speed-puff-04",
+        "dust-speed-puff-05",
+        "dust-speed-puff-06",
+        "dust-speed-puff-07",
+        "dust-speed-puff-08"
+      ],
+      "frameCount": 9,
+      "loop": false,
+      "progression": "standalone effect variants",
+      "timing": {
+        "basis": "approved-source-order",
+        "durationMs": null,
+        "status": "not-promoted; runtime timing intentionally not invented"
+      }
+    },
+    {
+      "id": "drip-strip",
+      "orderedFrames": [
+        "drip-strip-00"
+      ],
+      "frameCount": 1,
+      "loop": false,
+      "progression": "standalone effect strip",
+      "timing": {
+        "basis": "approved-source-order",
+        "durationMs": null,
+        "status": "not-promoted; runtime timing intentionally not invented"
+      }
+    },
+    {
+      "id": "misc-trash",
+      "orderedFrames": [
+        "misc-trash-00",
+        "misc-trash-01",
+        "misc-trash-02",
+        "misc-trash-03",
+        "misc-trash-04",
+        "misc-trash-05"
+      ],
+      "frameCount": 6,
+      "loop": false,
+      "progression": "standalone gameplay detail sprites",
+      "timing": {
+        "basis": "approved-source-order",
+        "durationMs": null,
+        "status": "not-promoted; runtime timing intentionally not invented"
+      }
+    },
+    {
+      "id": "close-up-heads",
+      "orderedFrames": [
+        "close-up-head-00",
+        "close-up-head-01",
+        "close-up-head-02"
+      ],
+      "frameCount": 3,
+      "loop": false,
+      "progression": "reference-only expression sprites",
+      "timing": {
+        "basis": "approved-source-order",
+        "durationMs": null,
+        "status": "not-promoted; runtime timing intentionally not invented"
+      }
+    }
+  ],
+  "sourceRegions": [
+    {
+      "frame": "reference-large-00",
+      "state": "reference-large",
+      "stateFrameIndex": 0,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        0,
+        0,
+        300,
+        232
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "idle-00",
+      "state": "idle",
+      "stateFrameIndex": 0,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        300,
+        0,
+        438,
+        114
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "idle-01",
+      "state": "idle",
+      "stateFrameIndex": 1,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        438,
+        0,
+        560,
+        114
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "idle-02",
+      "state": "idle",
+      "stateFrameIndex": 2,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        560,
+        0,
+        690,
+        114
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "idle-03",
+      "state": "idle",
+      "stateFrameIndex": 3,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        690,
+        0,
+        820,
+        114
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "idle-04",
+      "state": "idle",
+      "stateFrameIndex": 4,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        820,
+        0,
+        956,
+        114
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "idle-05",
+      "state": "idle",
+      "stateFrameIndex": 5,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        956,
+        0,
+        1084,
+        114
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "idle-06",
+      "state": "idle",
+      "stateFrameIndex": 6,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1084,
+        0,
+        1209,
+        114
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "idle-07",
+      "state": "idle",
+      "stateFrameIndex": 7,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1209,
+        0,
+        1330,
+        114
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "idle-08",
+      "state": "idle",
+      "stateFrameIndex": 8,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1330,
+        0,
+        1536,
+        114
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "bark-telegraph-00",
+      "state": "bark-telegraph",
+      "stateFrameIndex": 0,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        300,
+        114,
+        448,
+        232
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "bark-telegraph-01",
+      "state": "bark-telegraph",
+      "stateFrameIndex": 1,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        448,
+        114,
+        640,
+        232
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "bark-telegraph-02",
+      "state": "bark-telegraph",
+      "stateFrameIndex": 2,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        640,
+        114,
+        830,
+        232
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "bark-telegraph-03",
+      "state": "bark-telegraph",
+      "stateFrameIndex": 3,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        830,
+        114,
+        1015,
+        232
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "bark-telegraph-04",
+      "state": "bark-telegraph",
+      "stateFrameIndex": 4,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1015,
+        114,
+        1148,
+        232
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "bark-telegraph-05",
+      "state": "bark-telegraph",
+      "stateFrameIndex": 5,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1148,
+        114,
+        1305,
+        232
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "bark-telegraph-06",
+      "state": "bark-telegraph",
+      "stateFrameIndex": 6,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1305,
+        114,
+        1536,
+        232
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "walk-run-00",
+      "state": "walk-run",
+      "stateFrameIndex": 0,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        0,
+        232,
+        144,
+        329
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "walk-run-01",
+      "state": "walk-run",
+      "stateFrameIndex": 1,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        144,
+        232,
+        275,
+        329
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "walk-run-02",
+      "state": "walk-run",
+      "stateFrameIndex": 2,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        275,
+        232,
+        414,
+        329
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "walk-run-03",
+      "state": "walk-run",
+      "stateFrameIndex": 3,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        414,
+        232,
+        544,
+        329
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "walk-run-04",
+      "state": "walk-run",
+      "stateFrameIndex": 4,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        544,
+        232,
+        686,
+        329
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "walk-run-05",
+      "state": "walk-run",
+      "stateFrameIndex": 5,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        686,
+        232,
+        848,
+        329
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "walk-run-06",
+      "state": "walk-run",
+      "stateFrameIndex": 6,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        848,
+        232,
+        993,
+        329
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "walk-run-07",
+      "state": "walk-run",
+      "stateFrameIndex": 7,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        993,
+        232,
+        1136,
+        329
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "walk-run-08",
+      "state": "walk-run",
+      "stateFrameIndex": 8,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1136,
+        232,
+        1302,
+        329
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "walk-run-09",
+      "state": "walk-run",
+      "stateFrameIndex": 9,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1302,
+        232,
+        1536,
+        329
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "roar-00",
+      "state": "roar",
+      "stateFrameIndex": 0,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        0,
+        329,
+        138,
+        438
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "roar-01",
+      "state": "roar",
+      "stateFrameIndex": 1,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        138,
+        329,
+        258,
+        438
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "roar-02",
+      "state": "roar",
+      "stateFrameIndex": 2,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        258,
+        329,
+        376,
+        438
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "roar-03",
+      "state": "roar",
+      "stateFrameIndex": 3,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        376,
+        329,
+        515,
+        438
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "hit-reaction-00",
+      "state": "hit-reaction",
+      "stateFrameIndex": 0,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        515,
+        329,
+        618,
+        438
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "hit-reaction-01",
+      "state": "hit-reaction",
+      "stateFrameIndex": 1,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        618,
+        329,
+        731,
+        438
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "hit-reaction-02",
+      "state": "hit-reaction",
+      "stateFrameIndex": 2,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        731,
+        329,
+        875,
+        438
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "crash-stunned-00",
+      "state": "crash-stunned",
+      "stateFrameIndex": 0,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        875,
+        329,
+        1000,
+        438
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "crash-stunned-01",
+      "state": "crash-stunned",
+      "stateFrameIndex": 1,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1000,
+        329,
+        1128,
+        438
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "crash-stunned-02",
+      "state": "crash-stunned",
+      "stateFrameIndex": 2,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1128,
+        329,
+        1262,
+        438
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "crash-stunned-03",
+      "state": "crash-stunned",
+      "stateFrameIndex": 3,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1262,
+        329,
+        1536,
+        438
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "recovery-00",
+      "state": "recovery",
+      "stateFrameIndex": 0,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        0,
+        438,
+        130,
+        536
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "recovery-01",
+      "state": "recovery",
+      "stateFrameIndex": 1,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        130,
+        438,
+        232,
+        536
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "recovery-02",
+      "state": "recovery",
+      "stateFrameIndex": 2,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        232,
+        438,
+        330,
+        536
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "recovery-03",
+      "state": "recovery",
+      "stateFrameIndex": 3,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        330,
+        438,
+        450,
+        536
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "enraged-00",
+      "state": "enraged",
+      "stateFrameIndex": 0,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        450,
+        438,
+        629,
+        536
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "enraged-01",
+      "state": "enraged",
+      "stateFrameIndex": 1,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        629,
+        438,
+        779,
+        536
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "enraged-02",
+      "state": "enraged",
+      "stateFrameIndex": 2,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        779,
+        438,
+        907,
+        536
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "enraged-03",
+      "state": "enraged",
+      "stateFrameIndex": 3,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        907,
+        438,
+        1072,
+        536
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "enraged-04",
+      "state": "enraged",
+      "stateFrameIndex": 4,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1072,
+        438,
+        1253,
+        536
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "enraged-05",
+      "state": "enraged",
+      "stateFrameIndex": 5,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1253,
+        438,
+        1536,
+        536
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "emerge-00",
+      "state": "emerge",
+      "stateFrameIndex": 0,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        0,
+        536,
+        115,
+        638
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "emerge-01",
+      "state": "emerge",
+      "stateFrameIndex": 1,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        115,
+        536,
+        235,
+        638
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "emerge-02",
+      "state": "emerge",
+      "stateFrameIndex": 2,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        235,
+        536,
+        365,
+        638
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "emerge-03",
+      "state": "emerge",
+      "stateFrameIndex": 3,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        365,
+        536,
+        510,
+        638
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "turn-around-00",
+      "state": "turn-around",
+      "stateFrameIndex": 0,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        510,
+        536,
+        625,
+        638
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "turn-around-01",
+      "state": "turn-around",
+      "stateFrameIndex": 1,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        625,
+        536,
+        748,
+        638
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "turn-around-02",
+      "state": "turn-around",
+      "stateFrameIndex": 2,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        748,
+        536,
+        827,
+        638
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "turn-around-03",
+      "state": "turn-around",
+      "stateFrameIndex": 3,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        827,
+        536,
+        910,
+        638
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "retreat-00",
+      "state": "retreat",
+      "stateFrameIndex": 0,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        910,
+        536,
+        1022,
+        638
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "retreat-01",
+      "state": "retreat",
+      "stateFrameIndex": 1,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1022,
+        536,
+        1111,
+        638
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "retreat-02",
+      "state": "retreat",
+      "stateFrameIndex": 2,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1111,
+        536,
+        1215,
+        638
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "retreat-03",
+      "state": "retreat",
+      "stateFrameIndex": 3,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1215,
+        536,
+        1305,
+        638
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "retreat-04",
+      "state": "retreat",
+      "stateFrameIndex": 4,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1305,
+        536,
+        1536,
+        638
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "defeat-00",
+      "state": "defeat",
+      "stateFrameIndex": 0,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        0,
+        638,
+        180,
+        793
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "defeat-01",
+      "state": "defeat",
+      "stateFrameIndex": 1,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        180,
+        638,
+        335,
+        793
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "defeat-02",
+      "state": "defeat",
+      "stateFrameIndex": 2,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        335,
+        638,
+        520,
+        793
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "defeat-03",
+      "state": "defeat",
+      "stateFrameIndex": 3,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        520,
+        638,
+        710,
+        793
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "defeat-04",
+      "state": "defeat",
+      "stateFrameIndex": 4,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        710,
+        638,
+        900,
+        793
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "idle-variant-00",
+      "state": "idle-variants",
+      "stateFrameIndex": 0,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        900,
+        638,
+        1060,
+        793
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "idle-variant-01",
+      "state": "idle-variants",
+      "stateFrameIndex": 1,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1060,
+        638,
+        1225,
+        793
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "dig-00",
+      "state": "dig",
+      "stateFrameIndex": 0,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1225,
+        638,
+        1435,
+        793
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "reference-child-00",
+      "state": "reference-child",
+      "stateFrameIndex": 0,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1435,
+        638,
+        1536,
+        793
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "rolling-can-00",
+      "state": "rolling-can",
+      "stateFrameIndex": 0,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        0,
+        793,
+        98,
+        899
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "rolling-can-01",
+      "state": "rolling-can",
+      "stateFrameIndex": 1,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        98,
+        793,
+        175,
+        899
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "rolling-can-02",
+      "state": "rolling-can",
+      "stateFrameIndex": 2,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        175,
+        793,
+        270,
+        899
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "rolling-can-03",
+      "state": "rolling-can",
+      "stateFrameIndex": 3,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        270,
+        793,
+        390,
+        899
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "sprinkler-hydrant-00",
+      "state": "sprinkler-hydrant",
+      "stateFrameIndex": 0,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        390,
+        793,
+        451,
+        899
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "sprinkler-hydrant-01",
+      "state": "sprinkler-hydrant",
+      "stateFrameIndex": 1,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        451,
+        793,
+        506,
+        899
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "sprinkler-hydrant-02",
+      "state": "sprinkler-hydrant",
+      "stateFrameIndex": 2,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        506,
+        793,
+        552,
+        899
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "sprinkler-hydrant-03",
+      "state": "sprinkler-hydrant",
+      "stateFrameIndex": 3,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        552,
+        793,
+        612,
+        899
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "sprinkler-hydrant-04",
+      "state": "sprinkler-hydrant",
+      "stateFrameIndex": 4,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        612,
+        793,
+        720,
+        899
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "water-splash-00",
+      "state": "water-splash",
+      "stateFrameIndex": 0,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        720,
+        793,
+        803,
+        899
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "water-splash-01",
+      "state": "water-splash",
+      "stateFrameIndex": 1,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        803,
+        793,
+        882,
+        899
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "water-splash-02",
+      "state": "water-splash",
+      "stateFrameIndex": 2,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        882,
+        793,
+        990,
+        899
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "water-droplets-00",
+      "state": "water-droplets",
+      "stateFrameIndex": 0,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        990,
+        793,
+        1068,
+        899
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "impact-stars-00",
+      "state": "impact-stars",
+      "stateFrameIndex": 0,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1068,
+        793,
+        1536,
+        899
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "dust-speed-puff-00",
+      "state": "dust-speed-puffs",
+      "stateFrameIndex": 0,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        0,
+        899,
+        92,
+        1024
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "dust-speed-puff-01",
+      "state": "dust-speed-puffs",
+      "stateFrameIndex": 1,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        92,
+        899,
+        163,
+        1024
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "dust-speed-puff-02",
+      "state": "dust-speed-puffs",
+      "stateFrameIndex": 2,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        163,
+        899,
+        244,
+        1024
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "dust-speed-puff-03",
+      "state": "dust-speed-puffs",
+      "stateFrameIndex": 3,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        244,
+        899,
+        345,
+        1024
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "dust-speed-puff-04",
+      "state": "dust-speed-puffs",
+      "stateFrameIndex": 4,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        345,
+        899,
+        393,
+        1024
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "dust-speed-puff-05",
+      "state": "dust-speed-puffs",
+      "stateFrameIndex": 5,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        393,
+        899,
+        447,
+        1024
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "dust-speed-puff-06",
+      "state": "dust-speed-puffs",
+      "stateFrameIndex": 6,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        447,
+        899,
+        491,
+        1024
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "dust-speed-puff-07",
+      "state": "dust-speed-puffs",
+      "stateFrameIndex": 7,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        491,
+        899,
+        550,
+        1024
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "dust-speed-puff-08",
+      "state": "dust-speed-puffs",
+      "stateFrameIndex": 8,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        550,
+        899,
+        640,
+        1024
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "drip-strip-00",
+      "state": "drip-strip",
+      "stateFrameIndex": 0,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        640,
+        899,
+        900,
+        1024
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "misc-trash-00",
+      "state": "misc-trash",
+      "stateFrameIndex": 0,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        900,
+        899,
+        960,
+        1024
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "misc-trash-01",
+      "state": "misc-trash",
+      "stateFrameIndex": 1,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        960,
+        899,
+        1005,
+        1024
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "misc-trash-02",
+      "state": "misc-trash",
+      "stateFrameIndex": 2,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1005,
+        899,
+        1043,
+        1024
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "misc-trash-03",
+      "state": "misc-trash",
+      "stateFrameIndex": 3,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1043,
+        899,
+        1075,
+        1024
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "misc-trash-04",
+      "state": "misc-trash",
+      "stateFrameIndex": 4,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1075,
+        899,
+        1112,
+        1024
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "misc-trash-05",
+      "state": "misc-trash",
+      "stateFrameIndex": 5,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1112,
+        899,
+        1170,
+        1024
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "close-up-head-00",
+      "state": "close-up-heads",
+      "stateFrameIndex": 0,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1170,
+        899,
+        1294,
+        1024
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "close-up-head-01",
+      "state": "close-up-heads",
+      "stateFrameIndex": 1,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1294,
+        899,
+        1410,
+        1024
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    },
+    {
+      "frame": "close-up-head-02",
+      "state": "close-up-heads",
+      "stateFrameIndex": 2,
+      "classification": "PRESERVE EXACTLY - REPOSITION FOR ISOLATION",
+      "sourceOwnershipSelectionRegion": [
+        1410,
+        899,
+        1536,
+        1024
+      ],
+      "ownership": "all complete connected-alpha components whose bounding-box center is inside this reviewed region",
+      "anchor": "preserve source-space body ground contact or declared effect/reference origin",
+      "timing": "approved source order; runtime duration intentionally unset"
+    }
+  ]
+}

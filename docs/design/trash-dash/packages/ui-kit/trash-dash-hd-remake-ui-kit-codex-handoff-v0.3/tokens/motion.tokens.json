@@ -1,0 +1,149 @@
+{
+  "$schema": "trash-dash-motion-tokens-v1",
+  "version": "0.3.0",
+  "durationsMs": {
+    "instant": 80,
+    "fast": 120,
+    "standard": 180,
+    "expressive": 260,
+    "hero": 420,
+    "sequenceShort": 700,
+    "sequenceMedium": 1100,
+    "sequenceLong": 1700
+  },
+  "easing": {
+    "enter": "cubic-bezier(0.16, 1, 0.3, 1)",
+    "exit": "cubic-bezier(0.7, 0, 0.84, 0)",
+    "press": "cubic-bezier(0.2, 0, 0, 1)",
+    "spring": "cubic-bezier(0.34, 1.56, 0.64, 1)",
+    "impact": "cubic-bezier(0.36, 0, 0.66, -0.56)",
+    "settle": "cubic-bezier(0.22, 1, 0.36, 1)"
+  },
+  "primitives": {
+    "td.lift": {
+      "duration": "fast",
+      "easing": "enter",
+      "translateY": -6,
+      "scale": 1.025
+    },
+    "td.press": {
+      "duration": "instant",
+      "easing": "press",
+      "translateY": 3,
+      "scale": 0.97
+    },
+    "td.pop": {
+      "duration": "expressive",
+      "easing": "spring",
+      "fromScale": 0.82,
+      "toScale": 1.0
+    },
+    "td.wiggle": {
+      "duration": "standard",
+      "easing": "settle",
+      "rotationSequenceDeg": [
+        -1.5,
+        1.2,
+        -0.5,
+        0
+      ]
+    },
+    "td.slideIn": {
+      "duration": "expressive",
+      "easing": "enter",
+      "distancePx": 36
+    },
+    "td.peelOut": {
+      "duration": "standard",
+      "easing": "exit",
+      "rotationDeg": 4,
+      "scaleTo": 0.94
+    },
+    "td.stamp": {
+      "duration": "expressive",
+      "easing": "spring",
+      "fromScale": 1.45,
+      "toScale": 1.0,
+      "impactScale": 0.94
+    },
+    "td.slam": {
+      "duration": "hero",
+      "easing": "impact",
+      "overshootPx": 18
+    },
+    "td.shake": {
+      "duration": "expressive",
+      "amplitudePx": 8,
+      "cycles": 4
+    },
+    "td.swing": {
+      "duration": "hero",
+      "easing": "settle",
+      "rotationSequenceDeg": [
+        7,
+        -4,
+        2,
+        0
+      ]
+    },
+    "td.flapOpen": {
+      "duration": "hero",
+      "easing": "enter",
+      "rotationStartDeg": 78,
+      "rotationEndDeg": 0
+    },
+    "td.countUp": {
+      "duration": "sequenceMedium",
+      "easing": "enter"
+    },
+    "td.pageShift": {
+      "duration": "expressive",
+      "easing": "enter",
+      "distancePercent": 12
+    },
+    "td.cardReveal": {
+      "duration": "hero",
+      "easing": "spring",
+      "fromScale": 0.78,
+      "fromRotationDeg": -5
+    },
+    "td.celebrationBurst": {
+      "duration": "sequenceShort",
+      "easing": "spring",
+      "particleCountGuidance": "8-18"
+    }
+  },
+  "interactionRules": {
+    "focusUses": [
+      "td.lift",
+      "td.wiggle"
+    ],
+    "pressUses": [
+      "td.press"
+    ],
+    "frequentFeedbackMaxDurationMs": 350,
+    "blockingIntroMaxDurationMs": 700,
+    "heroSequenceSkippableAfterMs": 250,
+    "allowAnimationInterrupt": true,
+    "inputShouldNotWaitForDecorativeSettle": true
+  },
+  "reducedMotion": {
+    "enabledBy": [
+      "game-setting",
+      "prefers-reduced-motion"
+    ],
+    "maxDurationMs": 120,
+    "maxScale": 1.02,
+    "disable": [
+      "td.shake",
+      "td.swing",
+      "td.wiggle",
+      "td.slam",
+      "td.flapOpen",
+      "td.celebrationBurst"
+    ],
+    "replaceSpatialEntrancesWith": "opacity-and-minimal-scale",
+    "replaceHeroSequencesWith": "immediate-final-state",
+    "preserveStateFeedback": true
+  }
+}

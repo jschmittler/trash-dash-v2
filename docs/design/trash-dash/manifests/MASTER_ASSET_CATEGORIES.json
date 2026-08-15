@@ -1,22 +1,30 @@
 {
-  "bundle": "trash-dash-codex-import-master-2026-08-11",
-  "authority": "reference/ plus docs/game/APPROVED_ASSET_POLICY.md",
-  "directional_not_literal": [
-    "reference/level-layouts/dynamic-approved",
-    "reference/gameplay-tiles"
-  ],
+  "schema": "trash-dash-v2-master-asset-categories-v2",
+  "authority": "docs/design/trash-dash/manifests/library-catalog.json",
+  "libraryRoot": "docs/design/trash-dash/library",
+  "manualsRoot": "docs/design/trash-dash/manuals",
+  "packagesRoot": "docs/design/trash-dash/packages",
   "categories": {
-    "main_characters": "reference/main-characters",
-    "enemies_and_bosses": "reference/characters",
-    "environments": "reference/environments",
-    "foreground_assets": "reference/foreground-assets",
-    "collectibles_and_powerups": "reference/items",
-    "powerup_splash_ui": "reference/ui-powerups",
-    "end_level_reward": "reference/rewards",
-    "interactive_platforms_and_hazards": "reference/gameplay-tiles",
-    "dynamic_level_layouts": "reference/level-layouts/dynamic-approved"
+    "heroes": "library/characters/heroes",
+    "bosses": "library/characters/bosses",
+    "enemies": "library/characters/enemies",
+    "backgrounds": "library/environments/backgrounds",
+    "blueprints": "library/environments/blueprints",
+    "environmentConcepts": "library/environments/concepts",
+    "foreground": "library/environments/foreground",
+    "props": "library/environments/props",
+    "tiles": "library/environments/tiles",
+    "items": "library/gameplay/items",
+    "powerups": "library/gameplay/powerups",
+    "rewards": "library/gameplay/rewards",
+    "effects": "library/gameplay/effects",
+    "interface": "library/interface",
+    "branding": "library/branding"
   },
-  "non_authoritative": [
+  "nonCanonical": [
+    "packages",
     "archive"
-  ]
+  ],
+  "generatedCandidates": "assets/generated",
+  "runtimePromotions": "assets/runtime"
 }

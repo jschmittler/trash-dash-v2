@@ -1,0 +1,318 @@
+{
+  "sheet": "level3_downtown_nights.png",
+  "level": "level_3_downtown_nights",
+  "source_reference": "level-3-foreground-gameplay-assets.png",
+  "global_pixels_per_meter": 189.9,
+  "padding_px": 16,
+  "default_chroma_key": "#00FF00",
+  "fallback_chroma_key": "#FF00FF",
+  "qa": {
+    "overlap_check_passed": true,
+    "violations": []
+  },
+  "sprites": [
+    {
+      "id": "level3_road_sign_one_way",
+      "name": "Road Sign (One Way)",
+      "level": "level_3_downtown_nights",
+      "interaction_type": [
+        "blocking"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        136,
+        396
+      ],
+      "bbox_px": [
+        16,
+        16,
+        240,
+        380
+      ],
+      "usage_notes": "ONE WAY sign on metal post with concrete base; blocks horizontal movement, not standable.",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 2.0,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level3_dumpster",
+      "name": "Dumpster",
+      "level": "level_3_downtown_nights",
+      "interaction_type": [
+        "standable",
+        "blocking"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        484,
+        282
+      ],
+      "bbox_px": [
+        272,
+        16,
+        424,
+        266
+      ],
+      "usage_notes": "Large green industrial dumpster with slanted lid; lid/top standable per reference sheet, body blocks movement. Magenta chroma key forced due to dark green metal body.",
+      "chroma_key": "#FF00FF",
+      "scale_reference": {
+        "real_world_height_m": 1.4,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level3_construction_barricade",
+      "name": "Construction Barricade",
+      "level": "level_3_downtown_nights",
+      "interaction_type": [
+        "blocking"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        906,
+        225
+      ],
+      "bbox_px": [
+        712,
+        16,
+        388,
+        209
+      ],
+      "usage_notes": "Concrete jersey barrier with orange/white stripes and hazard lights; blocks horizontal movement.",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 1.1,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level3_cable_spool",
+      "name": "Cable Spool",
+      "level": "level_3_downtown_nights",
+      "interaction_type": [
+        "standable",
+        "blocking"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        1221,
+        225
+      ],
+      "bbox_px": [
+        1116,
+        16,
+        211,
+        209
+      ],
+      "usage_notes": "Large wooden cable spool with coiled black wire; flat drum face standable per reference sheet, body blocks movement.",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 1.1,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level3_nyc_newspaper_box",
+      "name": "NYC Newspaper Box",
+      "level": "level_3_downtown_nights",
+      "interaction_type": [
+        "blocking"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        1445,
+        215
+      ],
+      "bbox_px": [
+        1343,
+        16,
+        204,
+        199
+      ],
+      "usage_notes": "Composite pair of newspaper vending machines (Daily Beacon blue + metro red) kept as single sprite per contract; blocks movement.",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 1.05,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level3_traffic_cones",
+      "name": "Traffic Cones (Stack + Single)",
+      "level": "level_3_downtown_nights",
+      "interaction_type": [
+        "blocking"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        1683,
+        196
+      ],
+      "bbox_px": [
+        1563,
+        16,
+        240,
+        180
+      ],
+      "usage_notes": "Composite sprite (stack of four cones + single cone) kept as single sprite per contract; blocks movement.",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 0.95,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level3_milk_crate",
+      "name": "Milk Crate",
+      "level": "level_3_downtown_nights",
+      "interaction_type": [
+        "standable",
+        "blocking"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        1861,
+        196
+      ],
+      "bbox_px": [
+        1819,
+        16,
+        84,
+        180
+      ],
+      "usage_notes": "Stack of three plastic milk crates (blue on black/red); top crate standable per reference sheet, stack blocks movement.",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 0.95,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level3_trash_bag_pile",
+      "name": "Trash Bag Pile",
+      "level": "level_3_downtown_nights",
+      "interaction_type": [
+        "blocking"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        2062,
+        177
+      ],
+      "bbox_px": [
+        1919,
+        16,
+        286,
+        161
+      ],
+      "usage_notes": "Composite pile of three black bags on flattened cardboard boxes with scattered cans; ground obstacle, blocks movement.",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 0.85,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level3_bench_fragment",
+      "name": "Bench Fragment",
+      "level": "level_3_downtown_nights",
+      "interaction_type": [
+        "standable"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        2357,
+        177
+      ],
+      "bbox_px": [
+        2221,
+        16,
+        272,
+        161
+      ],
+      "usage_notes": "Weathered park bench with green slats; seat surface standable per reference sheet. Magenta chroma key forced due to green wooden slats.",
+      "chroma_key": "#FF00FF",
+      "scale_reference": {
+        "real_world_height_m": 0.85,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level3_manhole_cover",
+      "name": "Manhole Cover",
+      "level": "level_3_downtown_nights",
+      "interaction_type": [
+        "non_interactive"
+      ],
+      "render_layer": "foreground",
+      "anchor_px": [
+        2696,
+        120
+      ],
+      "bbox_px": [
+        2509,
+        16,
+        374,
+        104
+      ],
+      "usage_notes": "Low-profile circular NYC SEWER manhole in pavement frame; decorative ground detail, no collision. Scaled to visible sprite footprint (~0.55m), not rim thickness.",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 0.55,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level3_pizza_boxes",
+      "name": "Pizza Boxes",
+      "level": "level_3_downtown_nights",
+      "interaction_type": [
+        "blocking"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        2934,
+        82
+      ],
+      "bbox_px": [
+        2899,
+        16,
+        70,
+        66
+      ],
+      "usage_notes": "Stack of greasy pizza boxes with open top slice visible; low ground clutter obstacle, blocks movement.",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 0.35,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level3_sewer_grate",
+      "name": "Sewer Grate",
+      "level": "level_3_downtown_nights",
+      "interaction_type": [
+        "non_interactive"
+      ],
+      "render_layer": "foreground",
+      "anchor_px": [
+        3136,
+        82
+      ],
+      "bbox_px": [
+        2985,
+        16,
+        302,
+        66
+      ],
+      "usage_notes": "Low-profile rectangular storm drain grate in pavement; decorative ground detail, no collision (hazard behavior TBD in level design). Scaled to visible sprite footprint (~0.35m).",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 0.35,
+        "global_pixels_per_meter": 189.9
+      }
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "boss": "boss-trash-dash",
+  "canonId": "boss.level-01.trash-dash",
+  "execution": "EXECUTE: boss-trash-dash",
+  "objective": "Reassemble the complete approved character animation and gameplay-support sheet with independently extractable, non-overlapping frames.",
+  "visualAuthority": "docs/design/trash-dash/library/characters/bosses/trash-dash/sprites/reference/boss-trash-dash.png",
+  "approvedTransparentSource": "docs/design/trash-dash/library/characters/bosses/trash-dash/sprites/animation-source/boss-trash-dash-transparent.png",
+  "lockedTraits": [
+    "charcoal-black overfilled garbage-bag body",
+    "bottom-heavy legless silhouette with tied three-lobed top",
+    "ochre-brown rear-left shoulder tear",
+    "short mitten arms",
+    "embedded yellow-orange eyes beneath severe V brow",
+    "irregular dirty triangular teeth",
+    "chartreuse slime residue",
+    "three-quarter side profile facing right",
+    "approved scale, pose order, internal registration, ground contact, palette, shading, and alpha"
+  ],
+  "rendering": {
+    "sourcePixelScale": 1,
+    "runtimeScale": 1,
+    "resampling": false,
+    "redrawing": false,
+    "transparentProductionBackground": true,
+    "frameLayout": "manifest-defined variable rectangles",
+    "transparentGutterPixels": 8
+  },
+  "restrictions": [
+    "No generated or redrawn pixels",
+    "No change to sprite RGBA bytes",
+    "No scaling, rotation, retouching, filtering, or palette changes",
+    "No change to frame order, facing, logical pivot, or ground contact",
+    "No cross-frame visible-pixel overlap or bleed"
+  ],
+  "immutable": true
+}

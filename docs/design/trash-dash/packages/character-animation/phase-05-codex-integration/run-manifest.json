@@ -1,0 +1,30 @@
+{
+  "project": "Trash Dash",
+  "phase": "05-codex-integration-handoff",
+  "status": "complete",
+  "scope": {
+    "playable_character_variants": 4,
+    "common_enemies": 26,
+    "bosses": 6,
+    "total_atlases": 36
+  },
+  "source_phases": [1, 2, 3, 4],
+  "runtime_implementation_included": false,
+  "variable_canvas_required": true,
+  "equal_grid_slicing_allowed": false,
+  "documents": [
+    "README.md",
+    "ASSET_MAP.md",
+    "FRAME_METADATA_SCHEMA.json",
+    "CODEX_IMPORT_AND_INTEGRATION_PROMPT.md",
+    "qa/SHA256SUMS"
+  ],
+  "separate_tracks": [
+    "environment and parallax layers",
+    "ground and platforms",
+    "foreground gameplay props",
+    "collectibles",
+    "UI",
+    "cutscenes and dialog"
+  ]
+}

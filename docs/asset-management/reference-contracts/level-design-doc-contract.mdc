@@ -1,0 +1,346 @@
+---
+description: Binding contract for Trash Dash level blueprint and level concept documents. Re-read in full before starting any level-design doc generation or revision pass.
+alwaysApply: true
+---
+
+# Level Design Document Contract
+
+This is a binding process contract for **Level Blueprints** (full layout concepts) and **Level Concepts** (interactive environment concept sheets). Follow it exactly and consistently across every deliverable. Do not silently deviate from any rule below — if a source reference cannot satisfy a rule as-is, flag it explicitly rather than improvising.
+
+## 0. Process Gate (Non-Negotiable)
+
+Every deliverable follows two phases. **Do not generate images during the conversation phase.**
+
+### Phase 1 — Conversation
+1. Re-read this contract in full.
+2. Re-read the pinned reference document(s) for the target doc type (blueprint or concept).
+3. Produce a **Content Spec** (text only): zones/panels, copy, legend items, boss/goal, asset callouts.
+4. User approves or edits the Content Spec. No image generation until approved.
+
+### Phase 2 — Execution
+1. Re-read this contract in full.
+2. Generate the image using the approved Content Spec + pinned reference images.
+3. Run the QA checklist for that doc type (Section 6). Fail = revise spec or regenerate; do not hand off a failing doc.
+4. Save output to the path in Section 7.
+5. User review. Revisions restart at Phase 1 (spec edit first).
+
+---
+
+## 1. Master Deliverable Roadmap
+
+One deliverable per iteration. Order is fixed unless the user explicitly reorders.
+
+| Step | Deliverable | Status | Primary references |
+|------|-------------|--------|-------------------|
+| **A1** | Level 4 Blueprint — Secret Space Center | ✅ Done | L1/L2/L6 blueprints + L4 concept + `output/level4/` |
+| **A2** | Level 5 Blueprint — Orbital Junkyard | ✅ Done | L1/L2/L6 blueprints + L5 concept + `output/level5/` |
+| **B1** | Level 1 Concept — Forest Path | ✅ Done | L2/L4/L5 concepts + L1 blueprint + `output/level1/` |
+| **B2** | Level 6 Concept — Abandoned Ballpark | ✅ Done | L2/L4/L5 concepts + L6 blueprint + `output/level6/` |
+| **C1** | Level 3 Concept + Blueprint — Downtown Mayhem | ✅ Done | All L3 environment art + dynamic layout + enemy/boss canon |
+
+### Existing documents (do not regenerate unless user requests)
+| Level | Blueprint | Level concept | Foreground assets |
+|-------|-----------|---------------|-------------------|
+| 1 | ✅ | ❌ (B1) | ✅ `output/level1/` |
+| 2 | ✅ | ✅ | ✅ `output/level2/` |
+| 3 | ❌ (C1, last) | ❌ (C1, last) | ✅ `output/level3/` |
+| 4 | ❌ (A1) | ✅ | ✅ `output/level4/` |
+| 5 | ❌ (A2) | ✅ | ✅ `output/level5/` |
+| 6 | ✅ | ❌ (B2) | ✅ `output/level6/` |
+
+### Authoritative reference files
+Stored under `.cursor/projects/Users-schmitj1-Documents-Trashy/assets/` unless noted:
+
+**Blueprint references (match these exactly):**
+- `level-1-blueprint-80e4f6e6-8bd8-48e8-baa6-d49a69ff4c08.png`
+- `level-2-blueprint-1fbef721-8bd3-4a95-a3cf-12b447947a66.png`
+- `level-6-blueprint-f5b6567c-0b73-4f3d-8f22-30524257595b.png`
+
+**Level concept references (match these exactly):**
+- `level-2-concept-e635782f-8189-4910-bca0-4957ed20ea08.png`
+- `level-4-concept-31753bc4-a652-4e76-884b-3e39ae6f96f1.png`
+- `level-5-concept-96ac3909-a9fa-4b9b-b023-16754dca3cb3.png`
+
+**Per-level theme names (canonical):**
+| Level | Theme title | Internal ID |
+|-------|-------------|-------------|
+| 1 | Forest Path / Woodland Urban Edge | `level_1_woodland_urban_edge` |
+| 2 | Suburban After Dark | `level_2_suburban_after_dark` |
+| 3 | Downtown Nights | `level_3_downtown_nights` |
+| 4 | Secret Space Center | `level_4_secret_space_center` |
+| 5 | Orbital Junkyard | `level_5_orbital_junkyard` |
+| 6 | The Abandoned Ballpark | `level_6_abandoned_ballpark` |
+
+---
+
+## 2. Level Blueprint Contract
+
+Extracted from Level 1, 2, and 6 blueprint references. All new blueprints (Levels 3, 4, 5) must match this template.
+
+### 2.1 Canvas and framing
+- **Format:** Wide horizontal panorama (~3:1 aspect ratio or wider), single continuous illustration.
+- **Perspective:** 2.5D side-scrolling cross-section; every platform grounded, supported, or structurally believable.
+- **Art style:** Detailed painted/pixel-hybrid environment art matching reference blueprints — not wireframe, not UI mockup, not top-down.
+
+### 2.2 Header (top-left, fixed layout)
+- Rustic **wooden plank sign** with green vine/leaf accents: `TRASH DASH` in chunky off-white block type.
+- Subtitle bar directly below: `- LEVEL {N} | FULL LAYOUT CONCEPT -`
+  - Exception: Level 1 reference omits pipes (`- LEVEL 1 FULL LAYOUT CONCEPT -`). **Use pipe format for all new blueprints** (Levels 3–5).
+
+### 2.3 Progression strip (top, full width)
+- **8–9 numbered zones**, left → right, connected by **white dashed arrows**.
+- Each zone label block contains exactly:
+  1. **Number** (1–9)
+  2. **Zone name** — green, ALL CAPS, bold
+  3. **Tagline** — white, one short sentence describing gameplay purpose
+- Zone names, order, and taglines come **only** from the approved Content Spec. Do not invent zones.
+
+### 2.4 Main panorama (center)
+- One continuous painted environment flowing through all zones without panel breaks.
+- Include only elements listed in the approved Content Spec:
+  - Player start (far left)
+  - Trash tokens / collectibles (yellow glow bag icons per refs)
+  - Enemies (level-appropriate; from spec)
+  - Hazards, breakables, ladders, shortcuts (from spec)
+  - **Boss arena** (second-to-last zone)
+  - **Goal dumpster/bin** (far right)
+- Use **level-specific foreground assets** from that level's processed sprite sheet (`output/level{N}/`) where props appear in the layout.
+- **Optional (Level 2 pattern only, when spec requires):** dashed path overlays — green = shortcut, blue = challenge route.
+
+### 2.5 Legend bar (bottom-left)
+- Semi-transparent dark bar with **LEGEND** header.
+- **Default set** (Level 1 / Level 6 pattern): Collectibles (Trash Tokens), Enemy, Breakable, Shortcut, Challenge Route, Hazard — use only items relevant to the level per spec.
+- **Extended set** (Level 2 pattern): add Characters, Power-ups, level-specific collectible row, path-type key — **only when Content Spec explicitly requires it**.
+- Each entry: icon + ALL CAPS label + short description. Do not invent mechanics not in spec.
+
+### 2.6 Footer callout (bottom-right)
+- **Parchment-style box** with raccoon icon.
+- One of two formats (chosen in Content Spec):
+  - **Level Overview** — heading `LEVEL OVERVIEW`, 1–2 sentence narrative blurb (Level 1, Level 6 pattern).
+  - **Boss callout** — boss name, portrait, flavor text (Level 2 pattern).
+- Copy must match approved Content Spec verbatim.
+
+### 2.7 Blueprint non-negotiables
+- Do not change logo treatment, zone-strip layout, legend placement, or footer placement.
+- Do not add HUD, health bars, or UI beyond what reference blueprints show (boss health bar at arena is allowed when spec includes a boss).
+- Do not invent bosses, enemies, power-ups, or collectibles not in the Content Spec.
+- Do not use props from other levels unless the Content Spec explicitly calls for them.
+
+---
+
+## 3. Level Concept Contract
+
+Extracted from Level 2, 4, and 5 concept references. All new concepts (Levels 1, 3, 6) must match this template.
+
+### 3.1 Canvas and framing
+- **Format:** Portrait or square technical sheet on dark navy/grid background.
+- **Layout:** Header + **2×2 panel grid** + footer. No full-level panorama.
+
+### 3.2 Header (fixed structure)
+- `TRASH DASH` logo (top-left).
+- Center title block:
+  - `TRASH DASH - LEVEL {N}` (level number may use accent color per refs)
+  - `INTERACTIVE ENVIRONMENT CONCEPTS`
+  - Stage subtitle line, e.g. `— SECRET SPACE CENTER STAGE —` or themed bar (Level 5 pattern)
+- Optional top-right callout: pinned note or star badge with 1–3 design pillars (from Content Spec).
+
+### 3.3 Four panels (fixed titles — subtitles are level-specific)
+
+| # | Panel title (fixed) | Subtitle (level-specific, from spec) |
+|---|---------------------|--------------------------------------|
+| 1 | MAIN GROUND LANE | Primary walk surface for this level |
+| 2 | RAISED PLATFORM / STEP-UP | Vertical step / retaining structure |
+| 3 | SECONDARY PLATFORM | Elevated or supported secondary deck |
+| 4 | FALL-GAP HAZARD | This level's hazard type (water, reactor pit, cosmic sludge, etc.) |
+
+Each panel includes:
+- **Number badge** — blue square, white numeral (top-left of panel)
+- **Panel title** — ALL CAPS, bold
+- **Subtitle** — mixed case, descriptive
+- **Illustration** — painted side-view scene using **that level's terrain and foreground assets**
+- **Four-layer depth legend** below the art:
+
+| Layer | Label variants across refs | Purpose |
+|-------|---------------------------|---------|
+| Playable ground | FOREGROUND / PLAYABLE GROUND / Foreground (Playable) | Stand/jump surfaces |
+| Close BG | CLOSE BACKGROUND | Near parallax props |
+| Mid BG | MID BACKGROUND | Structural/environment mid layer |
+| Distant BG | DISTANT BACKGROUND | Skyline / far parallax |
+
+Each layer lists specific assets visible at that depth (from Content Spec).
+
+### 3.4 Footer (fixed structure, level-specific content)
+- **Design notes** — 3–4 bullet points (grounded surfaces, readable gameplay, parallax, level mood).
+- **Material / theme icon row** — 4–5 circular or square icons drawn from that level's asset set with ALL CAPS labels.
+- **Tagline** — level-specific slogan (e.g. Level 4 tape: `KEEP IT CLEAN.. DASH IT MEAN.`; Level 5: `KEEP SPACE CLEAN(ISH)`).
+- Level 5 reference also includes a **color palette swatch row** — include when spec calls for it (space/industrial levels).
+
+### 3.5 Level concept non-negotiables
+- Exactly four panels in 2×2 grid — do not add or remove panels.
+- Panel titles in Section 3.3 are fixed; only subtitles and illustrations change.
+- Use level-specific assets only (from `output/level{N}/` manifest).
+- Match the dark technical grid background and blue framing of Level 4/5 refs; Level 2 ref is the lighter suburban-night variant — **use Level 4/5 grid style as default** unless spec calls for suburban-night treatment (Level 1, Level 2 tone).
+
+---
+
+## 4. Content Spec Template
+
+Copy and fill before every execution. User must approve.
+
+```markdown
+## Deliverable: [Blueprint | Concept] — Level [N] — [Theme Name]
+
+### References pinned
+- [list exact filenames]
+
+### Level assets used
+- [list sprite IDs from output/levelN/ manifest]
+
+### [Blueprints only] Zones (in order)
+| # | Zone name | Tagline |
+|---|-----------|---------|
+| 1 | ... | ... |
+
+### [Blueprints only] Boss
+- Name:
+- Arena zone #:
+- Health bar: yes/no
+
+### [Blueprints only] Goal
+- Description (dumpster/bin variant):
+
+### [Blueprints only] Legend items
+- [icon]: [label] — [description]
+
+### [Blueprints only] Footer
+- Type: [Level Overview | Boss callout]
+- Copy (verbatim):
+
+### [Concepts only] Stage subtitle
+- 
+
+### [Concepts only] Design pillars (top-right callout)
+- 
+
+### [Concepts only] Panel subtitles
+1. MAIN GROUND LANE — 
+2. RAISED PLATFORM / STEP-UP — 
+3. SECONDARY PLATFORM — 
+4. FALL-GAP HAZARD — 
+
+### [Concepts only] Per-panel layer asset lists
+Panel 1: FG / Close / Mid / Distant — 
+Panel 2: ...
+Panel 3: ...
+Panel 4: ...
+
+### [Concepts only] Footer
+- Design notes (bullets):
+- Material icons (4–5):
+- Tagline:
+- Color palette row: yes/no
+```
+
+---
+
+## 5. Level-Specific Guidance (Approved Starting Points)
+
+These are **draft starting points** for Content Specs. Replace `TBD` fields during conversation phase; do not treat as final until user approves.
+
+### Level 4 Blueprint (A1) — Secret Space Center
+Derived from Level 4 concept panels. Boss name TBD.
+
+| # | Zone | Tagline |
+|---|------|---------|
+| 1 | LAB CORRIDOR ENTRY | Learn the mossy steel floors. |
+| 2 | REACTOR APPROACH | Step up the braced platform. |
+| 3 | CATWALK MODULE | Cross the supported service deck. |
+| 4 | CONTAINMENT WING | Navigate hazmat crates and barriers. |
+| 5 | REACTOR PIT TRENCH | Clear the containment fluid gap. |
+| 6 | LAUNCHPAD OVERLOOK | Climb past satellite dishes. |
+| 7 | MAINTENANCE BAY | Weave through tool carts and cables. |
+| 8 | BOSS ARENA | TBD |
+| 9 | THE DUMPSTER | Into the bin — goal reward. |
+
+Footer: Level Overview pattern. Legend: Level 1/6 default set.
+
+### Level 5 Blueprint (A2) — Orbital Junkyard
+Derived from Level 5 concept panels. Boss name TBD.
+
+| # | Zone | Tagline |
+|---|------|---------|
+| 1 | SALVAGE DECK | Junk-strewn metal route. |
+| 2 | ASTEROID STEP-UP | Grounded rock and scrap platform. |
+| 3 | CRANE DOCK | Cross the cantilever scrap deck. |
+| 4 | COSMIC SLUDGE GAP | Clear the neon goo chasm. |
+| 5 | DEBRIS FIELD | Pick through satellite wreckage. |
+| 6 | CRYSTAL OUTCROP | Navigate meteor chunks and alien trash. |
+| 7 | CARGO BAY | Pods, pallets, and barrels. |
+| 8 | BOSS ARENA | TBD |
+| 9 | THE DUMPSTER | Keep space clean(ish) — goal reward. |
+
+Footer: Level Overview pattern. Legend: Level 1/6 default set.
+
+### Level 3 Concept + Blueprint (C1) — Downtown Nights
+**Deferred.** Generate concept first, then blueprint, in one iteration pair once additional resources are available. Do not start until user explicitly triggers C1.
+
+---
+
+## 6. QA Checklists
+
+### 6.1 Blueprint QA (pass/fail)
+- [ ] Header matches Section 2.2 (logo + `- LEVEL {N} | FULL LAYOUT CONCEPT -`)
+- [ ] Zone count and left→right order match approved Content Spec
+- [ ] Every zone has number, green ALL CAPS title, white tagline, dashed arrow to next
+- [ ] Panorama is one continuous illustration (no panel grid)
+- [ ] Boss arena at second-to-last zone; goal dumpster/bin at far right
+- [ ] Legend items match approved spec (no extra mechanics)
+- [ ] Footer copy matches approved spec verbatim
+- [ ] Art style matches L1/L2/L6 reference tier
+- [ ] Level-specific assets only (from `output/level{N}/`)
+
+### 6.2 Level Concept QA (pass/fail)
+- [ ] Header matches Section 3.2
+- [ ] Exactly four panels in 2×2 grid with fixed titles from Section 3.3
+- [ ] Each panel has number badge, subtitle, illustration, four-layer legend
+- [ ] Layer asset lists match approved Content Spec
+- [ ] Footer has design notes, material icons, tagline
+- [ ] Art style matches L2/L4/L5 reference tier
+- [ ] Level-specific assets only (from `output/level{N}/`)
+
+---
+
+## 7. Output Paths
+
+Save completed documents to:
+
+```
+docs/level-design/blueprints/level{N}_{slug}_full_layout.png
+docs/level-design/concepts/level{N}_{slug}_interactive_environment.png
+docs/level-design/specs/level{N}_{doc-type}_content-spec.md
+```
+
+Create directories if missing. Always save the approved Content Spec alongside the image.
+
+---
+
+## 8. Global Gameplay Rules (Blueprints)
+
+These apply to every level blueprint unless James explicitly overrides in a Content Spec:
+
+- **No breakables:** Props are standable, blocking, or non-interactive only. Nothing in the game is smashable. Do not include a Breakable legend entry.
+- **Power-ups:** Exactly **1 Taco Power-Up** and **1 Kite Power-Up** per level. Visual source: `powerups-sprite-sheet-approved-2240eb5f-8659-4b9a-9e11-d0719b008146.png`. Placement pattern mirrors Level 2: taco mid-early (post-tutorial verticality), kite at a hazard/challenge zone.
+- **Shortcuts:** Include green dashed shortcut paths and blue dashed challenge routes where the Content Spec defines them (Level 2/6 pattern).
+- **Enemies:** All enemy placement must comply with `docs/enemy-canon/ENEMY_MASTER_CONTRACT.md` and the level's `docs/enemy-canon/LEVEL_{N}.md` spec. Use reference art under `docs/enemy-canon/reference-art/level-{N}/` as visual source of truth.
+- **Footer default:** New blueprints use **Boss callout card** (Level 2 / Brutus pattern) unless Content Spec specifies Level Overview.
+
+---
+
+## 9. Non-Negotiables (Summary)
+
+- Re-read this contract at the start of every conversation phase and every execution phase.
+- Conversation before execution — no image generation without approved Content Spec.
+- One deliverable per iteration (except C1: concept + blueprint as an explicit pair).
+- Level 3 is always last (C1).
+- Do not regenerate existing documents (Level 2 concept, Level 1/2/6 blueprints) unless user explicitly requests.
+- No liberties with layout, copy, or mechanics — match reference documents and approved spec as closely as possible.

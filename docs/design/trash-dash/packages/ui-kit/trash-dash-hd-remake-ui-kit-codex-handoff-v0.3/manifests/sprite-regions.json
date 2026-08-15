@@ -1,0 +1,682 @@
+{
+  "$schema": "trash-dash-ui-sprite-regions-v1",
+  "version": "0.3.0",
+  "coordinateFormat": "[left, top, right, bottom]",
+  "notes": [
+    "Regions are generous source crops intended for staged extraction.",
+    "Run visual cleanup and alpha QA after extraction.",
+    "Do not treat these rectangles as runtime hitboxes, anchors, or 9-slice guides."
+  ],
+  "sheets": [
+    {
+      "id": "phase-01-buttons-tabs",
+      "path": "source-sheets/phase-01-buttons-tabs.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "assets": [
+        {
+          "id": "button-primary-play-default",
+          "region": [
+            35,
+            30,
+            505,
+            235
+          ]
+        },
+        {
+          "id": "button-primary-play-focus",
+          "region": [
+            530,
+            30,
+            1010,
+            235
+          ]
+        },
+        {
+          "id": "button-primary-play-pressed",
+          "region": [
+            1030,
+            30,
+            1510,
+            235
+          ]
+        },
+        {
+          "id": "button-secondary-back-default",
+          "region": [
+            35,
+            225,
+            505,
+            435
+          ]
+        },
+        {
+          "id": "button-secondary-back-focus",
+          "region": [
+            530,
+            225,
+            1010,
+            435
+          ]
+        },
+        {
+          "id": "button-secondary-back-pressed",
+          "region": [
+            1030,
+            225,
+            1510,
+            435
+          ]
+        },
+        {
+          "id": "button-neutral-level-select",
+          "region": [
+            35,
+            435,
+            450,
+            635
+          ]
+        },
+        {
+          "id": "button-neutral-settings",
+          "region": [
+            450,
+            435,
+            865,
+            635
+          ]
+        },
+        {
+          "id": "icon-button-settings",
+          "region": [
+            890,
+            420,
+            1125,
+            640
+          ]
+        },
+        {
+          "id": "icon-button-back",
+          "region": [
+            1120,
+            420,
+            1360,
+            640
+          ]
+        },
+        {
+          "id": "tab-map-selected",
+          "region": [
+            15,
+            615,
+            260,
+            835
+          ]
+        },
+        {
+          "id": "tab-map-unselected",
+          "region": [
+            245,
+            615,
+            520,
+            835
+          ]
+        },
+        {
+          "id": "tab-collection-selected",
+          "region": [
+            500,
+            615,
+            795,
+            835
+          ]
+        },
+        {
+          "id": "tab-collection-unselected",
+          "region": [
+            770,
+            615,
+            1045,
+            835
+          ]
+        },
+        {
+          "id": "tab-stats-selected",
+          "region": [
+            1005,
+            615,
+            1305,
+            835
+          ]
+        },
+        {
+          "id": "tab-stats-unselected",
+          "region": [
+            1270,
+            615,
+            1535,
+            835
+          ]
+        },
+        {
+          "id": "state-locked",
+          "region": [
+            220,
+            810,
+            770,
+            1024
+          ]
+        },
+        {
+          "id": "state-disabled",
+          "region": [
+            770,
+            810,
+            1320,
+            1024
+          ]
+        }
+      ]
+    },
+    {
+      "id": "phase-02-panels-containers",
+      "path": "source-sheets/phase-02-panels-containers.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "assets": [
+        {
+          "id": "panel-main-menu-hero-blank",
+          "region": [
+            10,
+            5,
+            645,
+            420
+          ]
+        },
+        {
+          "id": "panel-cardboard-generic",
+          "region": [
+            625,
+            5,
+            1085,
+            420
+          ]
+        },
+        {
+          "id": "panel-wood-signboard-blank",
+          "region": [
+            1065,
+            5,
+            1536,
+            420
+          ]
+        },
+        {
+          "id": "panel-notebook-paper",
+          "region": [
+            10,
+            395,
+            520,
+            745
+          ]
+        },
+        {
+          "id": "panel-sticker-reward",
+          "region": [
+            490,
+            390,
+            900,
+            745
+          ]
+        },
+        {
+          "id": "container-junk-box-open",
+          "region": [
+            865,
+            370,
+            1536,
+            770
+          ]
+        },
+        {
+          "id": "container-junk-box-closed",
+          "region": [
+            10,
+            715,
+            640,
+            970
+          ]
+        },
+        {
+          "id": "material-cardboard-tile",
+          "region": [
+            625,
+            730,
+            805,
+            955
+          ]
+        },
+        {
+          "id": "material-duct-tape-tile",
+          "region": [
+            785,
+            720,
+            980,
+            955
+          ]
+        },
+        {
+          "id": "material-sticker-skull",
+          "region": [
+            950,
+            715,
+            1145,
+            955
+          ]
+        },
+        {
+          "id": "material-bottle-cap-crown",
+          "region": [
+            1110,
+            715,
+            1310,
+            955
+          ]
+        },
+        {
+          "id": "material-painted-wood-tile",
+          "region": [
+            1280,
+            715,
+            1536,
+            955
+          ]
+        },
+        {
+          "id": "decor-tape-beige",
+          "region": [
+            555,
+            900,
+            805,
+            1024
+          ]
+        },
+        {
+          "id": "decor-tape-silver",
+          "region": [
+            765,
+            890,
+            1035,
+            1024
+          ]
+        },
+        {
+          "id": "decor-tape-green",
+          "region": [
+            975,
+            890,
+            1260,
+            1024
+          ]
+        }
+      ]
+    },
+    {
+      "id": "phase-03-hud-notifications-alerts",
+      "path": "source-sheets/phase-03-hud-notifications-alerts.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "assets": [
+        {
+          "id": "hud-health-full",
+          "region": [
+            10,
+            120,
+            330,
+            275
+          ]
+        },
+        {
+          "id": "hud-health-partial",
+          "region": [
+            10,
+            245,
+            330,
+            410
+          ]
+        },
+        {
+          "id": "hud-bottle-cap-counter",
+          "region": [
+            310,
+            120,
+            555,
+            255
+          ]
+        },
+        {
+          "id": "hud-key-counter",
+          "region": [
+            310,
+            230,
+            555,
+            340
+          ]
+        },
+        {
+          "id": "hud-paw-counter",
+          "region": [
+            310,
+            315,
+            555,
+            420
+          ]
+        },
+        {
+          "id": "hud-timer-green",
+          "region": [
+            545,
+            120,
+            820,
+            270
+          ]
+        },
+        {
+          "id": "hud-timer-blue",
+          "region": [
+            545,
+            245,
+            820,
+            390
+          ]
+        },
+        {
+          "id": "resource-icons-grid",
+          "region": [
+            815,
+            105,
+            1145,
+            405
+          ]
+        },
+        {
+          "id": "number-glyph-set",
+          "region": [
+            1140,
+            105,
+            1536,
+            410
+          ]
+        },
+        {
+          "id": "hud-mini-map-compass-optional",
+          "region": [
+            10,
+            380,
+            270,
+            665
+          ]
+        },
+        {
+          "id": "direction-arrow-set",
+          "region": [
+            245,
+            380,
+            430,
+            660
+          ]
+        },
+        {
+          "id": "toast-bottle-cap",
+          "region": [
+            405,
+            375,
+            650,
+            515
+          ]
+        },
+        {
+          "id": "toast-key-found",
+          "region": [
+            405,
+            480,
+            645,
+            625
+          ]
+        },
+        {
+          "id": "toast-checkpoint",
+          "region": [
+            620,
+            375,
+            930,
+            540
+          ]
+        },
+        {
+          "id": "toast-secret-found",
+          "region": [
+            620,
+            505,
+            940,
+            670
+          ]
+        },
+        {
+          "id": "notification-animation-reference",
+          "region": [
+            825,
+            370,
+            1180,
+            670
+          ]
+        },
+        {
+          "id": "objective-tracker",
+          "region": [
+            5,
+            630,
+            360,
+            950
+          ]
+        },
+        {
+          "id": "objective-state-rows",
+          "region": [
+            345,
+            630,
+            785,
+            930
+          ]
+        },
+        {
+          "id": "warning-boss-incoming",
+          "region": [
+            755,
+            630,
+            1000,
+            825
+          ]
+        },
+        {
+          "id": "warning-low-health",
+          "region": [
+            970,
+            630,
+            1175,
+            825
+          ]
+        },
+        {
+          "id": "warning-run",
+          "region": [
+            755,
+            785,
+            1000,
+            950
+          ]
+        },
+        {
+          "id": "warning-danger-ahead",
+          "region": [
+            970,
+            780,
+            1180,
+            960
+          ]
+        },
+        {
+          "id": "alert-animation-reference",
+          "region": [
+            1145,
+            615,
+            1536,
+            955
+          ]
+        },
+        {
+          "id": "decorative-bits",
+          "region": [
+            5,
+            905,
+            680,
+            1024
+          ]
+        },
+        {
+          "id": "status-badges",
+          "region": [
+            650,
+            895,
+            1145,
+            1024
+          ]
+        },
+        {
+          "id": "impact-fx",
+          "region": [
+            1120,
+            895,
+            1536,
+            1024
+          ]
+        }
+      ]
+    },
+    {
+      "id": "phase-04-results-character-select",
+      "path": "source-sheets/phase-04-results-character-select.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "assets": [
+        {
+          "id": "results-level-clear",
+          "region": [
+            10,
+            15,
+            575,
+            395
+          ]
+        },
+        {
+          "id": "results-new-record",
+          "region": [
+            550,
+            15,
+            1135,
+            405
+          ]
+        },
+        {
+          "id": "reward-new-hat-unlocked",
+          "region": [
+            1100,
+            10,
+            1536,
+            395
+          ]
+        },
+        {
+          "id": "character-select-board",
+          "region": [
+            5,
+            370,
+            830,
+            850
+          ]
+        },
+        {
+          "id": "character-card-trashy-unselected",
+          "region": [
+            800,
+            370,
+            1145,
+            705
+          ]
+        },
+        {
+          "id": "character-card-trashy-selected",
+          "region": [
+            1145,
+            370,
+            1536,
+            705
+          ]
+        },
+        {
+          "id": "character-card-jimothy-unselected",
+          "region": [
+            800,
+            665,
+            1145,
+            1024
+          ]
+        },
+        {
+          "id": "character-card-jimothy-selected",
+          "region": [
+            1145,
+            665,
+            1536,
+            1024
+          ]
+        },
+        {
+          "id": "badge-p1",
+          "region": [
+            20,
+            810,
+            230,
+            1024
+          ]
+        },
+        {
+          "id": "badge-selected-check",
+          "region": [
+            230,
+            810,
+            490,
+            1024
+          ]
+        },
+        {
+          "id": "pointer-pink-right",
+          "region": [
+            470,
+            810,
+            800,
+            1024
+          ]
+        }
+      ]
+    }
+  ]
+}

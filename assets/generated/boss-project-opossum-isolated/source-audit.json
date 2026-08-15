@@ -1,0 +1,114 @@
+{
+  "boss": "Project O.P.O.S.S.U.M.",
+  "canonId": "boss.level-04.project-opossum",
+  "executionContract": {
+    "path": "docs/design/trash-dash/manuals/bosses/BOSSFIX.md",
+    "sha256": "2d0ef80021307cb14bb7e0b106851d2e2ea785a538dc02904d6366f806a96267"
+  },
+  "canonicalBoard": {
+    "path": "docs/design/trash-dash/library/characters/bosses/project-opossum/sprites/reference/boss-project-opossum.png",
+    "sha256": "9d7eaab0811ac5b678493812773f80280a77eacbf16724eb9a316e2b344a8719",
+    "size": [
+      1448,
+      1086
+    ],
+    "mode": "RGB"
+  },
+  "acceptedTransparentAtlas": {
+    "path": "docs/design/trash-dash/library/characters/bosses/project-opossum/sprites/animation-source/boss-project-opossum-transparent.png",
+    "sha256": "4c4800ff595705b7f9f13b89b01b5d2e7aecea1f4240d01d48607e5d7feda610",
+    "desktopCopySha256": "4c4800ff595705b7f9f13b89b01b5d2e7aecea1f4240d01d48607e5d7feda610",
+    "byteIdenticalToDesktopCopy": true,
+    "size": [
+      1536,
+      1024
+    ],
+    "mode": "RGBA",
+    "visibleBounds": [
+      19,
+      5,
+      1524,
+      1017
+    ],
+    "visiblePixelCount": 582015,
+    "opaquePixelCount": 582015,
+    "transparentPixelCount": 990849,
+    "partialAlphaPixelCount": 0,
+    "connectedComponentCount": 1432
+  },
+  "sequenceAudit": {
+    "emerge": {
+      "sourceClassification": "MISSING",
+      "classification": "EXISTS - COMPLETE (ASSEMBLED FROM APPROVED ART)",
+      "orderedFrames": [
+        "suction-pulse-attack-05",
+        "phase-shift-fake-charge-08",
+        "phase-shift-fake-charge-07",
+        "phase-shift-fake-charge-05",
+        "phase-shift-fake-charge-04",
+        "idle-stand-00"
+      ],
+      "startState": "approved large gravity aperture without a duplicate body",
+      "intermediateMotion": "approved cyan phase silhouettes resolve into the exact harnessed boss",
+      "endState": "idle-stand-00 active boss state",
+      "continuity": "canonical gravity/phase vocabulary resolves naturally to active idle",
+      "loop": false
+    },
+    "retreat": {
+      "sourceClassification": "MISSING",
+      "classification": "EXISTS - COMPLETE (ASSEMBLED FROM APPROVED ART)",
+      "orderedFrames": [
+        "idle-stand-00",
+        "phase-shift-fake-charge-04",
+        "phase-shift-fake-charge-05",
+        "phase-shift-fake-charge-07",
+        "phase-shift-fake-charge-08",
+        "suction-pulse-attack-05"
+      ],
+      "startState": "idle-stand-00 active boss state",
+      "intermediateMotion": "approved body phases into cyan displacement silhouettes",
+      "endState": "approved gravity aperture after intentional withdrawal",
+      "continuity": "active idle withdraws through canonical phase/portal mechanics without defeat imagery",
+      "loop": false
+    },
+    "defeat": {
+      "sourceClassification": "EXISTS - INCOMPLETE (HARNESS-BREAK ROW ABSENT FROM ACCEPTED TRANSPARENT ATLAS)",
+      "classification": "EXISTS - COMPLETE (ASSEMBLED FROM APPROVED ART)",
+      "orderedFrames": [
+        "hit-react-00",
+        "hit-react-03",
+        "stunned-after-crash-00",
+        "stunned-after-crash-05",
+        "containment-alarm-state-06",
+        "effect-library-upper-00",
+        "final-reveal-playing-possum-00",
+        "final-reveal-playing-possum-01",
+        "final-reveal-playing-possum-02",
+        "final-reveal-playing-possum-03",
+        "final-reveal-playing-possum-04",
+        "final-reveal-playing-possum-05",
+        "final-reveal-playing-possum-06",
+        "final-reveal-playing-possum-07",
+        "final-reveal-playing-possum-08"
+      ],
+      "startState": "approved hit reaction in the complete harness",
+      "intermediateMotion": "approved stun and overload pass through an approved electrical transition into the full ordered de-armored reveal",
+      "endState": "final-reveal-playing-possum-08, the exact approved opossum resting non-graphically",
+      "continuity": "hit to stun to overload to the complete approved reveal/playing-possum progression",
+      "loop": false
+    }
+  },
+  "defects": {
+    "missingOrIncompleteNamedAnimations": true,
+    "crossFrameRectangularEnvelopeOverlap": true,
+    "neighboringFrameBleedRisk": true,
+    "visiblePixelsTouchingAcceptedAtlasBoundary": false,
+    "ambiguousDetachedEffectOwnershipBeforeManifest": true,
+    "insufficientTransparentGutters": true,
+    "missingNamedEmergeRow": true,
+    "missingNamedRetreatRow": true,
+    "harnessBreakDefeatRowAbsentFromAcceptedTransparentAtlas": true,
+    "requiredSequenceArtProvenMissingAfterApprovedAssembly": false
+  },
+  "resolution": "approved-frame sequence composition plus reviewed connected-alpha ownership extraction and variable-cell repack; no artwork generation"
+}

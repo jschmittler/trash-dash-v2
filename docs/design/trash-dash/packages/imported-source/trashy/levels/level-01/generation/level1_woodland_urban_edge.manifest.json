@@ -1,0 +1,319 @@
+{
+  "sheet": "level1_woodland_urban_edge.png",
+  "level": "level_1_woodland_urban_edge",
+  "global_pixels_per_meter": 189.9,
+  "padding_px": 16,
+  "default_chroma_key": "#00FF00",
+  "fallback_chroma_key": "#FF00FF",
+  "qa": {
+    "overlap_check_passed": true,
+    "violations": []
+  },
+  "sprites": [
+    {
+      "id": "level1_broken_signpost",
+      "name": "Broken Signpost",
+      "level": "level_1_woodland_urban_edge",
+      "interaction_type": [
+        "blocking"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        98,
+        282
+      ],
+      "bbox_px": [
+        16,
+        16,
+        165,
+        266
+      ],
+      "usage_notes": "Tall solid post; blocks horizontal movement, not standable.",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 1.4,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level1_wooden_barricade",
+      "name": "Wooden Barricade",
+      "level": "level_1_woodland_urban_edge",
+      "interaction_type": [
+        "blocking"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        330,
+        206
+      ],
+      "bbox_px": [
+        197,
+        16,
+        266,
+        190
+      ],
+      "usage_notes": "Open A-frame; blocks horizontal movement, top not intended as standable (unstable frame).",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 1.0,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level1_wooden_crate",
+      "name": "Wooden Crate",
+      "level": "level_1_woodland_urban_edge",
+      "interaction_type": [
+        "standable",
+        "blocking"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        564,
+        187
+      ],
+      "bbox_px": [
+        479,
+        16,
+        171,
+        171
+      ],
+      "usage_notes": "Solid crate; can be stood on and blocks horizontal movement.",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 0.9,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level1_tire_pile",
+      "name": "Tire Pile",
+      "level": "level_1_woodland_urban_edge",
+      "interaction_type": [
+        "standable",
+        "blocking"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        747,
+        187
+      ],
+      "bbox_px": [
+        666,
+        16,
+        163,
+        171
+      ],
+      "usage_notes": "Stacked tires; standable top surface, solid sides block movement.",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 0.9,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level1_broken_concrete_block",
+      "name": "Broken Concrete Block",
+      "level": "level_1_woodland_urban_edge",
+      "interaction_type": [
+        "standable",
+        "blocking"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        960,
+        187
+      ],
+      "bbox_px": [
+        845,
+        16,
+        230,
+        171
+      ],
+      "usage_notes": "Solid rubble block; standable top, blocks horizontal movement.",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 0.9,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level1_mossy_stump",
+      "name": "Mossy Stump",
+      "level": "level_1_woodland_urban_edge",
+      "interaction_type": [
+        "standable",
+        "blocking"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        1202,
+        149
+      ],
+      "bbox_px": [
+        1091,
+        16,
+        222,
+        133
+      ],
+      "usage_notes": "Flat mossy top can be jumped onto and stood on; trunk blocks horizontal movement.",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 0.7,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level1_fern_clump",
+      "name": "Fern Clump",
+      "level": "level_1_woodland_urban_edge",
+      "interaction_type": [
+        "non_interactive"
+      ],
+      "render_layer": "foreground",
+      "anchor_px": [
+        1386,
+        130
+      ],
+      "bbox_px": [
+        1329,
+        16,
+        114,
+        114
+      ],
+      "usage_notes": "Purely decorative ground dressing; renders in front of player/enemies, no collision.",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 0.6,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level1_camp_junk_pile",
+      "name": "Camp Junk Pile",
+      "level": "level_1_woodland_urban_edge",
+      "interaction_type": [
+        "non_interactive"
+      ],
+      "render_layer": "foreground",
+      "anchor_px": [
+        1544,
+        130
+      ],
+      "bbox_px": [
+        1459,
+        16,
+        171,
+        114
+      ],
+      "usage_notes": "Composite decorative cluster (backpack+lantern+mug), kept as single sprite per contract; no collision.",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 0.6,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level1_fallen_log",
+      "name": "Fallen Log",
+      "level": "level_1_woodland_urban_edge",
+      "interaction_type": [
+        "standable",
+        "blocking"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        1812,
+        111
+      ],
+      "bbox_px": [
+        1646,
+        16,
+        333,
+        95
+      ],
+      "usage_notes": "Horizontal log acts as a low platform/step and a ground-level obstacle.",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 0.5,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level1_mushroom_cluster",
+      "name": "Mushroom Cluster",
+      "level": "level_1_woodland_urban_edge",
+      "interaction_type": [
+        "non_interactive"
+      ],
+      "render_layer": "foreground",
+      "anchor_px": [
+        2037,
+        111
+      ],
+      "bbox_px": [
+        1995,
+        16,
+        85,
+        95
+      ],
+      "usage_notes": "Decorative accent cluster; no collision, renders in front of player.",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 0.5,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level1_flat_stone_platform",
+      "name": "Flat Stone Platform",
+      "level": "level_1_woodland_urban_edge",
+      "interaction_type": [
+        "standable"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        2317,
+        92
+      ],
+      "bbox_px": [
+        2096,
+        16,
+        442,
+        76
+      ],
+      "usage_notes": "Low wide platform intended as a steppable surface; no side collision assumed.",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 0.4,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level1_rusty_can",
+      "name": "Rusty Metal Can",
+      "level": "level_1_woodland_urban_edge",
+      "interaction_type": [
+        "non_interactive"
+      ],
+      "render_layer": "foreground",
+      "anchor_px": [
+        2569,
+        73
+      ],
+      "bbox_px": [
+        2554,
+        16,
+        31,
+        57
+      ],
+      "usage_notes": "Small ground clutter; no collision, purely visual.",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 0.3,
+        "global_pixels_per_meter": 189.9
+      }
+    }
+  ]
+}

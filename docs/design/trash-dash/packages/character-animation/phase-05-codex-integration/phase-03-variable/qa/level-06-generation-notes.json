@@ -1,0 +1,32 @@
+{
+  "level": 6,
+  "environment": "Secret Level 6: Abandoned Ballpark",
+  "method": "imagegen reference rebuild with variable canvas",
+  "fixed_cell_exception": true,
+  "enemies": [
+    {
+      "name": "Baserunning Beaver",
+      "source": "source-pack/characters/level-06/sprites/baserunning-beaver.png",
+      "chroma": "#00ff00",
+      "generated_source": "generated/baserunning-beaver-chroma.png"
+    },
+    {
+      "name": "Clobbering Cub",
+      "source": "source-pack/characters/level-06/sprites/clobbering-cub.png",
+      "chroma": "#00ff00",
+      "generated_source": "generated/clobbering-cub-chroma.png"
+    },
+    {
+      "name": "Sliding Seagull",
+      "source": "source-pack/characters/level-06/sprites/sliding-seagull.png",
+      "chroma": "#00ff00",
+      "generated_source": "generated/sliding-seagull-chroma.png"
+    },
+    {
+      "name": "Windup Weasel",
+      "source": "source-pack/characters/level-06/sprites/windup-weasel.png",
+      "chroma": "#ff00ff",
+      "generated_source": "generated/windup-weasel-chroma.png"
+    }
+  ]
+}

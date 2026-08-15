@@ -29,8 +29,8 @@ Read [Level and Arena Placement](references/level-arena-placement.md) for the co
 
 ## Canonical V2 sources
 
-- Read `../../docs/design/trash-dash/docs/game/levels.md` and `../../docs/design/trash-dash/docs/game/LEVEL_LAYOUT_GUIDANCE.md` for layered backgrounds and level structure.
-- Read `../../docs/design/trash-dash/docs/game/enemies.md` for enemy supports, patrols, encounter spacing, and arenas.
+- Read `../../docs/design/trash-dash/manuals/levels/levels.md` and `../../docs/design/trash-dash/manuals/levels/LEVEL_LAYOUT_GUIDANCE.md` for layered backgrounds and level structure.
+- Read `../../docs/design/trash-dash/manuals/enemies/legacy-enemies.md` for enemy supports, patrols, encounter spacing, and arenas.
 - Apply `../../docs/architecture/LEVEL_CONTRACT.md`, `../../docs/architecture/ENCOUNTER_CONTRACT.md`, and `../../docs/architecture/RENDERING_LAYERS.md` to runtime work.
 
 ## Handoff

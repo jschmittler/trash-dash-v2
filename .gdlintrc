@@ -1,0 +1,4 @@
+disable:
+  - class-definitions-order
+max-line-length: 140
+max-returns: 10

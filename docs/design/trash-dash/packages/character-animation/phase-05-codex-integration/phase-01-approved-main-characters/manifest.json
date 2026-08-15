@@ -1,0 +1,291 @@
+{
+  "format_version": 1,
+  "phase": "phase-01-approved-main-characters",
+  "status": "approved",
+  "canonical": true,
+  "supersedes": [
+    "phase-01-main-characters",
+    "phase-01-main-characters-v2",
+    "phase-01-main-characters-v3"
+  ],
+  "runtime_policy": {
+    "use_only_approved_atlases": true,
+    "do_not_use_branded_source_sheets": true,
+    "do_not_run_background_removal": true,
+    "do_not_auto_trim": true,
+    "do_not_regenerate_or_reinterpret_art": true,
+    "preserve_transparency": true,
+    "preserve_aspect_ratio": true,
+    "recommended_pivot": "bottom-center"
+  },
+  "assets": {
+    "jimothy-powered": {
+      "display_name": "Jimothy Powered",
+      "file": "atlases/jimothy-powered-approved.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "d0ecae91dfe2eb595f2f0f162e349e966d7b66a8bcc4ed841b5ed5efc73d4e4b",
+      "status": "approved",
+      "description": "Approved powered-up Jimothy atlas. Golden electrical energy is part of the approved visual language and must be preserved.",
+      "semantic_state_contract": [
+        {
+          "state": "idle-stand",
+          "expected_frames": 4
+        },
+        {
+          "state": "walk",
+          "expected_frames": null
+        },
+        {
+          "state": "run",
+          "expected_frames": null
+        },
+        {
+          "state": "jump-start",
+          "expected_frames": 2
+        },
+        {
+          "state": "midair-rise",
+          "expected_frames": 2
+        },
+        {
+          "state": "fall",
+          "expected_frames": 2
+        },
+        {
+          "state": "land",
+          "expected_frames": 2
+        },
+        {
+          "state": "skid-stop",
+          "expected_frames": 3
+        },
+        {
+          "state": "crouch",
+          "expected_frames": 2
+        },
+        {
+          "state": "hurt-flinch",
+          "expected_frames": 3
+        },
+        {
+          "state": "knockout-stunned",
+          "expected_frames": 3
+        },
+        {
+          "state": "victory-celebrate",
+          "expected_frames": 4
+        },
+        {
+          "state": "glide-kite-flight",
+          "expected_frames": 5
+        }
+      ],
+      "notes": "The semantic state contract describes the intended gameplay animation vocabulary. Do not infer exact frame rectangles from legacy branded sheet coordinates. Use the approved atlas itself as visual truth."
+    },
+    "jimothy-regular": {
+      "display_name": "Jimothy Regular",
+      "file": "atlases/jimothy-regular-approved.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "sha256": "8abf2ae57ef142168a70000bf43ae228e458dfbc961e2a0ead080db6cdba56ef",
+      "status": "approved",
+      "description": "Approved regular Jimothy atlas. Non-powered state, with teal scarf, utility gear, locomotion, airborne, recovery, projectile/action, and glide poses.",
+      "semantic_state_contract": [
+        {
+          "state": "idle-stand",
+          "expected_frames": 4
+        },
+        {
+          "state": "walk",
+          "expected_frames": null
+        },
+        {
+          "state": "run",
+          "expected_frames": null
+        },
+        {
+          "state": "jump-start",
+          "expected_frames": 2
+        },
+        {
+          "state": "midair-rise",
+          "expected_frames": 2
+        },
+        {
+          "state": "fall",
+          "expected_frames": 2
+        },
+        {
+          "state": "land",
+          "expected_frames": 2
+        },
+        {
+          "state": "skid-stop",
+          "expected_frames": 3
+        },
+        {
+          "state": "crouch",
+          "expected_frames": 2
+        },
+        {
+          "state": "hurt-flinch",
+          "expected_frames": 3
+        },
+        {
+          "state": "knockout-stunned",
+          "expected_frames": 3
+        },
+        {
+          "state": "victory-celebrate",
+          "expected_frames": 4
+        },
+        {
+          "state": "glide-kite-flight",
+          "expected_frames": 5
+        }
+      ],
+      "notes": "The semantic state contract describes the intended gameplay animation vocabulary. Do not infer exact frame rectangles from legacy branded sheet coordinates. Use the approved atlas itself as visual truth."
+    },
+    "trashy-powered": {
+      "display_name": "Trashy Powered",
+      "file": "atlases/trashy-powered-approved.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "b1e0219f4e129630ddfac803607e021f40f3007fd77933c84daf9dad0207748b",
+      "status": "approved",
+      "description": "Approved powered-up Trashy atlas. Heavier armored silhouette, orange scarf, expanded locomotion and recovery poses, victory poses, and glide sequence.",
+      "semantic_state_contract": [
+        {
+          "state": "idle-stand",
+          "expected_frames": 4
+        },
+        {
+          "state": "walk",
+          "expected_frames": null
+        },
+        {
+          "state": "run",
+          "expected_frames": null
+        },
+        {
+          "state": "jump-start",
+          "expected_frames": 2
+        },
+        {
+          "state": "midair-rise",
+          "expected_frames": 2
+        },
+        {
+          "state": "fall",
+          "expected_frames": 2
+        },
+        {
+          "state": "land",
+          "expected_frames": 2
+        },
+        {
+          "state": "skid-stop",
+          "expected_frames": 3
+        },
+        {
+          "state": "crouch",
+          "expected_frames": 2
+        },
+        {
+          "state": "hurt-flinch",
+          "expected_frames": 3
+        },
+        {
+          "state": "knockout-stunned",
+          "expected_frames": 3
+        },
+        {
+          "state": "victory-celebrate",
+          "expected_frames": 4
+        },
+        {
+          "state": "glide-kite-flight",
+          "expected_frames": 5
+        }
+      ],
+      "notes": "The semantic state contract describes the intended gameplay animation vocabulary. Do not infer exact frame rectangles from legacy branded sheet coordinates. Use the approved atlas itself as visual truth."
+    },
+    "trashy-regular": {
+      "display_name": "Trashy Regular",
+      "file": "atlases/trashy-regular-approved.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "64d85e6b9b40b119e87cf7fa1725cd5be076104d1c6971c77b5810ff7ff6e9e6",
+      "status": "approved",
+      "description": "Approved regular Trashy atlas. Standard non-powered silhouette, locomotion, airborne, hurt/KO/victory poses, and glide sequence.",
+      "semantic_state_contract": [
+        {
+          "state": "idle-stand",
+          "expected_frames": 4
+        },
+        {
+          "state": "walk",
+          "expected_frames": null
+        },
+        {
+          "state": "run",
+          "expected_frames": null
+        },
+        {
+          "state": "jump-start",
+          "expected_frames": 2
+        },
+        {
+          "state": "midair-rise",
+          "expected_frames": 2
+        },
+        {
+          "state": "fall",
+          "expected_frames": 2
+        },
+        {
+          "state": "land",
+          "expected_frames": 2
+        },
+        {
+          "state": "skid-stop",
+          "expected_frames": 3
+        },
+        {
+          "state": "crouch",
+          "expected_frames": 2
+        },
+        {
+          "state": "hurt-flinch",
+          "expected_frames": 3
+        },
+        {
+          "state": "knockout-stunned",
+          "expected_frames": 3
+        },
+        {
+          "state": "victory-celebrate",
+          "expected_frames": 4
+        },
+        {
+          "state": "glide-kite-flight",
+          "expected_frames": 5
+        }
+      ],
+      "notes": "The semantic state contract describes the intended gameplay animation vocabulary. Do not infer exact frame rectangles from legacy branded sheet coordinates. Use the approved atlas itself as visual truth."
+    }
+  }
+}

@@ -1,0 +1,317 @@
+{
+  "sheet": "level6_abandoned_ballpark.png",
+  "level": "level_6_abandoned_ballpark",
+  "source_reference": "level-6-foreground-gameplay-assets.png",
+  "global_pixels_per_meter": 189.9,
+  "padding_px": 16,
+  "default_chroma_key": "#00FF00",
+  "fallback_chroma_key": "#FF00FF",
+  "qa": {
+    "overlap_check_passed": true,
+    "violations": []
+  },
+  "sprites": [
+    {
+      "id": "level6_cracked_brick_wall",
+      "name": "Cracked Brick Wall",
+      "level": "level_6_abandoned_ballpark",
+      "interaction_type": [
+        "standable",
+        "blocking"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        164,
+        358
+      ],
+      "bbox_px": [
+        16,
+        16,
+        297,
+        342
+      ],
+      "usage_notes": "Crumbling red brick wall segment with green 402 outfield marker and ivy; climbable/standable per reference sheet. Magenta chroma key forced due to large green painted section.",
+      "chroma_key": "#FF00FF",
+      "scale_reference": {
+        "real_world_height_m": 1.8,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level6_scoreboard_debris",
+      "name": "Scoreboard Debris",
+      "level": "level_6_abandoned_ballpark",
+      "interaction_type": [
+        "standable",
+        "blocking"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        544,
+        244
+      ],
+      "bbox_px": [
+        329,
+        16,
+        430,
+        228
+      ],
+      "usage_notes": "Green metal scoreboard fragment with BALL STRIKE OUT labels; climbable/standable per reference sheet. Magenta chroma key forced due to green metal panel.",
+      "chroma_key": "#FF00FF",
+      "scale_reference": {
+        "real_world_height_m": 1.2,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level6_garbage_can",
+      "name": "Garbage Can",
+      "level": "level_6_abandoned_ballpark",
+      "interaction_type": [
+        "blocking"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        855,
+        225
+      ],
+      "bbox_px": [
+        775,
+        16,
+        161,
+        209
+      ],
+      "usage_notes": "Green metal RC trash can overflowing with baseballs; pushable/breakable per reference sheet. Magenta chroma key forced due to green metal body.",
+      "chroma_key": "#FF00FF",
+      "scale_reference": {
+        "real_world_height_m": 1.1,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level6_broken_seat_cluster",
+      "name": "Broken Seat Cluster",
+      "level": "level_6_abandoned_ballpark",
+      "interaction_type": [
+        "standable"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        1154,
+        206
+      ],
+      "bbox_px": [
+        952,
+        16,
+        404,
+        190
+      ],
+      "usage_notes": "Composite row of three faded blue stadium seats on rusty base with ivy; standable per reference sheet, kept as single sprite per contract.",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 1.0,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level6_tarp_drape",
+      "name": "Tarp Drape",
+      "level": "level_6_abandoned_ballpark",
+      "interaction_type": [
+        "non_interactive"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        1627,
+        206
+      ],
+      "bbox_px": [
+        1372,
+        16,
+        511,
+        190
+      ],
+      "usage_notes": "Dark blue tarp draped over hidden mound; interactive hide/reveal per reference sheet (trigger handled in gameplay).",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 1.0,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level6_bat_rack",
+      "name": "Bat Rack",
+      "level": "level_6_abandoned_ballpark",
+      "interaction_type": [
+        "non_interactive"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        1983,
+        206
+      ],
+      "bbox_px": [
+        1899,
+        16,
+        168,
+        190
+      ],
+      "usage_notes": "Wooden rack with five upright bats and blue catcher's helmet; interactive take/refill per reference sheet (trigger handled in gameplay).",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 1.0,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level6_dugout_bench",
+      "name": "Dugout Bench",
+      "level": "level_6_abandoned_ballpark",
+      "interaction_type": [
+        "standable"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        2238,
+        187
+      ],
+      "bbox_px": [
+        2083,
+        16,
+        310,
+        171
+      ],
+      "usage_notes": "Forest-green wooden dugout bench with dirty towel draped over back; standable per reference sheet. Magenta chroma key forced due to green wood.",
+      "chroma_key": "#FF00FF",
+      "scale_reference": {
+        "real_world_height_m": 0.9,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level6_home_plate",
+      "name": "Home Plate",
+      "level": "level_6_abandoned_ballpark",
+      "interaction_type": [
+        "standable"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        2498,
+        187
+      ],
+      "bbox_px": [
+        2409,
+        16,
+        179,
+        171
+      ],
+      "usage_notes": "Oversized weathered pentagonal home plate with RC logo standing in dirt; standable checkpoint per reference sheet.",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 0.9,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level6_baseball_gear_crate",
+      "name": "Baseball Gear Crate",
+      "level": "level_6_abandoned_ballpark",
+      "interaction_type": [
+        "blocking"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        2688,
+        168
+      ],
+      "bbox_px": [
+        2604,
+        16,
+        168,
+        152
+      ],
+      "usage_notes": "Blue wooden RIVERCITY BALL CLUB crate with bats and catcher's mitt; breakable/interactive per reference sheet.",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 0.8,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level6_peanut_boxes",
+      "name": "Peanut Boxes",
+      "level": "level_6_abandoned_ballpark",
+      "interaction_type": [
+        "blocking"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        2831,
+        168
+      ],
+      "bbox_px": [
+        2788,
+        16,
+        86,
+        152
+      ],
+      "usage_notes": "Composite stack of two wooden PEANUTS SALTED crates with ivy; pushable/breakable per reference sheet, kept as single sprite per contract.",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 0.8,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level6_ice_cooler",
+      "name": "Ice Cooler",
+      "level": "level_6_abandoned_ballpark",
+      "interaction_type": [
+        "blocking"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        2950,
+        130
+      ],
+      "bbox_px": [
+        2890,
+        16,
+        120,
+        114
+      ],
+      "usage_notes": "Red and white ICE COLD cooler with open lid and water bottles; breakable/interactive per reference sheet.",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 0.6,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level6_concessions_junk",
+      "name": "Concessions Junk",
+      "level": "level_6_abandoned_ballpark",
+      "interaction_type": [
+        "non_interactive"
+      ],
+      "render_layer": "foreground",
+      "anchor_px": [
+        3107,
+        92
+      ],
+      "bbox_px": [
+        3026,
+        16,
+        163,
+        76
+      ],
+      "usage_notes": "Composite pile of popcorn box, tipped bucket, tray and soda cups; background clutter per reference sheet, no collision.",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 0.4,
+        "global_pixels_per_meter": 189.9
+      }
+    }
+  ]
+}

@@ -1,1 +1,2 @@
-docs/design/trash-dash/reference/**/*.png filter=lfs diff=lfs merge=lfs -text
+docs/design/trash-dash/library/**/*.png filter=lfs diff=lfs merge=lfs -text
+docs/design/trash-dash/packages/**/*.png filter=lfs diff=lfs merge=lfs -text

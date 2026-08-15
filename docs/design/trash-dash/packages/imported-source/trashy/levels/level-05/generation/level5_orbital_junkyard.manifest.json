@@ -1,0 +1,320 @@
+{
+  "sheet": "level5_orbital_junkyard.png",
+  "level": "level_5_orbital_junkyard",
+  "source_reference": "level-5-foreground-gameplay-assets.png",
+  "global_pixels_per_meter": 189.9,
+  "padding_px": 16,
+  "default_chroma_key": "#00FF00",
+  "fallback_chroma_key": "#FF00FF",
+  "qa": {
+    "overlap_check_passed": true,
+    "violations": []
+  },
+  "sprites": [
+    {
+      "id": "level5_space_cargo_pod",
+      "name": "Space Cargo Pod",
+      "level": "level_5_orbital_junkyard",
+      "interaction_type": [
+        "standable",
+        "blocking"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        307,
+        548
+      ],
+      "bbox_px": [
+        16,
+        16,
+        582,
+        532
+      ],
+      "usage_notes": "Large white-orange octagonal ASTRO HAUL cargo pod with ramp; standable cover/platform per reference sheet, breaks open when jumped on.",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 2.8,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level5_salvage_signpost",
+      "name": "Salvage Signpost",
+      "level": "level_5_orbital_junkyard",
+      "interaction_type": [
+        "blocking"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        739,
+        472
+      ],
+      "bbox_px": [
+        614,
+        16,
+        250,
+        456
+      ],
+      "usage_notes": "Purple directional sign on heavy pole with red-orange lights and purple crystals at base; stable directional set dressing per reference sheet.",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 2.4,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level5_meteor_chunk",
+      "name": "Meteor Chunk",
+      "level": "level_5_orbital_junkyard",
+      "interaction_type": [
+        "standable",
+        "blocking"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        1084,
+        453
+      ],
+      "bbox_px": [
+        880,
+        16,
+        408,
+        437
+      ],
+      "usage_notes": "Dark craggy meteor with glowing orange magma veins; solid obstacle, good for cover and landings per reference sheet.",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 2.3,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level5_satellite_debris_pile",
+      "name": "Satellite Debris Pile",
+      "level": "level_5_orbital_junkyard",
+      "interaction_type": [
+        "standable",
+        "blocking"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        1649,
+        396
+      ],
+      "bbox_px": [
+        1304,
+        16,
+        691,
+        380
+      ],
+      "usage_notes": "Composite pile of satellite dish, solar panel, pipes and scrap; climbable at angles per reference sheet, hides collectibles.",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 2.0,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level5_cosmic_crystal_cluster",
+      "name": "Cosmic Crystal Cluster",
+      "level": "level_5_orbital_junkyard",
+      "interaction_type": [
+        "blocking"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        2130,
+        358
+      ],
+      "bbox_px": [
+        2011,
+        16,
+        238,
+        342
+      ],
+      "usage_notes": "Jagged glowing purple crystal cluster on rocky base; slide bounces off edges per reference sheet, breakable for shards.",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 1.8,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level5_alien_trash_mound",
+      "name": "Alien Trash Mound",
+      "level": "level_5_orbital_junkyard",
+      "interaction_type": [
+        "blocking"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        2552,
+        358
+      ],
+      "bbox_px": [
+        2265,
+        16,
+        574,
+        342
+      ],
+      "usage_notes": "Composite scrap pile with green slime, purple tentacled alien, and pirate flag; squishy but solid living set dressing per reference sheet. Magenta chroma key forced due to green slime.",
+      "chroma_key": "#FF00FF",
+      "scale_reference": {
+        "real_world_height_m": 1.8,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level5_cargo_pallet",
+      "name": "Cargo Pallet",
+      "level": "level_5_orbital_junkyard",
+      "interaction_type": [
+        "standable",
+        "blocking"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        3067,
+        358
+      ],
+      "bbox_px": [
+        2855,
+        16,
+        424,
+        342
+      ],
+      "usage_notes": "Wheeled pallet with SPACE FREIGHT boxes strapped down; pushable moving platform per reference sheet, top standable.",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 1.8,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level5_floating_junk_anchor",
+      "name": "Floating Junk Anchor",
+      "level": "level_5_orbital_junkyard",
+      "interaction_type": [
+        "blocking"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        3391,
+        339
+      ],
+      "bbox_px": [
+        3295,
+        16,
+        192,
+        323
+      ],
+      "usage_notes": "Metallic sphere with purple eye light suspended by chain from grounded base; grapple/rope attach point per reference sheet.",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 1.7,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level5_broken_bot_husk",
+      "name": "Broken Bot Husk",
+      "level": "level_5_orbital_junkyard",
+      "interaction_type": [
+        "standable",
+        "blocking"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        3739,
+        320
+      ],
+      "bbox_px": [
+        3503,
+        16,
+        472,
+        304
+      ],
+      "usage_notes": "White robot dome head and torso half-buried in scrap with X eyes; climbable and bouncy per reference sheet.",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 1.6,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level5_oxygen_canister",
+      "name": "Oxygen Canister",
+      "level": "level_5_orbital_junkyard",
+      "interaction_type": [
+        "non_interactive"
+      ],
+      "render_layer": "foreground",
+      "anchor_px": [
+        4033,
+        301
+      ],
+      "bbox_px": [
+        3991,
+        16,
+        85,
+        285
+      ],
+      "usage_notes": "Teal O2 BREATH EASY cylinder with pressure gauge; collectible to refill air, throwable per reference sheet.",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 1.5,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level5_low_g_scrap_barrel",
+      "name": "Low-G Scrap Barrel",
+      "level": "level_5_orbital_junkyard",
+      "interaction_type": [
+        "blocking"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        4144,
+        244
+      ],
+      "bbox_px": [
+        4092,
+        16,
+        104,
+        228
+      ],
+      "usage_notes": "Green metal barrel with yellow hazard decal hovering on blue propulsion glow; drifts/bobs in low gravity per reference sheet. Magenta chroma key forced due to green barrel body.",
+      "chroma_key": "#FF00FF",
+      "scale_reference": {
+        "real_world_height_m": 1.2,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level5_maintenance_crate",
+      "name": "Maintenance Crate",
+      "level": "level_5_orbital_junkyard",
+      "interaction_type": [
+        "blocking"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        4326,
+        206
+      ],
+      "bbox_px": [
+        4212,
+        16,
+        229,
+        190
+      ],
+      "usage_notes": "Yellow-grey MAINT. B-14 crate with gear icon; breakable for parts, stackable per reference sheet.",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 1.0,
+        "global_pixels_per_meter": 189.9
+      }
+    }
+  ]
+}

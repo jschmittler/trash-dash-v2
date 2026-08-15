@@ -17,4 +17,7 @@ The master handoff is split into smaller archives. Extract all required parts in
 - 09 Legacy main-character bundle
 - 10 Legacy level-layout bundle
 
-Only `reference/` is authoritative. Optional history remains under `archive/`.
+This describes the original delivery. The extracted evidence is preserved in
+`packages/multipart/`; current authority is defined by
+`manifests/library-catalog.json` and `library/`. Optional history remains
+noncanonical.

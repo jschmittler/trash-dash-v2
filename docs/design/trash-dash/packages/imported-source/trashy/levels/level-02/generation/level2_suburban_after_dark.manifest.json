@@ -1,0 +1,420 @@
+{
+  "sheet": "level2_suburban_after_dark.png",
+  "level": "level_2_suburban_after_dark",
+  "source_reference": "level-2-foreground-gameplay-assets.png",
+  "global_pixels_per_meter": 189.9,
+  "padding_px": 16,
+  "default_chroma_key": "#00FF00",
+  "fallback_chroma_key": "#FF00FF",
+  "qa": {
+    "overlap_check_passed": true,
+    "violations": []
+  },
+  "sprites": [
+    {
+      "id": "level2_wood_fence",
+      "name": "Wood Fence",
+      "level": "level_2_suburban_after_dark",
+      "interaction_type": [
+        "blocking"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        226,
+        244
+      ],
+      "bbox_px": [
+        16,
+        16,
+        421,
+        228
+      ],
+      "usage_notes": "Privacy fence section; blocks horizontal movement, top not standable.",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 1.2,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level2_mailbox",
+      "name": "Mailbox",
+      "level": "level_2_suburban_after_dark",
+      "interaction_type": [
+        "standable",
+        "blocking"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        502,
+        225
+      ],
+      "bbox_px": [
+        453,
+        16,
+        98,
+        209
+      ],
+      "usage_notes": "Mailbox on post; top surface standable per reference sheet, post blocks movement.",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 1.1,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level2_trash_bin",
+      "name": "Trash Bin",
+      "level": "level_2_suburban_after_dark",
+      "interaction_type": [
+        "standable",
+        "blocking"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        626,
+        206
+      ],
+      "bbox_px": [
+        567,
+        16,
+        118,
+        190
+      ],
+      "usage_notes": "Green wheeled bin; lid/top standable per reference sheet, body blocks movement.",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 1.0,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level2_recycling_bin",
+      "name": "Recycling Bin",
+      "level": "level_2_suburban_after_dark",
+      "interaction_type": [
+        "blocking"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        759,
+        206
+      ],
+      "bbox_px": [
+        701,
+        16,
+        117,
+        190
+      ],
+      "usage_notes": "Blue wheeled bin marked breakable on source sheet; blocks movement, intended destructible in gameplay.",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 1.0,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level2_chain_link_fence",
+      "name": "Chain Link Fence",
+      "level": "level_2_suburban_after_dark",
+      "interaction_type": [
+        "blocking"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        982,
+        206
+      ],
+      "bbox_px": [
+        834,
+        16,
+        296,
+        190
+      ],
+      "usage_notes": "Chain-link fence section; blocks horizontal movement.",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 1.0,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level2_box_stack",
+      "name": "Box Stack",
+      "level": "level_2_suburban_after_dark",
+      "interaction_type": [
+        "blocking"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        1240,
+        206
+      ],
+      "bbox_px": [
+        1146,
+        16,
+        189,
+        190
+      ],
+      "usage_notes": "Composite stack of four boxes kept as single sprite per contract; breakable obstacle per source sheet.",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 1.0,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level2_doghouse",
+      "name": "Doghouse",
+      "level": "level_2_suburban_after_dark",
+      "interaction_type": [
+        "standable",
+        "blocking"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        1441,
+        187
+      ],
+      "bbox_px": [
+        1351,
+        16,
+        180,
+        171
+      ],
+      "usage_notes": "Buddy doghouse; roof standable per reference sheet, structure blocks movement.",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 0.9,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level2_lawn_chair",
+      "name": "Lawn Chair",
+      "level": "level_2_suburban_after_dark",
+      "interaction_type": [
+        "standable"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        1631,
+        177
+      ],
+      "bbox_px": [
+        1547,
+        16,
+        168,
+        161
+      ],
+      "usage_notes": "Adirondack chair with cup at base; seat/arms standable per reference sheet.",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 0.85,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level2_hedge_clump",
+      "name": "Hedge Clump",
+      "level": "level_2_suburban_after_dark",
+      "interaction_type": [
+        "standable",
+        "blocking"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        1837,
+        168
+      ],
+      "bbox_px": [
+        1731,
+        16,
+        213,
+        152
+      ],
+      "usage_notes": "Square-trimmed hedge on stone border; flat top standable per reference sheet.",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 0.8,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level2_garbage_bag_cluster",
+      "name": "Garbage Bag Cluster",
+      "level": "level_2_suburban_after_dark",
+      "interaction_type": [
+        "blocking"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        2074,
+        149
+      ],
+      "bbox_px": [
+        1960,
+        16,
+        228,
+        133
+      ],
+      "usage_notes": "Composite sprite (bag + box + crushed can) per contract; ground obstacle, blocks movement.",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 0.7,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level2_toy_car",
+      "name": "Toy Car",
+      "level": "level_2_suburban_after_dark",
+      "interaction_type": [
+        "standable",
+        "blocking"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        2249,
+        139
+      ],
+      "bbox_px": [
+        2204,
+        16,
+        90,
+        123
+      ],
+      "usage_notes": "Cozy coupe toy car; roof standable per reference sheet, body blocks movement.",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 0.65,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level2_cooler",
+      "name": "Cooler",
+      "level": "level_2_suburban_after_dark",
+      "interaction_type": [
+        "blocking"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        2368,
+        120
+      ],
+      "bbox_px": [
+        2310,
+        16,
+        116,
+        104
+      ],
+      "usage_notes": "Open cooler marked breakable on source sheet; blocks movement at ground level.",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 0.55,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level2_kiddie_pool",
+      "name": "Kiddie Pool",
+      "level": "level_2_suburban_after_dark",
+      "interaction_type": [
+        "blocking"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        2500,
+        82
+      ],
+      "bbox_px": [
+        2442,
+        16,
+        117,
+        66
+      ],
+      "usage_notes": "Inflatable pool obstacle with ball and duck; blocks movement, shallow water hazard implied.",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 0.35,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level2_beach_ball",
+      "name": "Beach Ball",
+      "level": "level_2_suburban_after_dark",
+      "interaction_type": [
+        "non_interactive"
+      ],
+      "render_layer": "foreground",
+      "anchor_px": [
+        2607,
+        82
+      ],
+      "bbox_px": [
+        2575,
+        16,
+        64,
+        66
+      ],
+      "usage_notes": "Inflatable ball marked obstacle on source sheet; kept non-interactive decorative unless gameplay needs bounce.",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 0.35,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level2_sprinkler",
+      "name": "Sprinkler",
+      "level": "level_2_suburban_after_dark",
+      "interaction_type": [
+        "blocking"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        2706,
+        63
+      ],
+      "bbox_px": [
+        2655,
+        16,
+        102,
+        47
+      ],
+      "usage_notes": "Active oscillating sprinkler marked hazard on source sheet; blocks movement, spray is gameplay hazard.",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 0.25,
+        "global_pixels_per_meter": 189.9
+      }
+    },
+    {
+      "id": "level2_stepping_stones",
+      "name": "Stepping Stones",
+      "level": "level_2_suburban_after_dark",
+      "interaction_type": [
+        "standable"
+      ],
+      "render_layer": "midground",
+      "anchor_px": [
+        2817,
+        39
+      ],
+      "bbox_px": [
+        2773,
+        16,
+        89,
+        23
+      ],
+      "usage_notes": "Composite path of four stones kept as single sprite per contract; each stone surface standable.",
+      "chroma_key": "#00FF00",
+      "scale_reference": {
+        "real_world_height_m": 0.12,
+        "global_pixels_per_meter": 189.9
+      }
+    }
+  ]
+}
