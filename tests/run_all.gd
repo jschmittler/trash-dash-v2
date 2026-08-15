@@ -10,6 +10,13 @@ const LIVE_SCENE_TRANSITION_SERVICE_CASE: Script = preload(
 	"res://tests/unit/test_live_scene_transition_service.gd"
 )
 const INPUT_REMAP_SERVICE_CASE: Script = preload("res://tests/unit/test_input_remap_service.gd")
+const RENDERING_LAYER_CASE: Script = preload("res://tests/unit/test_rendering_layer.gd")
+const RENDER_OBJECT_REF_VALIDATOR_CASE: Script = preload(
+	"res://tests/unit/test_render_object_ref_validator.gd"
+)
+const COLLISION_GEOMETRY_VALIDATOR_CASE: Script = preload(
+	"res://tests/unit/test_collision_geometry_validator.gd"
+)
 const ASSET_REF_VALIDATOR_CASE: Script = preload("res://tests/unit/test_asset_ref_validator.gd")
 const ANIMATION_MANIFEST_VALIDATOR_CASE: Script = preload(
 	"res://tests/unit/test_animation_manifest_validator.gd"
@@ -60,6 +67,9 @@ func _selected_scripts() -> Array[Script]:
 		FIXED_STEP_CLOCK_CASE,
 		LIVE_SCENE_TRANSITION_SERVICE_CASE,
 		INPUT_REMAP_SERVICE_CASE,
+		RENDERING_LAYER_CASE,
+		RENDER_OBJECT_REF_VALIDATOR_CASE,
+		COLLISION_GEOMETRY_VALIDATOR_CASE,
 		ASSET_REF_VALIDATOR_CASE,
 		ANIMATION_MANIFEST_VALIDATOR_CASE,
 		ANIMATION_STATE_REF_VALIDATOR_CASE,

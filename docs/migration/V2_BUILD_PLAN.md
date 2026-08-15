@@ -107,7 +107,7 @@ configuration at repository root.
 - [ ] Encode stable, versioned schemas for assets, animations, levels,
   encounters, rendering layers, collision, and save/settings data.
   `RenderingLayer` (`src/core/schema/rendering_layer.gd`), `RenderObjectRef`
-  (`src/core/schema/render_object_ref.gd`),   `CollisionGeometry`
+  (`src/core/schema/render_object_ref.gd`), `CollisionGeometry`
   (`src/core/schema/collision_geometry.gd`), `AssetRef`
   (`src/core/schema/asset_ref.gd`), `AnimationManifest`
   (`src/core/schema/animation_manifest.gd`), and `AnimationStateRef`
