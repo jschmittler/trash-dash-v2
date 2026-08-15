@@ -123,6 +123,8 @@ while IFS= read -r production_file; do
 		| src/core/input/input_map_adapter.gd \
 		| src/core/input/input_map_contract.gd \
 		| src/core/input/input_remap_service.gd \
+		| src/core/schema/encounter.gd \
+		| src/core/schema/encounter_validator.gd \
 		| src/core/services/audio_service.gd \
 		| src/core/services/live_scene_transition_service.gd \
 		| src/core/services/runtime_state_service.gd \

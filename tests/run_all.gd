@@ -10,6 +10,7 @@ const LIVE_SCENE_TRANSITION_SERVICE_CASE: Script = preload(
 	"res://tests/unit/test_live_scene_transition_service.gd"
 )
 const INPUT_REMAP_SERVICE_CASE: Script = preload("res://tests/unit/test_input_remap_service.gd")
+const ENCOUNTER_VALIDATOR_CASE: Script = preload("res://tests/unit/test_encounter_validator.gd")
 const BOOTSTRAP_SCENE_CASE: Script = preload("res://tests/gameplay/test_bootstrap_scene.gd")
 const VISUAL_CONTRACT_CASE: Script = preload("res://tests/visual/test_visual_contract.gd")
 const RUNNER_PROBE_CASE: Script = preload("res://tests/support/runner_probe_case.gd")
@@ -53,6 +54,7 @@ func _selected_scripts() -> Array[Script]:
 		FIXED_STEP_CLOCK_CASE,
 		LIVE_SCENE_TRANSITION_SERVICE_CASE,
 		INPUT_REMAP_SERVICE_CASE,
+		ENCOUNTER_VALIDATOR_CASE,
 		BOOTSTRAP_SCENE_CASE,
 		VISUAL_CONTRACT_CASE,
 	]
