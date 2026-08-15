@@ -5,22 +5,40 @@ const FoundationStatusType := preload("res://src/core/bootstrap/foundation_statu
 const DisplayPolicyType := preload("res://src/core/display/display_policy.gd")
 const InputMapContractType := preload("res://src/core/input/input_map_contract.gd")
 
+
 func test_content_rects_are_centered() -> void:
-	assert_equal(DisplayPolicyType.content_rect(Vector2i(1280, 720)), Rect2i(0, 0, 1280, 720), "16:9")
-	assert_equal(DisplayPolicyType.content_rect(Vector2i(1440, 900)), Rect2i(0, 45, 1440, 810), "1440x900")
-	assert_equal(DisplayPolicyType.content_rect(Vector2i(1280, 800)), Rect2i(0, 40, 1280, 720), "1280x800")
-	assert_equal(DisplayPolicyType.content_rect(Vector2i(390, 844)), Rect2i(0, 312, 390, 219), "portrait desktop")
+	assert_equal(
+		DisplayPolicyType.content_rect(Vector2i(1280, 720)), Rect2i(0, 0, 1280, 720), "16:9"
+	)
+	assert_equal(
+		DisplayPolicyType.content_rect(Vector2i(1440, 900)), Rect2i(0, 45, 1440, 810), "1440x900"
+	)
+	assert_equal(
+		DisplayPolicyType.content_rect(Vector2i(1280, 800)), Rect2i(0, 40, 1280, 720), "1280x800"
+	)
+	assert_equal(
+		DisplayPolicyType.content_rect(Vector2i(390, 844)),
+		Rect2i(0, 312, 390, 219),
+		"portrait desktop"
+	)
 	assert_equal(DisplayPolicyType.content_rect(Vector2i.ZERO), Rect2i(), "zero")
+
 
 func test_content_rects_cover_small_and_odd_sizes() -> void:
 	assert_equal(DisplayPolicyType.content_rect(Vector2i(1, 1)), Rect2i(0, 0, 1, 0), "one pixel")
-	assert_equal(DisplayPolicyType.content_rect(Vector2i(1001, 600)), Rect2i(0, 18, 1001, 563), "odd wide")
-	assert_equal(DisplayPolicyType.content_rect(Vector2i(599, 1001)), Rect2i(0, 332, 599, 336), "odd tall")
+	assert_equal(
+		DisplayPolicyType.content_rect(Vector2i(1001, 600)), Rect2i(0, 18, 1001, 563), "odd wide"
+	)
+	assert_equal(
+		DisplayPolicyType.content_rect(Vector2i(599, 1001)), Rect2i(0, 332, 599, 336), "odd tall"
+	)
+
 
 func test_desktop_policy_has_no_mobile_ui() -> void:
 	assert_equal(DisplayPolicyType.is_mobile_ui_enabled(&"macOS", false), false, "macOS")
 	assert_equal(DisplayPolicyType.is_mobile_ui_enabled(&"Android", false), false, "feature absent")
 	assert_equal(DisplayPolicyType.is_mobile_ui_enabled(&"Android", true), true, "future query")
+
 
 func test_identity_and_status_are_immutable_values() -> void:
 	var identity := BuildIdentityType.development()
@@ -35,6 +53,7 @@ func test_identity_and_status_are_immutable_values() -> void:
 	var copied_messages := status.messages()
 	copied_messages.append("mutated output")
 	assert_equal(status.messages(), PackedStringArray(["first"]), "copy output")
+
 
 func test_ready_and_error_status_factories_are_exact() -> void:
 	var identity := BuildIdentityType.development()
@@ -52,8 +71,10 @@ func test_ready_and_error_status_factories_are_exact() -> void:
 	assert_equal(error.identity(), identity, "error identity")
 	assert_equal(error.messages(), PackedStringArray(["problem"]), "error messages")
 
+
 func test_current_input_map_is_valid() -> void:
 	assert_equal(InputMapContractType.validate_current(), PackedStringArray(), "input map")
+
 
 func test_pure_input_validation_accepts_only_exact_key_descriptors() -> void:
 	assert_equal(
@@ -62,6 +83,7 @@ func test_pure_input_validation_accepts_only_exact_key_descriptors() -> void:
 		"approved event descriptors"
 	)
 
+
 func test_input_validation_reports_ordered_missing_and_mismatched_actions() -> void:
 	var actual := {
 		&"move_left": [_key_event(KEY_A), _key_event(KEY_RIGHT)],
@@ -69,15 +91,18 @@ func test_input_validation_reports_ordered_missing_and_mismatched_actions() -> v
 	}
 	assert_equal(
 		InputMapContractType.validate_actions(actual),
-		PackedStringArray([
-			"input defaults mismatch: move_left",
-			"missing input action: move_right",
-			"missing input action: dash",
-			"missing input action: action",
-			"missing input action: pause",
-		]),
+		PackedStringArray(
+			[
+				"input defaults mismatch: move_left",
+				"missing input action: move_right",
+				"missing input action: dash",
+				"missing input action: action",
+				"missing input action: pause",
+			]
+		),
 		"input validation messages"
 	)
+
 
 func test_input_validation_rejects_non_key_events() -> void:
 	var joypad_actions := _approved_input_events()
@@ -98,6 +123,7 @@ func test_input_validation_rejects_non_key_events() -> void:
 		PackedStringArray(["input defaults mismatch: action"]),
 		"mouse event"
 	)
+
 
 func test_input_validation_rejects_modifiers_echo_and_device_overrides() -> void:
 	var modified_actions := _approved_input_events()
@@ -137,6 +163,7 @@ func test_input_validation_rejects_modifiers_echo_and_device_overrides() -> void
 		"command-or-control autoremap"
 	)
 
+
 func test_input_validation_explicitly_checks_command_or_control_autoremap() -> void:
 	var input_contract_source := FileAccess.get_file_as_string(
 		"res://src/core/input/input_map_contract.gd"
@@ -145,6 +172,7 @@ func test_input_validation_explicitly_checks_command_or_control_autoremap() -> v
 		input_contract_source.contains("not event.command_or_control_autoremap"),
 		"production matcher owns the autoremap descriptor field"
 	)
+
 
 func _approved_input_events() -> Dictionary:
 	return {
@@ -155,6 +183,7 @@ func _approved_input_events() -> Dictionary:
 		&"action": [_key_event(KEY_E)],
 		&"pause": [_key_event(KEY_ESCAPE)],
 	}
+
 
 func _key_event(physical_keycode: Key) -> InputEventKey:
 	var event := InputEventKey.new()

@@ -16,15 +16,15 @@ var _configured_settings: ProjectSettingsAdapterType
 var _configured_identity: BuildIdentityType
 var _status: FoundationStatusType
 
+
 func configure(
-	registry: ServiceRegistryType,
-	settings: ProjectSettingsAdapterType,
-	identity: BuildIdentityType
+	registry: ServiceRegistryType, settings: ProjectSettingsAdapterType, identity: BuildIdentityType
 ) -> void:
 	assert(not is_inside_tree(), "Bootstrap dependencies must be configured before tree entry")
 	_configured_registry = registry
 	_configured_settings = settings
 	_configured_identity = identity
+
 
 func _ready() -> void:
 	var registry := (
@@ -37,9 +37,7 @@ func _ready() -> void:
 		_configured_identity if _configured_identity != null else BuildIdentityType.development()
 	)
 	var errors := StartupValidatorType.validate(
-		settings,
-		InputMapContractType.validate_current(),
-		registry
+		settings, InputMapContractType.validate_current(), registry
 	)
 	_status = (
 		FoundationStatusType.ready(identity)
@@ -47,6 +45,7 @@ func _ready() -> void:
 		else FoundationStatusType.error(identity, errors)
 	)
 	_view.present(_status)
+
 
 func foundation_state() -> FoundationStatusType.State:
 	return _status.state()

@@ -1,6 +1,12 @@
 # macOS Foundation Development Guide
 
-This repository currently provides a macOS-only Godot foundation shell. Use Godot `4.7.1.stable.official.a13da4feb` Standard with matching macOS export templates, plus Git, ripgrep, `unzip`, `lipo`, and `shasum`.
+This repository currently provides a macOS-only Godot foundation shell. Use Godot `4.7.1.stable.official.a13da4feb` Standard with matching macOS export templates, plus Git, ripgrep, `unzip`, `lipo`, `shasum`, and `gdtoolkit` (`gdformat`/`gdlint`) for the format/lint stage. Install the exact pinned toolkit version with:
+
+```bash
+python3 -m pip install --user --break-system-packages gdtoolkit==4.5.0
+```
+
+`gdformat` and `gdlint` are configured by the repository-root `.gdlintrc`. The scripts use `gdformat`/`gdlint` by default; override with `TRASH_DASH_GDFORMAT_BIN`/`TRASH_DASH_GDLINT_BIN` to select an explicit executable for one command.
 
 The scripts use `godot` by default. To select the accepted executable explicitly for one command:
 
@@ -67,7 +73,7 @@ The export command reports the clean source revision, package path, byte size, S
 tools/verify/verify_local.sh
 ```
 
-The aggregate labels are `Policy`, `Exact Godot version and headless import`, `Tests`, `Headless editor smoke`, `Fresh unsigned macOS export`, and `Bounded package process`. The policy stage includes deterministic shell-contract fixtures. The test stage first proves the runner's intentional failure path exits `1` with one deterministic message, then runs the real suite. Every Godot import, probe, test, editor, export, and package-smoke log is checked by the same status-aware diagnostic gate; a zero-exit stage still fails when it emits a real Godot warning or error, while the normal Godot banner and informational renderer lines remain allowed. A successful run ends with `Local verification: PASS`; any failed stage stops the sequence and returns nonzero. Its validated temporary directory is removed automatically. The package is launched through a locale-stable signal-reset wrapper because non-interactive shells ignore `SIGINT` for asynchronous children; the wrapper immediately becomes the package process. The verifier sends `SIGINT`, polls for a short bounded grace, then conditionally sends exact-PID `SIGTERM` and `SIGKILL` fallbacks. Any fallback is a verification failure. A child is reaped only after exact-PID absence is confirmed; if the bounded post-`SIGKILL` poll still cannot confirm absence, the verifier returns failure without calling blocking `wait`. A passing run requires the PID absent after signal-derived wait status `130`. Aggregate `INT`/`TERM` traps use the same conditional cleanup before deleting the validated directory.
+The aggregate labels are `Policy`, `Exact Godot version and headless import`, `Format and lint`, `Tests`, `Headless editor smoke`, `Fresh unsigned macOS export`, and `Bounded package process`. The policy stage includes deterministic shell-contract fixtures. The format/lint stage runs `gdformat --check` and `gdlint` over every `src/`/`tests/` GDScript file. The test stage runs unit, gameplay, and visual-contract GDScript suites together; it first proves the runner's intentional failure path exits `1` with one deterministic message, then runs the real suite. Every Godot import, probe, test, editor, export, and package-smoke log is checked by the same status-aware diagnostic gate; a zero-exit stage still fails when it emits a real Godot warning or error, while the normal Godot banner and informational renderer lines remain allowed. A successful run ends with `Local verification: PASS`; any failed stage stops the sequence and returns nonzero. Its validated temporary directory is removed automatically. The package is launched through a locale-stable signal-reset wrapper because non-interactive shells ignore `SIGINT` for asynchronous children; the wrapper immediately becomes the package process. The verifier sends `SIGINT`, polls for a short bounded grace, then conditionally sends exact-PID `SIGTERM` and `SIGKILL` fallbacks. Any fallback is a verification failure. A child is reaped only after exact-PID absence is confirmed; if the bounded post-`SIGKILL` poll still cannot confirm absence, the verifier returns failure without calling blocking `wait`. A passing run requires the PID absent after signal-derived wait status `130`. Aggregate `INT`/`TERM` traps use the same conditional cleanup before deleting the validated directory.
 
 The diagnostic shell displays exactly five neutral labels:
 

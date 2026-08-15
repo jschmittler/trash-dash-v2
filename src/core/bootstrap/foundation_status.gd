@@ -18,6 +18,7 @@ var _renderer: String
 var _content: String
 var _messages: PackedStringArray
 
+
 func _init(
 	state_value: State,
 	identity_value: BuildIdentityType,
@@ -38,6 +39,7 @@ func _init(
 	_content = content_value
 	_messages = messages_value.duplicate()
 
+
 static func ready(identity: BuildIdentityType) -> FoundationStatusType:
 	return FoundationStatusType.new(
 		State.FOUNDATION_READY,
@@ -49,6 +51,7 @@ static func ready(identity: BuildIdentityType) -> FoundationStatusType:
 		"prototype content not loaded",
 		PackedStringArray()
 	)
+
 
 static func error(identity: BuildIdentityType, messages: PackedStringArray) -> FoundationStatusType:
 	return FoundationStatusType.new(
@@ -62,26 +65,34 @@ static func error(identity: BuildIdentityType, messages: PackedStringArray) -> F
 		messages
 	)
 
+
 func state() -> State:
 	return _state
+
 
 func identity() -> BuildIdentityType:
 	return _identity
 
+
 func title() -> String:
 	return _title
+
 
 func subtitle() -> String:
 	return _subtitle
 
+
 func logical_size() -> Vector2i:
 	return _logical_size
+
 
 func renderer() -> String:
 	return _renderer
 
+
 func content() -> String:
 	return _content
+
 
 func messages() -> PackedStringArray:
 	return _messages.duplicate()

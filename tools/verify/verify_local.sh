@@ -87,10 +87,28 @@ run_godot_stage \
 	--editor \
 	--quit
 
-echo "[3/6] Tests"
+echo "[3/7] Format and lint"
+gdformat_bin="${TRASH_DASH_GDFORMAT_BIN:-gdformat}"
+gdlint_bin="${TRASH_DASH_GDLINT_BIN:-gdlint}"
+if ! command -v "$gdformat_bin" >/dev/null 2>&1; then
+	printf 'gdformat executable was not found: %s\n' "$gdformat_bin" >&2
+	exit 1
+fi
+if ! command -v "$gdlint_bin" >/dev/null 2>&1; then
+	printf 'gdlint executable was not found: %s\n' "$gdlint_bin" >&2
+	exit 1
+fi
+gdscript_files=()
+while IFS= read -r gdscript_file; do
+	gdscript_files+=("$gdscript_file")
+done < <(find "$repo_root/src" "$repo_root/tests" -name "*.gd" | sort)
+"$gdformat_bin" --check "${gdscript_files[@]}"
+"$gdlint_bin" "${gdscript_files[@]}"
+
+echo "[4/7] Tests"
 TRASH_DASH_GODOT_BIN="$godot_bin" "$script_dir/run_tests.sh"
 
-echo "[4/6] Headless editor smoke"
+echo "[5/7] Headless editor smoke"
 run_godot_stage \
 	"$repo_root" \
 	"headless editor smoke" \
@@ -101,11 +119,11 @@ run_godot_stage \
 	--editor \
 	--quit
 
-echo "[5/6] Fresh unsigned macOS export"
+echo "[6/7] Fresh unsigned macOS export"
 export_dir="$temp_dir/export"
 TRASH_DASH_GODOT_BIN="$godot_bin" "$script_dir/export_macos.sh" "$export_dir"
 
-echo "[6/6] Bounded package process"
+echo "[7/7] Bounded package process"
 executable="$export_dir/extracted/Trash Dash 2.0.app/Contents/MacOS/Trash Dash 2.0"
 prepare_godot_log_files "$repo_root" "package-smoke"
 package_engine_log="$godot_log_engine_file"

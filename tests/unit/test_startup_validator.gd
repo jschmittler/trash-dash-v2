@@ -10,11 +10,14 @@ const EXPECTED_ERRORS: Array[String] = [
 	"stretch aspect must be keep",
 	"renderer must be gl_compatibility",
 	"default texture filtering must be nearest",
+	"physics tick rate must be 60",
 	"missing input action: jump",
 	"missing service: audio",
 ]
 
-class FakeSettingsAdapter extends RefCounted:
+
+class FakeSettingsAdapter:
+	extends RefCounted
 	var _values: Dictionary
 
 	func _init(values: Dictionary) -> void:
@@ -23,12 +26,16 @@ class FakeSettingsAdapter extends RefCounted:
 	func get_value(key: StringName) -> Variant:
 		return _values.get(key)
 
+
 func test_valid_contract_has_no_errors() -> void:
 	assert_equal(
-		StartupValidatorType.validate(_valid_settings(), PackedStringArray(), ServiceRegistryType.unavailable()),
+		StartupValidatorType.validate(
+			_valid_settings(), PackedStringArray(), ServiceRegistryType.unavailable()
+		),
 		PackedStringArray(),
 		"valid"
 	)
+
 
 func test_failures_are_ordered() -> void:
 	assert_equal(
@@ -41,25 +48,39 @@ func test_failures_are_ordered() -> void:
 		"order"
 	)
 
+
 func _valid_settings() -> FakeSettingsAdapter:
-	return FakeSettingsAdapter.new({
-		&"display/window/size/viewport_width": 960,
-		&"display/window/size/viewport_height": 540,
-		&"display/window/stretch/mode": "canvas_items",
-		&"display/window/stretch/aspect": "keep",
-		&"rendering/renderer/rendering_method": "gl_compatibility",
-		&"rendering/textures/canvas_textures/default_texture_filter": 0,
-	})
+	return (
+		FakeSettingsAdapter
+		. new(
+			{
+				&"display/window/size/viewport_width": 960,
+				&"display/window/size/viewport_height": 540,
+				&"display/window/stretch/mode": "canvas_items",
+				&"display/window/stretch/aspect": "keep",
+				&"rendering/renderer/rendering_method": "gl_compatibility",
+				&"rendering/textures/canvas_textures/default_texture_filter": 0,
+				&"physics/common/physics_ticks_per_second": 60,
+			}
+		)
+	)
+
 
 func _invalid_settings() -> FakeSettingsAdapter:
-	return FakeSettingsAdapter.new({
-		&"display/window/size/viewport_width": 961,
-		&"display/window/size/viewport_height": 541,
-		&"display/window/stretch/mode": "viewport",
-		&"display/window/stretch/aspect": "expand",
-		&"rendering/renderer/rendering_method": "mobile",
-		&"rendering/textures/canvas_textures/default_texture_filter": 1,
-	})
+	return (
+		FakeSettingsAdapter
+		. new(
+			{
+				&"display/window/size/viewport_width": 961,
+				&"display/window/size/viewport_height": 541,
+				&"display/window/stretch/mode": "viewport",
+				&"display/window/stretch/aspect": "expand",
+				&"rendering/renderer/rendering_method": "mobile",
+				&"rendering/textures/canvas_textures/default_texture_filter": 1,
+			}
+		)
+	)
+
 
 func _incomplete_registry() -> ServiceRegistryType:
 	var complete_registry := ServiceRegistryType.unavailable()

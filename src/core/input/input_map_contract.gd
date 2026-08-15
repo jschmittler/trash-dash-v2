@@ -19,6 +19,7 @@ const REQUIRED_ACTIONS: Dictionary = {
 	&"pause": [KEY_ESCAPE],
 }
 
+
 static func validate_current() -> PackedStringArray:
 	var actual: Dictionary = {}
 	for action: StringName in ORDERED_ACTIONS:
@@ -26,6 +27,7 @@ static func validate_current() -> PackedStringArray:
 			continue
 		actual[action] = InputMap.action_get_events(action)
 	return validate_actions(actual)
+
 
 static func validate_actions(actual: Dictionary) -> PackedStringArray:
 	var messages := PackedStringArray()
@@ -37,6 +39,7 @@ static func validate_actions(actual: Dictionary) -> PackedStringArray:
 			messages.append("input defaults mismatch: %s" % action)
 	return messages
 
+
 static func _events_match_exactly(actual_events: Variant, required_keys: Array) -> bool:
 	if not actual_events is Array or actual_events.size() != required_keys.size():
 		return false
@@ -47,6 +50,7 @@ static func _events_match_exactly(actual_events: Variant, required_keys: Array) 
 		if not _key_event_matches(event as InputEventKey, required_keys[event_index]):
 			return false
 	return true
+
 
 static func _key_event_matches(event: InputEventKey, required_key: Key) -> bool:
 	return (

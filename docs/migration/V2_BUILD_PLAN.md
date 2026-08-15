@@ -64,26 +64,40 @@ configuration at repository root.
 
 - [x] Establish the production Godot project from accepted contracts, without
   copying spike gameplay, generated fixtures, or evidence code.
-- [ ] Define the fixed-step clock, scene lifecycle, dependency boundaries,
+- [x] Define the fixed-step clock, scene lifecycle, dependency boundaries,
   structured error handling, and development diagnostics. Dependency
   boundaries (`ServiceRegistry` + unavailable-service fallbacks), structured
   startup error handling (`StartupValidator`/`FoundationStatus`), and
-  development diagnostics (`bootstrap_view`) are implemented. A fixed-step
-  clock is not yet implemented, and `scene_transition_service.gd` /
-  `save_settings_service.gd` remain unimplemented stubs
-  (`return ERR_UNAVAILABLE`), so scene lifecycle is not yet real.
-- [ ] Implement the fixed 960×540/16:9 macOS viewport and desktop-only UI
+  development diagnostics (`bootstrap_view`) were already implemented.
+  `FixedStepClock` (`src/core/time/fixed_step_clock.gd`) defines a
+  deterministic accumulator clock, pinned to an explicit
+  `physics/common/physics_ticks_per_second=60` and validated by
+  `StartupValidator`. `LiveSceneTransitionService`
+  (`src/core/services/live_scene_transition_service.gd`) implements a real,
+  container-scoped scene swap (`change_scene`/`current_scene`) validated
+  against `ResourceLoader`; the `Unavailable*` DI fallback pattern is
+  preserved unchanged. `save_settings_service.gd` remains an unimplemented
+  stub, deferred to Task 5's persistence work.
+- [x] Implement the fixed 960×540/16:9 macOS viewport and desktop-only UI
   policy with remappable physical-keyboard actions. The fixed viewport,
   letterboxing (`DisplayPolicy`), and desktop-only UI gating
-  (`is_mobile_ui_enabled`) are implemented. `InputMapContract` only validates
-  a fixed default keymap; there is no remapping mechanism yet.
-- [ ] Add macOS boot/smoke tests and CI commands for import, format/lint, unit,
-  gameplay, visual-contract, and unsigned development builds. Import, unit,
-  gameplay, and unsigned-build stages exist in `verify_local.sh`. No
-  format/lint stage or visual-contract stage exists yet.
+  (`is_mobile_ui_enabled`) were already implemented. `InputRemapService`
+  (`src/core/input/input_remap_service.gd`) now adds real single-key rebind
+  capability with conflict rejection and reset-to-defaults, applied through
+  the new `InputMapAdapter` seam; persistence of a chosen remap to disk is
+  deferred to Task 5.
+- [x] Add macOS boot/smoke tests and CI commands for import, format/lint, unit,
+  gameplay, visual-contract, and unsigned development builds. Import,
+  unsigned-build, and package-smoke stages already existed. `verify_local.sh`
+  now runs a `gdformat --check`/`gdlint` stage (config in `.gdlintrc`) over
+  every `src/`/`tests/` script, and `tests/visual/test_visual_contract.gd`
+  adds an explicit visual-contract suite (content-rect and diagnostic
+  typography invariants across every required target window size) alongside
+  the existing unit/gameplay suites in the `Tests` stage.
 - [x] Run all commands from a clean checkout and record exact tool versions.
   Documented in `docs/development/MACOS_FOUNDATION.md`; scripts enforce the
-  exact accepted Godot build.
+  exact accepted Godot build. `gdtoolkit==4.5.0` is now pinned and documented
+  there too.
 
 ### Task 3: Implement schema-first content contracts
 

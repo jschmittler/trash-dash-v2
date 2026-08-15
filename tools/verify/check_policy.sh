@@ -120,8 +120,11 @@ while IFS= read -r production_file; do
 		| src/core/bootstrap/startup_validator.gd \
 		| src/core/build/build_identity.gd \
 		| src/core/display/display_policy.gd \
+		| src/core/input/input_map_adapter.gd \
 		| src/core/input/input_map_contract.gd \
+		| src/core/input/input_remap_service.gd \
 		| src/core/services/audio_service.gd \
+		| src/core/services/live_scene_transition_service.gd \
 		| src/core/services/runtime_state_service.gd \
 		| src/core/services/save_settings_service.gd \
 		| src/core/services/scene_transition_service.gd \
@@ -131,6 +134,7 @@ while IFS= read -r production_file; do
 		| src/core/services/unavailable_runtime_state_service.gd \
 		| src/core/services/unavailable_save_settings_service.gd \
 		| src/core/services/unavailable_scene_transition_service.gd \
+		| src/core/time/fixed_step_clock.gd \
 		| src/gameplay/.gitkeep \
 		| src/levels/.gitkeep \
 		| src/rendering/.gitkeep \
