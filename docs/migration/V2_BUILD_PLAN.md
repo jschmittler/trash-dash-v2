@@ -62,15 +62,28 @@ report; disposable implementation remains outside `main`.
 `src/world`, `src/actors`, `src/gameplay`, and `src/ui`, plus engine
 configuration at repository root.
 
-- [ ] Establish the production Godot project from accepted contracts, without
+- [x] Establish the production Godot project from accepted contracts, without
   copying spike gameplay, generated fixtures, or evidence code.
 - [ ] Define the fixed-step clock, scene lifecycle, dependency boundaries,
-  structured error handling, and development diagnostics.
+  structured error handling, and development diagnostics. Dependency
+  boundaries (`ServiceRegistry` + unavailable-service fallbacks), structured
+  startup error handling (`StartupValidator`/`FoundationStatus`), and
+  development diagnostics (`bootstrap_view`) are implemented. A fixed-step
+  clock is not yet implemented, and `scene_transition_service.gd` /
+  `save_settings_service.gd` remain unimplemented stubs
+  (`return ERR_UNAVAILABLE`), so scene lifecycle is not yet real.
 - [ ] Implement the fixed 960×540/16:9 macOS viewport and desktop-only UI
-  policy with remappable physical-keyboard actions.
+  policy with remappable physical-keyboard actions. The fixed viewport,
+  letterboxing (`DisplayPolicy`), and desktop-only UI gating
+  (`is_mobile_ui_enabled`) are implemented. `InputMapContract` only validates
+  a fixed default keymap; there is no remapping mechanism yet.
 - [ ] Add macOS boot/smoke tests and CI commands for import, format/lint, unit,
-  gameplay, visual-contract, and unsigned development builds.
-- [ ] Run all commands from a clean checkout and record exact tool versions.
+  gameplay, visual-contract, and unsigned development builds. Import, unit,
+  gameplay, and unsigned-build stages exist in `verify_local.sh`. No
+  format/lint stage or visual-contract stage exists yet.
+- [x] Run all commands from a clean checkout and record exact tool versions.
+  Documented in `docs/development/MACOS_FOUNDATION.md`; scripts enforce the
+  exact accepted Godot build.
 
 ### Task 3: Implement schema-first content contracts
 
