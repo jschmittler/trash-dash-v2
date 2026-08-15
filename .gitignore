@@ -3,7 +3,9 @@ __pycache__/
 *.py[cod]
 .codex/godot-logs/
 .godot/
+*.import
 .import/
+*.uid
 *.log
 logs/
 *.keystore

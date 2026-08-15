@@ -1,0 +1,53 @@
+---
+description: Binding contract for converting branded reference sprite sheets into game-import-ready sprite sheets + manifests. Re-read in full before starting any sprite conversion pass.
+alwaysApply: true
+---
+
+# Sprite Sheet Import-Readiness Contract
+
+This is a binding process contract. Follow it exactly and consistently across every level's sprite sheet. Do not silently deviate from any rule below — if a source sheet can't satisfy a rule as-is, flag it explicitly rather than improvising.
+
+## 1. Source Input
+- Each input is one branded reference sheet: numbered/labeled objects, a title, a level name, and a scale reference object (e.g. a character silhouette with a known real-world height, like "1.2m raccoon").
+- Every sheet must include that same kind of scale reference — it anchors cross-level scale normalization. If a sheet is missing one, flag it before proceeding.
+
+## 2. Re-imaging Requirement
+- Redraw each object as a strict **front-facing 2D orthographic projection**: no 3-quarter angle, no forced perspective, no directional cast shadow implying a specific light source (a simple ambient/contact shadow directly under the object is fine).
+- Object sits flush on an implied flat ground line, ready to be placed on a platform/floor in-engine.
+- Preserve the source art style/detail fidelity; only camera projection and framing are normalized.
+
+## 3. Scale Normalization
+- Render all sprites, across **all levels**, at one single fixed global pixels-per-meter ratio: **189.9 px/m** (3× the Trashy-anchored gameplay scale of 63.3 px/m).
+- The gameplay scale anchor remains Trashy (approved character sprite sheet), measured at a native idle-frame height of ~76px representing his canonical 1.2m height (`76 / 1.2 = 63.3 px/m`). Source art is intentionally exported at **3×** that density so the engine can scale props down at import for sharper detail; apply a uniform **0.333… runtime scale** (or equivalent) so props sit correctly next to Trashy in-world.
+- Do not re-derive or drift this value per-level. If a future authoritative character reference changes, update the gameplay anchor (63.3 px/m) here first, then recompute source density (`63.3 × 3 = 189.9 px/m`) and reprocess every existing level sheet.
+- The same object type (e.g. "wooden crate") must be proportionally consistent in size whether it appears in Level 1 or Level 5, and must look correctly proportioned standing next to Trashy once the engine import scale is applied.
+
+## 4. Sheet Packing
+- Sprites are **tight-cropped**: bounding box hugs the visible object, no dead space baked into the image edges.
+- Minimum padding of **16px** between every sprite's bounding box on the sheet — no touching, no overlap. This is a hard gate, not a suggestion.
+- Background is chroma green `#00FF00` — flat and uniform.
+  - Exception: if an object's own artwork requires green (e.g. foliage) such that keying would break it, that specific sprite falls back to chroma magenta `#FF00FF` instead, and this override is recorded in that sprite's `chroma_key` manifest field.
+
+## 5. Manifest (JSON, one per sheet)
+Every sprite on a sheet gets an entry with these required fields:
+
+- `id` — stable identifier, e.g. `level1_mossy_stump`
+- `name` — display name
+- `level` — level id/name this sprite belongs to
+- `interaction_type` — array, one or more of: `standable`, `blocking`, `non_interactive`
+- `render_layer` — `foreground` (always renders in front of player/enemies) or `midground` (player/enemies can pass in front of it)
+- `anchor_px` — `[x, y]` pixel coordinate of the ground-contact point, for precise floor placement
+- `bbox_px` — tight bounding box `[x, y, width, height]` on the sheet
+- `usage_notes` — free-text placement/behavior guidance
+- `chroma_key` — hex color used for that sprite's background; defaults to `#00FF00`, overridden per the exception in section 4 when needed
+
+Composite/multi-item objects (e.g. "Camp Junk Pile" containing a backpack, lantern, and mug) stay as a **single sprite** with one combined interaction profile — do not split them into separate sub-sprites.
+
+## 6. QA Gate
+- Before any sheet is considered import-ready, run an automated bounding-box overlap/touch check across all sprites on that sheet. This is a flat pass/fail check, not a subjective judgment call.
+
+## Non-negotiables (do not deviate without explicit user sign-off)
+- Chroma key defaults to `#00FF00`, fallback `#FF00FF`, only per-sprite when genuinely necessary.
+- Minimum sprite padding: 16px.
+- Global pixels-per-meter scale, fixed at **189.9 px/m** (3× Trashy-anchored gameplay scale), across all levels; engine applies uniform 1/3 import scale for correct in-world proportions.
+- Manifest schema fields above are the minimum required set — additional fields may be added, but none of the required ones may be omitted.

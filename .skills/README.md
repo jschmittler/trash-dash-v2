@@ -13,6 +13,7 @@ These are mandatory project instructions and the only canonical Trash Dash skill
 | Overlap Prevention / Spatial QA | `overlap-prevention/SKILL.md` | Occupied bounds, exclusion regions, clustering, duplicate prevention, minimum spacing, procedural rejection | Multiple objects or spatial relationships are involved | Rendering, Placement, Visual QA |
 | Visual QA | `visual-qa/SKILL.md` | Running-game verification, source/runtime comparison, screenshots, regressions, audit status | After meaningful visual work or during visual diagnosis | All visual skills |
 | Conductor | `conductor/SKILL.md` | Level scoring, loops, boss variants, art/gameplay analysis, continuity, rescore, manifests, audio integration | Music/audio is composed, integrated, audited, or rescored | Visual QA when rendered evidence informs music |
+| Enemy Canon | `enemy-canon/SKILL.md` | Enemy identity, behavior, placement, balancing, and canon-compliance workflow | Creating, modifying, debugging, reviewing, animating, placing, balancing, or implementing enemies, enemy encounters, enemy props, enemy VFX, or enemy collision | Sprite Art, Rendering, Animation, Placement, Overlap, Visual QA |
 | V2 Release Gate | `v2_release_gate/SKILL.md` | Final runtime, contract, provenance, test, and visual acceptance | Before any asset, animation, encounter, level, or audio integration is called complete | Every applicable content skill |
 
 ## Dependency model
