@@ -123,6 +123,12 @@ while IFS= read -r production_file; do
 		| src/core/input/input_map_adapter.gd \
 		| src/core/input/input_map_contract.gd \
 		| src/core/input/input_remap_service.gd \
+		| src/core/schema/animation_manifest.gd \
+		| src/core/schema/animation_manifest_validator.gd \
+		| src/core/schema/animation_state_ref.gd \
+		| src/core/schema/animation_state_ref_validator.gd \
+		| src/core/schema/asset_ref.gd \
+		| src/core/schema/asset_ref_validator.gd \
 		| src/core/schema/collision_geometry.gd \
 		| src/core/schema/collision_geometry_validator.gd \
 		| src/core/schema/render_object_ref.gd \

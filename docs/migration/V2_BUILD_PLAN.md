@@ -107,21 +107,26 @@ configuration at repository root.
 - [ ] Encode stable, versioned schemas for assets, animations, levels,
   encounters, rendering layers, collision, and save/settings data.
   `RenderingLayer` (`src/core/schema/rendering_layer.gd`), `RenderObjectRef`
-  (`src/core/schema/render_object_ref.gd`), and `CollisionGeometry`
-  (`src/core/schema/collision_geometry.gd`) are implemented as the first
-  slice, each with an explicit `schema_version`. Asset, animation, level,
-  encounter, and save/settings schemas remain unimplemented.
+  (`src/core/schema/render_object_ref.gd`), `CollisionGeometry`
+  (`src/core/schema/collision_geometry.gd`), `AssetRef`
+  (`src/core/schema/asset_ref.gd`), `AnimationManifest`
+  (`src/core/schema/animation_manifest.gd`), and `AnimationStateRef`
+  (`src/core/schema/animation_state_ref.gd`) are implemented, each with an
+  explicit `schema_version`. Level, encounter, and save/settings schemas
+  remain unimplemented.
 - [ ] Add fixtures that fail for unapproved paths, archive paths, missing
   supports, nonuniform scale, unknown layers/states, boss contamination, and
-  schema mismatches. Unknown-layer and schema-mismatch fixtures exist for the
-  rendering/collision slice
+  schema mismatches. Covered so far: unknown layers/states
   (`tests/unit/test_render_object_ref_validator.gd`,
-  `tests/unit/test_collision_geometry_validator.gd`); the remaining fixture
-  categories (unapproved/archive paths, missing supports, nonuniform scale,
-  unknown states, boss contamination) are not yet covered.
+  `tests/unit/test_animation_state_ref_validator.gd`), unapproved/archive
+  paths (`tests/unit/test_asset_ref_validator.gd`), nonuniform scale
+  (`tests/unit/test_animation_manifest_validator.gd`), and schema mismatches
+  across every schema implemented so far. Missing-supports and
+  boss-contamination fixtures are deferred to the encounter/level slice.
 - [ ] Implement the minimum validators required to pass each failing fixture.
-  `RenderObjectRefValidator` and `CollisionGeometryValidator` are implemented
-  for the rendering/collision slice; asset, animation, encounter, level, and
+  `RenderObjectRefValidator`, `CollisionGeometryValidator`,
+  `AssetRefValidator`, `AnimationManifestValidator`, and
+  `AnimationStateRefValidator` are implemented. Level, encounter, and
   save/settings validators remain unimplemented.
 - [ ] Add human-readable error reports used by `tools/level-validation` and
   the release gate. Validators return `PackedStringArray` messages in the

@@ -17,6 +17,13 @@ const RENDER_OBJECT_REF_VALIDATOR_CASE: Script = preload(
 const COLLISION_GEOMETRY_VALIDATOR_CASE: Script = preload(
 	"res://tests/unit/test_collision_geometry_validator.gd"
 )
+const ASSET_REF_VALIDATOR_CASE: Script = preload("res://tests/unit/test_asset_ref_validator.gd")
+const ANIMATION_MANIFEST_VALIDATOR_CASE: Script = preload(
+	"res://tests/unit/test_animation_manifest_validator.gd"
+)
+const ANIMATION_STATE_REF_VALIDATOR_CASE: Script = preload(
+	"res://tests/unit/test_animation_state_ref_validator.gd"
+)
 const BOOTSTRAP_SCENE_CASE: Script = preload("res://tests/gameplay/test_bootstrap_scene.gd")
 const VISUAL_CONTRACT_CASE: Script = preload("res://tests/visual/test_visual_contract.gd")
 const RUNNER_PROBE_CASE: Script = preload("res://tests/support/runner_probe_case.gd")
@@ -63,6 +70,9 @@ func _selected_scripts() -> Array[Script]:
 		RENDERING_LAYER_CASE,
 		RENDER_OBJECT_REF_VALIDATOR_CASE,
 		COLLISION_GEOMETRY_VALIDATOR_CASE,
+		ASSET_REF_VALIDATOR_CASE,
+		ANIMATION_MANIFEST_VALIDATOR_CASE,
+		ANIMATION_STATE_REF_VALIDATOR_CASE,
 		BOOTSTRAP_SCENE_CASE,
 		VISUAL_CONTRACT_CASE,
 	]
