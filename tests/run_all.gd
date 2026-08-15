@@ -26,6 +26,9 @@ const ANIMATION_STATE_REF_VALIDATOR_CASE: Script = preload(
 )
 const ENCOUNTER_VALIDATOR_CASE: Script = preload("res://tests/unit/test_encounter_validator.gd")
 const LEVEL_VALIDATOR_CASE: Script = preload("res://tests/unit/test_level_validator.gd")
+const SAVE_SETTINGS_VALIDATOR_CASE: Script = preload(
+	"res://tests/unit/test_save_settings_validator.gd"
+)
 const BOOTSTRAP_SCENE_CASE: Script = preload("res://tests/gameplay/test_bootstrap_scene.gd")
 const VISUAL_CONTRACT_CASE: Script = preload("res://tests/visual/test_visual_contract.gd")
 const RUNNER_PROBE_CASE: Script = preload("res://tests/support/runner_probe_case.gd")
@@ -77,6 +80,7 @@ func _selected_scripts() -> Array[Script]:
 		ANIMATION_STATE_REF_VALIDATOR_CASE,
 		ENCOUNTER_VALIDATOR_CASE,
 		LEVEL_VALIDATOR_CASE,
+		SAVE_SETTINGS_VALIDATOR_CASE,
 		BOOTSTRAP_SCENE_CASE,
 		VISUAL_CONTRACT_CASE,
 	]

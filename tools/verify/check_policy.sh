@@ -135,6 +135,8 @@ while IFS= read -r production_file; do
 		| src/core/schema/encounter_validator.gd \
 		| src/core/schema/level.gd \
 		| src/core/schema/level_validator.gd \
+		| src/core/schema/save_settings.gd \
+		| src/core/schema/save_settings_validator.gd \
 		| src/core/schema/render_object_ref.gd \
 		| src/core/schema/render_object_ref_validator.gd \
 		| src/core/schema/rendering_layer.gd \
