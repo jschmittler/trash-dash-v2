@@ -110,24 +110,26 @@ configuration at repository root.
   (`src/core/schema/render_object_ref.gd`), `CollisionGeometry`
   (`src/core/schema/collision_geometry.gd`), `AssetRef`
   (`src/core/schema/asset_ref.gd`), `AnimationManifest`
-  (`src/core/schema/animation_manifest.gd`), and `AnimationStateRef`
-  (`src/core/schema/animation_state_ref.gd`) are implemented, each with an
-  explicit `schema_version`. Level, encounter, and save/settings schemas
-  remain unimplemented.
+  (`src/core/schema/animation_manifest.gd`), `AnimationStateRef`
+  (`src/core/schema/animation_state_ref.gd`), and `Encounter`
+  (`src/core/schema/encounter.gd`) are implemented, each with an explicit
+  `schema_version`. Level and save/settings schemas remain unimplemented.
 - [ ] Add fixtures that fail for unapproved paths, archive paths, missing
   supports, nonuniform scale, unknown layers/states, boss contamination, and
   schema mismatches. Covered so far: unknown layers/states
   (`tests/unit/test_render_object_ref_validator.gd`,
   `tests/unit/test_animation_state_ref_validator.gd`), unapproved/archive
   paths (`tests/unit/test_asset_ref_validator.gd`), nonuniform scale
-  (`tests/unit/test_animation_manifest_validator.gd`), and schema mismatches
-  across every schema implemented so far. Missing-supports and
-  boss-contamination fixtures are deferred to the encounter/level slice.
+  (`tests/unit/test_animation_manifest_validator.gd`), missing/unknown
+  supports and duplicate IDs (`tests/unit/test_encounter_validator.gd`), and
+  schema mismatches across every schema implemented so far.
+  Boss-contamination fixtures are deferred to the level slice, since only
+  the level record owns boss arena lock bounds.
 - [ ] Implement the minimum validators required to pass each failing fixture.
   `RenderObjectRefValidator`, `CollisionGeometryValidator`,
-  `AssetRefValidator`, `AnimationManifestValidator`, and
-  `AnimationStateRefValidator` are implemented. Level, encounter, and
-  save/settings validators remain unimplemented.
+  `AssetRefValidator`, `AnimationManifestValidator`,
+  `AnimationStateRefValidator`, and `EncounterValidator` are implemented.
+  Level and save/settings validators remain unimplemented.
 - [ ] Add human-readable error reports used by `tools/level-validation` and
   the release gate. Validators return `PackedStringArray` messages in the
   established `StartupValidator` style, but `tools/level-validation` wiring

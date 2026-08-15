@@ -131,6 +131,8 @@ while IFS= read -r production_file; do
 		| src/core/schema/asset_ref_validator.gd \
 		| src/core/schema/collision_geometry.gd \
 		| src/core/schema/collision_geometry_validator.gd \
+		| src/core/schema/encounter.gd \
+		| src/core/schema/encounter_validator.gd \
 		| src/core/schema/render_object_ref.gd \
 		| src/core/schema/render_object_ref_validator.gd \
 		| src/core/schema/rendering_layer.gd \
