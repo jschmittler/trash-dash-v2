@@ -106,12 +106,27 @@ configuration at repository root.
 
 - [ ] Encode stable, versioned schemas for assets, animations, levels,
   encounters, rendering layers, collision, and save/settings data.
+  `RenderingLayer` (`src/core/schema/rendering_layer.gd`), `RenderObjectRef`
+  (`src/core/schema/render_object_ref.gd`), and `CollisionGeometry`
+  (`src/core/schema/collision_geometry.gd`) are implemented as the first
+  slice, each with an explicit `schema_version`. Asset, animation, level,
+  encounter, and save/settings schemas remain unimplemented.
 - [ ] Add fixtures that fail for unapproved paths, archive paths, missing
   supports, nonuniform scale, unknown layers/states, boss contamination, and
-  schema mismatches.
+  schema mismatches. Unknown-layer and schema-mismatch fixtures exist for the
+  rendering/collision slice
+  (`tests/unit/test_render_object_ref_validator.gd`,
+  `tests/unit/test_collision_geometry_validator.gd`); the remaining fixture
+  categories (unapproved/archive paths, missing supports, nonuniform scale,
+  unknown states, boss contamination) are not yet covered.
 - [ ] Implement the minimum validators required to pass each failing fixture.
+  `RenderObjectRefValidator` and `CollisionGeometryValidator` are implemented
+  for the rendering/collision slice; asset, animation, encounter, level, and
+  save/settings validators remain unimplemented.
 - [ ] Add human-readable error reports used by `tools/level-validation` and
-  the release gate.
+  the release gate. Validators return `PackedStringArray` messages in the
+  established `StartupValidator` style, but `tools/level-validation` wiring
+  and release-gate aggregation do not exist yet.
 
 ### Task 4: Build the clean-asset promotion pipeline
 
