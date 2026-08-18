@@ -40,6 +40,7 @@ sources. Neither is a fixed-cell runtime atlas unless its manifest says so.
 
 ## Written canon
 
+- [`manuals/ANIMATION_MINIMUM_CHECKLIST.md`](manuals/ANIMATION_MINIMUM_CHECKLIST.md) — shared animation production baseline.
 - [`manuals/characters/`](manuals/characters/) — playable-character canon.
 - [`manuals/bosses/`](manuals/bosses/) — boss identity and behavior canon.
 - [`manuals/enemies/`](manuals/enemies/) — enemy index, contracts, and level rosters.
