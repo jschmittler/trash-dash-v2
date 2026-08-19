@@ -1,6 +1,6 @@
 # Level 1 Parallax Candidate Package
 
-Status: **candidate package generated 2026-08-19; owner visual approval pending.** Source masters and processed candidates are reviewed independently. Runtime integration is intentionally outside this package.
+Status: **owner visual approval recorded 2026-08-19.** Source masters and processed candidates are reviewed independently. Runtime integration is intentionally outside this package.
 
 ## Contract
 

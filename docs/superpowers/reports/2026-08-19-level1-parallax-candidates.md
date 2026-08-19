@@ -38,7 +38,7 @@ and re-inspected.
 
 ## Known limits and gate status
 
-- **Asset-stage candidate review:** PASS pending owner visual approval.
+- **Asset-stage candidate review:** PASS; owner visual approval recorded 2026-08-19.
 - **Canonical library validators:** currently FAIL because of pre-existing
   uncataloged `.DS_Store` files throughout the design library. Those files are
   outside this asset package and were not changed.
