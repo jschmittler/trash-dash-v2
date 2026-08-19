@@ -1,0 +1,218 @@
+{
+  "target": [
+    1320,
+    540
+  ],
+  "plates": {
+    "level1-deep-woodland-far.png": {
+      "source": "assets/generated/level1-parallax/sources/level1-deep-woodland-far-source.png",
+      "sourceSize": [
+        1957,
+        804
+      ],
+      "runtimeSize": [
+        1320,
+        540
+      ],
+      "transparent": 0,
+      "opaque": 712800,
+      "partialAlpha": 0
+    },
+    "level1-deep-woodland-middle.png": {
+      "source": "assets/generated/level1-parallax/sources/level1-deep-woodland-middle-source.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "runtimeSize": [
+        1320,
+        540
+      ],
+      "transparent": 608653,
+      "opaque": 104147,
+      "partialAlpha": 0
+    },
+    "level1-deep-woodland-close.png": {
+      "source": "assets/generated/level1-parallax/sources/level1-deep-woodland-close-source.png",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "runtimeSize": [
+        1320,
+        540
+      ],
+      "transparent": 682266,
+      "opaque": 30534,
+      "partialAlpha": 0
+    },
+    "level1-creek-and-ruined-mill-far.png": {
+      "source": "assets/generated/level1-parallax/sources/level1-creek-and-ruined-mill-far-source.png",
+      "sourceSize": [
+        1959,
+        803
+      ],
+      "runtimeSize": [
+        1320,
+        540
+      ],
+      "transparent": 0,
+      "opaque": 712800,
+      "partialAlpha": 0
+    },
+    "level1-creek-and-ruined-mill-middle.png": {
+      "source": "assets/generated/level1-parallax/sources/level1-creek-and-ruined-mill-middle-source.png",
+      "sourceSize": [
+        1447,
+        1087
+      ],
+      "runtimeSize": [
+        1320,
+        540
+      ],
+      "transparent": 627368,
+      "opaque": 85432,
+      "partialAlpha": 0
+    },
+    "level1-creek-and-ruined-mill-close.png": {
+      "source": "assets/generated/level1-parallax/sources/level1-creek-and-ruined-mill-close-source.png",
+      "sourceSize": [
+        1537,
+        1023
+      ],
+      "runtimeSize": [
+        1320,
+        540
+      ],
+      "transparent": 663504,
+      "opaque": 49296,
+      "partialAlpha": 0
+    },
+    "level1-forest-edge-highway-far.png": {
+      "source": "assets/generated/level1-parallax/sources/level1-forest-edge-highway-far-source.png",
+      "sourceSize": [
+        1961,
+        802
+      ],
+      "runtimeSize": [
+        1320,
+        540
+      ],
+      "transparent": 0,
+      "opaque": 712800,
+      "partialAlpha": 0
+    },
+    "level1-forest-edge-highway-middle.png": {
+      "source": "assets/generated/level1-parallax/sources/level1-forest-edge-highway-middle-source.png",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "runtimeSize": [
+        1320,
+        540
+      ],
+      "transparent": 662557,
+      "opaque": 50243,
+      "partialAlpha": 0
+    },
+    "level1-forest-edge-highway-close.png": {
+      "source": "assets/generated/level1-parallax/sources/level1-forest-edge-highway-close-source.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "runtimeSize": [
+        1320,
+        540
+      ],
+      "transparent": 688649,
+      "opaque": 24151,
+      "partialAlpha": 0
+    },
+    "level1-industrial-city-fringe-far.png": {
+      "source": "assets/generated/level1-parallax/sources/level1-industrial-city-fringe-far-source.png",
+      "sourceSize": [
+        1957,
+        804
+      ],
+      "runtimeSize": [
+        1320,
+        540
+      ],
+      "transparent": 0,
+      "opaque": 712800,
+      "partialAlpha": 0
+    },
+    "level1-industrial-city-fringe-middle.png": {
+      "source": "assets/generated/level1-parallax/sources/level1-industrial-city-fringe-middle-source.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "runtimeSize": [
+        1320,
+        540
+      ],
+      "transparent": 547092,
+      "opaque": 165708,
+      "partialAlpha": 0
+    },
+    "level1-industrial-city-fringe-close.png": {
+      "source": "assets/generated/level1-parallax/sources/level1-industrial-city-fringe-close-source.png",
+      "sourceSize": [
+        1693,
+        929
+      ],
+      "runtimeSize": [
+        1320,
+        540
+      ],
+      "transparent": 645317,
+      "opaque": 67483,
+      "partialAlpha": 0
+    },
+    "level1-urban-park-transition-far.png": {
+      "source": "assets/generated/level1-parallax/sources/level1-urban-park-transition-far-source.png",
+      "sourceSize": [
+        1962,
+        802
+      ],
+      "runtimeSize": [
+        1320,
+        540
+      ],
+      "transparent": 0,
+      "opaque": 712800,
+      "partialAlpha": 0
+    },
+    "level1-urban-park-transition-middle.png": {
+      "source": "assets/generated/level1-parallax/sources/level1-urban-park-transition-middle-source.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "runtimeSize": [
+        1320,
+        540
+      ],
+      "transparent": 611010,
+      "opaque": 101790,
+      "partialAlpha": 0
+    },
+    "level1-urban-park-transition-close.png": {
+      "source": "assets/generated/level1-parallax/sources/level1-urban-park-transition-close-source.png",
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "runtimeSize": [
+        1320,
+        540
+      ],
+      "transparent": 668410,
+      "opaque": 44390,
+      "partialAlpha": 0
+    }
+  }
+}
