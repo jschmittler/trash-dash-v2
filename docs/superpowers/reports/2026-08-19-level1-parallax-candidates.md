@@ -1,6 +1,6 @@
 # Level 1 Parallax Candidate Report
 
-**Revision:** working tree based on `5bc5bf1`  
+**Revision:** working tree based on `5bc5bf1`
 **Scope:** five generated Level 1 three-plane background candidates; no gameplay or runtime integration.
 
 ## Inputs and derivation
