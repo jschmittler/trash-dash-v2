@@ -1,0 +1,218 @@
+{
+  "target": [
+    1320,
+    540
+  ],
+  "plates": {
+    "level2-moonlit-backyard-far.png": {
+      "source": "assets/generated/level2-parallax/sources/level2-moonlit-backyard-far-source.png",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "runtimeSize": [
+        1320,
+        540
+      ],
+      "transparent": 0,
+      "opaque": 712800,
+      "partialAlpha": 0
+    },
+    "level2-moonlit-backyard-middle.png": {
+      "source": "assets/generated/level2-parallax/sources/level2-moonlit-backyard-middle-source.png",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "runtimeSize": [
+        1320,
+        540
+      ],
+      "transparent": 621791,
+      "opaque": 91009,
+      "partialAlpha": 0
+    },
+    "level2-moonlit-backyard-close.png": {
+      "source": "assets/generated/level2-parallax/sources/level2-moonlit-backyard-close-source.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "runtimeSize": [
+        1320,
+        540
+      ],
+      "transparent": 672005,
+      "opaque": 40795,
+      "partialAlpha": 0
+    },
+    "level2-garbage-night-street-far.png": {
+      "source": "assets/generated/level2-parallax/sources/level2-garbage-night-street-far-source.png",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "runtimeSize": [
+        1320,
+        540
+      ],
+      "transparent": 0,
+      "opaque": 712800,
+      "partialAlpha": 0
+    },
+    "level2-garbage-night-street-middle.png": {
+      "source": "assets/generated/level2-parallax/sources/level2-garbage-night-street-middle-source.png",
+      "sourceSize": [
+        1360,
+        1157
+      ],
+      "runtimeSize": [
+        1320,
+        540
+      ],
+      "transparent": 650198,
+      "opaque": 62602,
+      "partialAlpha": 0
+    },
+    "level2-garbage-night-street-close.png": {
+      "source": "assets/generated/level2-parallax/sources/level2-garbage-night-street-close-source.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "runtimeSize": [
+        1320,
+        540
+      ],
+      "transparent": 652473,
+      "opaque": 60327,
+      "partialAlpha": 0
+    },
+    "level2-backyard-obstacle-course-far.png": {
+      "source": "assets/generated/level2-parallax/sources/level2-backyard-obstacle-course-far-source.png",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "runtimeSize": [
+        1320,
+        540
+      ],
+      "transparent": 0,
+      "opaque": 712800,
+      "partialAlpha": 0
+    },
+    "level2-backyard-obstacle-course-middle.png": {
+      "source": "assets/generated/level2-parallax/sources/level2-backyard-obstacle-course-middle-source.png",
+      "sourceSize": [
+        1402,
+        1122
+      ],
+      "runtimeSize": [
+        1320,
+        540
+      ],
+      "transparent": 642603,
+      "opaque": 70197,
+      "partialAlpha": 0
+    },
+    "level2-backyard-obstacle-course-close.png": {
+      "source": "assets/generated/level2-parallax/sources/level2-backyard-obstacle-course-close-source.png",
+      "sourceSize": [
+        1313,
+        1198
+      ],
+      "runtimeSize": [
+        1320,
+        540
+      ],
+      "transparent": 602359,
+      "opaque": 110441,
+      "partialAlpha": 0
+    },
+    "level2-drainage-ditch-and-culvert-far.png": {
+      "source": "assets/generated/level2-parallax/sources/level2-drainage-ditch-and-culvert-far-source.png",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "runtimeSize": [
+        1320,
+        540
+      ],
+      "transparent": 0,
+      "opaque": 712800,
+      "partialAlpha": 0
+    },
+    "level2-drainage-ditch-and-culvert-middle.png": {
+      "source": "assets/generated/level2-parallax/sources/level2-drainage-ditch-and-culvert-middle-source.png",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "runtimeSize": [
+        1320,
+        540
+      ],
+      "transparent": 628524,
+      "opaque": 84276,
+      "partialAlpha": 0
+    },
+    "level2-drainage-ditch-and-culvert-close.png": {
+      "source": "assets/generated/level2-parallax/sources/level2-drainage-ditch-and-culvert-close-source.png",
+      "sourceSize": [
+        1316,
+        1195
+      ],
+      "runtimeSize": [
+        1320,
+        540
+      ],
+      "transparent": 686501,
+      "opaque": 26299,
+      "partialAlpha": 0
+    },
+    "level2-suburban-main-street-far.png": {
+      "source": "assets/generated/level2-parallax/sources/level2-suburban-main-street-far-source.png",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "runtimeSize": [
+        1320,
+        540
+      ],
+      "transparent": 0,
+      "opaque": 712800,
+      "partialAlpha": 0
+    },
+    "level2-suburban-main-street-middle.png": {
+      "source": "assets/generated/level2-parallax/sources/level2-suburban-main-street-middle-source.png",
+      "sourceSize": [
+        1402,
+        1122
+      ],
+      "runtimeSize": [
+        1320,
+        540
+      ],
+      "transparent": 629706,
+      "opaque": 83094,
+      "partialAlpha": 0
+    },
+    "level2-suburban-main-street-close.png": {
+      "source": "assets/generated/level2-parallax/sources/level2-suburban-main-street-close-source.png",
+      "sourceSize": [
+        1314,
+        1197
+      ],
+      "runtimeSize": [
+        1320,
+        540
+      ],
+      "transparent": 608073,
+      "opaque": 104727,
+      "partialAlpha": 0
+    }
+  }
+}

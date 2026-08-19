@@ -30,6 +30,7 @@ STAGES = (
     "industrial-city-fringe",
     "urban-park-transition",
 )
+PREFIX = "level1"
 LAYERS = ("far", "middle", "close")
 KEY = (255, 0, 255, 255)
 
@@ -159,7 +160,7 @@ def _save_evidence(stage_images: dict[str, dict[str, Image.Image]]) -> None:
         review.paste(composites[stage].convert("RGB"), (VIEW[0], VIEW[1] + 72))
         draw.text((VIEW[0] + 16, VIEW[1] + 48), "COMPOSITE 960×540", fill="#f2e8cf")
         EVIDENCE.mkdir(parents=True, exist_ok=True)
-        review.save(EVIDENCE / f"level1-{stage}-review.png")
+        review.save(EVIDENCE / f"{PREFIX}-{stage}-review.png")
         for layer, image in planes.items():
             seam = Image.new("RGBA", VIEW, (0, 0, 0, 0))
             seam.alpha_composite(image.crop((840, 0, 1320, 540)), (0, 0))
@@ -192,7 +193,7 @@ def main() -> None:
     for stage in STAGES:
         stage_images[stage] = {}
         for layer in LAYERS:
-            stem = f"level1-{stage}-{layer}"
+            stem = f"{PREFIX}-{stage}-{layer}"
             source = SOURCES / f"{stem}-source.png"
             if not source.is_file():
                 raise FileNotFoundError(source)

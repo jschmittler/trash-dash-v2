@@ -16,11 +16,12 @@ STAGES = (
     "industrial-city-fringe", "urban-park-transition",
 )
 LAYERS = ("far", "middle", "close")
-EXPECTED = {f"level1-{stage}-{layer}.png" for stage in STAGES for layer in LAYERS}
+PREFIX = "level1"
+EXPECTED = {f"{PREFIX}-{stage}-{layer}.png" for stage in STAGES for layer in LAYERS}
 
 
 def main() -> int:
-    found = {path.name for path in ASSETS.glob("level1-*.png")}
+    found = {path.name for path in ASSETS.glob(f"{PREFIX}-*.png")}
     if found != EXPECTED:
         print(f"FAIL: inventory differs: missing={sorted(EXPECTED - found)} extra={sorted(found - EXPECTED)}")
         return 1
@@ -51,7 +52,7 @@ def main() -> int:
     if errors:
         print("\n".join(f"FAIL: {error}" for error in errors))
         return 1
-    print("PASS: 15 Level 1 parallax PNGs; 1320x540; far opaque; moving planes binary-alpha; no hot-magenta matte")
+    print(f"PASS: 15 {PREFIX} parallax PNGs; 1320x540; far opaque; moving planes binary-alpha; no hot-magenta matte")
     return 0
 
 
