@@ -4,7 +4,7 @@
 
 Fifteen candidate-only 1320×540 parallax plates were generated for the approved Level 2 **Suburban After Dark** reference progression: moonlit backyard, garbage night street, backyard obstacle course, drainage ditch and culvert, and suburban main street.
 
-- **Asset-stage review:** PASS pending owner visual approval.
+- **Asset-stage review:** PASS; owner visual approval recorded 2026-08-19.
 - **Runtime/traversal/renderer/release:** INCOMPLETE. No Level 2 scene or parallax renderer was added.
 
 ## Canonical-source provenance

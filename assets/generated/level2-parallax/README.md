@@ -1,6 +1,6 @@
 # Level 2 — Suburban After Dark parallax candidates
 
-Status: **candidate package under production 2026-08-19; owner visual approval pending.** These are generated rendering candidates only; no Level 2 runtime scene, renderer integration, traversal, or release acceptance is implied.
+Status: **owner visual approval recorded 2026-08-19.** These are generated rendering candidates only; no Level 2 runtime scene, renderer integration, traversal, or release acceptance is implied.
 
 The package contains five approved-source-aligned stages, each with `far`, `middle`, and `close` art plates normalized to 1320×540. Far plates are opaque. Moving plates use binary alpha after removing the externally keyed #FF00FF source field.
 
